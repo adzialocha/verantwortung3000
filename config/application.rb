@@ -7,7 +7,11 @@ Bundler.require(*Rails.groups)
 module Darmstadt3000
   class Application < Rails::Application
 
+    config.title = 'DARMSTADT 3000'
+
     config.assets.version = '1.0'
+    config.assets.enable = true
+
     config.action_dispatch.cookies_serializer = :json
     config.filter_parameters += [:password]
     config.session_store :cookie_store, key: '_darmstadt3000_session'
