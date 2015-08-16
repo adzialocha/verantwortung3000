@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: darmstadt3000-dev
+  username: dev
+  password: dev
+  host: localhost
+  port: 5432
+
+production:
+  <<: *default
+  url: <%= ENV['DB_URL'] %>
