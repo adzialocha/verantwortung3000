@@ -12,7 +12,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'kontakt@blatt3000.de'
+  config.mailer_sender = 'BLATT 3000 <kontakt@blatt3000.de>'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
