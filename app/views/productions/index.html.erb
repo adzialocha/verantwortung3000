@@ -1,0 +1,24 @@
+<table>
+
+<% @productions.each do |production| %>
+
+  <tr>
+
+    <td><%= production.title %></td>
+
+    <td>
+      <% if can? :read, production %>
+        <%= link_to 'Show', production_path(production) %>
+      <% end %>
+      <% if can? :update, production %>
+        <%= link_to 'Edit', edit_production_path(production) %>
+      <% end %>
+    </td>
+
+  </tr>
+
+<% end %>
+
+<% if can? :create, @productions %>
+  <p><%= link_to 'New Production', new_production_path %></p>
+<% end %>
