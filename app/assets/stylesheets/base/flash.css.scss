@@ -1,0 +1,18 @@
+.alert
+{
+  border-radius: 0;
+  border: 0;
+  color: $white;
+  background-color: $black;
+
+  .close
+  {
+    color: $white;
+    opacity: 1;
+  }
+
+  .close:hover
+  {
+    opacity: 1;
+  }
+}

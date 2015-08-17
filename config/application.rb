@@ -11,6 +11,7 @@ module Darmstadt3000
 
     config.assets.version = '1.0'
     config.assets.enable = true
+    config.assets.precompile += ['vendor/assets/bower_components/*']
 
     config.action_dispatch.cookies_serializer = :json
     config.filter_parameters += [:password]

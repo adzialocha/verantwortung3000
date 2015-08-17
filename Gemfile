@@ -6,6 +6,8 @@ gem 'pg'
 gem 'devise'
 gem 'simple_form'
 gem 'cancancan'
+gem 'bootstrap-sass'
+gem 'redcarpet'
 
 # https://github.com/tsechingho/chosen-rails/issues/70
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'
@@ -16,6 +18,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
+
+gem 'haml'
 
 group :development do
   gem 'web-console', '~> 2.0'

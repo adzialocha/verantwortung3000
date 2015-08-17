@@ -1,7 +1,16 @@
 @import "compass";
-@import "compass/reset";
+
+/* global */
 
 @import "vars";
 
+/* vendors */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* components */
+
 @import "base/typo";
 @import "base/layout";
+@import "base/flash";

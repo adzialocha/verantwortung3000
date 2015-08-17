@@ -1,0 +1,31 @@
+%nav.navbar
+
+  .container
+
+    .navbar-header
+
+      %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      = link_to Rails.application.config.title, root_path, class: "navbar-brand"
+
+    #navbar.collapse.navbar-collapse
+
+      %ul.nav.navbar-nav.navbar-left
+
+        = li_link_to "Home", root_path
+        = li_link_to "About", "#"
+        = li_link_to "Program", productions_path
+
+      %ul.nav.navbar-nav.navbar-right
+
+        - if user_signed_in?
+          = li_link_to 'Profile', edit_user_registration_path
+          = li_link_to "Logout", destroy_user_session_path, method: :delete
+        - else
+          = li_link_to "Sign up", new_user_registration_path
+          = li_link_to "Login", new_user_session_path
