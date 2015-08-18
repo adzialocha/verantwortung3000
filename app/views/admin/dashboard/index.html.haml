@@ -12,29 +12,33 @@
 
       .row
 
-        .col-md-3
+        .col-md-12
 
-          %p
-            Users:
-            %span(class="badge")= @users_count
+          %ul.list-group
 
-        .col-md-3
+            %li.list-group-item
 
-          %p
-            Events:
-            %span(class="badge")= @events_count
+              %span(class="badge")= @users_count
+              Users
 
-        .col-md-3
+          %ul.list-group
 
-          %p
-            Devices:
-            %span(class="badge")= @devices_count
+            %li.list-group-item
 
-        .col-md-3
+              %span(class="badge")= @events_count
+              Events
 
-          %p
-            Instruments:
-            %span(class="badge")= @instruments_count
+          %ul.list-group
 
+            %li.list-group-item
 
+              %span(class="badge")= @devices_count
+              Devices
+
+          %ul.list-group
+
+            %li.list-group-item
+
+              %span(class="badge")= @instruments_count
+              Instruments
 

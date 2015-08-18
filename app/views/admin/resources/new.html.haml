@@ -1,0 +1,25 @@
+.container
+
+  .row
+
+    .col-md-12
+
+      %h1 Create #{resource_class.model_name.human}
+
+  .row
+
+    .col-md-12
+
+      = simple_form_for admin_create_path, method: :post, html: { role: 'form' } do |form|
+
+        = form.error_notification
+
+        .form-inputs
+
+          %h1.page-header= resource.try(:title)
+
+          = render 'form', form: form
+
+        .form-actions
+
+          = form.button :submit, class: 'btn btn-default btn-info'

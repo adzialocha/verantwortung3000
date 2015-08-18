@@ -1,0 +1,45 @@
+.container
+
+  .row
+
+    .col-md-12
+
+      %h1 Edit #{resource_class.model_name.human}
+
+  .row
+
+    .col-md-12
+
+      .panel.panel-default
+
+        .panel-heading
+
+          .panel-title Meta
+
+        .panel-body
+
+          %p ID: #{resource.id}
+          %p Erstellt: #{resource.created_at}
+          %p Aktualisiert: #{resource.updated_at}
+
+          = render 'meta', resource: resource
+
+      .panel.panel-default
+
+        .panel-heading
+
+          .panel-title Daten
+
+        .panel-body
+
+          = simple_form_for [:admin, (parent if try(:parent?)), resource], method: :put, html: { role: 'form' } do |form|
+
+            = form.error_notification
+
+            .form-inputs
+
+              = render 'form', form: form
+
+            .form-actions
+
+              = form.button :submit, value: 'Speichern', class: 'btn btn-primary'

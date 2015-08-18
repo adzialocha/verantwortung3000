@@ -9,6 +9,7 @@ gem 'simple_form'
 gem 'cancancan'
 gem 'bootstrap-sass'
 gem 'redcarpet'
+gem 'inherited_resources'
 
 # https://github.com/tsechingho/chosen-rails/issues/70
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'

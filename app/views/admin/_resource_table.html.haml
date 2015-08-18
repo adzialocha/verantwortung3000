@@ -1,0 +1,44 @@
+.container
+
+  .row
+
+    .col-md-3
+
+    .col-md-9
+
+      .pull-right
+
+        = link_to new_resource_path, class: 'btn btn-sm btn-success' do
+
+          %i.glyphicon.glyphicon-plus-sign
+
+  .row
+
+    .col-md-12
+
+      %h1= resource_class.model_name.human.pluralize
+
+      %table.table.table-striped.table-condensed
+
+        %tr
+
+          %th ID
+
+          - attributes.each do |a|
+            %th= resource_class.human_attribute_name(a)
+
+          %th Actions
+
+        - collection.each do |resource|
+
+          %tr[resource]
+
+            %td= resource.id
+
+            - attributes.each do |a|
+              %td= resource.send(a)
+
+            %td
+
+              = link_to edit_resource_path(resource), class: 'btn btn-info btn-sm' do
+                %i.glyphicon.glyphicon-pencil
