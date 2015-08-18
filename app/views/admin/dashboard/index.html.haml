@@ -1,0 +1,40 @@
+.container
+
+  %h1 Hey!
+
+  .panel.panel-default
+
+    .panel-heading
+
+      .panel-title Statistiken
+
+    .panel-body
+
+      .row
+
+        .col-md-3
+
+          %p
+            Users:
+            %span(class="badge")= @users_count
+
+        .col-md-3
+
+          %p
+            Events:
+            %span(class="badge")= @events_count
+
+        .col-md-3
+
+          %p
+            Devices:
+            %span(class="badge")= @devices_count
+
+        .col-md-3
+
+          %p
+            Instruments:
+            %span(class="badge")= @instruments_count
+
+
+

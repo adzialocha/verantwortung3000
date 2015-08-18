@@ -1,0 +1,25 @@
+%nav.navbar
+
+  .container
+
+    .navbar-header
+
+      %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      = link_to 'Admin', admin_root_path, class: "navbar-brand"
+
+    #navbar.collapse.navbar-collapse
+
+      %ul.nav.navbar-nav.navbar-left
+
+        = li_link_to "Dashboard", admin_root_path
+
+      %ul.nav.navbar-nav.navbar-right
+
+        - if user_signed_in?
+          = li_link_to "Logout", destroy_user_session_path, method: :delete
