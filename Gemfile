@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.3'
 gem 'pg'
+gem 'rb-readline'
 
 gem 'devise'
 gem 'simple_form'

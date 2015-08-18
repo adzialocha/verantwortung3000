@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'welcome#index'
+
+  root 'pages#home'
+
+  controller :pages do
+    get :about
+    get :routes
+    get :contact
+  end
 
   resources :productions
 

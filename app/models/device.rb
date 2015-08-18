@@ -1,6 +1,8 @@
 class Device < ActiveRecord::Base
 
+  has_many :requirements, dependent: :nullify
+  has_many :events, through: :requirements
+
   belongs_to :user
-  has_and_belongs_to_many :events
 
 end
