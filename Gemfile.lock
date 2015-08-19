@@ -8,6 +8,15 @@ GIT
       sass-rails (< 5.1)
       sprockets (< 2.13)
 
+GIT
+  remote: git://github.com/zpaulovics/datetimepicker-rails.git
+  revision: 36d21cec5da7f5b214925804f60e63c61c747023
+  branch: master
+  submodules: true
+  specs:
+    datetimepicker-rails (4.7.16)
+      momentjs-rails (>= 2.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,6 +69,7 @@ GEM
     builder (3.2.2)
     cancancan (1.12.0)
     chunky_png (1.3.4)
+    cocoon (1.2.6)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -123,6 +133,8 @@ GEM
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.8.0)
+    momentjs-rails (2.10.3)
+      railties (>= 3.1)
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -210,14 +222,17 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   cancancan
+  cocoon
   coffee-rails (~> 4.1.0)
   compass-rails!
+  datetimepicker-rails!
   devise
   haml
   inherited_resources
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
+  momentjs-rails
   pg
   rails (= 4.2.3)
   rails_12factor

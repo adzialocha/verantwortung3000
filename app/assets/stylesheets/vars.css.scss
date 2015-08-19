@@ -2,7 +2,17 @@ $black: #000;
 $white: #fff;
 $gray: #666;
 
+/* bootstrap vars */
+
 $font-family-sans-serif: "Arial", sans-serif;
-$font-size-base: 16px;
+$font-size-base: 12px;
 
 $navbar-height: 100px;
+
+$border-radius-base: 0;
+
+$btn-border-radius-base: 0;
+$btn-default-border: $black;
+
+$input-color: $black;
+$input-border: $black;

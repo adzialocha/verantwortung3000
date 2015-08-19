@@ -1,12 +1,45 @@
 .container
 
   = simple_form_for @production do |f|
-    = f.input :title
-    = f.input :description
-    = f.button :submit
+
+    .row
+
+      .col-md-12
+
+        .panel
+
+          .panel-heading
+
+            .panel-title= @production.title
+
+          .panel-body
+
+            = f.input :title
+            = f.input :description
+
+    .row
+
+      .col-md-12
+
+        #cocoon-nested-container
+
+          = f.simple_fields_for :events do |event|
+            = render 'event_fields', f: event
+
+    .row
+
+      .col-md-6
+
+        = link_to_add_association 'Add new Event', f, :events, class: 'btn btn-success'
+
+      .col-md-6
+
+        .pull-right= f.button :submit, class: 'btn'
 
 .container
 
+  %hr
+
   %p Unhappy?
 
-  = button_to "Delete Production", production_path(@production), data: { confirm: "Are you sure?" }, method: :delete
+  = button_to 'Delete Production', production_path(@production), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete

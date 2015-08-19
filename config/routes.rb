@@ -10,7 +10,16 @@ Rails.application.routes.draw do
     get :contact
   end
 
-  resources :productions
+  resources :productions do
+
+    resources :events do
+
+      resources :instruments
+      resources :devices
+
+    end
+
+  end
 
   namespace :admin do
 

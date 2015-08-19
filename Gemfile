@@ -10,6 +10,10 @@ gem 'cancancan'
 gem 'bootstrap-sass'
 gem 'redcarpet'
 gem 'inherited_resources'
+gem 'cocoon'
+
+gem 'momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 
 # https://github.com/tsechingho/chosen-rails/issues/70
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'master'

@@ -1,4 +1,21 @@
 .container
 
   %h2= @production.title
+
   = markdown(@production.description)
+
+  %hr
+
+  - unless @production.events.empty?
+
+    %h2 Events
+
+    - @production.events.each do |event|
+
+      %p= event.title
+      = markdown(event.description)
+
+      %p= event.from
+      %p= event.to
+
+      %hr

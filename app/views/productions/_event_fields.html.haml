@@ -1,0 +1,17 @@
+.panel
+
+  .panel-heading
+
+    .panel-title Event
+
+  .panel-body
+
+    = f.input :title
+    = f.input :description
+
+    = f.input :from, as: :datetime_picker
+    = f.input :to, as: :datetime_picker
+
+  .panel-footer
+
+    = link_to_remove_association'Remove Event', f, class: 'btn btn-danger',data: { confirm: 'Are you sure?' }, wrapper_class: 'panel'

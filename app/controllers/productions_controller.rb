@@ -52,7 +52,12 @@ class ProductionsController < ApplicationController
   private
 
   def resource_params
-    params.require(:production).permit(:title, :description)
+
+    params.require(:production).permit(
+      :title, :description,
+      events_attributes: [:id, :title, :description, :from, :to, :_destroy]
+    )
+
   end
 
 end

@@ -1,0 +1,50 @@
+textarea
+{
+  max-width: 100%;
+  max-height: 400px;
+  min-height: 200px;
+}
+
+.form-control:focus
+{
+  border-color: $gray;
+  box-shadow: none;
+}
+
+.bootstrap-datetimepicker-widget
+{
+  border-color: $black;
+
+  .glyphicon
+  {
+    color: $black;
+  }
+
+  .picker-switch
+  {
+    text-transform: uppercase;
+  }
+
+  table td.day
+  {
+    border-radius: 0;
+    border: 1px solid $black;
+  }
+
+  table td.day.old
+  {
+    color: $black;
+  }
+
+  table td.day.disabled
+  {
+    border: none;
+    color: #999;
+  }
+
+  table td.day.active
+  {
+    background-color: $black;
+    text-shadow: none;
+  }
+}
