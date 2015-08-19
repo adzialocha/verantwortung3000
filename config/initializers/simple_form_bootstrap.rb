@@ -1,6 +1,8 @@
 # Use this setup block to configure all options available in SimpleForm.
+
 SimpleForm.setup do |config|
-  config.error_notification_class = 'alert alert-danger'
+
+  config.error_notification_class = 'alert alert-danger alert-dismissible'
   config.button_class = 'btn btn-default'
   config.boolean_label_class = nil
 
@@ -126,6 +128,7 @@ SimpleForm.setup do |config|
   # Check the Bootstrap docs (http://getbootstrap.com)
   # to learn about the different styles for forms and inputs,
   # buttons and other elements.
+
   config.default_wrapper = :vertical_form
   config.wrapper_mappings = {
     check_boxes: :vertical_radio_and_checkboxes,

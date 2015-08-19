@@ -1,18 +1,44 @@
 $black: #000;
 $white: #fff;
-$gray: #666;
 
 /* bootstrap vars */
 
-$font-family-sans-serif: "Arial", sans-serif;
-$font-size-base: 12px;
+$brand-primary:         $black;
+$brand-success:         $black;
+$brand-info:            $black;
+$brand-warning:         $black;
+$brand-danger:          $black;
 
-$navbar-height: 100px;
+$state-danger-text:     #ff0000;
 
-$border-radius-base: 0;
+$font-family-sans-serif:  "Arial", sans-serif;
+$font-size-base:          12px;
 
-$btn-border-radius-base: 0;
-$btn-default-border: $black;
+$link-color:            $black;
+$link-hover-color:      $black;
+$link-hover-decoration: underline;
 
-$input-color: $black;
-$input-border: $black;
+$navbar-height:                       100px;
+$navbar-default-link-color:           $black;
+$navbar-default-link-hover-color:     $black;
+
+$border-radius-base:    0;
+$border-radius-large:   0;
+$border-radius-large:   0;
+
+$component-active-bg:   $black;
+
+$btn-border-radius-base:    0;
+$btn-default-border:        $black;
+
+$btn-primary-bg:            $black;
+
+$input-color:     $black;
+$input-border:    $black;
+
+$panel-bg:                    #fff;
+
+$panel-inner-border:          $black;
+$panel-default-text:          $black;
+$panel-default-border:        $black;
+$panel-default-heading-bg:    $black;

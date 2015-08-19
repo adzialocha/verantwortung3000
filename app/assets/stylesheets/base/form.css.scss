@@ -5,10 +5,50 @@ textarea
   min-height: 200px;
 }
 
-.form-control:focus
+.btn
 {
-  border-color: $gray;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.btn-danger
+{
+  background-color: $gray-lighter;
+  color: $black;
+}
+
+.btn-default:hover, .btn-danger:hover
+{
+  background-color: $black;
+  color: $white;
+}
+
+.btn-success, .btn-primary, .btn-info
+{
+  color: $white;
+}
+
+.btn-success:hover, .btn-primary:hover, .btn-info:hover
+{
+  background-color: $white;
+  color: $black;
+}
+
+.form-control
+{
+  padding-left: 6px;
+}
+
+.form-control:focus, .has-error .form-control:focus
+{
+  border-color: $gray-dark;
+  background-color: $gray-lighter;
   box-shadow: none;
+}
+
+.has-error .form-control:focus
+{
+  border-color: $state-danger-text
 }
 
 .bootstrap-datetimepicker-widget
