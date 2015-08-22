@@ -1,0 +1,7 @@
+.image-grid
+
+  - resource.images.each do |image|
+
+    .image-grid__container.img-responsive
+
+      .image-grid__container__image{ :style => 'background-image: url("' + image.src.url + '")' }

@@ -1,0 +1,41 @@
+.image-grid
+{
+  font-size: 0;
+}
+
+.image-grid__container
+{
+  float: left;
+
+  width: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.image-grid__container:after
+{
+  padding-top: 100%;
+  display: block;
+  content: '';
+}
+
+.image-grid__container__image
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .image-grid__container
+  {
+    width: 100%;
+    float: none;
+  }
+
+}

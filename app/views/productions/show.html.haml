@@ -4,6 +4,8 @@
 
   = markdown(@production.description)
 
+  = render '/image_grid', resource: @production
+
   %hr
 
   - unless @production.events.empty?

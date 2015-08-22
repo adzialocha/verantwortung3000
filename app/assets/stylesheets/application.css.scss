@@ -11,10 +11,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* components */
+/* base */
 
 @import "base/typo";
 @import "base/layout";
 @import "base/flash";
 @import "base/form";
 @import "base/images";
+
+/* components */
+
+@import "components/image_grid";
