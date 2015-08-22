@@ -2,11 +2,22 @@
 
   .container
 
-    %ul
+    .row
 
-      %li= Rails.application.config.title
-      = li_link_to "Anfahrt", routes_path
-      = li_link_to "Kontakt", contact_path
+      .col-md-6
 
-      - if current_user.try(:admin)
-        = li_link_to "Admin", admin_root_path
+        %ul
+
+          %li= Rails.application.config.title
+          = li_link_to "Anfahrt", routes_path
+          = li_link_to "Kontakt", contact_path
+
+          - if current_user.try(:admin)
+            = li_link_to "Admin", admin_root_path
+
+      .col-md-6
+
+        %ul.pull-right
+
+          = li_link_to "English", url_for(:locale => 'en')
+          = li_link_to "Deutsch", url_for(:locale => 'de')
