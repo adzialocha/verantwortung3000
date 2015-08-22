@@ -7,4 +7,6 @@ class Production < ActiveRecord::Base
 
   validates :title, presence: true, length: { minimum: 5 }
 
+  mount_uploaders :images, ImageUploader
+
 end

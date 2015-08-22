@@ -11,6 +11,9 @@ gem 'bootstrap-sass'
 gem 'redcarpet'
 gem 'inherited_resources'
 gem 'cocoon'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave', branch: 'master'
+gem 'fog-aws'
+gem 'mini_magick'
 
 gem 'momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true

@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   has_many :devices, dependent: :destroy
   has_many :productions, dependent: :destroy
 
+  mount_uploader :image, ImageUploader
+
 end

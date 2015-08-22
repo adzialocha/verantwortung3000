@@ -1,0 +1,4 @@
+development:
+
+  AWS_ACCESS_ID: "<INSERT>"
+  AWS_ACCESS_KEY: "<INSERT>""

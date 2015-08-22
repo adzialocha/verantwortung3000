@@ -9,6 +9,10 @@ module Darmstadt3000
 
     config.title = 'DARMSTADT 3000'
 
+    config.before_configuration do
+      ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}
+    end
+
     config.assets.version = '1.0'
     config.assets.enable = true
     config.assets.precompile += ['vendor/assets/bower_components/*']
