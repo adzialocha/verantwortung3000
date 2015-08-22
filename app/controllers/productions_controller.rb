@@ -55,6 +55,7 @@ class ProductionsController < ApplicationController
 
     params.require(:production).permit(
       :title, :description,
+      images_attributes: [:id, :src, :_destroy],
       events_attributes: [:id, :title, :description, :from, :to, :_destroy]
     )
 

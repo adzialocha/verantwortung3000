@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150822170806) do
+ActiveRecord::Schema.define(version: 20150822201937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 20150822170806) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
-    t.json     "images"
   end
 
   add_index "devices", ["user_id"], name: "index_devices_on_user_id", using: :btree
@@ -66,13 +65,20 @@ ActiveRecord::Schema.define(version: 20150822170806) do
   add_index "events", ["location_id"], name: "index_events_on_location_id", using: :btree
   add_index "events", ["production_id"], name: "index_events_on_production_id", using: :btree
 
+  create_table "images", force: :cascade do |t|
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "src"
+    t.integer  "imageable_id"
+    t.string   "imageable_type"
+  end
+
   create_table "instruments", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
-    t.json     "images"
   end
 
   add_index "instruments", ["user_id"], name: "index_instruments_on_user_id", using: :btree
@@ -82,7 +88,6 @@ ActiveRecord::Schema.define(version: 20150822170806) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.json     "images"
   end
 
   create_table "productions", force: :cascade do |t|
@@ -91,7 +96,6 @@ ActiveRecord::Schema.define(version: 20150822170806) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
-    t.json     "images"
   end
 
   add_index "productions", ["user_id"], name: "index_productions_on_user_id", using: :btree

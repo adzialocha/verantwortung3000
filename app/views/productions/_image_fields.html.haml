@@ -1,0 +1,15 @@
+.panel
+
+  .panel-body
+
+    - if f.object.src?
+
+      = image_tag f.object.src.thumb.url, class: 'img-thumbnail img-responsive'
+
+    - else
+
+      = f.file_field :src
+
+  .panel-footer
+
+    = link_to_remove_association 'Remove Image', f, class: 'btn btn-danger', data: { confirm: 'Are you sure?' }, wrapper_class: 'panel'

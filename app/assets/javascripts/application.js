@@ -35,9 +35,10 @@
 
     $(document).on('cocoon:after-insert', _initDatepickers);
 
-    $('a.add_fields').
+    $('.cocoon-nested-container a.add_fields').
       data('association-insertion-method', 'after').
-      data('association-insertion-node', '#cocoon-nested-container');
+      data("association-insertion-traversal", 'closest').
+      data('association-insertion-node', '.cocoon-nested-container');
 
   });
 

@@ -1,7 +1,7 @@
 class Location < ActiveRecord::Base
 
-  has_many :events
+  include Imageable
 
-  mount_uploaders :images, ImageUploader
+  has_many :events
 
 end

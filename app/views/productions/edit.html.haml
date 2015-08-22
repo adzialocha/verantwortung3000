@@ -16,14 +16,25 @@
 
           .panel-body
 
+            %h3 Informationen
+
             = f.input :title
             = f.input :description
+
+            %h3 Bilder
+
+            .cocoon-nested-container
+
+              = f.simple_fields_for :images do |image|
+                = render 'image_fields', f: image
+
+              = link_to_add_association 'Add new Image', f, :images, class: 'btn btn-success'
 
     .row
 
       .col-md-12
 
-        #cocoon-nested-container
+        #cocoon-nested-events-container
 
           = f.simple_fields_for :events do |event|
             = render 'event_fields', f: event
@@ -32,7 +43,7 @@
 
       .col-md-6
 
-        = link_to_add_association 'Add new Event', f, :events, class: 'btn btn-success'
+        = link_to_add_association 'Add new Event', f, :events, class: 'btn btn-success', data: { 'association-insertion-node': '#cocoon-nested-events-container' }
 
       .col-md-6
 

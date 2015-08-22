@@ -7,11 +7,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   storage :fog
 
   def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+    "uploads/#{model.class.to_s.underscore}/#{model.id}"
   end
 
   def default_url
-    "/images/fallback/" + [version_name, "default.png"].compact.join('_')
+    "/images/default.png"
   end
 
   process :resize_to_fit => [960, 960]

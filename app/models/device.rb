@@ -1,10 +1,10 @@
 class Device < ActiveRecord::Base
 
+  include Imageable
+
   has_many :requirements, dependent: :nullify
   has_many :events, through: :requirements
 
   belongs_to :user
-
-  mount_uploaders :images, ImageUploader
 
 end
