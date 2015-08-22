@@ -6,11 +6,15 @@
 
   .panel-body
 
-    = f.input :title
-    = f.input :description
-
     = f.input :from, as: :datetime_picker
     = f.input :to, as: :datetime_picker
+
+    // %a.btn.btn-primary{:role => 'button', :data => { 'toggle': 'collapse' }, :href => '.accordion' } Edit Custom Info
+
+    // .collapse.accordion
+
+    = f.input :title
+    = f.input :description
 
   .panel-footer
 

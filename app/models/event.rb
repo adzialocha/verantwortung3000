@@ -12,4 +12,16 @@ class Event < ActiveRecord::Base
   has_many :collaborations, dependent: :destroy
   has_many :instruments, through: :collaborations
 
+  validate :daterange_is_correct
+
+  private
+
+  def daterange_is_correct
+
+    if self.from >= self.to
+      errors.add(:to, 'End of event cant be before or same as the beginning.')
+    end
+
+  end
+
 end
