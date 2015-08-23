@@ -9,15 +9,15 @@ class Ability
     alias_action :update, :destroy, :edit, :to => :change
 
     if user.admin?
-        can :manage, :all
-    else
-        can :read, [ Production ]
-        can :change, :all, :user_id => user.id
+      can :manage, :all
     end
 
     if User.exists?(user)
+      can :change, :all, :user_id => user.id
       can :read, :all
       can :create, :all
+    else
+      can :read, [ Production ]
     end
 
   end
