@@ -2,6 +2,8 @@
 
   %h2= @production.title
 
+  %p= @production.user.email
+
   = markdown(@production.description)
 
   = render '/image_grid', resource: @production

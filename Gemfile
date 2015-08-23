@@ -6,6 +6,7 @@ gem 'rb-readline'
 
 gem 'devise'
 gem 'simple_form'
+gem 'country_select'
 gem 'cancancan'
 gem 'bootstrap-sass'
 gem 'redcarpet'

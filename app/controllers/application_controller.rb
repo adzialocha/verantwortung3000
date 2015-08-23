@@ -12,7 +12,13 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:account_update) << [:image, :image_cache, :remove_image, :imageable_id, :imageable_type]
+
+    additional_params = [:first_name, :last_name, :tel, :street, :city_code, :city, :country]
+
+    devise_parameter_sanitizer.for(:account_update) << [:image, :image_cache, :remove_image, :imageable_id, :imageable_type] + additional_params
+
+    devise_parameter_sanitizer.for(:sign_up) << additional_params
+
   end
 
   private

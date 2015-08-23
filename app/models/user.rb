@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
 
   mount_uploader :image, ImageUploader
 
+  validates :email, :first_name, :last_name, :tel, :street, :city_code, :city, :country, presence: true
+
 end

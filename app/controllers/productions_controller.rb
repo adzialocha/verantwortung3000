@@ -8,6 +8,7 @@ class ProductionsController < ApplicationController
 
   def show
     @production = Production.find(params[:id])
+    @owner = @production.user
   end
 
   def new
@@ -54,7 +55,7 @@ class ProductionsController < ApplicationController
   def resource_params
 
     params.require(:production).permit(
-      :title, :description,
+      :title, :description, :user_id,
       images_attributes: [:id, :src, :_destroy],
       events_attributes: [:id, :title, :description, :from, :to, :_destroy]
     )

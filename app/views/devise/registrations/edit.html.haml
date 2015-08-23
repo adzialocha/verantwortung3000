@@ -4,21 +4,31 @@
 
     = f.error_notification
 
-    %h2 Edit #{resource_name.to_s.humanize}
+    %h2 My Profile
 
     .form-inputs
 
-      = f.input :email, required: true, autofocus: true
+      %h3 Account
+
+      = f.input :first_name
+      = f.input :last_name
+
+      = f.input :email, required: true
 
       - if devise_mapping.confirmable? && resource.pending_reconfirmation?
         %p
           Currently waiting confirmation for: #{resource.unconfirmed_email}
 
-      = f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false
-      = f.input :password_confirmation, required: false
-      = f.input :current_password, hint: "we need your current password to confirm your changes", required: true
+      = f.input :tel
 
-      %h2 Profile Picture
+      %h3 Your Address
+
+      = f.input :street
+      = f.input :city_code
+      = f.input :city
+      = f.input :country
+
+      %h3 Profile Picture
 
       - if resource.image?
         = image_tag(resource.image.thumb.url)
@@ -27,13 +37,20 @@
       = f.file_field :image
       = f.hidden_field :image_cache
 
+      %h3 Credentials
+
+      = f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false
+      = f.input :password_confirmation, required: false
+
+      %h3 Confirmation
+
+      = f.input :current_password, hint: "we need your current password to confirm your changes", required: true
+
     .form-actions
 
-      = f.button :submit, "Update"
+      = f.button :submit, "Update", :class => "btn btn-primary"
 
-  %h3 Cancel my account
+  %h3 Danger Zone
 
   %p
     Unhappy? #{link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
-
-  = link_to "Back", :back

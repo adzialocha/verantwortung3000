@@ -7,7 +7,26 @@
     %h2 Sign up
 
     .form-inputs
-      = f.input :email, required: true, autofocus: true
+
+      %h3 Hello
+
+      = f.input :first_name, autofocus: true
+      = f.input :last_name
+
+      %h3 Contact
+
+      = f.input :email, required: true, hint: "This email will be public to any other signed user, email will be the main communication medium between users"
+      = f.input :tel, hint: "We need an mobile number in case we have to ask you something during the festival"
+
+      %h3 Your Address
+
+      = f.input :street
+      = f.input :city_code
+      = f.input :city
+      = f.input :country
+
+      %h3 Your Password
+
       = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
       = f.input :password_confirmation, required: true
 
