@@ -2,7 +2,10 @@
 
   %h2= @production.title
 
-  %p= @production.user.email
+  - if can? :update, @production
+    %p= link_to 'Edit', edit_production_path(@production)
+
+  %p= link_to @production.user.fullname, user_path(@production.user)
 
   = markdown(@production.description)
 

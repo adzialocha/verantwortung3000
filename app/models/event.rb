@@ -12,6 +12,10 @@ class Event < ActiveRecord::Base
   has_many :collaborations, dependent: :destroy
   has_many :instruments, through: :collaborations
 
+  accepts_nested_attributes_for :collaborations, reject_if: :all_blank, allow_destroy: true
+
+  accepts_nested_attributes_for :requirements, reject_if: :all_blank, allow_destroy: true
+
   validate :daterange_is_correct
 
   private

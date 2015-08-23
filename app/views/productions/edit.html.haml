@@ -1,58 +1,97 @@
-.container
+.well-container
 
-  = simple_form_for @production do |f|
-
-    = f.error_notification
-
-    .row
-
-      .col-md-12
-
-        .panel
-
-          .panel-heading
-
-            .panel-title= @production.title
-
-          .panel-body
-
-            %h3 Informationen
-
-            = f.input :title
-            = f.input :description
-
-            %h3 Bilder
-
-            .cocoon-nested-container
-
-              = f.simple_fields_for :images do |image|
-                = render 'image_fields', f: image
-
-              = link_to_add_association 'Add new Image', f, :images, class: 'btn btn-success'
-
-    .row
-
-      .col-md-12
-
-        #cocoon-nested-events-container
-
-          = f.simple_fields_for :events do |event|
-            = render 'event_fields', f: event
+  .container
 
     .row
 
       .col-md-6
 
-        = link_to_add_association 'Add new Event', f, :events, class: 'btn btn-success', data: { 'association-insertion-node': '#cocoon-nested-events-container' }
+        %h1 My Production
 
       .col-md-6
 
-        .pull-right= f.button :submit, class: 'btn'
+        %button.btn.btn-default.toggle-help.pull-right Toggle Help
 
-.container
+    = simple_form_for @production do |f|
 
-  %hr
+      = f.error_notification
 
-  %p Unhappy?
+      .row
 
-  = button_to 'Delete Production', production_path(@production), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete
+        .col-md-12
+
+          .panel
+
+            .panel-heading
+
+              .panel-title= @production.title
+
+            .panel-body
+
+              .well
+
+                %h1 Hey!
+
+                %p You want to edit or create a production. A production is something you can contribute to the festival. It can consist of different events, they all relate to this idea production.
+
+                %p Start with basic information, like the title and a description of the production.
+
+              %h3 Informationen
+
+              = f.input :title
+
+              .well
+
+                %h1 Formatting
+
+                %p All description fields can be formatted with MARKDOWN sytax which means you can change the text style, add links etc.
+
+                = link_to 'Read more about it here', 'http://daringfireball.net/projects/markdown/', target: '_blank'
+
+              = f.input :description
+
+              .well
+
+                %h1 Images
+
+                %p You can add unlimited images to your production. Click "Add New Image" and select the File to upload a new one.
+
+              %h3 Images
+
+              .cocoon-nested-container
+
+                = f.simple_fields_for :images do |image|
+                  = render 'image_fields', f: image
+
+                = link_to_add_association 'Add new Image', f, :images, class: 'btn btn-success'
+
+      .row
+
+        .col-md-12
+
+          .well
+
+            %h1 Events
+
+            %p Every production consists of at least one event, it can also be many. For example: a workshop might happen on several days, or: for a premiere you might need to reserve the room two hours before for soundcheck. Also soundchecks and setups are events!
+
+          #cocoon-nested-events-container
+
+            = f.simple_fields_for :events do |event|
+              = render 'event_fields', f: event
+
+            = link_to_add_association 'Add new Event', f, :events, class: 'btn btn-success', data: { 'association-insertion-node': '#cocoon-nested-events-container' }
+
+      .row
+
+        .col-md-12
+
+          .pull-right= f.button :submit, class: 'btn'
+
+  .container
+
+    %hr
+
+    %p Unhappy?
+
+    = button_to 'Delete Production', production_path(@production), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete

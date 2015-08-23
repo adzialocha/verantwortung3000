@@ -17,10 +17,14 @@ module ApplicationHelper
   end
 
   def markdown(text)
-    renderOptions = {hard_wrap: true, filter_html: true}
-    markdownOptions = {autolink: true, no_intra_emphasis: true}
-    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(renderOptions), markdownOptions)
+
+    render_options = { hard_wrap: true, filter_html: true, no_styles: true, no_images: true, link_attributes: { 'target': '_blank' } }
+    markdown_options = { autolink: true, no_intra_emphasis: true }
+
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML.new(render_options), markdown_options)
+
     markdown.render(text).html_safe
+
   end
 
 end

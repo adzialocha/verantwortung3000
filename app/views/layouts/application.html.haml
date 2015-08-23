@@ -19,13 +19,6 @@
     = render 'layouts/navigation'
     = render 'layouts/flash'
 
-    - if user_signed_in?
-
-      .container
-        %p
-          Logged in as
-          %strong= current_user.email
-
     = yield
 
     = render 'layouts/footer'

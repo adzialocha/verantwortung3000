@@ -1,0 +1,53 @@
+.container
+
+  .row
+
+    .col-md-6
+
+      - if @user.image?
+        = image_tag @user.image.url, class: 'img-responsive'
+
+    .col-md-6
+
+      %h1= @user.fullname
+
+      - if can? :update, @user
+        = link_to 'Edit my Profile', edit_user_registration_path(@user)
+
+      %p= @user.country
+      %p= mail_to @user.email
+
+      - if @user.description?
+
+        %hr
+
+        = markdown(@user.description)
+
+      %hr
+
+      - unless @user.productions.empty?
+
+        %h5 I contribute these productions
+
+        %ul
+          - @user.productions.each do |production|
+            %li= link_to production.title, production_path(production)
+
+      - unless @user.instruments.empty?
+
+        %h5 I offer the following instruments
+
+        %ul
+          - @user.instruments.each do |instrument|
+            %li= link_to instrument.title, instrument_path(instrument)
+
+      - unless @user.devices.empty?
+
+        %h5 I offer these devices
+
+        %ul
+          - @user.devices.each do |device|
+            %li= link_to device.title, device_path(device)
+
+
+

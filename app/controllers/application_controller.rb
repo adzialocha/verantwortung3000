@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 
     additional_params = [:first_name, :last_name, :tel, :street, :city_code, :city, :country]
 
-    devise_parameter_sanitizer.for(:account_update) << [:image, :image_cache, :remove_image, :imageable_id, :imageable_type] + additional_params
+    devise_parameter_sanitizer.for(:account_update) << [:image, :image_cache, :remove_image, :imageable_id, :imageable_type, :description] + additional_params
 
     devise_parameter_sanitizer.for(:sign_up) << additional_params
 

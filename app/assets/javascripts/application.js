@@ -40,6 +40,12 @@
       data("association-insertion-traversal", 'closest').
       data('association-insertion-node', '.cocoon-nested-container');
 
+    // toggle help button
+
+    $('.toggle-help').on('click', function() {
+      $('.well').toggle();
+    });
+
   });
 
 })(window, document, window.jQuery);

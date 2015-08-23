@@ -6,6 +6,8 @@
 
     %h2 My Profile
 
+    = link_to "Go To Public Profile", user_path(resource)
+
     .form-inputs
 
       %h3 Account
@@ -28,14 +30,23 @@
       = f.input :city
       = f.input :country
 
-      %h3 Profile Picture
+      %h3 Profile
+
+      %h4 Picture
 
       - if resource.image?
         = image_tag(resource.image.thumb.url)
-        = f.check_box :remove_image
+
+        = f.label :remove_image do
+          = f.check_box :remove_image
+          %span Delete Image
 
       = f.file_field :image
       = f.hidden_field :image_cache
+
+      %h4 About yourself
+
+      = f.input :description
 
       %h3 Credentials
 

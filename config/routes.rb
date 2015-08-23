@@ -10,12 +10,14 @@ Rails.application.routes.draw do
     get :contact
   end
 
+  resources :users, :only => :show
+
   resources :productions do
 
     resources :events do
 
-      resources :instruments
-      resources :devices
+      resources :collaborations
+      resources :requirements
 
     end
 
