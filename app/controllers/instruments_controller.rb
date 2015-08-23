@@ -53,7 +53,7 @@ class InstrumentsController < ApplicationController
   def resource_params
 
     params.require(:instrument).permit(
-      :title, :description, :user_id
+      :title, :description, :user_id,
       images_attributes: [:id, :src, :_destroy]
     )
 
