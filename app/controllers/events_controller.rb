@@ -2,6 +2,10 @@ class EventsController < ResourceController
 
   nested_belongs_to :production
 
+  def index
+    redirect_to parent_url
+  end
+
   private
 
   def event_params

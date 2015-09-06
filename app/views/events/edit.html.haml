@@ -92,8 +92,10 @@
 
         .col-md-6
 
-          / = button_to 'Delete Event', event_path(@event), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete
+          = link_to 'Delete Event', production_event_path(@production, @event), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete
 
         .col-md-6
+
+          .pull-right= link_to 'Go To Production', production_path(@production), class: 'btn btn-default'
 
           .pull-right= f.button :submit, class: 'btn'

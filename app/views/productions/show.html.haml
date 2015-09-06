@@ -13,16 +13,4 @@
 
   %hr
 
-  - unless @production.events.empty?
-
-    %h2 Events
-
-    - @production.events.each do |event|
-
-      %p= event.title
-      = markdown(event.description)
-
-      %p= event.from
-      %p= event.to
-
-      %hr
+  = render '/event_grid', resource: @production

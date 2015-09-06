@@ -6,9 +6,11 @@
 
       .event-grid__container__event
 
+        %h3= event.production_title
+
         %p= nice_timeframe(event.from, event.to)
 
         - if can? :update, resource
-          %p= link_to 'Edit', edit_event_path(event), class: 'btn btn-success'
+          %p= link_to 'Edit', edit_production_event_path(event.production, event), class: 'btn btn-success'
 
 .clearfix
