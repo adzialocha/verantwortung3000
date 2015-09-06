@@ -1,2 +1,2 @@
-class DevicesController < ApplicationController
+class DevicesController < BaseController
 end

@@ -27,4 +27,14 @@ module ApplicationHelper
 
   end
 
+  def nice_timeframe(from, to)
+
+    if from.day == to.day
+      from.strftime('%d.%m. %H:%M') + ' - ' + to.strftime('%H:%M')
+    else
+      from.strftime('%d.%m. %H:%M') + ' - ' + to.strftime('%d.%m. %H:%M')
+    end
+
+  end
+
 end

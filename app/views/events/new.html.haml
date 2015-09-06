@@ -1,0 +1,42 @@
+.well-container
+
+  .container
+
+    .row
+
+      .col-md-6
+
+        %h1 My Event
+
+      .col-md-6
+
+        %button.btn.btn-default.toggle-help.pull-right Toggle Help
+
+    = simple_form_for [@production, @event] do |f|
+
+      = f.error_notification
+
+      .panel
+
+        .panel-heading
+
+          .panel-title Event
+
+        .panel-body
+
+          .well
+
+            %h1 Pick a location and a time
+
+            %p Where does this event take place? And when? Please note that you will reserve the location for this timeframe.
+
+            %p You will get a warning when the location is already reserved.
+
+          = f.input :location_id, collection: Location.all
+
+          = f.input :from, as: :datetime_picker
+          = f.input :to, as: :datetime_picker
+
+        .panel-footer
+
+          = f.button :submit, class: 'btn'

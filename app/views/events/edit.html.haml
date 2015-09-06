@@ -1,0 +1,99 @@
+.well-container
+
+  .container
+
+    .row
+
+      .col-md-6
+
+        %h1 My Event
+
+      .col-md-6
+
+        %button.btn.btn-default.toggle-help.pull-right Toggle Help
+
+    = simple_form_for [@production, @event] do |f|
+
+      = f.error_notification
+
+      .panel
+
+        .panel-heading
+
+          .panel-title Event
+
+        .panel-body
+
+          .well
+
+            %h1 Pick a location and a time
+
+            %p Where does this event take place? And when? Please note that you will reserve the location for this timeframe.
+
+            %p You will get a warning when the location is already reserved.
+
+          = f.input :location_id, collection: Location.all
+
+          = f.input :from, as: :datetime_picker
+          = f.input :to, as: :datetime_picker
+
+          %hr
+
+          .well
+
+            %h1 Instruments you will need
+
+            %p Which instruments do you need? You can choose from the ones which have already been registered by users.
+
+            %p Keep in mind that an instrument is always related to a performer. You have to get his confirmation first if you start a request here.
+
+            %p If you cant find your instrument you can describe what you need after selecting "Cant find". We will automatically create a post on the black board then. Other users might be inspired by this to contribute to your event and contact you via mail.
+
+          .cocoon-nested-container
+
+            = f.simple_fields_for :collaborations do |collaboration|
+              = render 'collaboration_fields', f: collaboration
+
+            = link_to_add_association 'Add new Instrument', f, :collaborations, class: 'btn btn-success'
+
+          %hr
+
+          .well
+
+            %h1 Technical devices
+
+            %p This works very similar as instruments. The only difference is that technical devices are not related to a performer. Of course you will still need the confirmation of the owner.
+
+            %p If you cant find your needed device you can start a black board post by selecting "Cant find". We will automatically create the announcement for you.
+
+          .cocoon-nested-container
+
+            = f.simple_fields_for :requirements do |requirement|
+              = render 'requirement_fields', f: requirement
+
+            = link_to_add_association 'Add new Device', f, :requirements, class: 'btn btn-success'
+
+          %hr
+
+          .well
+
+            %h1 Anything more to say?
+
+            %p Is there something special to say about this specific event? Is it something different than you already described for the production? Then you can fill it in here. Otherwise leave these fields free.
+
+          // %a.btn.btn-primary{:role => 'button', :data => { 'toggle': 'collapse' }, :href => '.accordion' } Edit Custom Info
+
+          // .collapse.accordion
+
+          = f.input :title
+          = f.input :description
+
+      .row
+
+        .col-md-6
+
+          / = button_to 'Delete Event', event_path(@event), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete
+
+        .col-md-6
+
+          .pull-right= f.button :submit, class: 'btn'

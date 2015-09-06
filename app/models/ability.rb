@@ -10,14 +10,18 @@ class Ability
 
     if user.admin?
       can :manage, :all
+    else
+      can :read, :all
     end
 
-    if User.exists?(user)
-      can :change, :all, :user_id => user.id
+    if User.exists?(user.id)
+
+      can :change, [Production, Instrument, Device, Event], :user_id => user.id
+      can :change, User, :id => user.id
+
       can :read, :all
       can :create, :all
-    else
-      can :read, [ Production ]
+
     end
 
   end

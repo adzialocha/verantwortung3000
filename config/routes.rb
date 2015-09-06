@@ -14,12 +14,14 @@ Rails.application.routes.draw do
 
   resources :productions do
 
-    resources :events do
+    resources :events
 
-      resources :collaborations
-      resources :requirements
+    #  do
 
-    end
+    #   resources :collaborations
+    #   resources :requirements
+
+    # end
 
   end
 

@@ -11,11 +11,14 @@
 
       %h1= @user.fullname
 
-      / - if can? :update, @user
-      /   = link_to 'Edit my Profile', edit_user_registration_path(@user)
+      - if can? :update, @user
+        = link_to 'Edit my Profile', edit_user_registration_path(@user)
 
       %p= @user.country
-      %p= mail_to @user.email
+
+      - if user_signed_in?
+
+        %p= mail_to @user.email
 
       - if @user.description?
 

@@ -1,0 +1,12 @@
+.container
+
+  %h1= @event.production_title
+
+  - if can? :update, @event
+    %p= link_to 'Edit', edit_production_event_path(@production, @event)
+
+  %p= nice_timeframe(@event.from, @event.to)
+
+  %hr
+
+  = markdown(@event.production_description)

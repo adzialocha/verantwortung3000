@@ -20,6 +20,14 @@
 
         .col-md-12
 
+          .well
+
+            %h1 Hey!
+
+            %p You want to edit or create a production. A production is something you can contribute to the festival. It can consist of different events, they all relate to this idea production.
+
+            %p Start with basic information, like the title and a description of the production.
+
           .panel
 
             .panel-heading
@@ -27,14 +35,6 @@
               .panel-title= @production.title
 
             .panel-body
-
-              .well
-
-                %h1 Hey!
-
-                %p You want to edit or create a production. A production is something you can contribute to the festival. It can consist of different events, they all relate to this idea production.
-
-                %p Start with basic information, like the title and a description of the production.
 
               %h3 Informationen
 
@@ -75,16 +75,15 @@
 
             %p Every production consists of at least one event, it can also be many. For example: a workshop might happen on several days, or: for a premiere you might need to reserve the room two hours before for soundcheck. Also soundchecks and setups are events!
 
-          #cocoon-nested-events-container
-
-            = f.simple_fields_for :events do |event|
-              = render 'event_fields', f: event
-
-            = link_to_add_association 'Add new Event', f, :events, class: 'btn btn-success', data: { 'association-insertion-node': '#cocoon-nested-events-container' }
+          = render '/event_grid', resource: @production
 
       .row
 
-        .col-md-12
+        .col-md-6
+
+          = link_to 'Add New Event', new_production_event_path(@production), class: 'btn btn-success'
+
+        .col-md-6
 
           .pull-right= f.button :submit, class: 'btn'
 
