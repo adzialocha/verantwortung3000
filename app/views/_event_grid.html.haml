@@ -6,7 +6,7 @@
 
       .event-grid__container__event
 
-        %h3= event.production_title
+        %h3= link_to event.production_title, production_event_path(event.production, event)
 
         %p= nice_timeframe(event.from, event.to)
 

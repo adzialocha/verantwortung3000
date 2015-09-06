@@ -12,7 +12,9 @@ class EventsController < ResourceController
 
     params.require(:event).permit(
       :title, :description, :user_id, :from, :to, :location_id,
-      images_attributes: [:id, :src, :_destroy]
+      images_attributes: [ :id, :src, :_destroy ],
+      collaborations_attributes: [ :id, :title, :description, :instrument_id, :user_id, :_destroy ],
+      requirements_attributes: [ :id, :title, :description, :device_id, :user_id, :_destroy ]
     )
 
   end

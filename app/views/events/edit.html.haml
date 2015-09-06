@@ -81,10 +81,6 @@
 
             %p Is there something special to say about this specific event? Is it something different than you already described for the production? Then you can fill it in here. Otherwise leave these fields free.
 
-          // %a.btn.btn-primary{:role => 'button', :data => { 'toggle': 'collapse' }, :href => '.accordion' } Edit Custom Info
-
-          // .collapse.accordion
-
           = f.input :title
           = f.input :description
 
@@ -96,6 +92,6 @@
 
         .col-md-6
 
-          .pull-right= link_to 'Go To Production', production_path(@production), class: 'btn btn-default'
+          .pull-right= link_to 'Go To Edit Production', edit_production_path(@production), class: 'btn btn-default'
 
           .pull-right= f.button :submit, class: 'btn'

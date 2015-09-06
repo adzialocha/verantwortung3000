@@ -75,15 +75,23 @@
 
             %p Every production consists of at least one event, it can also be many. For example: a workshop might happen on several days, or: for a premiere you might need to reserve the room two hours before for soundcheck. Also soundchecks and setups are events!
 
-          = render '/event_grid', resource: @production
+          .panel
+
+            .panel-heading
+
+              .panel-title Events
+
+            .panel-body
+
+              = render '/event_grid', resource: @production
+
+            .panel-footer
+
+              = link_to 'Add New Event', new_production_event_path(@production), class: 'btn btn-success'
 
       .row
 
-        .col-md-6
-
-          = link_to 'Add New Event', new_production_event_path(@production), class: 'btn btn-success'
-
-        .col-md-6
+        .col-md-12
 
           .pull-right= f.button :submit, class: 'btn'
 

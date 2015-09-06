@@ -1,0 +1,24 @@
+.items-select
+
+  = f.input id, as: :integer
+
+  .items-select-cell-container.clearfix
+
+    .items-select__cell.items-select__cell--default{ 'data-value': -1 }
+
+      %h4 Doesnt exist
+      %p Create a post on the black board
+
+    - collection.each do |item|
+
+      .items-select__cell{ 'data-disabled': false, 'data-value': item.id }
+
+        = image_tag item.cover_image.src.thumb.url, class: 'img-responsive'
+
+        %h4= item.title
+        %p= item.description
+
+  .items-select__create
+
+    = f.input :title
+    = f.input :description

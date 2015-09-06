@@ -1,8 +1,5 @@
 .instrument
 
-  = f.input :instrument_id, collection: Instrument.all
-
-  = f.input :title
-  = f.input :description
+  = render 'items_select', f: f, id: :instrument_id, collection: Instrument.all
 
   = link_to_remove_association 'Remove Instrument', f, class: 'btn btn-danger',data: { confirm: 'Are you sure?' }, wrapper_class: 'instrument'
