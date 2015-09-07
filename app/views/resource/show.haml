@@ -1,0 +1,16 @@
+.container
+
+  %h1= resource.class.model_name.human
+
+  %h2= resource.title
+
+  - if can? :update, resource
+    %p= link_to 'Edit', edit_resource_path(resource), class: 'btn btn-default'
+
+  %p= link_to resource.user.fullname, user_path(resource.user)
+
+  = markdown(resource.description)
+
+  = render '/image_grid', resource: resource
+
+  = link_to 'Go To Overview', collection_path(resource), class: 'btn btn-default'

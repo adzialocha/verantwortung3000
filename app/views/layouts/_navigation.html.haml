@@ -21,6 +21,9 @@
         = li_link_to "About", about_path
         = li_link_to "Program", productions_path
 
+        - if user_signed_in?
+          = li_link_to "Black Board", blackboard_path
+
       %ul.nav.navbar-nav.navbar-right
 
         - if user_signed_in?

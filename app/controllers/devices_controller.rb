@@ -1,4 +1,4 @@
-class DevicesController < BaseController
+class DevicesController < ResourceController
 
   private
 

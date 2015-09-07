@@ -41,4 +41,14 @@ module ApplicationHelper
 
   end
 
+  def cover_thumb_url(resource)
+
+    if resource.cover_image.present?
+      resource.cover_image.src.thumb.url
+    else
+      '/images/default_image.jpg'
+    end
+
+  end
+
 end

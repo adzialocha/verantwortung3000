@@ -2,6 +2,10 @@
 
   %h1 Produktionen
 
+  %p= link_to 'Show all instruments', instruments_path, class: 'btn btn-default'
+  %p= link_to 'Show all participants', users_path, class: 'btn btn-default'
+  %p= link_to 'Show all devices', devices_path, class: 'btn btn-default'
+
   %table(class="table")
 
     - @productions.each do |production|
@@ -16,6 +20,7 @@
           - if can? :update, production
             = link_to 'Edit', edit_production_path(production)
 
-    - if can? :create, @productions
+  %hr
 
-      %p= link_to 'New Production', new_production_path
+  - if can? :create, @productions
+    %p= link_to 'New Production', new_production_path, class: 'btn btn-default'

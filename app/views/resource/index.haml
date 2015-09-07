@@ -1,0 +1,21 @@
+.container
+
+  %h1 All Devices
+
+  %table(class="table")
+
+    - collection.each do |resource|
+
+      %tr
+
+        %td= resource.title
+
+        %td
+          - if can? :read, resource
+            = link_to 'Show', resource_path(resource)
+          - if can? :update, resource
+            = link_to 'Edit', edit_resource_url(resource)
+
+    - if can? :create, collection
+
+      %p= link_to 'Create new', new_resource_path

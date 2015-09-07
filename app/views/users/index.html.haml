@@ -1,0 +1,15 @@
+.container
+
+  %h1 All Participants
+
+  %table(class="table")
+
+    - @users.each do |user|
+
+      %tr
+
+        %td= user.fullname
+
+        %td
+          - if can? :read, user
+            = link_to 'Show', user_path(user)

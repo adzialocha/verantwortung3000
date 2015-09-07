@@ -3,3 +3,5 @@
   = render 'items_select', f: f, id: :device_id, collection: Device.all
 
   = link_to_remove_association 'Remove Device', f, class: 'btn btn-danger', data: { confirm: 'Are you sure?' }, wrapper_class: 'device'
+
+  %hr

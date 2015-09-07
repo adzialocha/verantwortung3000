@@ -10,7 +10,7 @@ $item-select-size: 150px;
 {
   width: 100%;
   height: $item-select-size;
-  overflow-y: hidden;
+  overflow: auto;
 }
 
 .items-select__cell
@@ -28,6 +28,7 @@ $item-select-size: 150px;
   height: $item-select-size;
 
   margin-right: 10px;
+  margin-bottom: 10px;
 
   padding: 10px;
 }

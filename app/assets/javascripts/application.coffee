@@ -90,6 +90,8 @@
 
     # toggle help button
 
+    $('.well').hide()
+
     $('.toggle-help').on 'click', () -> $('.well').toggle()
 
 ) window, document, window.jQuery

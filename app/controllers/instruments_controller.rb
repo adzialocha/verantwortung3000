@@ -1,4 +1,4 @@
-class InstrumentsController < BaseController
+class InstrumentsController < ResourceController
 
   private
 

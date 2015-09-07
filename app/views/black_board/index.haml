@@ -1,0 +1,18 @@
+.container
+
+  %h1 Black Board
+
+  - if @collaborations.count > 0
+
+    %h2 Looking for performers
+
+    - @collaborations.each do |item|
+      = render 'post', item: item
+
+  - if @requirements.count > 0
+
+    %h2 Looking for gear
+
+    - @requirements.each do |item|
+      = render 'post', item: item
+

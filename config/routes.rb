@@ -10,20 +10,16 @@ Rails.application.routes.draw do
     get :contact
   end
 
-  resources :users, :only => :show
+  get 'blackboard', controller: :black_board, to: :index
+
+  resources :users, :only => [ :show, :index ]
 
   resources :productions do
-
     resources :events
-
-    #  do
-
-    #   resources :collaborations
-    #   resources :requirements
-
-    # end
-
   end
+
+  resources :instruments
+  resources :devices
 
   namespace :admin do
 

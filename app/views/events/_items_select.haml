@@ -13,7 +13,7 @@
 
       .items-select__cell{ 'data-disabled': false, 'data-value': item.id }
 
-        = image_tag item.cover_image.src.thumb.url, class: 'img-responsive'
+        = image_tag cover_thumb_url(item), class: 'img-responsive'
 
         %h4= item.title
         %p= item.description
