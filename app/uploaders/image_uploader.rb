@@ -7,11 +7,11 @@ class ImageUploader < CarrierWave::Uploader::Base
   storage :fog
 
   def store_dir
-    'uploads/#{model.class.to_s.underscore}/#{model.id}'
+    "uploads/#{model.class.to_s.underscore}/#{model.id}"
   end
 
   def default_url(*args)
-    '/images/default_image.jpg'
+    "/images/default_image.jpg"
   end
 
   process :resize_to_fit => [960, 960]
