@@ -1,6 +1,6 @@
 .container
 
-  %h1 All Devices
+  %h1= collection.model_name.human.pluralize
 
   %table(class="table")
 
@@ -18,4 +18,4 @@
 
     - if can? :create, collection
 
-      %p= link_to 'Create new', new_resource_path
+      %p= link_to 'Create new', new_resource_path, class: 'btn btn-default'
