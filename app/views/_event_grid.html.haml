@@ -1,16 +1,19 @@
 .event-grid.row
 
-  - resource.events.each do |event|
+  - resource.events.each_with_index do |event, index|
 
     .event-grid__container.col-md-6
 
       .event-grid__container__event
 
-        %h3= link_to event.production_title, production_event_path(event.production, event)
+        %h2
 
-        %p= nice_timeframe(event.from, event.to)
+          = link_to "##{index + 1} #{event.production_title}", production_event_path(event.production, event)
+
+        %h3= nice_timeframe(event.from, event.to)
 
         - if can? :update, resource
-          %p= link_to 'Edit', edit_production_event_path(event.production, event), class: 'btn btn-success'
+
+          = link_to 'Edit This Event', edit_production_event_path(event.production, event), class: 'btn btn-default'
 
 .clearfix

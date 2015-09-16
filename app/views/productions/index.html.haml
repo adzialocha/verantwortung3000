@@ -1,26 +1,30 @@
 .container
 
-  %h1 Produktionen
+  .row.header-row
 
-  %p= link_to 'Show all instruments', instruments_path, class: 'btn btn-default'
-  %p= link_to 'Show all participants', users_path, class: 'btn btn-default'
-  %p= link_to 'Show all devices', devices_path, class: 'btn btn-default'
+    .col-sm-9
 
-  %table(class="table")
+      %h1 Produktionen
 
-    - @productions.each do |production|
+    .col-sm-3
 
-      %tr
+      - if can? :create, @productions
+        = link_to 'New Production', new_production_path, class: 'btn btn-default'
 
-        %td= production.title
+  .row
 
-        %td
-          - if can? :read, production
-            = link_to 'Show', production_path(production)
-          - if can? :update, production
-            = link_to 'Edit', edit_production_path(production)
+    .col-sm-12
 
-  %hr
+      %table(class="table")
 
-  - if can? :create, @productions
-    %p= link_to 'New Production', new_production_path, class: 'btn btn-default'
+        - @productions.each do |production|
+
+          %tr
+
+            %td= production.title
+
+            %td
+              - if can? :read, production
+                = link_to 'Show', production_path(production)
+              - if can? :update, production
+                = link_to 'Edit', edit_production_path(production)

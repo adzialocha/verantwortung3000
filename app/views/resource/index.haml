@@ -1,21 +1,32 @@
 .container
 
-  %h1= collection.model_name.human.pluralize
+  .row.header-row
 
-  %table(class="table")
+    .col-sm-9
 
-    - collection.each do |resource|
+      %h1= collection.model_name.human.pluralize
 
-      %tr
+    .col-sm-3
 
-        %td= resource.title
+      - if can? :create, collection
+        = link_to 'Create new', new_resource_path, class: 'btn btn-default'
 
-        %td
-          - if can? :read, resource
-            = link_to 'Show', resource_path(resource)
-          - if can? :update, resource
-            = link_to 'Edit', edit_resource_url(resource)
+  .row
 
-    - if can? :create, collection
+    .col-sm-12
 
-      %p= link_to 'Create new', new_resource_path, class: 'btn btn-default'
+      %table(class="table")
+
+        - collection.each do |resource|
+
+          %tr
+
+            %td= resource.title
+
+            %td
+              - if can? :read, resource
+                = link_to 'Show', resource_path(resource)
+              - if can? :update, resource
+                = link_to 'Edit', edit_resource_url(resource)
+
+

@@ -71,16 +71,21 @@
       _initItemPickers null, $(this)
 
       $numberItem = $(this).find 'input[type="number"]'
+      $firstItem = $(this).find '.items-select__cell:first-child'
+
       val = $numberItem.val()
 
       if not val? or val == ''
 
-        $(this).find('.items-select__cell:first-child').addClass 'items-select__cell--selected'
+        $selectedItem = $firstItem
         $(this).find('.items-select__create').show()
 
       else
 
-        $(this).find('.items-select__cell[data-value="' + val + '"]').addClass 'items-select__cell--selected'
+        $selectedItem = $(this).find '.items-select__cell[data-value="' + val + '"]'
+        $firstItem.after $selectedItem
+
+      $selectedItem.addClass 'items-select__cell--selected'
 
     # cocoon setup
 

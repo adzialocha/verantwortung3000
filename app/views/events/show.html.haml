@@ -1,16 +1,71 @@
 .container
 
-  %h1= @event.production_title
+  .row.header-row
 
-  - if can? :update, @event
-    %p= link_to 'Edit', edit_production_event_path(@production, @event)
+    .col-sm-9
 
-  %p= nice_timeframe(@event.from, @event.to)
+      %h1= @event.production_title
 
-  %hr
+    .col-sm-3
 
-  = markdown(@event.production_description)
+      = link_to 'Go To Production', production_path(@production), class: 'btn btn-default'
 
-  %hr
+      - if can? :update, @event
+        = link_to 'Edit', edit_production_event_path(@production, @event), class: 'btn btn-default'
 
-  = link_to 'Go To Production', production_path(@production), class: 'btn btn-default'
+  .row
+
+    .col-sm-12
+
+      .content
+
+        .content__meta
+
+          %h2= nice_timeframe(@event.from, @event.to)
+
+          %h3= @event.location.title
+
+        %hr
+
+        - unless @event.description.nil?
+
+          .content__markdown
+
+            = markdown(@event.description)
+
+        - if user_signed_in?
+
+          %hr
+
+          %h3 Devices
+
+          %table(class="table")
+
+            - @event.devices.each do |device|
+
+              %tr
+
+                %td= device.title
+
+                %td
+                  - if can? :read, device
+                    = link_to 'Show', device_path(device)
+                  - if can? :update, device
+                    = link_to 'Edit', edit_device_path(device)
+
+
+          %h3 Instruments
+
+          %table(class="table")
+
+            - @event.instruments.each do |instrument|
+
+              %tr
+
+                %td= instrument.title
+
+                %td
+                  - if can? :read, instrument
+                    = link_to 'Show', instrument_path(instrument)
+                  - if can? :update, instrument
+                    = link_to 'Edit', edit_instrument_path(instrument)

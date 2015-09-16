@@ -2,25 +2,32 @@
 
   .container
 
-    .navbar-header
+    .row
 
-      %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+      .col-sm-12.col-xs-10
 
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
+        .navbar-brand-container
 
-      = link_to 'Admin', admin_root_path, class: "navbar-brand"
+          %h1= link_to 'Admin', admin_root_path, class: "navbar-brand"
 
-    #navbar.collapse.navbar-collapse
+      .col-sm-12.col-xs-2
 
-      %ul.nav.navbar-nav.navbar-left
+        .navbar-header
 
-        = li_link_to "Dashboard", admin_root_path
-        = li_link_to "Users", admin_users_path
+          %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
 
-      %ul.nav.navbar-nav.navbar-right
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
 
-        - if user_signed_in?
-          = li_link_to "Logout", destroy_user_session_path, method: :delete
+        #navbar.collapse.navbar-collapse
+
+          %ul.nav.navbar-nav.navbar-left
+
+            = li_link_to "Dashboard", admin_root_path
+            = li_link_to "Users", admin_users_path
+
+          %ul.nav.navbar-nav.navbar-right
+
+            = li_link_to "Logout", destroy_user_session_path, method: :deleteh

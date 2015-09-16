@@ -1,0 +1,34 @@
+.header-row
+{
+  h1
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  a
+  {
+    float: right;
+    @include clearfix();
+  }
+
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: $screen-xs-max) {
+
+  .header-row
+  {
+    h1
+    {
+      margin-bottom: 15px;
+    }
+
+    a
+    {
+      float: initial;
+    }
+  }
+
+}

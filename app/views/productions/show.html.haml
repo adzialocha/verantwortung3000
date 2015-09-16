@@ -1,16 +1,40 @@
 .container
 
-  %h2= @production.title
+  .row.header-row
 
-  - if can? :update, @production
-    %p= link_to 'Edit', edit_production_path(@production)
+    .col-sm-9
 
-  %p= link_to @production.user.fullname, user_path(@production.user)
+      %h1= @production.title
 
-  = markdown(@production.description)
+    .col-sm-3
 
-  = render '/image_grid', resource: @production
+      - if can? :update, @production
+        = link_to 'Edit This Production', edit_production_path(@production), class: 'btn btn-default'
 
-  %hr
+  .row
 
-  = render '/event_grid', resource: @production
+    .col-sm-12
+
+      .content
+
+        .content__meta
+
+          %h3= link_to @production.user.fullname, user_path(@production.user)
+
+        - unless @production.description.nil?
+
+          .content__markdown
+
+            = markdown(@production.description)
+
+        - if @production.images.any?
+
+          %hr
+
+          .content__images
+
+            = render '/image_grid', resource: @production
+
+        .content__calendar
+
+          = render '/event_grid', resource: @production

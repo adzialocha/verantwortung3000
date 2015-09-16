@@ -2,33 +2,55 @@
 
   .container
 
-    .navbar-header
+    .row
 
-      %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+      .col-sm-12.col-xs-10
 
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
+        .navbar-brand-container
 
-      = link_to Rails.application.config.title, root_path, class: "navbar-brand"
+          %h1= link_to Rails.application.config.title, root_path, class: "navbar-brand"
 
-    #navbar.collapse.navbar-collapse
+      .col-sm-12.col-xs-2
 
-      %ul.nav.navbar-nav.navbar-left
+        .navbar-header
 
-        = li_link_to "Home", root_path
-        = li_link_to "About", about_path
-        = li_link_to "Program", productions_path
+          %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
 
-        - if user_signed_in?
-          = li_link_to "Black Board", blackboard_path
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
 
-      %ul.nav.navbar-nav.navbar-right
+        #navbar.collapse.navbar-collapse
 
-        - if user_signed_in?
-          = li_link_to 'Profile', edit_user_registration_path
-          = li_link_to "Logout", destroy_user_session_path, method: :delete
-        - else
-          = li_link_to "Sign up", new_user_registration_path
-          = li_link_to "Login", new_user_session_path
+          %ul.nav.navbar-nav.navbar-left
+
+            = li_link_to "Home", root_path
+            = li_link_to "About", about_path
+            = li_link_to "Program", productions_path
+            = li_link_to "Participants", users_path
+
+          %ul.nav.navbar-nav.navbar-right
+
+            - if user_signed_in?
+
+              %li{"class" => "dropdown"}
+
+                %a{"role" => "button", "class" => "dropdown-toggle", "data-toggle" => "dropdown"}
+
+                  %span Resources
+                  %span{"class" => "caret"}
+
+                %ul.dropdown-menu
+
+                  = li_link_to "Instruments", instruments_path
+                  = li_link_to "Devices", devices_path
+                  = li_link_to "Black Board", blackboard_path
+
+              = li_link_to 'Profile', edit_user_registration_path
+              = li_link_to "Logout", destroy_user_session_path, method: :delete
+
+            - else
+
+              = li_link_to "Sign up", new_user_registration_path
+              = li_link_to "Login", new_user_session_path

@@ -1,0 +1,44 @@
+.event-grid
+{
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  border: 3px solid $black;
+
+  h2
+  {
+    margin-top: 0;
+  }
+}
+
+.event-grid__container
+{
+
+}
+
+.event-grid__container:nth-child(odd)
+{
+  border-right: 3px solid $black;
+}
+
+.event-grid__container__event
+{
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .event-grid
+  {
+    border-left: none;
+    border-right: none;
+  }
+
+  .event-grid__container
+  {
+    border-right: none !important;
+  }
+
+}

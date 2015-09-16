@@ -1,5 +1,9 @@
 class ProductionsController < ResourceController
 
+  def create
+    create!(:notice => "Production created!") { edit_production_url(@production) }
+  end
+
   private
 
   def production_params
