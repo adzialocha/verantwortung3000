@@ -1,0 +1,10 @@
+.activity
+
+  %p= a.created_at
+
+  - if a.owner
+    %p= link_to a.owner.fullname, user_path(a.owner)
+
+  = yield
+
+  %hr
