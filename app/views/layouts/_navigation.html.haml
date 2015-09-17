@@ -4,7 +4,7 @@
 
     .row
 
-      .col-sm-12.col-xs-10
+      .col-sm-12.col-xs-10.reset-col
 
         .navbar-brand-container
 
@@ -16,7 +16,6 @@
 
           %button.navbar-toggle.collapsed{"data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
 
-            %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
@@ -25,10 +24,10 @@
 
           %ul.nav.navbar-nav.navbar-left
 
-            = li_link_to "Home", root_path
-            = li_link_to "About", about_path
-            = li_link_to "Program", productions_path
-            = li_link_to "Participants", users_path
+            = li_link_to t('navigation.home'), root_path
+            = li_link_to t('navigation.about'), about_path
+            = li_link_to t('navigation.calendar'), calendar_path
+            = li_link_to t('navigation.locations'), locations_path
 
           %ul.nav.navbar-nav.navbar-right
 
@@ -43,14 +42,19 @@
 
                 %ul.dropdown-menu
 
-                  = li_link_to "Instruments", instruments_path
-                  = li_link_to "Devices", devices_path
-                  = li_link_to "Black Board", blackboard_path
+                  = li_link_to t('navigation.productions'), productions_path
+                  = li_link_to t('navigation.instruments'), instruments_path
+                  = li_link_to t('navigation.devices'), devices_path
 
-              = li_link_to 'Profile', edit_user_registration_path
-              = li_link_to "Logout", destroy_user_session_path, method: :delete
+                  %li{"role" => "separator", "class" => "divider"}
+
+                  = li_link_to t('navigation.activity'), activity_path
+                  = li_link_to t('navigation.blackboard'), blackboard_path
+
+              = li_link_to t('navigation.profile'), edit_user_registration_path
+              = li_link_to t('navigation.signout'), destroy_user_session_path, method: :delete
 
             - else
 
-              = li_link_to "Sign up", new_user_registration_path
-              = li_link_to "Login", new_user_session_path
+              = li_link_to t('navigation.signup'), new_user_registration_path
+              = li_link_to t('navigation.signin'), new_user_session_path

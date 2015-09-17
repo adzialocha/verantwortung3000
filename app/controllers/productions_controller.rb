@@ -1,7 +1,13 @@
 class ProductionsController < ResourceController
 
   def create
+
+    if resource.attributes.has_key? 'user_id'
+      resource.user_id = current_user.id
+    end
+
     create!(:notice => "Production created!") { edit_production_url(@production) }
+
   end
 
   private

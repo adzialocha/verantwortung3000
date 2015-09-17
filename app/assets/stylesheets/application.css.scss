@@ -5,6 +5,7 @@
 /* global */
 
 @import "vars";
+@import "utils";
 
 /* vendors */
 
@@ -18,6 +19,7 @@
 @import "base/flash";
 @import "base/form";
 @import "base/images";
+@import "base/table";
 
 /* components */
 
@@ -27,3 +29,4 @@
 @import "components/items-select";
 @import "components/header-row";
 @import "components/content";
+@import "components/locations";

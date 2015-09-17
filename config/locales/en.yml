@@ -1,2 +1,5 @@
 en:
-  hello: "Hello world"
+
+  date:
+    formats:
+      short: "%d. %B %Y"

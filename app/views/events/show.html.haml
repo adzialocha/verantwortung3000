@@ -8,10 +8,12 @@
 
     .col-sm-3
 
-      = link_to 'Go To Production', production_path(@production), class: 'btn btn-default'
+      .btn-group
 
-      - if can? :update, @event
-        = link_to 'Edit', edit_production_event_path(@production, @event), class: 'btn btn-default'
+        = link_to 'Go To Production', production_path(@production), class: 'btn btn-default'
+
+        - if can? :update, @event
+          = link_to 'Edit', edit_production_event_path(@production, @event), class: 'btn btn-default'
 
   .row
 
@@ -21,13 +23,20 @@
 
         .content__meta
 
-          %h2= nice_timeframe(@event.from, @event.to)
+          %h3
+            = link_to @event.production.user.fullname, user_path(@event.production.user)
 
-          %h3= @event.location.title
+          %h3
 
-        %hr
+            %span
+              = "#{nice_timeframe(@event.from, @event.to)} @ "
 
-        - unless @event.description.nil?
+            %span
+              = link_to @event.location.title, location_path(@event.location)
+
+        - if not @event.description.nil? and @event.description != ""
+
+          %hr
 
           .content__markdown
 
@@ -35,37 +44,18 @@
 
         - if user_signed_in?
 
-          %hr
+          - if @event.devices.any?
 
-          %h3 Devices
+            %hr
 
-          %table(class="table")
+            %h2 Devices
 
-            - @event.devices.each do |device|
+            = render "/table", collection: @event.devices
 
-              %tr
+          - if @event.instruments.any?
 
-                %td= device.title
+            %hr
 
-                %td
-                  - if can? :read, device
-                    = link_to 'Show', device_path(device)
-                  - if can? :update, device
-                    = link_to 'Edit', edit_device_path(device)
+            %h2 Instruments
 
-
-          %h3 Instruments
-
-          %table(class="table")
-
-            - @event.instruments.each do |instrument|
-
-              %tr
-
-                %td= instrument.title
-
-                %td
-                  - if can? :read, instrument
-                    = link_to 'Show', instrument_path(instrument)
-                  - if can? :update, instrument
-                    = link_to 'Edit', edit_instrument_path(instrument)
+            = render "/table", collection: @event.instruments

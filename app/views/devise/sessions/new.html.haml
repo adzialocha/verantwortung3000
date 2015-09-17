@@ -1,17 +1,27 @@
 .container
 
-  %h2 Log in
+  .row.header-row
 
-  = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .col-sm-12
 
-    .form-inputs
+      %h1= t('auth.signin_title')
 
-      = f.input :email, required: false, autofocus: true
-      = f.input :password, required: false
-      = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+  .row
 
-    .form-actions
+    .col-sm-12
 
-      = f.button :submit, "Log in"
+      = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
 
-  = render "devise/shared/links"
+        .form-inputs
+
+          = f.input :email, required: false, autofocus: true
+          = f.input :password, required: false
+          = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+
+        .form-actions
+
+          = f.button :submit, "Log in"
+
+        = render "devise/shared/links"
+
+

@@ -21,7 +21,7 @@
 
           %h3= link_to @production.user.fullname, user_path(@production.user)
 
-        - unless @production.description.nil?
+        - if not @production.description.nil? and @production.description != ""
 
           .content__markdown
 
@@ -35,6 +35,8 @@
 
             = render '/image_grid', resource: @production
 
-        .content__calendar
+        - if @production.events.any?
 
-          = render '/event_grid', resource: @production
+          .content__calendar
+
+            = render '/event_grid', resource: @production.events

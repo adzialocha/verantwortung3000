@@ -1,38 +1,38 @@
 .container
 
-  .row
+  .row.header-row
 
     .col-md-12
 
       %h1 Edit #{resource_class.model_name.human}
 
-  .row
+  = simple_form_for [:admin, (parent if try(:parent?)), resource], method: :put, html: { role: 'form' } do |form|
 
-    .col-md-12
+    .row
 
-      .panel.panel-default
+      .col-md-12
 
-        .panel-heading
+        .panel.panel-default
 
-          .panel-title Meta
+          .panel-heading
 
-        .panel-body
+            .panel-title Meta
 
-          %p ID: #{resource.id}
-          %p Erstellt: #{resource.created_at}
-          %p Aktualisiert: #{resource.updated_at}
+          .panel-body
 
-          = render 'meta', resource: resource
+            %p ID: #{resource.id}
+            %p Erstellt: #{resource.created_at}
+            %p Aktualisiert: #{resource.updated_at}
 
-      .panel.panel-default
+            = render 'meta', resource: resource
 
-        .panel-heading
+        .panel.panel-default
 
-          .panel-title Daten
+          .panel-heading
 
-        .panel-body
+            .panel-title Daten
 
-          = simple_form_for [:admin, (parent if try(:parent?)), resource], method: :put, html: { role: 'form' } do |form|
+          .panel-body
 
             = form.error_notification
 
@@ -40,6 +40,27 @@
 
               = render 'form', form: form
 
-            .form-actions
+        - if defined? resource.images
 
-              = form.button :submit, value: 'Speichern', class: 'btn btn-primary'
+          .panel.panel-default
+
+            .panel-heading
+
+              .panel-title Images
+
+            .panel-body
+
+              .cocoon
+
+                .cocoon-nested-container
+
+                  = form.simple_fields_for :images do |image|
+                    = render 'image_fields', f: image
+
+                = link_to_add_association 'Add new Image', form, :images, class: 'btn btn-success'
+
+    .row
+
+      .col-md-12
+
+        .pull-right= form.button :submit, class: 'btn'

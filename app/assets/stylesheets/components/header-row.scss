@@ -6,7 +6,7 @@
     padding: 0;
   }
 
-  a
+  a, .btn-group
   {
     float: right;
     @include clearfix();
@@ -25,7 +25,7 @@
       margin-bottom: 15px;
     }
 
-    a
+    a, .btn-group
     {
       float: initial;
     }

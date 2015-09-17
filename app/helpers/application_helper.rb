@@ -1,5 +1,7 @@
 module ApplicationHelper
 
+  require 'redcarpet/render_strip'
+
   def li_link_to(body, url, html_options = {})
     active = 'active' if current_page?(url)
     content_tag :li, class: active do
@@ -27,6 +29,15 @@ module ApplicationHelper
 
       markdown.render(text).html_safe
 
+    end
+
+  end
+
+  def no_markdown(text)
+
+    unless text.nil?
+      markdown = Redcarpet::Markdown.new(Redcarpet::Render::StripDown.new())
+      markdown.render(text).html_safe
     end
 
   end

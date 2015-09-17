@@ -10,9 +10,12 @@ Rails.application.routes.draw do
     get :contact
   end
 
+  get 'calendar', controller: :calendar, to: :index
   get 'blackboard', controller: :black_board, to: :index
+  get 'activity', controller: :activity, to: :index
 
   resources :users, :only => [ :show, :index ]
+  resources :locations, :only => [ :show, :index ]
 
   resources :productions do
     resources :events
@@ -26,6 +29,7 @@ Rails.application.routes.draw do
     root 'dashboard#index'
 
     resources :users
+    resources :locations
 
   end
 

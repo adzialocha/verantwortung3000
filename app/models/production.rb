@@ -10,4 +10,8 @@ class Production < ActiveRecord::Base
   validates :title, presence: true, length: { minimum: 5 }
   validates :description, presence: true
 
+  default_scope { order('title') }
+
+  scope :owned_by, -> (user) { where(user_id: user.id) }
+
 end

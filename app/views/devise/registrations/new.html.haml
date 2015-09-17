@@ -1,36 +1,44 @@
 .container
 
-  = simple_form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
+  .row.header-row
 
-    = f.error_notification
+    .col-sm-12
 
-    %h2 Sign up
+      %h1= t('auth.signup_title')
 
-    .form-inputs
+  .row
 
-      %h3 Hello
+    .col-sm-12
 
-      = f.input :first_name, autofocus: true
-      = f.input :last_name
+      = simple_form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
 
-      %h3 Contact
+        = f.error_notification
 
-      = f.input :email, required: true, hint: "This email will be public to any other signed user, email will be the main communication medium between users"
-      = f.input :tel, hint: "We need an mobile number in case we have to ask you something during the festival"
+        .form-inputs
 
-      %h3 Your Address
+          %h2 Hello
 
-      = f.input :street
-      = f.input :city_code
-      = f.input :city
-      = f.input :country
+          = f.input :first_name, autofocus: true
+          = f.input :last_name
 
-      %h3 Your Password
+          %h2 Contact
 
-      = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
-      = f.input :password_confirmation, required: true
+          = f.input :email, required: true, hint: "This email will be public to any other signed user, email will be the main communication medium between users"
+          = f.input :tel, hint: "We need an mobile number in case we have to ask you something during the festival"
 
-    .form-actions
-      = f.button :submit, "Sign up"
+          %h2 Your Address
 
-  = render "devise/shared/links"
+          = f.input :street
+          = f.input :city_code
+          = f.input :city
+          = f.input :country
+
+          %h2 Your Password
+
+          = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
+          = f.input :password_confirmation, required: true
+
+        .form-actions
+          = f.button :submit, "Sign up"
+
+      = render "devise/shared/links"

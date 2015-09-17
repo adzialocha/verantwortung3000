@@ -1,0 +1,20 @@
+.container
+
+  .row.header-row
+
+    .col-sm-12
+
+      %h1 Orte
+
+  .row
+
+    .col-sm-12
+
+      .locations
+
+        - @locations.each do |location|
+
+          .locations__item{ :style => if location.cover_image then 'background-image: url("' + location.cover_image.src.url + '")' end }
+
+            %h2
+              = link_to location.title, location_path(location)

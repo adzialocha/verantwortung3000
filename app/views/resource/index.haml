@@ -15,18 +15,12 @@
 
     .col-sm-12
 
-      %table(class="table")
+      - if user_signed_in?
 
-        - collection.each do |resource|
+        %h2= "My #{collection.model_name.human.pluralize}"
 
-          %tr
+        = render '/table', collection: collection.owned_by(current_user)
 
-            %td= resource.title
+      %h2= "All #{collection.model_name.human.pluralize}"
 
-            %td
-              - if can? :read, resource
-                = link_to 'Show', resource_path(resource)
-              - if can? :update, resource
-                = link_to 'Edit', edit_resource_url(resource)
-
-
+      = render '/table', collection: collection

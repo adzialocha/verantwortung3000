@@ -71,16 +71,20 @@ body
   }
 }
 
+.navbar-right
+{
+  margin-right: 0;
+}
+
 .navbar-brand-container
 {
-  margin-top: 30px;
-
   width: 100%;
   text-align: center;
 
   h1
   {
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -91,6 +95,13 @@ a.navbar-brand
   font-weight: bold;
 
   line-height: initial;
+
+  margin-left: 0 !important;
+
+  width: 100%;
+  height: auto;
+
+  display: inline-block;
 }
 
 @media (max-width: $screen-xs-max) {
@@ -103,6 +114,9 @@ a.navbar-brand
 
   a.navbar-brand
   {
+    width: auto;
+    height: $navbar-height;
+
     font-size: 20px;
   }
 
@@ -128,8 +142,39 @@ a.navbar-brand
     padding-right: 30px;
 
     border-bottom: 3px solid $black;
+
+    .divider
+    {
+      display: none;
+    }
+
+    .navbar-left
+    {
+      margin-bottom: 0;
+    }
+
+    .navbar-right
+    {
+      margin-right: -15px;
+      margin-top: 0;
+    }
   }
 
+  .dropdown-menu
+  {
+    li > a
+    {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+  }
+
+}
+
+.nav .open > a
+{
+  background-color: $black;
+  color: $white;
 }
 
 .dropdown-menu
@@ -144,6 +189,19 @@ a.navbar-brand
   {
     padding: 15px 20px;
   }
+
+  li.active a
+  {
+    background-color: $white;
+    color: $black;
+  }
+
+  .divider
+  {
+    background-color: $black;
+    height: 3px;
+    margin: 0;
+  }
 }
 
 @media (min-width: $screen-sm-min) {
@@ -153,59 +211,6 @@ a.navbar-brand
     margin-left: -15px;
     margin-right: -15px;
     padding: 0;
-  }
-
-}
-
-/* footer */
-
-.footer
-{
-  position: absolute;
-  bottom: 0;
-
-  width: 100%;
-  height: $footer-height;
-
-  .container
-  {
-    margin-top: $padding-base-horizontal;
-  }
-
-  ul, li
-  {
-    padding: 0;
-    margin: 0;
-  }
-
-  ul
-  {
-    list-style: none;
-  }
-
-  li
-  {
-    display: inline;
-    margin-right: 5px;
-  }
-
-  li, a
-  {
-    color: $gray;
-    font-size: $font-size-base;
-  }
-}
-
-@media (max-width: $screen-xs-min) {
-
-  body
-  {
-    margin-bottom: $footer-height * 1.5;
-  }
-
-  .footer
-  {
-    height: $footer-height * 1.5;
   }
 
 }
@@ -238,4 +243,63 @@ a.navbar-brand
 .panel-footer
 {
   border-color: $black;
+}
+
+/* footer */
+
+.footer
+{
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: $footer-height;
+
+  .container
+  {
+    margin-top: $padding-base-horizontal;
+  }
+
+  ul, li
+  {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul
+  {
+    list-style: none;
+    display: inline;
+  }
+
+  li
+  {
+    display: inline;
+    margin-right: 5px;
+  }
+
+  li, a
+  {
+    color: $gray;
+    font-size: $font-size-base;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .footer ul
+  {
+    display: block !important;
+  }
+
+  body
+  {
+    margin-bottom: $footer-height * 1.5;
+  }
+
+  .footer
+  {
+    height: $footer-height * 1.5;
+  }
+
 }

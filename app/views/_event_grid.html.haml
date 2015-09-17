@@ -1,19 +1,35 @@
 .event-grid.row
 
-  - resource.events.each_with_index do |event, index|
+  - resource.each_with_index do |event, index|
 
     .event-grid__container.col-md-6
 
+      - if event.production.cover_image
+
+        .event-grid__container__image{ :style => 'background-image: url("' + event.production.cover_image.src.url + '")' }
+
       .event-grid__container__event
+
+        - if can? :update, resource
+
+          = link_to 'Edit', edit_production_event_path(event.production, event), class: 'btn btn-default pull-right'
 
         %h2
 
           = link_to "##{index + 1} #{event.production_title}", production_event_path(event.production, event)
 
-        %h3= nice_timeframe(event.from, event.to)
+        = link_to user_path(event.production.user) do
 
-        - if can? :update, resource
+          %p.event-grid__container__event__owner
+            %strong= event.production.user.fullname
 
-          = link_to 'Edit This Event', edit_production_event_path(event.production, event), class: 'btn btn-default'
+        %h3
+
+          %span= "#{nice_timeframe(event.from, event.to)} @ "
+
+          %span
+            = link_to event.location.title, location_path(event.location)
+
+        %p= no_markdown(event.production_description.truncate(100))
 
 .clearfix

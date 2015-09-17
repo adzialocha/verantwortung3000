@@ -1,0 +1,37 @@
+.container
+
+  .row.header-row
+
+    .col-sm-6
+
+      %h1= @location.title
+
+    .col-sm-6
+
+      = link_to 'Overview', locations_path, class: 'btn btn-default'
+
+  .row
+
+    .col-sm-12
+
+      .content
+
+        - if not @location.description.nil? and @location.description != ""
+
+          .content__markdown
+
+            = markdown(@location.description)
+
+        - if @location.images.any?
+
+          %hr
+
+          .content__images
+
+            = render '/image_grid', resource: @location
+
+        - if @location.events.any?
+
+          .content__calendar
+
+            = render '/event_grid', resource: @location.events

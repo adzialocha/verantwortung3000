@@ -7,4 +7,8 @@ class Instrument < ActiveRecord::Base
 
   belongs_to :user
 
+  default_scope { order('title') }
+
+  scope :owned_by, -> (user) { where(user_id: user.id) }
+
 end

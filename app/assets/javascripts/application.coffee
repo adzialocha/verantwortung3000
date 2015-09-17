@@ -91,7 +91,7 @@
 
     $(document).on 'cocoon:after-insert', _initItemPickers
 
-    $('.cocoon-nested-container a.add_fields').data('association-insertion-method', 'after').data('association-insertion-traversal', 'closest').data 'association-insertion-node', '.cocoon-nested-container'
+    $('.cocoon a.add_fields').data('association-insertion-method', 'before').data('association-insertion-traversal', 'closest').data 'association-insertion-node', '.cocoon'
 
     # toggle help button
 

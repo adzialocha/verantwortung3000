@@ -1,0 +1,17 @@
+.container
+
+  .row.header-row
+
+    .col-sm-12
+
+      %h1 Kalender
+
+  .row
+
+    .col-sm-12
+
+      - @events.each do |day, events|
+
+        %h1= l day, format: :long
+
+        = render '/event_grid', resource: events

@@ -1,0 +1,27 @@
+.locations
+{
+
+}
+
+.locations__item
+{
+  height: 300px;
+
+  background-position: center;
+  background-size: cover;
+
+  padding: 20px;
+
+  h2
+  {
+    display: inline;
+    background-color: $black;
+
+    a
+    {
+      color: $white;
+    }
+  }
+
+  border-bottom: 3px solid $black;
+}

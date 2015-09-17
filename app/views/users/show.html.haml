@@ -9,48 +9,55 @@
 
     .col-md-6
 
-      %h1= @user.fullname
+      .content
 
-      - if can? :update, @user
-        = link_to 'Edit my Profile', edit_user_registration_path(@user)
+        %h1= @user.fullname
 
-      %p= @user.country
+        .content__meta
 
-      - if user_signed_in?
+          - if can? :update, @user
+            = link_to 'Edit my Profile', edit_user_registration_path(@user), class: "btn btn-default pull-right"
 
-        %p= mail_to @user.email
+          %p= @user.country
 
-      - if @user.description?
+          - if user_signed_in?
 
-        %hr
+            %p= mail_to @user.email
 
-        = markdown(@user.description)
+        - if not @user.description.nil? and @user.description != ""
 
-      %hr
+          .content__markdown
 
-      - unless @user.productions.empty?
+            = markdown(@user.description)
 
-        %h5 I contribute these productions
+  - if @user_events.any?
 
-        %ul
-          - @user.productions.each do |production|
-            %li= link_to production.title, production_path(production)
+    .row
 
-      - unless @user.instruments.empty?
+      .col-md-12
 
-        %h5 I offer the following instruments
+        .content__calendar
 
-        %ul
-          - @user.instruments.each do |instrument|
-            %li= link_to instrument.title, instrument_path(instrument)
+          = render '/event_grid', resource: @user_events
 
-      - unless @user.devices.empty?
+  - if user_signed_in?
 
-        %h5 I offer these devices
+    .row
 
-        %ul
-          - @user.devices.each do |device|
-            %li= link_to device.title, device_path(device)
+      .col-md-12
 
+        - unless @user.instruments.empty?
 
+          %hr
 
+          %h2 Instruments
+
+          = render "/table", collection: @user.instruments
+
+        - unless @user.devices.empty?
+
+          %hr
+
+          %h2 Devices
+
+          = render "/table", collection: @user.devices

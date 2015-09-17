@@ -1,11 +1,41 @@
-= f.input :title
-= f.input :description
+= simple_form_for [resource] do |f|
 
-%h3 Images
+  .row
 
-.cocoon-nested-container
+    .col-md-12
 
-  = f.simple_fields_for :images do |image|
-    = render 'image_fields', f: image
+      = f.error_notification
 
-  = link_to_add_association 'Add new Image', f, :images, class: 'btn btn-success'
+      .panel
+
+        .panel-heading
+
+          .panel-title= resource.class.model_name.human
+
+        .panel-body
+
+          = f.input :title
+          = f.input :description
+
+      .panel
+
+        .panel-heading
+
+          .panel-title Images
+
+        .panel-body
+
+          .cocoon
+
+            .cocoon-nested-container
+
+              = f.simple_fields_for :images do |image|
+                = render 'image_fields', f: image
+
+            = link_to_add_association 'Add new Image', f, :images, class: 'btn btn-success'
+
+  .row
+
+    .col-md-12
+
+      .pull-right= f.button :submit, class: 'btn'

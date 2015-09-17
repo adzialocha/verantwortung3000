@@ -8,10 +8,12 @@
 
     .col-sm-3
 
-      = link_to 'Go To Overview', collection_path(resource), class: 'btn btn-default'
+      .btn-group
 
-      - if can? :update, resource
-        = link_to 'Edit', edit_resource_path(resource), class: 'btn btn-default'
+        = link_to 'Overview', collection_path(resource), class: 'btn btn-default'
+
+        - if can? :update, resource
+          = link_to 'Edit', edit_resource_path(resource), class: 'btn btn-default'
 
   .row
 
@@ -23,9 +25,11 @@
 
           %h3= link_to resource.user.fullname, user_path(resource.user)
 
-        .content__markdown
+        - if not resource.description.nil? and resource.description != ""
 
-          = markdown(resource.description)
+          .content__markdown
+
+            = markdown(resource.description)
 
         %hr
 

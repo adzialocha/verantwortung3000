@@ -21,6 +21,10 @@ class Event < ActiveRecord::Base
   FESTIVAL_START = Time.new(2016, 8, 31)
   FESTIVAL_END = Time.new(2016, 9, 6)
 
+  def group_by_day
+    from.to_date
+  end
+
   # attributes
 
   def production_title

@@ -1,67 +1,77 @@
 .container
 
-  = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true }) do |f|
+  .row.header-row
 
-    = f.error_notification
+    .col-sm-9
 
-    %h2 My Profile
+      %h1= t('auth.myprofile_title')
 
-    = link_to "Go To Public Profile", user_path(resource)
+    .col-sm-3
 
-    .form-inputs
+      = link_to "Go To Public Profile", user_path(resource), class: 'btn btn-default'
 
-      %h3 Account
+  .row
 
-      = f.input :first_name
-      = f.input :last_name
+    .col-sm-12
 
-      = f.input :email, required: true
+      = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true }) do |f|
 
-      - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-        %p
-          Currently waiting confirmation for: #{resource.unconfirmed_email}
+        = f.error_notification
 
-      = f.input :tel
+        .form-inputs
 
-      %h3 Your Address
+          %h2 Account
 
-      = f.input :street
-      = f.input :city_code
-      = f.input :city
-      = f.input :country
+          = f.input :first_name
+          = f.input :last_name
 
-      %h3 Profile
+          = f.input :email, required: true
 
-      %h4 Picture
+          - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+            %p
+              Currently waiting confirmation for: #{resource.unconfirmed_email}
 
-      - if resource.image?
-        = image_tag(resource.image.thumb.url)
+          = f.input :tel
 
-        = f.label :remove_image do
-          = f.check_box :remove_image
-          %span Delete Image
+          %h2 Your Address
 
-      = f.file_field :image
-      = f.hidden_field :image_cache
+          = f.input :street
+          = f.input :city_code
+          = f.input :city
+          = f.input :country
 
-      %h4 About yourself
+          %h2 Profile
 
-      = f.input :description
+          %h4 Picture
 
-      %h3 Credentials
+          - if resource.image?
+            = image_tag(resource.image.thumb.url)
 
-      = f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false
-      = f.input :password_confirmation, required: false
+            = f.label :remove_image do
+              = f.check_box :remove_image
+              %span Delete Image
 
-      %h3 Confirmation
+          = f.file_field :image
+          = f.hidden_field :image_cache
 
-      = f.input :current_password, hint: "we need your current password to confirm your changes", required: true
+          %h4 About yourself
 
-    .form-actions
+          = f.input :description
 
-      = f.button :submit, "Update", :class => "btn btn-primary"
+          %h2 Credentials
 
-  %h3 Danger Zone
+          = f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false
+          = f.input :password_confirmation, required: false
 
-  %p
-    Unhappy? #{link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+          %h2 Confirmation
+
+          = f.input :current_password, hint: "we need your current password to confirm your changes", required: true
+
+        .form-actions
+
+          = f.button :submit, "Update", :class => "btn btn-primary"
+
+      %h2 Danger Zone
+
+      %p
+        Unhappy? #{link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}

@@ -1,0 +1,41 @@
+%table{"class" => "table table-hover"}
+
+  %tr
+
+    %th #
+
+    %th Name
+
+    %th Owner
+
+    %th
+
+      .pull-right Action
+
+  - collection.each do |resource|
+
+    %tr
+
+      %td.table-image
+
+        - unless resource.cover_image.nil?
+          .table-image__image{ :style => 'background-image: url("' + resource.cover_image.src.thumb.url + '")' }
+
+      %td
+
+        - if can? :read, resource
+          = link_to resource.title, resource, action: 'show'
+        - else
+          = resource.title
+
+      %td
+
+        - unless resource.user.nil?
+          = link_to resource.user.fullname, user_path(resource.user)
+
+      %td
+
+        .pull-right
+
+          - if can? :update, resource
+            = link_to 'Edit', [resource, action: 'edit'], class: 'btn btn-default'
