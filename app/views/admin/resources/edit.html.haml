@@ -42,22 +42,7 @@
 
         - if defined? resource.images
 
-          .panel.panel-default
-
-            .panel-heading
-
-              .panel-title Images
-
-            .panel-body
-
-              .cocoon
-
-                .cocoon-nested-container
-
-                  = form.simple_fields_for :images do |image|
-                    = render 'image_fields', f: image
-
-                = link_to_add_association 'Add new Image', form, :images, class: 'btn btn-success'
+          = render "/image_upload", f: form
 
     .row
 

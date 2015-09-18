@@ -187,14 +187,17 @@ de:
     goto_overview: "Zur Übersicht"
     goto_show: "Ansehen"
 
+    toggle_help: "Hilfe"
+
     table_column_title_name: "Titel"
     table_column_title_owner: "Erstellt von"
 
     form:
 
       panel_images: "Bilder"
+      btn_select_file: "Auswählen"
       btn_add_image: "Bild hinzufügen"
-      btn_remove_image: "Bild entfernen"
+      btn_remove_image: "Entfernen"
 
       prompt_are_you_sure: "Bist du dir sicher?"
 
@@ -277,8 +280,13 @@ de:
     title_edit: "%{title} bearbeiten"
 
     form:
+
       panel_title: "Produktion"
       btn_submit: "Speichern"
+      btn_delete: "Produktion löschen"
+
+      title_events: "Programm"
+      btn_add_event: "Veranstaltung hinzufügen"
 
     event:
 
@@ -306,6 +314,7 @@ de:
     form:
       panel_title: "Instrument"
       btn_submit: "Speichern"
+      btn_delete: "Instrument löschen"
 
   # DEVICES
 
@@ -325,6 +334,7 @@ de:
     form:
       panel_title: "Gerät"
       btn_submit: "Speichern"
+      btn_delete: "Gerät löschen"
 
   # PARTICIPANTS
 

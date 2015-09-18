@@ -12,16 +12,15 @@
 
         - if can? :update, resource
 
-          = link_to t('common.goto_edit'), edit_production_event_path(event.production, event), class: 'btn btn-default pull-right'
+          = link_to t('common.goto_edit'), edit_production_event_path(event.production, event), class: 'btn btn-info pull-right'
 
         %h2
 
           = link_to "##{index + 1} #{event.production_title}", production_event_path(event.production, event)
 
-        = link_to user_path(event.production.user) do
-
-          %p.event-grid__container__event__owner
-            %strong= event.production.user.fullname
+        %p.event-grid__container__event__owner
+          %strong
+            = link_to event.production.user.fullname, user_path(event.production.user)
 
         %h3
 

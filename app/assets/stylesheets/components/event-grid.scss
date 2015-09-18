@@ -19,10 +19,19 @@
 
   cursor: crosshair;
 
-  h2
+  h2, h3, p
   {
     display: inline;
+  }
 
+  h3, p
+  {
+    float: left;
+    clear: both;
+  }
+
+  h2
+  {
     background-color: $black;
 
     a
@@ -89,7 +98,6 @@
 
   span a, p a
   {
-    background-color: $black;
     color: $white;
   }
 

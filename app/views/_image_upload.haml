@@ -1,0 +1,18 @@
+.panel.image-upload-panel
+
+  .panel-heading
+
+    .panel-title= t 'common.form.panel_images'
+
+  .panel-body
+
+    .cocoon
+
+      .cocoon-nested-container
+
+        = f.simple_fields_for :images do |image|
+          = render '/image_upload_field', f: image
+
+      .clearfix
+
+      = link_to_add_association t('common.form.btn_add_image'), f, :images, class: 'btn btn-success', partial: "/image_upload_field"

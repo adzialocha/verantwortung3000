@@ -1,0 +1,24 @@
+.col-md-4.col-sm-6.col-xs-12.image-upload-panel__item
+
+  .panel
+
+    .panel-body
+
+      - if f.object.src?
+
+        = link_to f.object.src.url, class: 'fancybox' do
+          = image_tag f.object.src.thumb.url, class: 'img-responsive'
+
+      - else
+
+        = f.file_field :src
+
+        %img.img-responsive.preview
+
+    .panel-footer
+
+      - unless f.object.src?
+
+        .btn.btn-default.select-file= t("common.form.btn_select_file")
+
+      = link_to_remove_association(t("common.form.btn_remove_image"), f, class: 'btn btn-danger', data: { confirm: t("common.form.prompt_are_you_sure") }, wrapper_class: 'image-upload-panel__item')

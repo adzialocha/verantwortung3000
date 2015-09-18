@@ -2,6 +2,8 @@
 !/log/.keep
 /tmp
 
+/public/uploads
+
 config/application.yml
 
 *.rbc

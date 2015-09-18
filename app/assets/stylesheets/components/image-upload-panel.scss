@@ -1,0 +1,36 @@
+.image-upload-panel
+{
+  .panel
+  {
+    input[type="file"]
+    {
+      display: none;
+    }
+
+    width: 100%;
+
+    float: left;
+    display: inline-block;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    .panel-body
+    {
+      height: 150px;
+
+      img
+      {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 150px;
+        max-height: 150px;
+      }
+
+      img + .btn
+      {
+        margin-top: 10px;
+      }
+    }
+  }
+}

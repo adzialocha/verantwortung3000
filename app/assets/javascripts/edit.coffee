@@ -8,7 +8,29 @@
 
   'use strict'
 
+  _initFileSelectors = ($event, cInsertedItem) ->
+
+    $selectItem = cInsertedItem.find '.select-file'
+    $originalItem = cInsertedItem.find 'input[type="file"]'
+    $previewItem = cInsertedItem.find '.preview'
+
+    $selectItem.on 'click', () ->
+      $originalItem.trigger 'click'
+
+    $originalItem.on 'change', ($event) ->
+
+      if $event.target.files and $event.target.files[0]
+
+        reader = new FileReader()
+
+        reader.onload = ($res) ->
+          $previewItem.attr 'src', $res.target.result
+
+        reader.readAsDataURL $event.target.files[0]
+
   _initItemPickers = ($event, cInsertedItem) ->
+
+    # init item pickers
 
     $parent = cInsertedItem
 
@@ -85,7 +107,10 @@
 
     # cocoon setup
 
-    $(document).on 'cocoon:after-insert', _initItemPickers
+    $(document).on 'cocoon:after-insert', ($event, cInsertedItem) ->
+
+      _initItemPickers($event, cInsertedItem)
+      _initFileSelectors($event, cInsertedItem)
 
     $('.cocoon a.add_fields').data('association-insertion-method', 'before').data('association-insertion-traversal', 'closest').data 'association-insertion-node', '.cocoon'
 

@@ -2,15 +2,22 @@
 
   .container
 
-    .row
+    .row.header-row
 
-      .col-md-6
+      .col-sm-7
 
-        %h1 My Production
+        %h1
+          %span.header-row__category
+            = link_to t('productions.overview_title'), productions_path
 
-      .col-md-6
+          %span.text-nowrap= "> #{t('productions.title_edit', title: @production.title) }"
 
-        %button.btn.btn-default.toggle-help.pull-right Toggle Help
+      .col-sm-5
+
+        .btn-group
+
+          = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
+          = link_to t('common.goto_show'), production_path(@production), class: 'btn btn-info'
 
     = simple_form_for @production do |f|
 
@@ -32,11 +39,9 @@
 
             .panel-heading
 
-              .panel-title= @production.title
+              .panel-title= t 'productions.form.panel_title'
 
             .panel-body
-
-              %h3 Informationen
 
               = f.input :title
 
@@ -50,20 +55,7 @@
 
               = f.input :description
 
-              .well
-
-                %h1 Images
-
-                %p You can add unlimited images to your production. Click "Add New Image" and select the File to upload a new one.
-
-              %h3 Images
-
-              .cocoon-nested-container
-
-                = f.simple_fields_for :images do |image|
-                  = render 'image_fields', f: image
-
-                = link_to_add_association 'Add new Image', f, :images, class: 'btn btn-success'
+          = render "/image_upload", f: f
 
       .row
 
@@ -75,30 +67,20 @@
 
             %p Every production consists of at least one event, it can also be many. For example: a workshop might happen on several days, or: for a premiere you might need to reserve the room two hours before for soundcheck. Also soundchecks and setups are events!
 
-          .panel
+          %h1= t 'productions.form.title_events'
 
-            .panel-heading
+          = render '/event_grid', resource: @production.events
 
-              .panel-title Events
+          = link_to t('productions.form.btn_add_event'), new_production_event_path(@production), class: 'btn btn-success'
 
-            .panel-body
-
-              = render '/event_grid', resource: @production.events
-
-            .panel-footer
-
-              = link_to 'Add New Event', new_production_event_path(@production), class: 'btn btn-success'
+      %hr
 
       .row
 
-        .col-md-12
+        .col-md-6
 
-          .pull-right= f.button :submit, class: 'btn'
+          = button_to t('productions.form.btn_delete'), production_path(@production), data: { confirm: t('common.form.prompt_are_you_sure') }, class: 'btn btn-danger', method: :delete
 
-  .container
+        .col-md-6
 
-    %hr
-
-    %p Unhappy?
-
-    = button_to 'Delete Production', production_path(@production), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete
+          .pull-right= f.button :submit, t('productions.form.btn_submit'), class: 'btn btn-success'
