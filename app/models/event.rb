@@ -2,7 +2,7 @@ class Event < ActiveRecord::Base
 
   include PublicActivity::Model
 
-  tracked owner: Proc.new { |controller, model| controller.current_user ? controller.current_user : nil }
+  tracked :owner => Proc.new { |controller, model| controller.current_user ? controller.current_user : nil }, :parameters => { :title => :production_title }
 
   belongs_to :production
 
@@ -23,6 +23,9 @@ class Event < ActiveRecord::Base
   default_scope { order(:from) }
 
   validate :daterange_is_correct
+
+  validates :title, presence: true, length: { minimum: 5, maximum: 50 }
+  validates :description, presence: true
 
   FESTIVAL_START = Time.new(2016, 8, 30)
   FESTIVAL_END = Time.new(2016, 9, 5)

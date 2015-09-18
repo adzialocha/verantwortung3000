@@ -36,6 +36,12 @@
 
   .row
 
-    .col-md-12
+    .col-md-6
 
-      .pull-right= f.button :submit, t(resource.model_name.human.pluralize.downcase + '.form.btn_submit'), class: 'btn'
+      - if delete
+
+        = link_to t(resource.model_name.human.pluralize.downcase + '.form.btn_delete'), resource_path(resource), data: { confirm: t("common.form.prompt_are_you_sure") }, class: 'btn btn-danger', method: :delete
+
+    .col-md-6
+
+      .pull-right= f.button :submit, t(resource.model_name.human.pluralize.downcase + '.form.btn_submit'), class: 'btn btn-success'

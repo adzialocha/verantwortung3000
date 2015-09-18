@@ -10,8 +10,6 @@
 
     %th
 
-      .pull-right= t('common.table_column_title_actions')
-
   - collection.each do |resource|
 
     %tr
@@ -23,10 +21,12 @@
 
       %td
 
-        - if can? :read, resource
-          = link_to resource.title, resource, action: 'show'
-        - else
-          = resource.title
+        %strong.text-uppercase
+
+          - if can? :read, resource
+            = link_to resource.title, resource, action: 'show'
+          - else
+            = resource.title
 
       %td
 
@@ -38,4 +38,4 @@
         .pull-right
 
           - if can? :update, resource
-            = link_to t('common.goto_edit'), [resource, action: 'edit'], class: 'btn btn-default'
+            = link_to t('common.goto_edit'), [resource, action: 'edit'], class: 'btn btn-info'

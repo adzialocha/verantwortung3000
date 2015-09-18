@@ -2,20 +2,23 @@
 
   .row.header-row
 
-    .col-sm-9
+    .col-sm-7
 
       %h1
         %span.header-row__category
           = link_to t(resource.model_name.human.pluralize.downcase + '.overview_title'), collection_path(resource)
-        %span >
-        %span= t(resource.model_name.human.pluralize.downcase + '.title_edit')
 
-    .col-sm-3
+        %span.text-nowrap= "> #{ t(resource.model_name.human.pluralize.downcase + '.title_edit', title: resource.title) }"
 
-      = link_to t('common.goto_overview'), collection_path(resource), class: 'btn btn-default'
+    .col-sm-5
+
+      .btn-group
+
+        = link_to t('common.goto_overview'), collection_path(resource), class: 'btn btn-default'
+        = link_to t('common.goto_show'), resource_path(resource), class: 'btn btn-info'
 
   .row
 
     .col-sm-12
 
-      = render 'form', resource: resource
+      = render 'form', resource: resource, delete: true

@@ -13,22 +13,35 @@ textarea
 
 .btn-danger
 {
-  background-color: $gray-lighter;
-  color: $black;
+  border-color: red;
+  background-color: $white;
+  color: red;
 }
 
-.btn-default:hover, .btn-danger:hover
+.btn-info
+{
+  background-color: #ddd;
+}
+
+.btn-default:hover, .btn-info:hover
 {
   background-color: $black;
   color: $white;
 }
 
-.btn-success, .btn-primary, .btn-info
+.btn-danger:hover
+{
+  border-color: red;
+  background-color: red;
+  color: $white;
+}
+
+.btn-success, .btn-primary
 {
   color: $white;
 }
 
-.btn-success:hover, .btn-primary:hover, .btn-info:hover
+.btn-success:hover, .btn-primary:hover
 {
   background-color: $white;
   color: $black;

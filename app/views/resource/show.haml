@@ -2,21 +2,21 @@
 
   .row.header-row
 
-    .col-sm-9
+    .col-sm-6
 
       %h1
         %span.header-row__category
           = link_to t(resource.model_name.human.pluralize.downcase + '.overview_title'), collection_path(resource)
         %span= "> #{resource.title}"
 
-    .col-sm-3
+    .col-sm-6
 
       .btn-group
 
         = link_to t('common.goto_overview'), collection_path(resource), class: 'btn btn-default'
 
         - if can? :update, resource
-          = link_to t('common.goto_edit'), edit_resource_path(resource), class: 'btn btn-default'
+          = link_to t('common.goto_edit'), edit_resource_path(resource), class: 'btn btn-info'
 
   .row
 

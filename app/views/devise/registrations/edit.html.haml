@@ -4,11 +4,11 @@
 
     .col-sm-9
 
-      %h1= t('auth.myprofile_title')
+      %h1= t('participants.title_edit')
 
     .col-sm-3
 
-      = link_to "Go To Public Profile", user_path(resource), class: 'btn btn-default'
+      = link_to t('participants.goto_public_view'), user_path(resource), class: 'btn btn-info'
 
   .row
 
@@ -20,58 +20,70 @@
 
         .form-inputs
 
-          %h2 Account
+          %h2= t('participants.form_title_account')
 
           = f.input :first_name
           = f.input :last_name
 
           = f.input :email, required: true
 
-          - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-            %p
-              Currently waiting confirmation for: #{resource.unconfirmed_email}
+          / - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+          /   %p
+          /     Currently waiting confirmation for: #{resource.unconfirmed_email}
 
           = f.input :tel
 
-          %h2 Your Address
+          %hr
+
+          %h2= t('participants.form_title_address')
 
           = f.input :street
           = f.input :city_code
           = f.input :city
           = f.input :country
 
-          %h2 Profile
+          %hr
 
-          %h4 Picture
+          %h2= t('participants.form_title_picture')
 
           - if resource.image?
-            = image_tag(resource.image.thumb.url)
 
-            = f.label :remove_image do
-              = f.check_box :remove_image
-              %span Delete Image
+            = link_to resource.image.url, class: "fancybox" do
+
+              = image_tag(resource.image.thumb.url)
+
+            %p
+
+              = f.label :remove_image do
+                = f.check_box :remove_image
+                %span= t('participants.remove_current_image')
 
           = f.file_field :image
           = f.hidden_field :image_cache
 
-          %h4 About yourself
+          %h2= t('participants.form_title_about')
 
           = f.input :description
 
-          %h2 Credentials
+          %hr
 
-          = f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false
+          %h2= t('participants.form_title_credentials')
+
+          = f.input :password, autocomplete: "off", required: false
           = f.input :password_confirmation, required: false
+          = f.input :current_password, required: true
 
-          %h2 Confirmation
+        .form-actions.pull-right
 
-          = f.input :current_password, hint: "we need your current password to confirm your changes", required: true
+          = f.button :submit, t('participants.btn_submit'), :class => "btn btn-success"
 
-        .form-actions
+      %hr
 
-          = f.button :submit, "Update", :class => "btn btn-primary"
-
-      %h2 Danger Zone
+      %h2= t('participants.title_dangerzone')
 
       %p
-        Unhappy? #{link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+
+        %span= t('participants.dangerzone')
+
+        %span
+          = link_to t('participants.submit_delete_account'), registration_path(resource_name), data: { confirm: t('participants.prompt_delete_account') }, method: :delete

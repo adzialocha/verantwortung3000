@@ -31,7 +31,7 @@
           = link_to t('common.goto_overview'), calendar_path, class: 'btn btn-default'
 
         - if can? :update, @production
-          = link_to t('productions.goto_edit'), edit_production_path(@production), class: 'btn btn-default'
+          = link_to t('productions.goto_edit'), edit_production_path(@production), class: 'btn btn-info'
 
   .row
 

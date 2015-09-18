@@ -2,6 +2,7 @@
 {
   border-radius: 0;
   border: 0;
+
   color: $white;
   background-color: $black;
 
@@ -15,4 +16,14 @@
   {
     opacity: 1;
   }
+}
+
+.alert-info
+{
+  background-color: #333;
+}
+
+.alert-danger
+{
+  background-color: red;
 }

@@ -1,5 +1,9 @@
 de:
+
+  # DATE & TIME HELPERS
+
   date:
+
     abbr_day_names:
     - So
     - Mo
@@ -8,6 +12,7 @@ de:
     - Do
     - Fr
     - Sa
+
     abbr_month_names:
     -
     - Jan
@@ -22,6 +27,7 @@ de:
     - Okt
     - Nov
     - Dez
+
     day_names:
     - Sonntag
     - Montag
@@ -30,10 +36,12 @@ de:
     - Donnerstag
     - Freitag
     - Samstag
+
     formats:
       default: "%d.%m.%Y"
       long: "%e. %B %Y"
       short: "%e. %b"
+
     month_names:
     -
     - Januar
@@ -48,12 +56,16 @@ de:
     - Oktober
     - November
     - Dezember
+
     order:
     - :day
     - :month
     - :year
+
   datetime:
+
     distance_in_words:
+
       about_x_hours:
         one: vor etwa einer Stunde
         other: vor etwa %{count} Stunden
@@ -88,6 +100,7 @@ de:
       x_seconds:
         one: vor einer Sekunde
         other: "vor %{count} Sekunden"
+
     prompts:
       day: Tag
       hour: Stunden
@@ -95,9 +108,26 @@ de:
       month: Monat
       second: Sekunde
       year: Jahr //all are in singular now
+
+  time:
+
+    am: vormittags
+
+    formats:
+      default: "%A, %d. %B %Y, %H:%M Uhr"
+      long: "%A, %d. %B %Y, %H:%M Uhr"
+      short: "%d. %B, %H:%M Uhr"
+
+    pm: nachmittags
+
+  # FORM HELPERS
+
   errors:
+
     format: "%{attribute} %{message}"
+
     messages:
+
       accepted: muss akzeptiert werden
       blank: muss ausgefüllt werden
       present: darf nicht ausgefüllt werden
@@ -131,104 +161,239 @@ de:
         one: hat die falsche Länge (muss genau 1 Zeichen haben)
         other: hat die falsche Länge (muss genau %{count} Zeichen haben)
       other_than: darf nicht gleich %{count} sein
+
     template:
       body: 'Bitte überprüfen Sie die folgenden Felder:'
       header:
         one: 'Konnte %{model} nicht speichern: ein Fehler.'
         other: 'Konnte %{model} nicht speichern: %{count} Fehler.'
+
   helpers:
+
     select:
       prompt: Bitte wählen
+
     submit:
       create: "%{model} erstellen"
       submit: "%{model} speichern"
       update: "%{model} aktualisieren"
-  number:
-    currency:
-      format:
-        delimiter: "."
-        format: "%n %u"
-        precision: 2
-        separator: ","
-        significant: false
-        strip_insignificant_zeros: false
-        unit: "€"
-    format:
-      delimiter: "."
-      precision: 2
-      separator: ","
-      significant: false
-      strip_insignificant_zeros: false
-    human:
-      decimal_units:
-        format: "%n %u"
-        units:
-          billion:
-            one: Milliarde
-            other: Milliarden
-          million: Millionen
-          quadrillion:
-            one: Billiarde
-            other: Billiarden
-          thousand: Tausend
-          trillion: Billionen
-          unit: ''
-      format:
-        delimiter: ''
-        precision: 3
-        significant: true
-        strip_insignificant_zeros: true
-      storage_units:
-        format: "%n %u"
-        units:
-          byte:
-            one: Byte
-            other: Bytes
-          gb: GB
-          kb: KB
-          mb: MB
-          tb: TB
-    percentage:
-      format:
-        delimiter: ''
-        format: "%n %"
-    precision:
-      format:
-        delimiter: ''
-  support:
-    array:
-      last_word_connector: " und "
-      two_words_connector: " und "
-      words_connector: ", "
-  time:
-    am: vormittags
-    formats:
-      default: "%A, %d. %B %Y, %H:%M Uhr"
-      long: "%A, %d. %B %Y, %H:%M Uhr"
-      short: "%d. %B, %H:%M Uhr"
-    pm: nachmittags
 
-  activity:
+  # VERANTWORTUNG 3000
+  # ==================================================
 
-    event:
-      update: "Event wurde aktualisiert:"
+  common:
+
+    goto_edit: "Bearbeiten"
+    goto_overview: "Zur Übersicht"
+    goto_show: "Ansehen"
+
+    table_column_title_name: "Titel"
+    table_column_title_owner: "Erstellt von"
+
+    form:
+
+      panel_images: "Bilder"
+      btn_add_image: "Bild hinzufügen"
+      btn_remove_image: "Bild entfernen"
+
+      prompt_are_you_sure: "Bist du dir sicher?"
+
+  # NAVIGATION
 
   navigation:
 
     home: "Startseite"
     about: "Über"
-    program: "Programm"
-    participants: "Teilnehmer"
+    calendar: "Kalender"
+    locations: "Orte"
 
+    dropdown: "Menü"
+
+    participants: "Teilnehmer"
+    productions: "Produktionen"
     instruments: "Instrumente"
     devices: "Geräte"
+
+    activity: "Aktivitäten"
     blackboard: "Schwarzes Brett"
+
     profile: "Mein Profil"
 
     signup: "Registrieren"
-    signin: Login
+    signin: "Login"
     signout: "Logout"
+
+    footer:
+
+      routes: "Anfahrt"
+      contact: "Kontakt"
+      admin: "Administration"
+
+      locale:
+        english: "English"
+        german: "Deutsch"
+
+  # AUTHENTIFICATION
 
   auth:
 
     signin_title: "Login"
+
+  # STATIC PAGES
+
+  pages:
+
+    home_title: 'VERANTWORTUNG 3000'
+    home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
+
+    about_title: 'Über'
+    about_html: '<p>Text fehlt</p>'
+
+    contact_title: 'Kontakt'
+    contact_html: '<p>Text fehlt</p>'
+
+    routes_title: 'Anfahrt'
+    routes_html: '<p>Text fehlt</p>'
+
+  # LOCATIONS
+
+  locations:
+
+    overview_title: "Orte"
+
+  # PRODUCTIONS
+
+  productions:
+
+    overview_title: "Produktionen"
+
+    goto_create_new: "Produktion erstellen"
+    goto_edit: "Bearbeiten"
+
+    title_table_my: "Eigene Produktionen"
+    title_table_all: "Alle Produktionen"
+
+    title_create_new: "Neue Produktion erstellen"
+    title_edit: "%{title} bearbeiten"
+
+    form:
+      panel_title: "Produktion"
+      btn_submit: "Speichern"
+
+    event:
+
+      goto_overview: "Zur Übersicht"
+      goto_production: "Zur Produktion"
+
+      title_table_instruments: "Instrumente"
+      title_table_devices: "Geräte"
+
+  # INSTRUMENTS
+
+  instruments:
+
+    overview_title: "Instrumente"
+
+    goto_create_new: "Instrument eintragen"
+    goto_edit: "Bearbeiten"
+
+    title_table_my: "Eigene Instrumente"
+    title_table_all: "Alle Instrumente"
+
+    title_create_new: "Neues Instrument eintragen"
+    title_edit: "%{title} bearbeiten"
+
+    form:
+      panel_title: "Instrument"
+      btn_submit: "Speichern"
+
+  # DEVICES
+
+  devices:
+
+    overview_title: "Geräte"
+
+    goto_create_new: "Gerät eintragen"
+    goto_edit: "Bearbeiten"
+
+    title_table_my: "Eigene Geräte"
+    title_table_all: "Alle Geräte"
+
+    title_create_new: "Neues Gerät eintragen"
+    title_edit: "%{title} bearbeiten"
+
+    form:
+      panel_title: "Gerät"
+      btn_submit: "Speichern"
+
+  # PARTICIPANTS
+
+  participants:
+
+    overview_title: "Teilnehmer"
+
+    title_events: "Kalender"
+
+    title_table_instruments: "Instrumente"
+    title_table_devices: "Geräte"
+
+    title_edit: "Mein Profil bearbeiten"
+    goto_public_view: "Öffentliche Ansicht"
+
+    form_title_account: "Allgemeine Angaben"
+    form_title_address: "Adresse"
+    form_title_picture: "Profilbild"
+    form_title_about: "Profiltext"
+    form_title_credentials: "Passwort ändern"
+
+    remove_current_image: "Aktuelles Bild löschen"
+
+    btn_submit: "Profil aktualisieren"
+
+    title_dangerzone: "Danger Zone"
+
+    dangerzone: "Achtung! Hier kannst du dein Profil unwiederruflich löschen:"
+
+    submit_delete_account: "Profil löschen"
+    prompt_delete_account: "Oha! Bist du dir sicher, dass du dein Profil und alle dazugehörigen Einträge für immer löschen möchtest? Dieser Schritt kann nicht rückgängig gemacht werden."
+
+  # BLACK BOARD
+
+  blackboard:
+
+    title: "Schwarzes Brett"
+
+    title_collaborations: "Performer/Instrumente gesucht"
+    title_requirements: "Geräte gesucht"
+
+  # ACTIVITY
+
+  activity:
+
+    title: "Aktivitäten"
+
+    deleted: "%{title} (gelöscht)"
+
+    event:
+
+      create: "Eine Veranstaltung wurde erstellt:"
+      update: "Eine Veranstaltung wurde aktualisiert:"
+      destroy: "Eine Veranstaltung wurde gelöscht:"
+
+    production:
+
+      create: "Eine Produktion wurde erstellt:"
+      update: "Eine Produktion wurde aktualisiert:"
+      destroy: "Eine Produktion wurde gelöscht:"
+
+    instrument:
+
+      create: "Ein Instrument wurde erstellt:"
+      update: "Ein Instrument wurde aktualisiert:"
+      destroy: "Ein Instrument wurde gelöscht:"
+
+    device:
+
+      create: "Ein Gerät wurde erstellt:"
+      update: "Ein Gerät wurde aktualisiert:"
+      destroy: "Ein Gerät wurde gelöscht:"

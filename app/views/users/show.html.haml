@@ -2,7 +2,7 @@
 
   .row.header-row
 
-    .col-sm-9
+    .col-sm-8
 
       %h1
 
@@ -13,9 +13,11 @@
           - else
             = t('participants.overview_title')
 
-        %span= "> #{@user.fullname}"
+        %span >
 
-    .col-sm-3
+        %span.text-nowrap= @user.fullname
+
+    .col-sm-4
 
       - if user_signed_in?
 
@@ -24,7 +26,7 @@
           = link_to t('common.goto_overview'), users_path, class: 'btn btn-default'
 
           - if can? :update, @user
-            = link_to t('common.goto_edit'), edit_user_registration_path(@user), class: 'btn btn-default'
+            = link_to t('common.goto_edit'), edit_user_registration_path(@user), class: 'btn btn-info'
 
   .row
 

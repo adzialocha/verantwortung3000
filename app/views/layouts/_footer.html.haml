@@ -12,15 +12,15 @@
 
         %ul
 
-          = li_link_to "Anfahrt", routes_path
-          = li_link_to "Kontakt", contact_path
+          = li_link_to t('navigation.footer.routes'), routes_path
+          = li_link_to t('navigation.footer.contact'), contact_path
 
           - if current_user.try(:admin)
-            = li_link_to "Admin", admin_root_path
+            = li_link_to t('navigation.footer.admin'), admin_root_path
 
       .col-xs-6
 
         %ul.pull-right
 
-          = li_link_to "English", url_for(:locale => 'en')
-          = li_link_to "Deutsch", url_for(:locale => 'de')
+          = li_link_to t('navigation.footer.locale.english'), url_for(:locale => 'en')
+          = li_link_to t('navigation.footer.locale.german'), url_for(:locale => 'de')

@@ -1,13 +1,8 @@
 class Instrument < ActiveRecord::Base
 
   include Imageable
-  include PublicActivity::Model
-
-  tracked owner: Proc.new { |controller, model| controller.current_user ? controller.current_user : nil }
-
-  extend FriendlyId
-
-  friendly_id :title, :use => [:slugged, :finders]
+  include Trackable
+  include Sluggable
 
   has_many :collaborations, dependent: :nullify
   has_many :events, through: :collaborations
@@ -17,5 +12,8 @@ class Instrument < ActiveRecord::Base
   default_scope { order('title') }
 
   scope :owned_by, -> (user) { where(user_id: user.id) }
+
+  validates :title, presence: true, length: { minimum: 5, maximum: 30 }
+  validates :description, presence: true
 
 end

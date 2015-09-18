@@ -4,7 +4,8 @@
 
     - if f.object.src?
 
-      = image_tag f.object.src.thumb.url, class: 'img-responsive'
+      = link_to f.object.src.url, class: 'fancybox' do
+        = image_tag f.object.src.thumb.url, class: 'img-responsive'
 
     - else
 

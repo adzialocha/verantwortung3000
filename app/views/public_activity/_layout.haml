@@ -2,34 +2,43 @@
 
   .activity__image-container
 
-    - if activity.owner and not activity.owner.image.nil?
+    - if activity.trackable and activity.trackable.respond_to?(:images) and activity.trackable.images.any?
 
-      .activity__image-container__image{ :style => 'background-image: url("' + activity.owner.image.thumb.url + '")' }
+      .activity__image-container__image{ :style => 'background-image: url("' + activity.trackable.cover_image.src.thumb.url + '")' }
 
-        = link_to "", user_path(activity.owner), title: activity.owner.fullname
+        = render "/public_activity/message", activity: activity
+
+    - else
+
+      - if activity.owner and not activity.owner.image.nil?
+
+        .activity__image-container__image{ :style => 'background-image: url("' + activity.owner.image.thumb.url + '")' }
+
+          = render "/public_activity/message", activity: activity
 
   .activity__content
-
-    %p.activity__content__meta
-
-      - if activity.owner
-
-        %span= "#{l(activity.created_at, format: :short)} - "
-        %span= link_to activity.owner.fullname, user_path(activity.owner)
-
-      - else
-
-        %span= l activity.created_at, format: :short
 
     %p.activity__content__message
 
       %span= t 'activity.' + activity.key
 
-      - if activity.trackable
+      - if activity.trackable and activity.trackable.respond_to?(:title)
 
         %span
           = yield
 
       - else
 
-        %span= t('activity.message_deleted')
+        %span= t 'activity.deleted', title: (activity.parameters.has_key?(:title) ? activity.parameters[:title] : "")
+
+    %p.activity__content__meta
+
+      - if activity.owner
+
+        %span= "#{distance_of_time_in_words(Time.now, activity.created_at)} - "
+        %span= link_to activity.owner.fullname, user_path(activity.owner)
+
+      - else
+
+        %span= distance_of_time_in_words(Time.now, activity.created_at)
+

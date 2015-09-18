@@ -24,15 +24,8 @@ $table-image-size: 50px;
 {
   td, th
   {
-    border-top: 1px solid $black !important;
+    border-top: 7px solid $white !important;
     vertical-align: middle !important;
-  }
-
-  th
-  {
-    border-top: none !important;
-    color: $black !important;
-    text-transform: uppercase;
   }
 
   tr:first-child
@@ -43,16 +36,60 @@ $table-image-size: 50px;
 
   tr:nth-child(2) td
   {
-    border-top: 3px solid $black !important;
+    border-top: 7px solid $white !important;
+  }
+
+  tr td:nth-child(2), tr th:nth-child(2)
+  {
+    width: 60%;
+  }
+
+  tr td:nth-child(3), tr th:nth-child(3)
+  {
+    width: 25%;
+  }
+
+  tr td:nth-child(4), tr th:nth-child(4)
+  {
+    width: 10%;
+    min-width: 100px;
+  }
+
+  tr th
+  {
+    background-color: $black;
+    color: $white !important;
+
+    border-top: none !important;
+    text-transform: uppercase;
+  }
+
+  tr td
+  {
+    background-color: #eee;
   }
 
   tr:hover
   {
-    background-color: $black !important;
+    td
+    {
+      background-color: $black !important;
+    }
 
-    td > a, th, td
+    td > a, td > strong > a, td
     {
       color: $white !important;
     }
+
+    .btn
+    {
+      visibility: visible;
+    }
   }
+
+  .btn
+  {
+    visibility: hidden;
+  }
+
 }

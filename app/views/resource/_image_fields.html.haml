@@ -4,7 +4,8 @@
 
     - if f.object.src?
 
-      = image_tag f.object.src.thumb.url, class: 'img-responsive'
+      = link_to f.object.src.url, class: 'fancybox' do
+        = image_tag f.object.src.thumb.url, class: 'img-responsive'
 
     - else
 
@@ -12,4 +13,4 @@
 
   .panel-footer
 
-    = link_to_remove_association t('common.form.btn_remove_image'), f, class: 'btn btn-danger', data: { confirm: t('common.form.prompt_are_you_sure')  }, wrapper_class: 'panel'
+    = link_to_remove_association(t("common.form.btn_remove_image"), f, class: 'btn btn-danger', data: { confirm: t("common.form.prompt_are_you_sure") }, wrapper_class: 'panel')

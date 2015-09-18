@@ -9,7 +9,7 @@
     .col-sm-6
 
       - if can? :create, collection
-        = link_to t(collection.model_name.human.pluralize.downcase + '.goto_create_new'), new_resource_path, class: 'btn btn-default'
+        = link_to t(collection.model_name.human.pluralize.downcase + '.goto_create_new'), new_resource_path, class: 'btn btn-info'
 
   .row
 

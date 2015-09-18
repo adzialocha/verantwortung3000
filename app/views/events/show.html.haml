@@ -38,7 +38,7 @@
         = link_to t('productions.event.goto_production'), production_path(@production), class: 'btn btn-default'
 
         - if can? :update, @event
-          = link_to t('common.goto_edit'), edit_production_event_path(@production, @event), class: 'btn btn-default'
+          = link_to t('common.goto_edit'), edit_production_event_path(@production, @event), class: 'btn btn-info'
 
   .row
 
@@ -66,6 +66,8 @@
           .content__markdown
 
             = markdown(@event.description)
+
+          %hr
 
   - if user_signed_in?
 
