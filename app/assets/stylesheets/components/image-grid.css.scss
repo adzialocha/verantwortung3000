@@ -31,6 +31,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  a
+  {
+    display: block;
+    height: 100%;
+  }
 }
 
 @media (max-width: $screen-xs-max) {

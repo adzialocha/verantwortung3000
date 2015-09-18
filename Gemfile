@@ -20,6 +20,7 @@ gem 'friendly_id'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 
+gem 'fancybox2-rails'
 gem 'momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 

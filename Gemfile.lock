@@ -129,6 +129,8 @@ GEM
     erubis (2.7.0)
     excon (0.45.4)
     execjs (2.6.0)
+    fancybox2-rails (0.2.8)
+      railties (>= 3.1.0, < 5.0)
     ffi (1.9.10)
     fog-aws (0.7.4)
       fog-core (~> 1.27)
@@ -292,6 +294,7 @@ DEPENDENCIES
   country_select
   datetimepicker-rails!
   devise
+  fancybox2-rails
   fog-aws
   friendly_id
   haml

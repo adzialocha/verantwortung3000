@@ -1,102 +1,28 @@
 # = require jquery
 # = require jquery_ujs
 # = require bootstrap-sprockets
-# = require cocoon
-# = require moment
-# = require moment/de
-# = require pickers
-# = require bootstrap-datetimepicker
-# = require_tree .
+# = require fancybox
 
 ((window, document, $) ->
 
   'use strict'
 
-  _initItemPickers = ($event, cInsertedItem) ->
-
-    $parent = cInsertedItem
-
-    $selectElem = $parent.find 'input[type="number"]'
-    $createElem = $parent.find '.items-select__create'
-
-    $selectElem.hide()
-    $createElem.hide()
-
-    $parent.find('.items-select__cell').on 'click', () ->
-
-      $cell = $(this)
-
-      if $cell.data('disabled')
-        return false
-
-      unless $cell.hasClass 'items-select__cell--selected'
-
-        $cell.siblings('.items-select__cell').removeClass 'items-select__cell--selected'
-
-        $cell.addClass 'items-select__cell--selected'
-
-        val = $cell.data('value')
-
-        if val == -1
-
-          $selectElem.val ''
-          $createElem.show()
-
-        else
-
-          $createElem.hide()
-          $selectElem.val $cell.data('value')
-
-      else
-
-        $createElem.hide()
-        $cell.removeClass 'items-select__cell--selected'
-        $selectElem.val ''
-
   $(document).ready () ->
 
-    # jquery datetimepicker setup
-
-    $('.datetimepicker').datetimepicker
-
-      stepping: 15
-      defaultDate: '2016-08-30 10:00'
-      minDate: '2016-08-30 10:00'
-      maxDate: '2016-09-04 23:00'
-
-    # item picker setup
-
-    $('.items-select').each () ->
-
-      _initItemPickers null, $(this)
-
-      $numberItem = $(this).find 'input[type="number"]'
-      $firstItem = $(this).find '.items-select__cell:first-child'
-
-      val = $numberItem.val()
-
-      if not val? or val == ''
-
-        $selectedItem = $firstItem
-        $(this).find('.items-select__create').show()
-
-      else
-
-        $selectedItem = $(this).find '.items-select__cell[data-value="' + val + '"]'
-        $firstItem.after $selectedItem
-
-      $selectedItem.addClass 'items-select__cell--selected'
-
-    # cocoon setup
-
-    $(document).on 'cocoon:after-insert', _initItemPickers
-
-    $('.cocoon a.add_fields').data('association-insertion-method', 'before').data('association-insertion-traversal', 'closest').data 'association-insertion-node', '.cocoon'
-
-    # toggle help button
-
-    $('.well').hide()
-
-    $('.toggle-help').on 'click', () -> $('.well').toggle()
+    $('a.fancybox').fancybox({
+      closeClick: true,
+      closeBtn: false,
+      padding : 0,
+      openEffect: 'none',
+      closeEffect: 'none',
+      helpers : {
+        overlay : {
+          speedOut: 0,
+          css : {
+            'background' : 'rgba(58, 42, 45, 0.95)'
+          }
+        }
+      }
+    })
 
 ) window, document, window.jQuery

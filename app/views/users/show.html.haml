@@ -5,8 +5,14 @@
     .col-sm-9
 
       %h1
+
         %span.header-row__category
-          = link_to t('participants.overview_title'), users_path
+
+          - if user_signed_in?
+            = link_to t('participants.overview_title'), users_path
+          - else
+            = t('participants.overview_title')
+
         %span= "> #{@user.fullname}"
 
     .col-sm-3
@@ -25,7 +31,8 @@
     .col-md-6
 
       - if @user.image?
-        = image_tag @user.image.url, class: 'img-responsive'
+        = link_to @user.image.url, class: 'fancybox' do
+          = image_tag @user.image.url, class: 'img-responsive'
 
     .col-md-6
 
