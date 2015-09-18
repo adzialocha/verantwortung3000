@@ -15,8 +15,10 @@ gem 'cocoon'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave', branch: 'master'
 gem 'fog-aws'
 gem 'mini_magick'
-gem 'public_activity'
+gem 'public_activity', github: 'pokonski/public_activity', branch: 'master'
 gem 'friendly_id'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 gem 'momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true

@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   resources :users, :only => [ :show, :index ]
   resources :locations, :only => [ :show, :index ]
 
-  resources :productions do
+  resources :productions, :path => 'program' do
     resources :events
   end
 

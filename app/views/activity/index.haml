@@ -1,4 +1,16 @@
 .container
 
-  / - for activity in @activities
-  /   = render_activity(activity, :layout => "layouts/activity_wrapper", fallback: 'default')
+  .row.header-row
+
+    .col-sm-12
+
+      %h1 Aktivität
+
+  .row
+
+    .col-sm-12
+
+      - for activity in @activities
+        = render_activity activity, :layout => "../public_activity/layout", :fallback => "message"
+
+      = will_paginate @activities, renderer: BootstrapPagination::Rails

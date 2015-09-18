@@ -1,0 +1,13 @@
+- case activity.trackable_type
+
+  - when 'Event'
+    = link_to activity.trackable.production_title, production_event_path(activity.trackable.production, activity.trackable)
+
+  - when 'Production'
+    = link_to activity.trackable.title, production_path(activity.trackable)
+
+  - when 'Instrument'
+    = link_to activity.trackable.title, instrument_path(activity.trackable)
+
+  - when 'Device'
+    = link_to activity.trackable.title, device_path(activity.trackable)

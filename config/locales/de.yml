@@ -208,6 +208,11 @@ de:
       short: "%d. %B, %H:%M Uhr"
     pm: nachmittags
 
+  activity:
+
+    event:
+      update: "Event wurde aktualisiert:"
+
   navigation:
 
     home: "Startseite"

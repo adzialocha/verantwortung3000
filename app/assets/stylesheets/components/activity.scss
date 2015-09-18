@@ -1,0 +1,53 @@
+$activity-size: 50px;
+
+.activity
+{
+  height: $activity-size;
+  @include clearfix();
+
+  margin-bottom: 20px;
+}
+
+.activity__image-container
+{
+  width: $activity-size;
+  height: $activity-size;
+  float: left;
+
+  background-color: $black;
+}
+
+.activity__image-container__image
+{
+  height: $activity-size;
+
+  background-position: center;
+  background-size: cover;
+
+  a
+  {
+    display: block;
+    height: $activity-size;
+  }
+}
+
+.activity__content
+{
+  padding-left: 20px;
+  float: left;
+
+  p
+  {
+    margin: 0;
+  }
+}
+
+.activity__content__meta
+{
+
+}
+
+.activity__content__message
+{
+  font-weight: bold;
+}
