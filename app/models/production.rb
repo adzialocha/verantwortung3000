@@ -5,6 +5,10 @@ class Production < ActiveRecord::Base
 
   tracked owner: Proc.new { |controller, model| controller.current_user ? controller.current_user : nil }
 
+  extend FriendlyId
+
+  friendly_id :title, :use => [:slugged, :finders]
+
   has_many :events, dependent: :destroy
   belongs_to :user
 

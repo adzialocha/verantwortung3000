@@ -7,7 +7,7 @@ Bundler.require(*Rails.groups)
 module Darmstadt3000
   class Application < Rails::Application
 
-    config.title = 'DARMSTADT 3000'
+    config.title = 'VERANTWORTUNG 3000'
 
     config.before_configuration do
       ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}

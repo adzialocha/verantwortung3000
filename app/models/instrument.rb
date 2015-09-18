@@ -5,6 +5,10 @@ class Instrument < ActiveRecord::Base
 
   tracked owner: Proc.new { |controller, model| controller.current_user ? controller.current_user : nil }
 
+  extend FriendlyId
+
+  friendly_id :title, :use => [:slugged, :finders]
+
   has_many :collaborations, dependent: :nullify
   has_many :events, through: :collaborations
 
