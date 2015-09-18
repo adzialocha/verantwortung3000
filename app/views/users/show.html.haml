@@ -1,5 +1,25 @@
 .container
 
+  .row.header-row
+
+    .col-sm-9
+
+      %h1
+        %span.header-row__category
+          = link_to t('participants.overview_title'), users_path
+        %span= "> #{@user.fullname}"
+
+    .col-sm-3
+
+      - if user_signed_in?
+
+        .btn-group
+
+          = link_to t('common.goto_overview'), users_path, class: 'btn btn-default'
+
+          - if can? :update, @user
+            = link_to t('common.goto_edit'), edit_user_registration_path(@user), class: 'btn btn-default'
+
   .row
 
     .col-md-6
@@ -11,12 +31,15 @@
 
       .content
 
-        %h1= @user.fullname
+        - if not @user.description.nil? and @user.description != ""
+
+          .content__markdown
+
+            = markdown(@user.description)
 
         .content__meta
 
-          - if can? :update, @user
-            = link_to 'Edit my Profile', edit_user_registration_path(@user), class: "btn btn-default pull-right"
+          %br
 
           %p= @user.country
 
@@ -24,21 +47,15 @@
 
             %p= mail_to @user.email
 
-        - if not @user.description.nil? and @user.description != ""
+  .row
 
-          .content__markdown
+    .col-md-12
 
-            = markdown(@user.description)
+      .content__calendar
 
-  - if @user_events.any?
+        %h1= t 'participants.title_events'
 
-    .row
-
-      .col-md-12
-
-        .content__calendar
-
-          = render '/event_grid', resource: @user_events
+        = render '/event_grid', resource: @user_events
 
   - if user_signed_in?
 
@@ -48,16 +65,12 @@
 
         - unless @user.instruments.empty?
 
-          %hr
-
-          %h2 Instruments
+          %h1= t 'participants.title_table_instruments'
 
           = render "/table", collection: @user.instruments
 
         - unless @user.devices.empty?
 
-          %hr
-
-          %h2 Devices
+          %h1= t 'participants.title_table_devices'
 
           = render "/table", collection: @user.devices

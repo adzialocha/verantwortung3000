@@ -1,26 +1,26 @@
 .container
 
-  .row.header-row
+  .page
 
-    .col-sm-12
+    %h1= t('blackboard.title')
 
-      %h1 Black Board
-
-  .row
-
-    .col-sm-12
+    .black-board
 
       - if @collaborations.count > 0
 
-        %h2 Looking for performers
+        %h2= t('blackboard.title_collaborations')
 
-        - @collaborations.each do |item|
-          = render 'post', item: item
+        .black-board__table
+
+          - @collaborations.each do |item|
+            = render 'post', item: item
 
       - if @requirements.count > 0
 
-        %h2 Looking for gear
+        %h2= t('blackboard.title_requirements')
 
-        - @requirements.each do |item|
-          = render 'post', item: item
+        .black-board__table
+
+          - @requirements.each do |item|
+            = render 'post', item: item
 

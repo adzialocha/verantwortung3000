@@ -4,11 +4,14 @@
 
     .col-sm-6
 
-      %h1= @location.title
+      %h1
+        %span.header-row__category
+          = link_to t('locations.overview_title'), locations_path
+        %span= "> #{@location.title}"
 
     .col-sm-6
 
-      = link_to 'Overview', locations_path, class: 'btn btn-default'
+      = link_to t('common.goto_overview'), locations_path, class: 'btn btn-default'
 
   .row
 

@@ -13,7 +13,7 @@
 {
   border-top: 3px solid $black;
 
-  height: 250px;
+  height: 300px;
 
   position: relative;
 
@@ -30,6 +30,13 @@
       color: $white !important;
     }
   }
+
+  .btn
+  {
+    visibility: hidden;
+  }
+
+  overflow: hidden;
 }
 
 .event-grid__container:nth-child(odd)
@@ -64,7 +71,7 @@
 {
   background-position: center;
   background-size: cover;
-  opacity: .3;
+  opacity: 0;
 }
 
 .event-grid__container:hover
@@ -72,6 +79,23 @@
   .event-grid__container__image
   {
     opacity: 1;
+  }
+
+  h2, h3, p
+  {
+    background-color: $black;
+    color: $white;
+  }
+
+  span a, p a
+  {
+    background-color: $black;
+    color: $white;
+  }
+
+  .btn
+  {
+    visibility: visible;
   }
 }
 

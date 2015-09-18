@@ -12,7 +12,7 @@
 
         - if can? :update, resource
 
-          = link_to 'Edit', edit_production_event_path(event.production, event), class: 'btn btn-default pull-right'
+          = link_to t('common.goto_edit'), edit_production_event_path(event.production, event), class: 'btn btn-default pull-right'
 
         %h2
 
@@ -30,6 +30,6 @@
           %span
             = link_to event.location.title, location_path(event.location)
 
-        %p= no_markdown(event.production_description.truncate(100))
+        %p= no_markdown(event.production_description.truncate(200))
 
 .clearfix

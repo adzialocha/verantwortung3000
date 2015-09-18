@@ -2,14 +2,36 @@
 
   .row.header-row
 
-    .col-sm-9
+    .col-sm-6
 
-      %h1= @production.title
+      %h1
 
-    .col-sm-3
+        - if user_signed_in?
 
-      - if can? :update, @production
-        = link_to 'Edit This Production', edit_production_path(@production), class: 'btn btn-default'
+          %span.header-row__category
+            = link_to t('productions.overview_title'), productions_path
+
+        - else
+
+          %span.header-row__category
+            = link_to t('calendar.overview_title'), calendar_path
+
+        %span= "> #{@production.title}"
+
+    .col-sm-6
+
+      .btn-group
+
+        - if user_signed_in?
+
+          = link_to t('common.goto_overview'), productions_path, class: 'btn btn-default'
+
+        - else
+
+          = link_to t('common.goto_overview'), calendar_path, class: 'btn btn-default'
+
+        - if can? :update, @production
+          = link_to t('productions.goto_edit'), edit_production_path(@production), class: 'btn btn-default'
 
   .row
 

@@ -2,18 +2,43 @@
 
   .row.header-row
 
-    .col-sm-9
+    .col-sm-6
 
-      %h1= @event.production_title
+      %h1
 
-    .col-sm-3
+        - if user_signed_in?
+
+          %span.header-row__category
+            = link_to t('productions.overview_title'), productions_path
+
+        - else
+
+          %span.header-row__category
+            = link_to t('calendar.overview_title'), calendar_path
+
+        %span >
+
+        %span
+          = link_to @production.title, production_path(@production)
+
+        %span= "> #{@event.production_title}"
+
+    .col-sm-6
 
       .btn-group
 
-        = link_to 'Go To Production', production_path(@production), class: 'btn btn-default'
+        - unless user_signed_in?
+
+          = link_to t('productions.event.goto_calendar'), calendar_path, class: 'btn btn-default'
+
+        - else
+
+          = link_to t('productions.event.goto_overview'), productions_path, class: 'btn btn-default'
+
+        = link_to t('productions.event.goto_production'), production_path(@production), class: 'btn btn-default'
 
         - if can? :update, @event
-          = link_to 'Edit', edit_production_event_path(@production, @event), class: 'btn btn-default'
+          = link_to t('common.goto_edit'), edit_production_event_path(@production, @event), class: 'btn btn-default'
 
   .row
 
@@ -42,20 +67,21 @@
 
             = markdown(@event.description)
 
-        - if user_signed_in?
+  - if user_signed_in?
 
-          - if @event.devices.any?
+    .row
 
-            %hr
+      .col-sm-12
 
-            %h2 Devices
+        - if @event.instruments.any?
 
-            = render "/table", collection: @event.devices
+          %h1= t 'productions.event.title_table_instruments'
 
-          - if @event.instruments.any?
+          = render "/table", collection: @event.instruments
 
-            %hr
+        - if @event.devices.any?
 
-            %h2 Instruments
+          %h1= t 'productions.event.title_table_devices'
 
-            = render "/table", collection: @event.instruments
+          = render "/table", collection: @event.devices
+

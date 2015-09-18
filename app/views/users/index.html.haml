@@ -1,15 +1,16 @@
 .container
 
-  %h1 All Participants
+  .row.header-row
 
-  %table(class="table")
+    .col-sm-12
 
-    - @users.each do |user|
+      %h1= t('participants.overview_title')
 
-      %tr
+  .row
 
-        %td= user.fullname
+    .col-sm-12
 
-        %td
-          - if can? :read, user
-            = link_to 'Show', user_path(user)
+      - @users.each do |user|
+
+        %h2
+          = link_to "#{user.fullname} (#{user.country})", user_path(user)

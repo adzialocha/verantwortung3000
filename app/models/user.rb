@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
 
   validates :email, :first_name, :last_name, :tel, :street, :city_code, :city, :country, presence: true
 
+  default_scope { order('last_name') }
+
   def fullname
     self.first_name + ' ' + self.last_name
   end

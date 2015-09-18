@@ -8,6 +8,8 @@ module Darmstadt3000
   class Application < Rails::Application
 
     config.title = 'VERANTWORTUNG 3000'
+    config.description = ''
+    config.url = 'http://www.verantwortung3000.de'
 
     config.before_configuration do
       ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}

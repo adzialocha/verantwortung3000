@@ -4,13 +4,13 @@
 
     %th #
 
-    %th Name
+    %th= t('common.table_column_title_name')
 
-    %th Owner
+    %th= t('common.table_column_title_owner')
 
     %th
 
-      .pull-right Action
+      .pull-right= t('common.table_column_title_actions')
 
   - collection.each do |resource|
 
@@ -38,4 +38,4 @@
         .pull-right
 
           - if can? :update, resource
-            = link_to 'Edit', [resource, action: 'edit'], class: 'btn btn-default'
+            = link_to t('common.goto_edit'), [resource, action: 'edit'], class: 'btn btn-default'

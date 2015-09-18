@@ -1,10 +1,15 @@
 .locations
 {
-
+  margin-top: 60px;
 }
 
 .locations__item
 {
+  position: relative;
+
+  margin-left: -15px;
+  margin-right: -15px;
+
   height: 300px;
 
   background-position: center;
@@ -14,6 +19,15 @@
 
   h2
   {
+    position: absolute;
+
+    right: 0px;
+    bottom: 0;
+
+    margin: 50px;
+
+    font-size: 40px;
+
     display: inline;
     background-color: $black;
 
@@ -24,4 +38,13 @@
   }
 
   border-bottom: 3px solid $black;
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .locations__item h2
+  {
+    font-size: 30px;
+  }
+
 }

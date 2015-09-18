@@ -1,6 +1,14 @@
-%strong= item.title
-%p= item.description
+.black-board__table__item
 
-= link_to item.event.production.user.fullname, user_path(item.event.production.user)
+  %p.black-board__table__item__user.pull-right= link_to item.event.production.user.fullname, user_path(item.event.production.user)
 
-%hr
+
+  %p.black-board__table__item__title
+    %strong= "#{item.title} @ "
+    %span.black-board__table__item__title__event
+      = link_to item.event.production_title, production_event_path(item.event.production, item.event)
+
+  %p.black-board__table__item__date= l item.created_at, format: :long
+
+  - if not item.description.nil? and item.description != ""
+    %p.black-board__table__item__description= item.description

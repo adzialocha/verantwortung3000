@@ -1,0 +1,39 @@
+.black-board
+{
+  margin-top: 30px;
+}
+
+.black-board__table
+{
+  margin-top: 30px;
+}
+
+.black-board__table__item
+{
+  display: inline-block;
+  width: 100%;
+
+  border-bottom: 3px solid $black;
+
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.black-board__table__item__user, .black-board__table__item__title__event
+{
+  background-color: $black;
+  a
+  {
+    color: $white;
+  }
+}
+
+p.black-board__table__item__title, p.black-board__table__item__date
+{
+  margin: 0;
+}
+
+.black-board__table__item__description
+{
+  margin-top: 10px;
+}

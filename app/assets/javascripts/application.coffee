@@ -60,8 +60,8 @@
     $('.datetimepicker').datetimepicker
 
       stepping: 15
-      defaultDate: '2016-09-01 10:00'
-      minDate: '2016-08-31 15:00'
+      defaultDate: '2016-08-30 10:00'
+      minDate: '2016-08-30 10:00'
       maxDate: '2016-09-04 23:00'
 
     # item picker setup

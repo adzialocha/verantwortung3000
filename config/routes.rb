@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, path: 'participants'
 
   root 'pages#home'
 
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'blackboard', controller: :black_board, to: :index
   get 'activity', controller: :activity, to: :index
 
-  resources :users, :only => [ :show, :index ]
+  resources :users, :only => [ :show, :index ], path: 'participants'
   resources :locations, :only => [ :show, :index ]
 
   resources :productions, :path => 'program' do

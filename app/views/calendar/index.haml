@@ -1,17 +1,7 @@
 .container
 
-  .row.header-row
+  - @events.each do |day, events|
 
-    .col-sm-12
+    %h1.text-center= l day, format: :long
 
-      %h1 Kalender
-
-  .row
-
-    .col-sm-12
-
-      - @events.each do |day, events|
-
-        %h1= l day, format: :long
-
-        = render '/event_grid', resource: events
+    = render '/event_grid', resource: events

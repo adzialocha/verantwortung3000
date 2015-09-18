@@ -20,10 +20,12 @@ class Event < ActiveRecord::Base
 
   accepts_nested_attributes_for :requirements, reject_if: :all_blank, allow_destroy: true
 
+  default_scope { order(:from) }
+
   validate :daterange_is_correct
 
-  FESTIVAL_START = Time.new(2016, 8, 31)
-  FESTIVAL_END = Time.new(2016, 9, 6)
+  FESTIVAL_START = Time.new(2016, 8, 30)
+  FESTIVAL_END = Time.new(2016, 9, 5)
 
   def group_by_day
     from.to_date

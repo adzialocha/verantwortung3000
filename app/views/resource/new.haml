@@ -4,10 +4,18 @@
 
     .col-sm-9
 
-      %h1= "Create New #{collection.model_name.human}"
+      %h1
+        %span.header-row__category
+          = link_to t(resource.model_name.human.pluralize.downcase + '.overview_title'), collection_path(resource)
+        %span >
+        %span= t(resource.model_name.human.pluralize.downcase + '.title_create_new')
 
     .col-sm-3
 
-      = link_to 'Overview', collection_path(resource), class: 'btn btn-default'
+      = link_to t('common.goto_overview'), collection_path(resource), class: 'btn btn-default'
 
-  = render 'form', resource: resource
+  .row
+
+    .col-sm-12
+
+      = render 'form', resource: resource

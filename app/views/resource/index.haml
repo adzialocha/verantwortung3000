@@ -2,14 +2,14 @@
 
   .row.header-row
 
-    .col-sm-9
+    .col-sm-6
 
-      %h1= collection.model_name.human.pluralize
+      %h1= t(collection.model_name.human.pluralize.downcase + '.overview_title')
 
-    .col-sm-3
+    .col-sm-6
 
       - if can? :create, collection
-        = link_to 'Create new', new_resource_path, class: 'btn btn-default'
+        = link_to t(collection.model_name.human.pluralize.downcase + '.goto_create_new'), new_resource_path, class: 'btn btn-default'
 
   .row
 
@@ -17,10 +17,10 @@
 
       - if user_signed_in?
 
-        %h2= "My #{collection.model_name.human.pluralize}"
+        %h2= t(collection.model_name.human.pluralize.downcase + '.title_table_my')
 
         = render '/table', collection: collection.owned_by(current_user)
 
-      %h2= "All #{collection.model_name.human.pluralize}"
+      %h2= t(collection.model_name.human.pluralize.downcase + '.title_table_all')
 
       = render '/table', collection: collection
