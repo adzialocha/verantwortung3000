@@ -12,6 +12,9 @@ class Requirement < ActiveRecord::Base
 
   validate :is_occupied
 
+  after_create :inform_owner, :unless => 'device.blank?'
+  before_update :inform_owner, :if => 'self.device_id_changed? and ! device.blank?'
+
   def owner_needed?
     self.device.blank?
   end
@@ -26,6 +29,10 @@ class Requirement < ActiveRecord::Base
       errors.add(:device_id, I18n.t("productions.event.form.error_device_occupied"))
     end
 
+  end
+
+  def inform_owner
+     UserMailer.inform_about_requirement(self.device.user, self).deliver_now
   end
 
 end

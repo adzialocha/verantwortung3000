@@ -14,10 +14,10 @@
     %meta{:content => Rails.application.config.title, :property => "og:title"}
     %meta{:content => Rails.application.config.description, :property => "og:description"}
     %meta{:content => Rails.application.config.url, :property => "og:url"}
-    %meta{:content => Rails.application.config.url + "/assets/logo.jpg", :property => "og:image"}
+    %meta{:content => image_path("logo.jpg"), :property => "og:image"}
     %meta{:content => "image/jpeg", :property => "og:image:type"}
-    %meta{:content => "1200", :property => "og:image:width"}
-    %meta{:content => "1200", :property => "og:image:height"}/
+    %meta{:content => "700", :property => "og:image:width"}
+    %meta{:content => "700", :property => "og:image:height"}
 
     = favicon_link_tag(source="favicon.ico", options={})
 

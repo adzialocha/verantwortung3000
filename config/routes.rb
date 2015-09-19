@@ -10,9 +10,9 @@ Rails.application.routes.draw do
     get :contact
   end
 
-  get 'calendar', controller: :calendar, to: :index
-  get 'blackboard', controller: :black_board, to: :index
-  get 'activity', controller: :activity, to: :index
+  get 'calendar', controller: :calendar, action: :index
+  get 'blackboard', controller: :black_board, action: :index
+  get 'activity', controller: :activity, action: :index
 
   resources :users, :only => [ :show, :index ], path: 'participants'
   resources :locations, :only => [ :show, :index ]

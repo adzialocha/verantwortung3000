@@ -37,9 +37,19 @@ de:
 
     auth:
 
-      signup_html: '<p>Welcome %{mail}!</p><p>You can confirm your account email through the link below:</p><p><a href="%{url}">%{url}</a></p>'
+      signup_html: 'Welcome %{mail}!\nYou can confirm your account email through the link below:\n\n%{url}'
 
-      forgot_password_html: '<p>Hello %{mail}!</p><p>Someone has requested a link to change your password. You can do this through the link below.</p><p><a href="%{url}">%{url}</a></p><p>If you didnt request this, please ignore this email.</p><p>Your password wont change until you access the link above and create a new one.</p>'
+      forgot_password_html: 'Hello %{mail}!\nSomeone has requested a link to change your password. You can do this through the link below.\n\n%{url}\n\nIf you didnt request this, please ignore this email.\nYour password wont change until you access the link above and create a new one.'
+
+    requirement:
+
+      subject: "VERANTWORTUNG 3000 - NEUE GERÄTANFRAGE"
+      message: "Hallo %{name}!\n\n%{url}\n%{event}\n%{from}\n%{to}\n%{location}\n%{device}\n"
+
+    collaboration:
+
+      subject: "VERANTWORTUNG 3000 - NEUE KOLLABORATION"
+      message: "Hallo %{name}!\n\n%{url}\n%{event}\n%{from}\n%{to}\n%{location}\n%{instrument}\n"
 
   # NAVIGATION
 
@@ -97,6 +107,9 @@ de:
     submit_forgot_password: "Passwort zurücksetzen"
     resend_confirmation_title: "Bestätigungsmail nochmal schicken"
     submit_resend_confirmation: "Abschicken"
+
+    change_password_title: "Passwort ändern"
+    submit_change_password: "Passwort ändern"
 
   # STATIC PAGES
 

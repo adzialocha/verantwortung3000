@@ -7,9 +7,21 @@ Bundler.require(*Rails.groups)
 module Darmstadt3000
   class Application < Rails::Application
 
+    # VERANTWORTUNG 3000
+
     config.title = 'VERANTWORTUNG 3000'
-    config.description = ''
+    config.description = 'Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.'
     config.url = 'http://www.verantwortung3000.de'
+
+    config.FESTIVAL_START = Time.new 2016, 8, 30
+    config.FESTIVAL_END = Time.new 2016, 9, 5
+
+    # RAILS APPLICATION
+
+    config.action_mailer.default_url_options = {
+      :host => "http://www.verantwortung3000.de",
+      :port => 80
+    }
 
     config.before_configuration do
       ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}

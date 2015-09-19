@@ -12,6 +12,9 @@ class Collaboration < ActiveRecord::Base
 
   validate :is_occupied
 
+  after_create :inform_owner, :unless => 'instrument.blank?'
+  before_update :inform_owner, :if => 'self.instrument_id_changed? and ! instrument.blank?'
+
   def performer_needed?
     self.instrument.blank?
   end
@@ -26,6 +29,10 @@ class Collaboration < ActiveRecord::Base
       errors.add :instrument_id, I18n.t("productions.event.form.error_instrument_occupied")
     end
 
+  end
+
+  def inform_owner
+     UserMailer.inform_about_collaboration(self.instrument.user, self).deliver_now
   end
 
 end

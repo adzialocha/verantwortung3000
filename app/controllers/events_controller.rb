@@ -6,6 +6,10 @@ class EventsController < ResourceController
     redirect_to parent_url
   end
 
+  def create
+    create!
+  end
+
   private
 
   def event_params
