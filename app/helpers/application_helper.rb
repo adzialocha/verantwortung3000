@@ -2,6 +2,10 @@ module ApplicationHelper
 
   require 'redcarpet/render_strip'
 
+  def image_url(source)
+    URI.join root_url, image_path(source)
+  end
+
   def li_link_to(body, url, html_options = {})
     active = 'active' if current_page?(url)
     content_tag :li, class: active do
