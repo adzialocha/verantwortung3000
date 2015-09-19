@@ -127,3 +127,17 @@ $item-select-size: 150px;
 
   padding: 15px;
 }
+
+.items-select--disabled
+{
+  .items-select__create
+  {
+    display: none;
+  }
+
+  .items-select-cell-container
+  {
+    height: auto;
+  }
+}
+

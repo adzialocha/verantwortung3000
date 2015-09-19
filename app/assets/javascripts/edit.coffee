@@ -89,8 +89,6 @@
 
     $('.items-select').each () ->
 
-      _initItemPickers null, $(this)
-
       $numberItem = $(this).find 'input[type="number"]'
       $firstItem = $(this).find '.items-select__cell--default'
 
@@ -98,13 +96,19 @@
 
       if not val? or val == ''
 
+        _initItemPickers null, $(this)
+
         $selectedItem = $firstItem
         $(this).find('.items-select__create').show()
 
       else
 
+        $(this).addClass 'items-select--disabled'
+
         $selectedItem = $(this).find '.items-select__cell[data-value="' + val + '"]'
-        $firstItem.parent().after $selectedItem.parent()
+
+        $firstItem.parent().remove()
+        $(this).find('.items-select__cell[data-value!="' + val + '"]').parent().remove()
 
       $selectedItem.addClass 'items-select__cell--selected'
 
