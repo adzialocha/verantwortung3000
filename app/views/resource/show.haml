@@ -34,8 +34,20 @@
 
             = markdown(resource.description)
 
-        %hr
+        - if resource.images.any?
 
-        .content__images
+          %hr
 
-          = render '/image_grid', resource: resource
+          .content__images
+
+            = render '/image_grid', resource: resource
+
+        - if user_signed_in? and resource.events.any?
+
+          %hr
+
+          %h1= t(resource.model_name.human.pluralize.downcase + '.title_used_in_events')
+
+          .content__events
+
+            = render '/event_grid', resource: resource.events

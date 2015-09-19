@@ -10,24 +10,24 @@ class Event < ActiveRecord::Base
 
   has_and_belongs_to_many :event_categories, :join_table => :event_categories_events, dependent: :destroy
 
-  has_many :requirements, dependent: :destroy
-  has_many :devices, through: :requirements
+  has_many :requirements, dependent: :destroy, :inverse_of => :event
+  has_many :devices, -> { uniq }, through: :requirements
 
-  has_many :collaborations, dependent: :destroy
-  has_many :instruments, through: :collaborations
+  has_many :collaborations, dependent: :destroy, :inverse_of => :event
+  has_many :instruments, -> { uniq }, through: :collaborations
 
-  accepts_nested_attributes_for :collaborations, reject_if: :all_blank, allow_destroy: true
+  accepts_nested_attributes_for :collaborations, allow_destroy: true
 
-  accepts_nested_attributes_for :requirements, reject_if: :all_blank, allow_destroy: true
+  accepts_nested_attributes_for :requirements, allow_destroy: true
 
   default_scope { order(:from) }
 
-  validate :daterange_is_correct
+  validate :daterange_is_correct, :location_is_free
 
   validates :location_id, :from, :to, presence: true
 
-  validates_associated :collaborations
   validates_associated :requirements
+  validates_associated :collaborations
 
   FESTIVAL_START = Time.new(2016, 8, 30)
   FESTIVAL_END = Time.new(2016, 9, 5)
@@ -47,6 +47,16 @@ class Event < ActiveRecord::Base
   end
 
   private
+
+  def location_is_free
+
+    existing_events = Event.where('id != :id AND location_id = :location AND (("to" >= :to AND "from" <= :from) OR ("to" > :from AND "from" < :to))', id: self.id, location: self.location_id, to: self.to, from: self.from).first
+
+    if existing_events
+      errors.add(:location_id, I18n.t("productions.event.form.error_location_occupied"))
+    end
+
+  end
 
   def daterange_is_correct
 

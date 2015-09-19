@@ -92,7 +92,7 @@
       _initItemPickers null, $(this)
 
       $numberItem = $(this).find 'input[type="number"]'
-      $firstItem = $(this).find '.items-select__cell:first-child'
+      $firstItem = $(this).find '.items-select__cell--default'
 
       val = $numberItem.val()
 
@@ -104,7 +104,7 @@
       else
 
         $selectedItem = $(this).find '.items-select__cell[data-value="' + val + '"]'
-        $firstItem.after $selectedItem
+        $firstItem.parent().after $selectedItem.parent()
 
       $selectedItem.addClass 'items-select__cell--selected'
 

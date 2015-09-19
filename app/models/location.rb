@@ -1,11 +1,10 @@
 class Location < ActiveRecord::Base
 
   include Imageable
-
-  extend FriendlyId
-
-  friendly_id :title, use: :slugged
+  include Sluggable
 
   has_many :events
+
+  default_scope { order('title') }
 
 end

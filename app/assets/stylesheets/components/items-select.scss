@@ -7,6 +7,17 @@ $item-select-size: 150px;
     display: none;
   }
 
+  .form-group.integer.has-error
+  {
+    display: block;
+    padding-left: 15px;
+
+    input
+    {
+      display: none;
+    }
+  }
+
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -49,7 +60,7 @@ $item-select-size: 150px;
   cursor: pointer;
 
   border: 3px solid;
-  border-color: $gray-light;
+  border-color: transparent;
 
   background-size: cover;
   background-position: center;
@@ -97,7 +108,7 @@ $item-select-size: 150px;
 
 .items-select__cell--selected
 {
-  border-color: red;
+  border-color: blue;
 }
 
 .items-select__cell--disabled
