@@ -69,7 +69,7 @@ de:
     collaboration:
 
       subject: "VERANTWORTUNG 3000 - NEUE KOLLABORATION"
-      mmessage: |+
+      message: |+
         Hallo %{name}!
 
         %{url}
