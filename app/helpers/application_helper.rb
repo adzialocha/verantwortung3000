@@ -57,7 +57,7 @@ module ApplicationHelper
     if resource.cover_image.present?
       resource.cover_image.src.thumb.url
     else
-      '/images/default_image.jpg'
+      path_to_image 'default.png'
     end
 
   end

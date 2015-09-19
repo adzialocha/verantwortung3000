@@ -24,8 +24,10 @@ class Event < ActiveRecord::Base
 
   validate :daterange_is_correct
 
-  validates :title, presence: true, length: { minimum: 5, maximum: 50 }
-  validates :description, presence: true
+  validates :location_id, :from, :to, presence: true
+
+  validates_associated :collaborations
+  validates_associated :requirements
 
   FESTIVAL_START = Time.new(2016, 8, 30)
   FESTIVAL_END = Time.new(2016, 9, 5)
@@ -49,15 +51,15 @@ class Event < ActiveRecord::Base
   def daterange_is_correct
 
     if self.from >= self.to
-      errors.add(:to, 'End of event cant be before or same as the beginning.')
+      errors.add(:to, I18n.t("productions.event.form.error_wrong_daterange"))
     end
 
     unless self.to.between? FESTIVAL_START, FESTIVAL_END
-      errors.add(:to, 'Date is outside of festival timeframe.')
+      errors.add(:to, I18n.t("productions.event.form.error_out_of_daterange"))
     end
 
     unless self.from.between? FESTIVAL_START, FESTIVAL_END
-      errors.add(:from, 'Date is outside of festival timeframe.')
+      errors.add(:from, I18n.t("productions.event.form.error_out_of_daterange"))
     end
 
   end

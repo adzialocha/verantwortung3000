@@ -22,12 +22,8 @@
   h2, h3, p
   {
     display: inline;
-  }
-
-  h3, p
-  {
     float: left;
-    clear: both;
+    clear: left;
   }
 
   h2
@@ -38,11 +34,6 @@
     {
       color: $white !important;
     }
-  }
-
-  .btn
-  {
-    visibility: hidden;
   }
 
   overflow: hidden;
@@ -100,11 +91,6 @@
   {
     color: $white;
   }
-
-  .btn
-  {
-    visibility: visible;
-  }
 }
 
 @media (max-width: $screen-md-min) {
@@ -114,4 +100,19 @@
     border-right: none !important;
   }
 
+}
+
+/* edit view */
+
+.panel-body
+{
+  .event-grid
+  {
+    margin: 0;
+  }
+
+  .event-grid__container
+  {
+    border: none !important;
+  }
 }

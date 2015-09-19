@@ -6,16 +6,6 @@ class EventsController < ResourceController
     redirect_to parent_url
   end
 
-  def create
-
-    if resource.attributes.has_key? 'user_id'
-      resource.user_id = current_user.id
-    end
-
-    create!(:notice => "Event created!") { edit_production_event_url(@event.production, @event) }
-
-  end
-
   private
 
   def event_params

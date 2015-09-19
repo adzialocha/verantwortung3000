@@ -14,8 +14,12 @@
     $originalItem = cInsertedItem.find 'input[type="file"]'
     $previewItem = cInsertedItem.find '.preview'
 
+    # workaround for custom file selector input
+
     $selectItem.on 'click', () ->
       $originalItem.trigger 'click'
+
+    # show preview of local image
 
     $originalItem.on 'change', ($event) ->
 
@@ -37,7 +41,6 @@
     $selectElem = $parent.find 'input[type="number"]'
     $createElem = $parent.find '.items-select__create'
 
-    $selectElem.hide()
     $createElem.hide()
 
     $parent.find('.items-select__cell').on 'click', () ->
@@ -49,7 +52,7 @@
 
       unless $cell.hasClass 'items-select__cell--selected'
 
-        $cell.siblings('.items-select__cell').removeClass 'items-select__cell--selected'
+        $cell.parent().parent().find('.items-select__cell').removeClass 'items-select__cell--selected'
 
         $cell.addClass 'items-select__cell--selected'
 
@@ -118,6 +121,9 @@
 
     $('.well').hide()
 
-    $('.toggle-help').on 'click', () -> $('.well').toggle()
+    $('.toggle-help').on 'click', ($event) ->
+
+      $($event.target).toggleClass 'toggle-help--activated'
+      $('.well').toggle()
 
 ) window, document, window.jQuery

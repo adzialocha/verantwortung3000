@@ -192,6 +192,8 @@ de:
     table_column_title_name: "Titel"
     table_column_title_owner: "Erstellt von"
 
+    alert_no_permission: "Error: Kein Zugriff auf diese Funktion"
+
     form:
 
       panel_images: "Bilder"
@@ -200,6 +202,12 @@ de:
       btn_remove_image: "Entfernen"
 
       prompt_are_you_sure: "Bist du dir sicher?"
+
+    help_image_upload: "Bilder hochladen"
+    help_image_upload_html: "<p>Hilfetext fehlt</p>"
+
+    help_text_formatting: "Texte formatieren"
+    help_text_formatting_html: "<p>Hilfetext (Markdown etc.) fehlt</p>"
 
   # NAVIGATION
 
@@ -288,6 +296,15 @@ de:
       title_events: "Programm"
       btn_add_event: "Veranstaltung hinzufügen"
 
+    help_new: "Produktion erstellen"
+    help_new_html: "<p>Hilfetext fehlt</p>"
+
+    help_edit_main: "Produktion bearbeiten"
+    help_edit_main_html: "<p>Hilfetext fehlt</p>"
+
+    help_edit_events: "Events bearbeiten"
+    help_edit_events_html: "<p>Hilfetext fehlt</p>"
+
     event:
 
       goto_overview: "Zur Übersicht"
@@ -295,6 +312,54 @@ de:
 
       title_table_instruments: "Instrumente"
       title_table_devices: "Geräte"
+
+      title_create_new: "Neue Veranstaltung erstellen"
+
+      help_edit_main: "Event"
+      help_edit_main_html: "<p>Hilfetext fehlt</p>"
+
+      help_edit_instruments: "Instrumente bearbeiten"
+      help_edit_instruments_html: "<p>Hilfetext fehlt</p>"
+
+      help_edit_devices: "Geräte bearbeiten"
+      help_edit_devices_html: "<p>Hilfetext fehlt</p>"
+
+      help_edit_more: "Weitere Informationen bearbeiten"
+      help_edit_more_html: "<p>Hilfetext fehlt</p>"
+
+      form:
+
+        panel_title: "Veranstaltung"
+        btn_submit: "Veranstaltung erstellen"
+        goto_production: "Zur Produktion"
+
+        error_wrong_daterange: "Das Ende liegt zeitlich vor oder genau auf dem Veranstaltungsbeginn"
+        error_out_of_daterange: "Der Zeitraum liegt außerhalb des Festivals!"
+
+        panel_instruments_title: "Benötigte Instrumente"
+        panel_devices_title: "Benötigte Geräte"
+        panel_info_title: "Weitere Informationen"
+
+        btn_add_instrument: "Instrument hinzufügen"
+        btn_add_device: "Gerät hinzufügen"
+        btn_remove_instrument: "Entfernen"
+        btn_remove_device: "Entfernen"
+
+        select_not_exist_title: "Nicht vorhanden"
+        select_not_exist_description: "Erstelle einen Eintrag auf dem Schwarzen Brett"
+
+        blackboard_title: "Titel der Anzeige auf dem Schwarzen Brett"
+        blackboard_description: "Text zur Anzeige"
+
+        error_title_needed: "Du musst einen Titel angeben"
+        error_description_needed: "Du musst einen Text angeben"
+
+        btn_edit_submit: "Speichern"
+        btn_delete: "Veranstaltung löschen"
+
+    alert_create: "Produktion wurde erfolgreich erstellt!"
+    alert_update: "Produktion wurde erfolgreich aktualisiert!"
+    alert_delete: "Produktion wurde erfolgreich gelöscht!"
 
   # INSTRUMENTS
 
@@ -316,6 +381,10 @@ de:
       btn_submit: "Speichern"
       btn_delete: "Instrument löschen"
 
+    alert_create: "Instrument wurde erfolgreich erstellt!"
+    alert_update: "Instrument wurde erfolgreich aktualisiert!"
+    alert_delete: "Instrument wurde erfolgreich gelöscht!"
+
   # DEVICES
 
   devices:
@@ -335,6 +404,10 @@ de:
       panel_title: "Gerät"
       btn_submit: "Speichern"
       btn_delete: "Gerät löschen"
+
+    alert_create: "Gerät wurde erfolgreich erstellt!"
+    alert_update: "Gerät wurde erfolgreich aktualisiert!"
+    alert_delete: "Gerät wurde erfolgreich gelöscht!"
 
   # PARTICIPANTS
 

@@ -1,44 +1,41 @@
-.well-container
+.container
 
-  .container
+  .row.header-row
+
+    .col-sm-7
+
+      %h1
+
+        %span.header-row__category
+          = link_to t('productions.overview_title'), productions_path
+
+        %span >
+
+        %span
+          = link_to @production.title, edit_production_path(@production)
+
+        %span= "> #{ t('productions.event.title_create_new') }"
+
+    .col-sm-5
+
+      .btn-group
+
+        = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
+
+        = link_to t('productions.event.form.goto_production'), edit_production_path(@production), class: 'btn btn-default'
+
+  = simple_form_for [@production, @event] do |f|
 
     .row
 
-      .col-md-6
+      .col-sm-12
 
-        %h1 My Event
+        = f.error_notification
+        = render 'form', f: f
 
-      .col-md-6
+    .row
 
-        %button.btn.btn-default.toggle-help.pull-right Toggle Help
+      .col-sm-12
 
-    = simple_form_for [@production, @event] do |f|
-
-      = f.error_notification
-
-      .panel
-
-        .panel-heading
-
-          .panel-title Event
-
-        .panel-body
-
-          .well
-
-            %h1 Pick a location and a time
-
-            %p Where does this event take place? And when? Please note that you will reserve the location for this timeframe.
-
-            %p You will get a warning when the location is already reserved.
-
-          = f.input :location_id, collection: Location.all
-
-          = f.input :from, as: :datetime_picker
-          = f.input :to, as: :datetime_picker
-
-        .panel-footer
-
-          = button_to 'Go To Production', production_path(@production), class: 'btn btn-default'
-
-          = f.button :submit, class: 'btn'
+        .pull-right
+          = f.button :submit, t('productions.event.form.btn_submit'), class: 'btn btn-success'

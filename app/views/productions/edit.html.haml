@@ -1,86 +1,85 @@
-.well-container
+.container
 
-  .container
+  .row.header-row
 
-    .row.header-row
+    .col-sm-7
 
-      .col-sm-7
+      %h1
+        %span.header-row__category
+          = link_to t('productions.overview_title'), productions_path
 
-        %h1
-          %span.header-row__category
-            = link_to t('productions.overview_title'), productions_path
+        %span.text-nowrap= "> #{t('productions.title_edit', title: @production.title) }"
 
-          %span.text-nowrap= "> #{t('productions.title_edit', title: @production.title) }"
+    .col-sm-5
 
-      .col-sm-5
+      .btn-group
 
-        .btn-group
+        = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
+        = link_to t('common.goto_show'), production_path(@production), class: 'btn btn-info'
 
-          = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
-          = link_to t('common.goto_show'), production_path(@production), class: 'btn btn-info'
+  = simple_form_for @production do |f|
 
-    = simple_form_for @production do |f|
+    = f.error_notification
 
-      = f.error_notification
+    .row
 
-      .row
+      .col-md-12
 
-        .col-md-12
+        .well
 
-          .well
+          %h1= t('productions.help_edit_main')
+          = t('productions.help_edit_main_html')
 
-            %h1 Hey!
+        .panel
 
-            %p You want to edit or create a production. A production is something you can contribute to the festival. It can consist of different events, they all relate to this idea production.
+          .panel-heading
 
-            %p Start with basic information, like the title and a description of the production.
+            .panel-title= t 'productions.form.panel_title'
 
-          .panel
+          .panel-body
 
-            .panel-heading
+            = f.input :title
 
-              .panel-title= t 'productions.form.panel_title'
+            .well
 
-            .panel-body
+              %h1= t('common.help_text_formatting')
+              = t('common.help_text_formatting_html')
 
-              = f.input :title
+            = f.input :description
 
-              .well
+        = render "/image_upload", f: f
 
-                %h1 Formatting
+    .row
 
-                %p All description fields can be formatted with MARKDOWN sytax which means you can change the text style, add links etc.
+      .col-md-12
 
-                = link_to 'Read more about it here', 'http://daringfireball.net/projects/markdown/', target: '_blank'
+        .well
 
-              = f.input :description
+          %h1= t('productions.help_edit_events')
+          = t('productions.help_edit_events_html')
 
-          = render "/image_upload", f: f
+        .panel
 
-      .row
+          .panel-heading
 
-        .col-md-12
+            .panel-title= t 'productions.form.title_events'
 
-          .well
+          .panel-body
 
-            %h1 Events
+            = render '/event_grid', resource: @production.events, show_edit: true
 
-            %p Every production consists of at least one event, it can also be many. For example: a workshop might happen on several days, or: for a premiere you might need to reserve the room two hours before for soundcheck. Also soundchecks and setups are events!
+          .panel-footer
 
-          %h1= t 'productions.form.title_events'
+            = link_to t('productions.form.btn_add_event'), new_production_event_path(@production), class: 'btn btn-success'
 
-          = render '/event_grid', resource: @production.events
+    %hr
 
-          = link_to t('productions.form.btn_add_event'), new_production_event_path(@production), class: 'btn btn-success'
+    .row
 
-      %hr
+      .col-xs-6
 
-      .row
+        = link_to t('productions.form.btn_delete'), production_path(@production), data: { confirm: t('common.form.prompt_are_you_sure') }, class: 'btn btn-danger', method: :delete
 
-        .col-md-6
+      .col-xs-6
 
-          = button_to t('productions.form.btn_delete'), production_path(@production), data: { confirm: t('common.form.prompt_are_you_sure') }, class: 'btn btn-danger', method: :delete
-
-        .col-md-6
-
-          .pull-right= f.button :submit, t('productions.form.btn_submit'), class: 'btn btn-success'
+        .pull-right= f.button :submit, t('productions.form.btn_submit'), class: 'btn btn-success'

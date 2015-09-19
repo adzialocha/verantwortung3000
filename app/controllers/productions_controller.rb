@@ -6,7 +6,7 @@ class ProductionsController < ResourceController
       resource.user_id = current_user.id
     end
 
-    create!(:notice => "Production created!") { edit_production_url(@production) }
+    create!(:notice => t('productions.alert_create')) { edit_production_url(@production) }
 
   end
 

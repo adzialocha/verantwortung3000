@@ -1,24 +1,27 @@
 .items-select
 
-  = f.input id, as: :integer
+  = f.input id, as: :integer, label: false
 
   .items-select-cell-container.clearfix
 
-    .items-select__cell.items-select__cell--default{ 'data-value': -1 }
+    .col-md-3.col-sm-4.col-xs-12
 
-      %h4 Doesnt exist
-      %p Create a post on the black board
+      .items-select__cell.items-select__cell--default{ 'data-value': -1 }
+
+        %h2= t('productions.event.form.select_not_exist_title')
+        %p= t('productions.event.form.select_not_exist_description')
 
     - collection.each do |item|
 
-      .items-select__cell{ 'data-disabled': false, 'data-value': item.id }
+      .col-md-3.col-sm-4.col-xs-12
 
-        = image_tag cover_thumb_url(item), class: 'img-responsive'
+        .items-select__cell{ 'data-disabled': false, 'data-value': item.id, style: "background-image: url('#{cover_thumb_url(item)}')" }
 
-        %h4= item.title
-        %p= item.description
+          %h2.items-select__cell__title= item.title.truncate(25)
+          %p.items-select__cell__description= item.user.fullname
+          %p.items-select__cell__description= no_markdown(item.description).truncate(50)
 
   .items-select__create
 
-    = f.input :title
-    = f.input :description
+    = f.input :title, label: t('productions.event.form.blackboard_title'), required: true
+    = f.input :description, label: t('productions.event.form.blackboard_description'), required: true

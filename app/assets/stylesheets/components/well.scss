@@ -1,0 +1,18 @@
+.well
+{
+  border: 0;
+
+  background-color: green;
+
+  color: $white;
+
+  h1, h2, h3, h4, h5, p, a
+  {
+    color: $white;
+  }
+
+  h1
+  {
+    margin: 0;
+  }
+}

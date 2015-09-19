@@ -16,6 +16,11 @@ body
   margin-bottom: 100px;
 }
 
+body.nav-collapsed
+{
+  overflow: hidden;
+}
+
 hr
 {
   border-bottom: 3px solid $black;
@@ -113,7 +118,7 @@ a.navbar-brand
   display: inline-block;
 }
 
-@media (max-width: $screen-xs-max) {
+@media (max-width: $screen-sm-max) {
 
   .navbar-brand-container
   {
@@ -131,9 +136,19 @@ a.navbar-brand
 
 }
 
+@media (max-width: $screen-xs-max) {
+
+  a.navbar-brand
+  {
+    font-size: 18px;
+  }
+
+}
+
 .navbar-collapse
 {
   background-color: $white;
+  overflow-y: auto;
 }
 
 @media (max-width: $screen-xs-max) {
@@ -148,8 +163,6 @@ a.navbar-brand
     right: 0px;
     bottom: 0px;
     top: $navbar-height;
-
-    height: 100%;
 
     padding-left: 30px;
     padding-right: 30px;

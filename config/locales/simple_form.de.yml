@@ -31,6 +31,12 @@ de:
         city: "Stadt"
         country: "Land"
 
+      event:
+
+        location_id: "Ort"
+        from: "Beginn"
+        to: "Ende"
+
     # Examples
 
     # labels:

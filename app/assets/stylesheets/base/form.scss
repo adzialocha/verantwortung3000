@@ -66,6 +66,8 @@ textarea
 
 .bootstrap-datetimepicker-widget
 {
+  z-index: 9999;
+
   border-color: $black;
 
   .glyphicon
@@ -100,4 +102,22 @@ textarea
     background-color: $black;
     text-shadow: none;
   }
+}
+
+/* help toggle */
+
+.btn.toggle-help:focus
+{
+  background-color: inherit;
+}
+
+.btn.toggle-help:hover
+{
+  background-color: $black;
+}
+
+.btn.toggle-help.toggle-help--activated
+{
+  border-color: green;
+  color: green;
 }

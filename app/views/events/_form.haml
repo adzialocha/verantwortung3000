@@ -1,0 +1,17 @@
+.panel
+
+  .panel-heading
+
+    .panel-title= t('productions.event.form.panel_title')
+
+  .panel-body
+
+    .well
+
+      %h1= t('productions.event.help_main')
+      = t('productions.event.help_main_html')
+
+    = f.input :location_id, collection: Location.all, include_blank: false
+
+    = f.input :from, as: :datetime_picker
+    = f.input :to, as: :datetime_picker

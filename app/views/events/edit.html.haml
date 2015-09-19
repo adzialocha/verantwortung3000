@@ -1,97 +1,106 @@
-.well-container
+.container
 
-  .container
+  .row.header-row
 
-    .row
+    .col-sm-7
 
-      .col-md-6
+      %h1
 
-        %h1 My Event
+        %span.header-row__category
+          = link_to t('productions.overview_title'), productions_path
 
-      .col-md-6
+        %span >
 
-        %button.btn.btn-default.toggle-help.pull-right Toggle Help
+        %span
+          = link_to @production.title, edit_production_path(@production)
 
-    = simple_form_for [@production, @event] do |f|
+        %span= "> #{ @event.production_title }"
 
-      = f.error_notification
+    .col-sm-5
 
-      .panel
+      .btn-group
 
-        .panel-heading
+        = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
 
-          .panel-title Event
+        = link_to t('productions.event.form.goto_production'), edit_production_path(@production), class: 'btn btn-info'
 
-        .panel-body
+  = simple_form_for [@production, @event] do |f|
 
-          .well
+    = f.error_notification
 
-            %h1 Pick a location and a time
+    = render 'form', f: f
 
-            %p Where does this event take place? And when? Please note that you will reserve the location for this timeframe.
+    .panel
 
-            %p You will get a warning when the location is already reserved.
+      .panel-heading
 
-          = f.input :location_id, collection: Location.all
+        .panel-title= t('productions.event.form.panel_instruments_title')
 
-          = f.input :from, as: :datetime_picker
-          = f.input :to, as: :datetime_picker
+      .panel-body
 
-          %hr
+        .well
 
-          .well
+          %h1= t('productions.event.help_edit_instruments')
+          = t('productions.event.help_edit_instruments_html')
 
-            %h1 Instruments you will need
-
-            %p Which instruments do you need? You can choose from the ones which have already been registered by users.
-
-            %p Keep in mind that an instrument is always related to a performer. You have to get his confirmation first if you start a request here.
-
-            %p If you cant find your instrument you can describe what you need after selecting "Cant find". We will automatically create a post on the black board then. Other users might be inspired by this to contribute to your event and contact you via mail.
+        .cocoon
 
           .cocoon-nested-container
 
             = f.simple_fields_for :collaborations do |collaboration|
               = render 'collaboration_fields', f: collaboration
 
-            = link_to_add_association 'Add new Instrument', f, :collaborations, class: 'btn btn-success'
+          .clearfix
 
-          %hr
+          = link_to_add_association t('productions.event.form.btn_add_instrument'), f, :collaborations, class: 'btn btn-success'
 
-          .well
+    .panel
 
-            %h1 Technical devices
+      .panel-heading
 
-            %p This works very similar as instruments. The only difference is that technical devices are not related to a performer. Of course you will still need the confirmation of the owner.
+        .panel-title= t('productions.event.form.panel_devices_title')
 
-            %p If you cant find your needed device you can start a black board post by selecting "Cant find". We will automatically create the announcement for you.
+      .panel-body
+
+        .well
+
+          %h1= t('productions.event.help_edit_devices')
+          = t('productions.event.help_edit_devices_html')
+
+        .cocoon
 
           .cocoon-nested-container
 
             = f.simple_fields_for :requirements do |requirement|
               = render 'requirement_fields', f: requirement
 
-            = link_to_add_association 'Add new Device', f, :requirements, class: 'btn btn-success'
+          .clearfix
 
-          %hr
+          = link_to_add_association t('productions.event.form.btn_add_device'), f, :requirements, class: 'btn btn-success'
 
-          .well
+    .panel
 
-            %h1 Anything more to say?
+      .panel-heading
 
-            %p Is there something special to say about this specific event? Is it something different than you already described for the production? Then you can fill it in here. Otherwise leave these fields free.
+        .panel-title= t('productions.event.form.panel_info_title')
 
-          = f.input :title
-          = f.input :description
+      .panel-body
 
-      .row
+        .well
 
-        .col-md-6
+          %h1= t('productions.event.help_edit_more')
+          = t('productions.event.help_edit_more_html')
 
-          = link_to 'Delete Event', production_event_path(@production, @event), data: { confirm: 'Are you sure?' }, class: 'btn btn-danger', method: :delete
+        = f.input :title
+        = f.input :description
 
-        .col-md-6
+    .row
 
-          .pull-right= link_to 'Go To Edit Production', edit_production_path(@production), class: 'btn btn-default'
+      .col-xs-6
 
-          .pull-right= f.button :submit, class: 'btn'
+        = link_to t('productions.event.form.btn_delete'), production_event_path(@production, @event), data: { confirm: t('common.form.prompt_are_you_sure') }, class: 'btn btn-danger', method: :delete
+
+      .col-xs-6
+
+        .pull-right
+          = f.button :submit, t('productions.event.form.btn_edit_submit'), class: 'btn btn-success'

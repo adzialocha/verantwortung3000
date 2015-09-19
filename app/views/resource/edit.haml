@@ -5,6 +5,7 @@
     .col-sm-7
 
       %h1
+
         %span.header-row__category
           = link_to t(resource.model_name.human.pluralize.downcase + '.overview_title'), collection_path(resource)
 
@@ -14,11 +15,17 @@
 
       .btn-group
 
+        = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
         = link_to t('common.goto_overview'), collection_path(resource), class: 'btn btn-default'
         = link_to t('common.goto_show'), resource_path(resource), class: 'btn btn-info'
 
   .row
 
     .col-sm-12
+
+      .well
+
+        %h1= t(resource.model_name.human.pluralize.downcase + '.help_edit')
+        = t(resource.model_name.human.pluralize.downcase + '.help_edit_html')
 
       = render 'form', resource: resource, delete: true

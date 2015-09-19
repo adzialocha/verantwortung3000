@@ -11,7 +11,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def default_url(*args)
-    "/assets/default_image.jpg"
+    path_to_image "default.png"
   end
 
   process :resize_to_fit => [960, 960]

@@ -25,4 +25,13 @@
       }
     })
 
+    # navigation collapse no-scroll hack
+
+    $(document).on 'show.bs.collapse', () ->
+      $('body').addClass 'nav-collapsed'
+
+    $(document).on 'hide.bs.collapse', () ->
+      $('body').removeClass 'nav-collapsed'
+
 ) window, document, window.jQuery
+

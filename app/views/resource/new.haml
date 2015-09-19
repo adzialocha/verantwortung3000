@@ -5,17 +5,28 @@
     .col-sm-9
 
       %h1
+
         %span.header-row__category
           = link_to t(resource.model_name.human.pluralize.downcase + '.overview_title'), collection_path(resource)
+
         %span >
+
         %span= t(resource.model_name.human.pluralize.downcase + '.title_create_new')
 
     .col-sm-3
 
-      = link_to t('common.goto_overview'), collection_path(resource), class: 'btn btn-default'
+      .btn-group
+
+        = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
+        = link_to t('common.goto_overview'), collection_path(resource), class: 'btn btn-default'
 
   .row
 
     .col-sm-12
+
+      .well
+
+        %h1= t(resource.model_name.human.pluralize.downcase + '.help_new')
+        = t(resource.model_name.human.pluralize.downcase + '.help_new_html')
 
       = render 'form', resource: resource, delete: false
