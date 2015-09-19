@@ -9,15 +9,21 @@ de:
       mark: "*"
 
     error_notification:
+
       default_message: "Oups. Leider hat etwas nicht funktioniert. Bitte schaue nochmal nach:"
 
     labels:
 
       defaults:
 
+        remember_me: "Login merken"
+
         password: "Passwort"
+        password_confirmation: "Passwort bestätigen"
         title: "Titel"
         description: "Beschreibung"
+
+        current_password: "Aktuelles Passwort"
 
       user:
 
@@ -34,26 +40,5 @@ de:
       event:
 
         location_id: "Ort"
-        from: "Beginn"
-        to: "Ende"
-
-    # Examples
-
-    # labels:
-    #   defaults:
-    #     password: "Password"
-    #   user:
-    #     new:
-    #       email: "E-mail to sign in."
-    #     edit:
-    #       email: "E-mail."
-    # hints:
-    #   defaults:
-    #     username: "User name to sign in."
-    #     password: "No special characters, please."
-    # include_blanks:
-    #   defaults:
-    #     age: "Rather not say"
-    # prompts:
-    #   defaults:
-    #     age: "Select your age"
+        from: "Von"
+        to: "Bis"

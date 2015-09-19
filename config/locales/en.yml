@@ -1,5 +1,344 @@
-en:
+de:
 
-  date:
-    formats:
-      short: "%d. %B %Y"
+  # VERANTWORTUNG 3000
+  # ==================================================
+
+  common:
+
+    goto_edit: "Bearbeiten"
+    goto_overview: "Zur Übersicht"
+    goto_show: "Ansehen"
+
+    toggle_help: "Hilfe"
+
+    table_column_title_name: "Titel"
+    table_column_title_owner: "Erstellt von"
+
+    alert_no_permission: "Error: Kein Zugriff auf diese Funktion"
+
+    form:
+
+      panel_images: "Bilder"
+      btn_select_file: "Auswählen"
+      btn_add_image: "Bild hinzufügen"
+      btn_remove_image: "Entfernen"
+
+      prompt_are_you_sure: "Bist du dir sicher?"
+
+    help_image_upload: "Bilder hochladen"
+    help_image_upload_html: "<p>Hilfetext fehlt</p>"
+
+    help_text_formatting: "Texte formatieren"
+    help_text_formatting_html: "<p>Hilfetext (Markdown etc.) fehlt</p>"
+
+  # MAILS
+
+  mails:
+
+    auth:
+
+      signup_html: '<p>Welcome %{mail}!</p><p>You can confirm your account email through the link below:</p><p><a href="%{url}">%{url}</a></p>'
+
+      forgot_password_html: '<p>Hello %{mail}!</p><p>Someone has requested a link to change your password. You can do this through the link below.</p><p><a href="%{url}">%{url}</a></p><p>If you didnt request this, please ignore this email.</p><p>Your password wont change until you access the link above and create a new one.</p>'
+
+  # NAVIGATION
+
+  navigation:
+
+    home: "Startseite"
+    about: "Über"
+    calendar: "Kalender"
+    locations: "Orte"
+
+    dropdown: "Menü"
+
+    participants: "Teilnehmer"
+    productions: "Produktionen"
+    instruments: "Instrumente"
+    devices: "Geräte"
+
+    activity: "Aktivitäten"
+    blackboard: "Schwarzes Brett"
+
+    profile: "Mein Profil"
+
+    signup: "Registrieren"
+    signin: "Login"
+    signout: "Logout"
+
+    footer:
+
+      routes: "Anfahrt"
+      contact: "Kontakt"
+      admin: "Administration"
+
+      locale:
+        english: "English"
+        german: "Deutsch"
+
+  # AUTHENTIFICATION
+
+  auth:
+
+    signin_title: "Login"
+    submit_signin: "Login"
+
+    signup_title: "Registrieren"
+    signup_title_name: "Hallo!"
+    signup_description_html: '<p>Text fehlt<p>'
+    signup_contact: "Kontakt"
+    signup_hint_email: "E-Mail ist das Hauptkommunikationsmittel auf VERANTWORTUNG 3000, bitte gebe sie an!"
+    signup_hint_mobile: "Deine Mobilnummer brauchen wir während der Festivaltage, damit wird dich immer bei Fragen erreichen können."
+    signup_address: "Deine Adresse"
+    signup_password: "Passwort"
+    submit_signup: "Registrieren"
+
+    forgot_password_title: "Passwort vergessen?"
+    submit_forgot_password: "Passwort zurücksetzen"
+    resend_confirmation_title: "Bestätigungsmail nochmal schicken"
+    submit_resend_confirmation: "Abschicken"
+
+  # STATIC PAGES
+
+  pages:
+
+    home_title: 'VERANTWORTUNG 3000'
+    home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
+
+    about_title: 'Über'
+    about_html: '<p>Text fehlt</p>'
+
+    contact_title: 'Kontakt'
+    contact_html: '<p>Text fehlt</p>'
+
+    routes_title: 'Anfahrt'
+    routes_html: '<p>Text fehlt</p>'
+
+  # LOCATIONS
+
+  locations:
+
+    overview_title: "Orte"
+
+  # PRODUCTIONS
+
+  productions:
+
+    overview_title: "Produktionen"
+
+    goto_create_new: "Produktion erstellen"
+    goto_edit: "Bearbeiten"
+
+    title_table_my: "Eigene Produktionen"
+    title_table_all: "Alle Produktionen"
+
+    title_create_new: "Neue Produktion erstellen"
+    title_edit: "%{title} bearbeiten"
+
+    form:
+
+      panel_title: "Produktion"
+      btn_submit: "Speichern"
+      btn_delete: "Produktion löschen"
+
+      title_events: "Programm"
+      btn_add_event: "Veranstaltung hinzufügen"
+
+    help_new: "Produktion erstellen"
+    help_new_html: "<p>Hilfetext fehlt</p>"
+
+    help_edit_main: "Produktion bearbeiten"
+    help_edit_main_html: "<p>Hilfetext fehlt</p>"
+
+    help_edit_events: "Events bearbeiten"
+    help_edit_events_html: "<p>Hilfetext fehlt</p>"
+
+    event:
+
+      goto_overview: "Zur Übersicht"
+      goto_production: "Zur Produktion"
+
+      title_table_instruments: "Instrumente"
+      title_table_devices: "Geräte"
+
+      title_create_new: "Neue Veranstaltung erstellen"
+
+      help_edit_main: "Event"
+      help_edit_main_html: "<p>Hilfetext fehlt</p>"
+
+      help_edit_instruments: "Instrumente bearbeiten"
+      help_edit_instruments_html: "<p>Hilfetext fehlt</p>"
+
+      help_edit_devices: "Geräte bearbeiten"
+      help_edit_devices_html: "<p>Hilfetext fehlt</p>"
+
+      help_edit_more: "Weitere Informationen bearbeiten"
+      help_edit_more_html: "<p>Hilfetext fehlt</p>"
+
+      form:
+
+        panel_title: "Veranstaltung"
+        btn_submit: "Veranstaltung erstellen"
+        goto_production: "Zur Produktion"
+
+        error_location_occupied: "Der Ort ist leider schon zu dieser Uhrzeit belegt"
+        error_instrument_occupied: "Leider ist dieses Instrument zu dieser Uhrzeit schon belegt"
+        error_device_occupied: "Leider ist dieses Gerät zu dieser Uhrzeit schon belegt"
+
+        error_wrong_daterange: "Das Ende liegt zeitlich vor oder genau auf dem Veranstaltungsbeginn"
+        error_out_of_daterange: "Der Zeitraum liegt außerhalb des Festivals!"
+
+        panel_instruments_title: "Benötigte Instrumente"
+        panel_devices_title: "Benötigte Geräte"
+        panel_info_title: "Weitere Informationen"
+
+        btn_add_instrument: "Instrument hinzufügen"
+        btn_add_device: "Gerät hinzufügen"
+        btn_remove_instrument: "Entfernen"
+        btn_remove_device: "Entfernen"
+
+        select_not_exist_title: "Nicht vorhanden"
+        select_not_exist_description: "Erstelle einen Eintrag auf dem Schwarzen Brett"
+
+        blackboard_title: "Titel der Anzeige auf dem Schwarzen Brett"
+        blackboard_description: "Text zur Anzeige"
+
+        error_title_needed: "Du musst einen Titel angeben"
+        error_description_needed: "Du musst einen Text angeben"
+
+        btn_edit_submit: "Speichern"
+        btn_delete: "Veranstaltung löschen"
+
+    alert_create: "Produktion wurde erfolgreich erstellt!"
+    alert_update: "Produktion wurde erfolgreich aktualisiert!"
+    alert_delete: "Produktion wurde erfolgreich gelöscht!"
+
+  events:
+
+    alert_create: "Veranstaltung wurde erfolgreich erstellt!"
+    alert_update: "Veranstaltung wurde erfolgreich aktualisiert!"
+    alert_delete: "Veranstaltung wurde erfolgreich gelöscht!"
+
+  # INSTRUMENTS
+
+  instruments:
+
+    overview_title: "Instrumente"
+
+    goto_create_new: "Instrument eintragen"
+    goto_edit: "Bearbeiten"
+
+    title_table_my: "Eigene Instrumente"
+    title_table_all: "Alle Instrumente"
+
+    title_create_new: "Neues Instrument eintragen"
+    title_edit: "%{title} bearbeiten"
+
+    title_used_in_events: "Veranstaltungen"
+
+    form:
+      panel_title: "Instrument"
+      btn_submit: "Speichern"
+      btn_delete: "Instrument löschen"
+
+    alert_create: "Instrument wurde erfolgreich erstellt!"
+    alert_update: "Instrument wurde erfolgreich aktualisiert!"
+    alert_delete: "Instrument wurde erfolgreich gelöscht!"
+
+  # DEVICES
+
+  devices:
+
+    overview_title: "Geräte"
+
+    goto_create_new: "Gerät eintragen"
+    goto_edit: "Bearbeiten"
+
+    title_table_my: "Eigene Geräte"
+    title_table_all: "Alle Geräte"
+
+    title_create_new: "Neues Gerät eintragen"
+    title_edit: "%{title} bearbeiten"
+
+    title_used_in_events: "Veranstaltungen"
+
+    form:
+      panel_title: "Gerät"
+      btn_submit: "Speichern"
+      btn_delete: "Gerät löschen"
+
+    alert_create: "Gerät wurde erfolgreich erstellt!"
+    alert_update: "Gerät wurde erfolgreich aktualisiert!"
+    alert_delete: "Gerät wurde erfolgreich gelöscht!"
+
+  # PARTICIPANTS
+
+  participants:
+
+    overview_title: "Teilnehmer"
+
+    title_events: "Kalender"
+
+    title_table_instruments: "Instrumente"
+    title_table_devices: "Geräte"
+
+    title_edit: "Mein Profil bearbeiten"
+    goto_public_view: "Öffentliche Ansicht"
+
+    form_title_account: "Allgemeine Angaben"
+    form_title_address: "Adresse"
+    form_title_picture: "Profilbild"
+    form_title_about: "Profiltext"
+    form_title_credentials: "Passwort ändern"
+
+    remove_current_image: "Aktuelles Bild löschen"
+
+    btn_submit: "Profil aktualisieren"
+
+    title_dangerzone: "Danger Zone"
+
+    dangerzone: "Achtung! Hier kannst du dein Profil unwiederruflich löschen:"
+
+    submit_delete_account: "Profil löschen"
+    prompt_delete_account: "Oha! Bist du dir sicher, dass du dein Profil und alle dazugehörigen Einträge für immer löschen möchtest? Dieser Schritt kann nicht rückgängig gemacht werden."
+
+  # BLACK BOARD
+
+  blackboard:
+
+    title: "Schwarzes Brett"
+
+    title_collaborations: "Performer/Instrumente gesucht"
+    title_requirements: "Geräte gesucht"
+
+  # ACTIVITY
+
+  activity:
+
+    title: "Aktivitäten"
+
+    deleted: "%{title} (gelöscht)"
+
+    event:
+
+      create: "Eine Veranstaltung wurde erstellt:"
+      update: "Eine Veranstaltung wurde aktualisiert:"
+      destroy: "Eine Veranstaltung wurde gelöscht:"
+
+    production:
+
+      create: "Eine Produktion wurde erstellt:"
+      update: "Eine Produktion wurde aktualisiert:"
+      destroy: "Eine Produktion wurde gelöscht:"
+
+    instrument:
+
+      create: "Ein Instrument wurde erstellt:"
+      update: "Ein Instrument wurde aktualisiert:"
+      destroy: "Ein Instrument wurde gelöscht:"
+
+    device:
+
+      create: "Ein Gerät wurde erstellt:"
+      update: "Ein Gerät wurde aktualisiert:"
+      destroy: "Ein Gerät wurde gelöscht:"

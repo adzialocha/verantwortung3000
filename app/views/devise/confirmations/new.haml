@@ -1,0 +1,18 @@
+.container
+
+  .page
+
+    %h1= t('auth.resend_confirmation_title')
+
+    = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+
+      = f.error_notification
+
+      = f.full_error :confirmation_token
+
+      .form-inputs
+        = f.input :email, required: true, autofocus: true
+      .form-actions
+        = f.button :submit, t('auth.submit_resend_confirmation'), class: "btn btn-success"
+
+    = render "devise/shared/links"

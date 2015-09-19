@@ -8,10 +8,14 @@
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no", :name => "viewport"}
 
+    %meta{:name => "robots", :content => "noindex"}
+    %meta{:name => "googlebot", :content => "noindex"}
+
     %title ADMIN - #{Rails.application.config.title}
 
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
+    = javascript_include_tag 'edit'
     = csrf_meta_tags
 
   %body

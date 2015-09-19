@@ -1,0 +1,13 @@
+%ul.devise-links
+
+  - if controller_name != 'sessions'
+    = li_link_to t('auth.signin_title'), new_session_path(resource_name)
+
+  - if devise_mapping.registerable? && controller_name != 'registrations'
+    = li_link_to t('auth.signup_title'), new_registration_path(resource_name)
+
+  - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
+    = li_link_to t('auth.forgot_password_title'), new_password_path(resource_name)
+
+  - if devise_mapping.confirmable? && controller_name != 'confirmations'
+    = li_link_to t('auth.resend_confirmation_title'), new_confirmation_path(resource_name)

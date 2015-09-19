@@ -1,0 +1,17 @@
+.container
+
+  .page
+
+    %h1= t('auth.forgot_password_title')
+
+    = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+
+      = f.error_notification
+
+      .form-inputs
+        = f.input :email, required: true, autofocus: true
+
+      .form-actions
+        = f.button :submit, t('auth.submit_forgot_password'), class: "btn btn-success"
+
+    = render "devise/shared/links"

@@ -1,0 +1,42 @@
+.container
+
+  .page
+
+    %h1= t('auth.signup_title')
+
+    = simple_form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
+
+      = f.error_notification
+
+      .form-inputs
+
+        %h2= t('auth.signup_title_name')
+
+        = t('auth.signup_description_html')
+
+        = f.input :first_name, autofocus: true, required: true
+        = f.input :last_name, required: true
+
+        %h2= t('auth.signup_contact')
+
+        = f.input :email, required: true, hint: t('auth.signup_hint_email')
+        = f.input :tel, required: true, hint: t('auth.signup_hint_mobile')
+
+        %h2= t('auth.signup_address')
+
+        = f.input :street
+        = f.input :city_code
+        = f.input :city
+        = f.input :country
+
+        %h2= t('auth.signup_password')
+
+        = f.input :password, required: true
+        = f.input :password_confirmation, required: true
+
+      .form-actions
+
+        .pull-right
+          = f.button :submit, t('auth.submit_signup'), class: "btn btn-success"
+
+    = render "devise/shared/links"

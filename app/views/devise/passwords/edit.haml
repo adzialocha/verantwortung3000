@@ -1,0 +1,22 @@
+.container
+
+  .page
+
+    %h1= t('auth.change_password_title')
+
+    = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
+
+      = f.error_notification
+
+      = f.input :reset_password_token, as: :hidden
+      = f.full_error :reset_password_token
+
+      .form-inputs
+
+        = f.input :password, required: true, autofocus: true
+        = f.input :password_confirmation, required: true
+
+      .form-actions
+        = f.button :submit, t('auth.submit_change_password'), class: "btn btn-success"
+
+    = render "devise/shared/links"
