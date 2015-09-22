@@ -55,4 +55,9 @@ $footer-height: 50px;
     height: $footer-height * 1.5;
   }
 
+  .pull-right
+  {
+    float: left !important;
+  }
+
 }

@@ -1,6 +1,9 @@
 body.nav-collapsed
 {
-  overflow: hidden;
+  .navigation-wrapper
+  {
+    position: static;
+  }
 }
 
 .navbar
@@ -119,21 +122,20 @@ a.navbar-brand
 .navbar-collapse
 {
   background-color: $white;
-  overflow-y: auto;
 }
 
 @media (max-width: $screen-xs-max) {
 
   .navbar-collapse.in, .navbar-collapse.collapsing
   {
-    position: fixed;
+    position: absolute;
 
     z-index: 3000;
 
     left: 0px;
     right: 0px;
-    bottom: 0px;
-    top: $navbar-height;
+    //bottom: 0px;
+    //top: $navbar-height;
 
     padding-left: 30px;
     padding-right: 30px;

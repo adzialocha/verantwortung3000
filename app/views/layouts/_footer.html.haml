@@ -4,7 +4,7 @@
 
     .row
 
-      .col-xs-6
+      .col-xs-12.col-sm-6
 
         %ul
 
@@ -18,7 +18,7 @@
           - if current_user.try(:admin)
             = li_link_to t('navigation.footer.admin'), admin_root_path
 
-      .col-xs-6
+      .col-xs-12.col-sm-6
 
         %ul.pull-right
 

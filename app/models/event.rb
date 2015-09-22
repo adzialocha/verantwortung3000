@@ -36,6 +36,10 @@ class Event < ActiveRecord::Base
 
   # attributes
 
+  def cover_image
+    self.production.cover_image
+  end
+
   def production_title
     return self.title? ? self.title : self.production.title
   end
