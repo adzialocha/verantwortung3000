@@ -56,15 +56,17 @@
 
             %p= mail_to @user.email
 
-  .row
+  - if @user_events.any?
 
-    .col-md-12
+    .row
 
-      .content__calendar
+      .col-md-12
 
-        %h1= t 'participants.title_events'
+        .content__calendar
 
-        = render '/event_grid', resource: @user_events
+          %h1= t 'participants.title_events'
+
+          = render '/event_grid', resource: @user_events
 
   - if user_signed_in?
 

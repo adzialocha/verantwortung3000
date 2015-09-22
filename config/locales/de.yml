@@ -146,8 +146,8 @@ de:
 
   pages:
 
-    home_title: 'VERANTWORTUNG 3000'
-    home_html: '<h2>30. August - 04. September 2016</h2><p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
+    home_title: '30. August - 04. September 2016'
+    home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
 
     about_title: 'Über'
     about_html: '<p>Text fehlt</p>'
@@ -163,6 +163,12 @@ de:
   locations:
 
     overview_title: "Orte"
+
+  # CALENDAR
+
+  calendar:
+
+    overview_title: "Kalender"
 
   # PRODUCTIONS
 
@@ -201,6 +207,7 @@ de:
 
       goto_overview: "Zur Übersicht"
       goto_production: "Zur Produktion"
+      goto_calendar: "Zum Kalender"
 
       title_table_instruments: "Instrumente"
       title_table_devices: "Geräte"

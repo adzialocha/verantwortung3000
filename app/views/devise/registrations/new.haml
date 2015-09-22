@@ -12,7 +12,11 @@
 
         %h2= t('auth.signup_title_name')
 
+        %br
+
         = t('auth.signup_description_html')
+
+        %hr
 
         = f.input :first_name, autofocus: true, required: true
         = f.input :last_name, required: true
