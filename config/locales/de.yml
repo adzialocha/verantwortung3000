@@ -26,7 +26,7 @@ de:
       prompt_are_you_sure: "Bist du dir sicher?"
 
     help_image_upload: "Bilder hochladen"
-    help_image_upload_html: "<p>Hilfetext fehlt</p>"
+    help_image_upload_html: "<p>Hier kannst du Bilder für deine Produktion hochladen.</p>"
 
     help_text_formatting: "Texte formatieren"
     help_text_formatting_html: "<p>Hilfetext (Markdown etc.) fehlt</p>"
@@ -38,7 +38,7 @@ de:
     auth:
 
       signup_html: |+
-        Welcome %{mail}
+        Welcome %{mail}!
         You can confirm your account email through the link below:
 
         %{url}
@@ -60,6 +60,8 @@ de:
       message: |+
         Hallo %{name}!
 
+        Eines deiner Geräte wurde für ein Event angefragt. Hier die Informationen,
+
         %{url}
         %{event}
         %{from} - %{to}
@@ -71,6 +73,8 @@ de:
       subject: "VERANTWORTUNG 3000 - NEUE KOLLABORATION"
       message: |+
         Hallo %{name}!
+
+        Eines deiner Instrumente wurde für ein Event angefragt. Hier die Informationen,
 
         %{url}
         %{event}
@@ -122,7 +126,7 @@ de:
 
     signup_title: "Registrieren"
     signup_title_name: "Hallo!"
-    signup_description_html: '<p>Text fehlt<p>'
+    signup_description_html: '<p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden. Hierfür benötigen wir einige Daten von dir. Wir bitten dich also, diese hier weiter unten einzutragen.</p><p>Mit der Anmeldung erklärst du dich bereit, an VERATNWORTUNG 3000 teilzunehmen. Die Teilnahme kostet ca. 90 Euro, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p><p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich.</p>'
     signup_contact: "Kontakt"
     signup_hint_email: "E-Mail ist das Hauptkommunikationsmittel auf VERANTWORTUNG 3000, bitte gebe sie an!"
     signup_hint_mobile: "Deine Mobilnummer brauchen wir während der Festivaltage, damit wird dich immer bei Fragen erreichen können."
@@ -143,7 +147,7 @@ de:
   pages:
 
     home_title: 'VERANTWORTUNG 3000'
-    home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
+    home_html: '<h2>30. August - 04. September 2016</h2><p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
 
     about_title: 'Über'
     about_html: '<p>Text fehlt</p>'
