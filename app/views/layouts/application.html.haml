@@ -27,6 +27,7 @@
     = javascript_include_tag 'application'
 
     - if user_signed_in?
+      = stylesheet_link_tag    'edit', media: 'all'
       = javascript_include_tag 'edit'
 
     = csrf_meta_tags

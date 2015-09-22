@@ -1,0 +1,27 @@
+.panel
+{
+  border-color: $black;
+  border-radius: 0;
+  background-color: $white;
+}
+
+.panel-heading
+{
+  background-color: $black;
+  border-radius: 0;
+  color: $white;
+  border: 0;
+}
+
+.panel-title
+{
+  font-size: $font-size-base;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.panel-footer
+{
+  border-color: $black;
+}

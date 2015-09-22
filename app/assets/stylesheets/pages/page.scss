@@ -1,0 +1,30 @@
+.page
+{
+  h1, h2, h3
+  {
+    text-align: center;
+  }
+
+  h1
+  {
+    margin-bottom: 30px;
+  }
+
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  p
+  {
+    text-align: justify;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .page h1
+  {
+    text-align: left;
+  }
+
+}

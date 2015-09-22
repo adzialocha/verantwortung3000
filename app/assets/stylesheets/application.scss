@@ -1,4 +1,3 @@
-//= require bootstrap-datetimepicker
 //= require fancybox
 
 @import "compass";
@@ -15,22 +14,26 @@
 
 /* base */
 
-@import "base/typo";
 @import "base/layout";
-@import "base/flash";
-@import "base/form";
-@import "base/images";
-@import "base/table";
+@import "base/typo";
+
+/* layout */
+
+@import "layout/content";
+@import "layout/footer";
+@import "layout/header-row";
+@import "layout/navigation";
 
 /* components */
 
-@import "components/image-grid";
+@import "components/buttons";
 @import "components/event-grid";
-@import "components/well";
-@import "components/items-select";
-@import "components/header-row";
-@import "components/content";
-@import "components/locations";
-@import "components/activity";
-@import "components/blackboard";
-@import "components/image-upload-panel";
+@import "components/flash";
+@import "components/form";
+@import "components/image-grid";
+@import "components/images";
+
+/* pages */
+
+@import "pages/page";
+@import "pages/locations";

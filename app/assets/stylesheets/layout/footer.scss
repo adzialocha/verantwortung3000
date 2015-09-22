@@ -1,0 +1,58 @@
+$footer-height: 50px;
+
+.footer
+{
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: $footer-height;
+
+  .container
+  {
+    margin-top: $padding-base-horizontal;
+  }
+
+  ul, li
+  {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul
+  {
+    list-style: none;
+    display: inline;
+  }
+
+  li
+  {
+    display: inline;
+    margin-right: 5px;
+  }
+
+  li, a
+  {
+    color: $gray;
+    font-size: $font-size-base;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .footer ul
+  {
+    display: block !important;
+  }
+
+  body
+  {
+    margin-bottom: $footer-height * 1.5;
+  }
+
+  .footer
+  {
+    height: $footer-height * 1.5;
+  }
+
+}
