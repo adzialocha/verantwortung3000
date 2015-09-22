@@ -11,10 +11,10 @@ class Event < ActiveRecord::Base
   has_and_belongs_to_many :event_categories, :join_table => :event_categories_events, dependent: :destroy
 
   has_many :requirements, dependent: :destroy, :inverse_of => :event
-  has_many :devices, -> { uniq }, through: :requirements
+  has_many :devices, through: :requirements
 
   has_many :collaborations, dependent: :destroy, :inverse_of => :event
-  has_many :instruments, -> { uniq }, through: :collaborations
+  has_many :instruments, through: :collaborations
 
   accepts_nested_attributes_for :collaborations, allow_destroy: true
 

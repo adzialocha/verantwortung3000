@@ -62,7 +62,7 @@ en:
 
         %{url}
         %{event}
-        %{from} - %{to}
+        %{date}
         %{location}
         %{device}
 
@@ -74,7 +74,7 @@ en:
 
         %{url}
         %{event}
-        %{from} - %{to}
+        %{date}
         %{location}
         %{instrument}
 
@@ -231,6 +231,9 @@ en:
         error_location_occupied: "Der Ort ist leider schon zu dieser Uhrzeit belegt"
         error_instrument_occupied: "Leider ist dieses Instrument zu dieser Uhrzeit schon belegt"
         error_device_occupied: "Leider ist dieses Gerät zu dieser Uhrzeit schon belegt"
+
+        error_instrument_unique: "Dieses Instrument existiert schon in deiner Liste"
+        error_device_unique: "Dieses Gerät existiert schon in deiner Liste"
 
         error_wrong_daterange: "Das Ende liegt zeitlich vor oder genau auf dem Veranstaltungsbeginn"
         error_out_of_daterange: "Der Zeitraum liegt außerhalb des Festivals!"

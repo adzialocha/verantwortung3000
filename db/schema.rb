@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150918124133) do
+ActiveRecord::Schema.define(version: 20150922223922) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20150918124133) do
     t.text     "description"
   end
 
+  add_index "collaborations", ["event_id", "instrument_id"], name: "index_collaborations_on_event_id_and_instrument_id", unique: true, using: :btree
   add_index "collaborations", ["event_id"], name: "index_collaborations_on_event_id", using: :btree
   add_index "collaborations", ["instrument_id"], name: "index_collaborations_on_instrument_id", using: :btree
 
@@ -154,6 +155,7 @@ ActiveRecord::Schema.define(version: 20150918124133) do
   end
 
   add_index "requirements", ["device_id"], name: "index_requirements_on_device_id", using: :btree
+  add_index "requirements", ["event_id", "device_id"], name: "index_requirements_on_event_id_and_device_id", unique: true, using: :btree
   add_index "requirements", ["event_id"], name: "index_requirements_on_event_id", using: :btree
 
   create_table "users", force: :cascade do |t|

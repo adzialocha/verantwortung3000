@@ -5,15 +5,13 @@ class Requirement < ActiveRecord::Base
   belongs_to :event
   belongs_to :device
 
-  validates_uniqueness_of :device_id, :scope => :event_id, :unless => 'device.blank?'
-
   validates :title,  presence: true, :if => 'device.blank?'
   validates :description,  presence: true, :if => 'device.blank?'
 
   validate :is_occupied
+  validate :unique_devices, :unless => 'device.blank?'
 
   after_create :inform_owner, :unless => 'device.blank?'
-  before_update :inform_owner, :if => 'self.device_id_changed? and ! device.blank?'
 
   def owner_needed?
     self.device.blank?
@@ -27,6 +25,16 @@ class Requirement < ActiveRecord::Base
 
     if existing
       errors.add(:device_id, I18n.t("productions.event.form.error_device_occupied"))
+    end
+
+  end
+
+  def unique_devices
+
+    device_ids = self.event.requirements.map { |re| re.device_id }
+
+    if device_ids.count(self.device_id) > 1
+      errors.add(:device_id, I18n.t("productions.event.form.error_device_unique"))
     end
 
   end

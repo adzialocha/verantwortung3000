@@ -5,15 +5,13 @@ class Collaboration < ActiveRecord::Base
   belongs_to :event
   belongs_to :instrument
 
-  validates_uniqueness_of :instrument_id, :scope => :event_id, :unless => 'instrument.blank?'
-
   validates :title,  presence: true, :if => 'instrument.blank?'
   validates :description,  presence: true, :if => 'instrument.blank?'
 
   validate :is_occupied
+  validate :unique_instruments, :unless => 'instrument.blank?'
 
   after_create :inform_owner, :unless => 'instrument.blank?'
-  before_update :inform_owner, :if => 'self.instrument_id_changed? and ! instrument.blank?'
 
   def performer_needed?
     self.instrument.blank?
@@ -27,6 +25,16 @@ class Collaboration < ActiveRecord::Base
 
     if existing
       errors.add :instrument_id, I18n.t("productions.event.form.error_instrument_occupied")
+    end
+
+  end
+
+  def unique_instruments
+
+    instrument_ids = self.event.collaborations.map { |re| re.instrument_id }
+
+    if instrument_ids.count(self.instrument_id) > 1
+      errors.add(:instrument_id, I18n.t("productions.event.form.error_instrument_unique"))
     end
 
   end
