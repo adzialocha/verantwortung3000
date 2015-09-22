@@ -30,7 +30,7 @@
     $(document).on 'show.bs.collapse', () ->
       $('body').addClass 'nav-collapsed'
 
-    $(document).on 'hide.bs.collapse', () ->
+    $(document).on 'hidden.bs.collapse', () ->
       $('body').removeClass 'nav-collapsed'
 
 ) window, document, window.jQuery

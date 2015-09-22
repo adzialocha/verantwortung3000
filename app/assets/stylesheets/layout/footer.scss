@@ -40,11 +40,6 @@ $footer-height: 50px;
 
 @media (max-width: $screen-xs-max) {
 
-  .footer ul
-  {
-    display: block !important;
-  }
-
   body
   {
     margin-bottom: $footer-height * 1.5;
@@ -53,11 +48,16 @@ $footer-height: 50px;
   .footer
   {
     height: $footer-height * 1.5;
-  }
 
-  .pull-right
-  {
-    float: left !important;
+    ul
+    {
+      display: block !important;
+    }
+
+    .pull-right
+    {
+      float: left !important;
+    }
   }
 
 }
