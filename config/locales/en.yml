@@ -56,33 +56,35 @@ en:
 
     requirement:
 
-      subject: "VERANTWORTUNG 3000 - New equipment request"
+      subject: "VERANTWORTUNG 3000 - NEW EQUIPMENT REQUEST"
       message: |+
-        Hallo %{name}!
+        Hello %{name}!
 
-        %{url}
-        %{event}
-        %{date}
-        %{location}
         %{device}
+
+        %{event}
+        %{date} @ %{location}
+
+        Link: %{url}
 
     collaboration:
 
-      subject: "VERANTWORTUNG 3000 - New collaboration"
+      subject: "VERANTWORTUNG 3000 - NEW COLLABORATION"
       message: |+
-        Hallo %{name}!
+        Hello %{name}!
 
-        %{url}
-        %{event}
-        %{date}
-        %{location}
         %{instrument}
+
+        %{event}
+        %{date} @ %{location}
+
+        Link: %{url}
 
   # NAVIGATION
 
   navigation:
 
-    home: "Front page"
+    home: "Home"
     about: "About"
     calendar: "Calendar"
     locations: "Places"
@@ -146,10 +148,10 @@ en:
     home_html: '<p>Altwustrow is a village in Brandeburg. VERANTWORTUNG 3000 wants to create a gathering in Altwustrow, for 6 days in September 2016. VERANTWORTUNG 3000 is a space for exchange and critical discussion on contemporary music.</p><p>VERANTWORTUNG 3000 will be initiated by BLATT 3000. BLATT 3000 does not want any curation. BLATT 3000 wants a system of self-curation. All participants are responsible for the programming and realisation.</p><p>VERANTWORTUNG 3000 offers facilities, food and a platform for managing resources. Participants offer their resources and make use of others’ resources to create a programme. Everyone brings his or her loot, so we can share, play and eat together in Altwustrow.</p><p>VERANTWORTUNG 3000 is self-financed. Participation cost is approx. 90 Euros. Further information on the programme on VERANTWORTUNG3000.de.</p>'
 
     about_title: 'About'
-    about_html: '<p>VERANTWORTUNG 3000 is an event taking place in Altwustrow (Brandenburg) from 30 August to 4 September 2016. VERANTWORTUNG 3000 is initiated by BLATT 3000. BLATT 3000 is neither the curator nor artistic director. Participants themselves will curate and programme by creating events on this platform. VERANTWORTUNG 3000 is a tool for self-curation. All BLATT 3000 does, is to take care of the spaces, that we will all make use of.</p><p>During these 6 days, we will have a large farm for ourselves (5000m2). The farm belongs to our lovely host Peter, who will be so kind to leave us his space for the whole time. On the farm there is a house, in which most of us will find space to sleep, some others will have to live in tents in the garden. Overall, there is space for 50 people. You can get a feel for the different localities, if you go to PLACES. We will all have to provide food for ourselves - BLATT 3000 will do the shopping, everyone will cook for all of us.</p><p>VERANTWORTUNG3000.de is everyone’s tool of organisation and basis of communication. Every participiant registers and will be displayed via a profil. When registered you can create productions and events, enter your instruments and all other equipment, that you need or bring along.</p><p>An instrument is to be understood in an abstract way - it is an activity or object which a performer makes use of (i.e. voice or tambourin or shoes). Equipment (i.e. microphone) is not necessarily tied to a performer and might be used by other participants.</p><p>All different categories will be connected to each other on the platform, so that everyone always sees, when what how and where something happens and who is involved. All that will be found on the ‚CALENDAR‘. So VERANTWORTUNG3000.de is the platform on which you connect with one another, plan productions, collaborations, search for performers, instruments, equipment or offer your cooking services. There is also a BLACKBOARD, which can be used for any request to the community.</p><p>Email is the main way of communication and will be useful for further dialogues and arranging details, collaborating etc.</p><p>The platform is the office headquarter: this is where the main festival organisation takes place and is at the same time used to share tasks and resposibilities. All participants are responsible for realising VERANTWORTUNG 3000. BLATT 3000 solemnly coordinates the structure and communication of the platform.</p>'
+    about_html: '<p>VERANTWORTUNG 3000 is an event taking place in Altwustrow (Brandenburg) from 30 August to 4 September 2016. VERANTWORTUNG 3000 is initiated by BLATT 3000. BLATT 3000 is neither the curator nor artistic director. Participants themselves will curate and programme by creating events on this platform. VERANTWORTUNG 3000 is a tool for self-curation. All BLATT 3000 does, is to take care of the spaces, that we will all make use of.</p><p>During these 6 days, we will have a large farm for ourselves (5000m2). The farm belongs to our lovely host Peter, who will be so kind to leave us his space for the whole time. On the farm there is a house, in which most of us will find space to sleep, some others will have to live in tents in the garden. Overall, there is space for 50 people. You can get a feel for the different localities, if you go to PLACES. We will all have to provide food for ourselves - BLATT 3000 will do the shopping, everyone will cook for all of us.</p><h3>PLATFORM</h3><p>VERANTWORTUNG3000.de is everyone’s tool of organisation and basis of communication. Every participiant registers and will be displayed via a profil. When registered you can create productions and events, enter your instruments and all other equipment, that you need or bring along.</p><p>An instrument is to be understood in an abstract way - it is an activity or object which a performer makes use of (i.e. voice or tambourin or shoes). Equipment (i.e. microphone) is not necessarily tied to a performer and might be used by other participants.</p><p>All different categories will be connected to each other on the platform, so that everyone always sees, when what how and where something happens and who is involved. All that will be found on the ‚CALENDAR‘. So VERANTWORTUNG3000.de is the platform on which you connect with one another, plan productions, collaborations, search for performers, instruments, equipment or offer your cooking services. There is also a BLACKBOARD, which can be used for any request to the community.</p><p>Email is the main way of communication and will be useful for further dialogues and arranging details, collaborating etc.</p><p>The platform is the office headquarter: this is where the main festival organisation takes place and is at the same time used to share tasks and resposibilities. All participants are responsible for realising VERANTWORTUNG 3000. BLATT 3000 solemnly coordinates the structure and communication of the platform.</p>'
 
     contact_title: 'Contact'
-    contact_html: '<p>BLATT 3000</p><p>DZIALOCHA, KOBEL, WEBER GBR</p><p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p><p>GERMANY</p><p></p><p>PARTNER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p><p>TELEFON +49 (0) 30 / 37 4489 47</p><p></p><p>If you have any questions regarding VERANTWORTUNG 3000 write an email to KONTAKT AT VERANTWORTUNG3000 DE</p>'
+    contact_html: '<p>BLATT 3000</p><p>DZIALOCHA, KOBEL, WEBER GBR</p><p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p><p>GERMANY</p><p></p><p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p><p>TELEFON +49 (0) 30 / 37 4489 47</p><p></p><p>If you have any questions regarding VERANTWORTUNG 3000 write an email to KONTAKT AT VERANTWORTUNG3000 DE</p>'
 
     routes_title: 'Directions'
     routes_html: '<p>Altwustrow village is located in the Oderbruch region, 80 km East of Berlin. The nearest train station is in Wriezen. Wriezen can be reached within a 90 min train ride from Berlin. We recommend taking your bike with you und cycle to Altwustrow from Wriezen train station. Also the area is lovely for some bike rides in the afternoon. It will take you 30 min by bike from Wriezen to Altwustrow.</p><p>However, if you won’t bring your bike, there is a public bus (875) going to Altwustrow from Wriezen train station every hour (it will take 15 min).</p><p><a href="http://www.altwustrow.de" target="_blank">www.altwustrow.de</a></p>'
@@ -164,7 +166,7 @@ en:
 
   calendar:
 
-    overview_title: "Kalender"
+    overview_title: "Calendar"
 
   # PRODUCTIONS
 
@@ -211,7 +213,7 @@ en:
       title_create_new: "Create new event"
 
       help_edit_main: "Event"
-      help_edit_main_html: "<p>Hilfetext fehlt</p>"
+      help_edit_main_html: "<p>Select the venue and date for your event.</p>"
 
       help_edit_instruments: "Edit instruments"
       help_edit_instruments_html: "<p>Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>"
@@ -253,142 +255,142 @@ en:
         blackboard_title: "Name the announcement on the blackboard"
         blackboard_description: "Announcement text"
 
-        error_title_needed: "Du musst einen Titel angeben"
-        error_description_needed: "Du musst einen Text angeben"
+        error_title_needed: "Can't be blank"
+        error_description_needed: "Can't be blank"
 
-        btn_edit_submit: "Speichern"
-        btn_delete: "Veranstaltung löschen"
+        btn_edit_submit: "Save"
+        btn_delete: "Delete event"
 
-    alert_create: "Produktion wurde erfolgreich erstellt!"
-    alert_update: "Produktion wurde erfolgreich aktualisiert!"
-    alert_delete: "Produktion wurde erfolgreich gelöscht!"
+    alert_create: "The productions has been created."
+    alert_update: "The productions has been updated."
+    alert_delete: "The productions has been deleted."
 
   events:
 
-    alert_create: "Veranstaltung wurde erfolgreich erstellt!"
-    alert_update: "Veranstaltung wurde erfolgreich aktualisiert!"
-    alert_delete: "Veranstaltung wurde erfolgreich gelöscht!"
+    alert_create: "The event has been created."
+    alert_update: "The event has been updated."
+    alert_delete: "The event has been deleted."
 
   # INSTRUMENTS
 
   instruments:
 
-    overview_title: "Instrumente"
+    overview_title: "Instruments"
 
-    goto_create_new: "Instrument eintragen"
-    goto_edit: "Bearbeiten"
+    goto_create_new: "Create instrument"
+    goto_edit: "Edit"
 
-    title_table_my: "Eigene Instrumente"
-    title_table_all: "Alle Instrumente"
+    title_table_my: "My instruments"
+    title_table_all: "Other instruments"
 
-    title_create_new: "Neues Instrument eintragen"
-    title_edit: "%{title} bearbeiten"
+    title_create_new: "Create a new instrument"
+    title_edit: "Edit %{title}"
 
-    title_used_in_events: "Veranstaltungen"
+    title_used_in_events: "Events"
 
     form:
       panel_title: "Instrument"
-      btn_submit: "Speichern"
-      btn_delete: "Instrument löschen"
+      btn_submit: "Save"
+      btn_delete: "Delete instrument"
 
-    alert_create: "Instrument wurde erfolgreich erstellt!"
-    alert_update: "Instrument wurde erfolgreich aktualisiert!"
-    alert_delete: "Instrument wurde erfolgreich gelöscht!"
+    alert_create: "The instrument has been created."
+    alert_update: "The instrument has been updated."
+    alert_delete: "The instrument has been deleted."
 
   # DEVICES
 
   devices:
 
-    overview_title: "Geräte"
+    overview_title: "Equipment"
 
-    goto_create_new: "Gerät eintragen"
-    goto_edit: "Bearbeiten"
+    goto_create_new: "Create equipment"
+    goto_edit: "Edit"
 
-    title_table_my: "Eigene Geräte"
-    title_table_all: "Alle Geräte"
+    title_table_my: "My equipment"
+    title_table_all: "Other equipment"
 
-    title_create_new: "Neues Gerät eintragen"
-    title_edit: "%{title} bearbeiten"
+    title_create_new: "Create new equipment"
+    title_edit: "Edit %{title}"
 
-    title_used_in_events: "Veranstaltungen"
+    title_used_in_events: "Events"
 
     form:
-      panel_title: "Gerät"
-      btn_submit: "Speichern"
-      btn_delete: "Gerät löschen"
+      panel_title: "Equipment"
+      btn_submit: "Save"
+      btn_delete: "Delete equipment"
 
-    alert_create: "Gerät wurde erfolgreich erstellt!"
-    alert_update: "Gerät wurde erfolgreich aktualisiert!"
-    alert_delete: "Gerät wurde erfolgreich gelöscht!"
+    alert_create: "The equipment has been created."
+    alert_update: "The equipment has been updated."
+    alert_delete: "The equipment has been deleted."
 
   # PARTICIPANTS
 
   participants:
 
-    overview_title: "Teilnehmer"
+    overview_title: "Participants"
 
-    title_events: "Kalender"
+    title_events: "Calendar"
 
-    title_table_instruments: "Instrumente"
-    title_table_devices: "Geräte"
+    title_table_instruments: "Instruments"
+    title_table_devices: "Equipment"
 
-    title_edit: "Mein Profil bearbeiten"
-    goto_public_view: "Öffentliche Ansicht"
+    title_edit: "Edit my profile"
+    goto_public_view: "Public view"
 
-    form_title_account: "Allgemeine Angaben"
-    form_title_address: "Adresse"
-    form_title_picture: "Profilbild"
-    form_title_about: "Profiltext"
-    form_title_credentials: "Passwort ändern"
+    form_title_account: "General information"
+    form_title_address: "Address"
+    form_title_picture: "Profile picture"
+    form_title_about: "Profile text"
+    form_title_credentials: "Change password"
 
-    remove_current_image: "Aktuelles Bild löschen"
+    remove_current_image: "Delete current picture"
 
-    btn_submit: "Profil aktualisieren"
+    btn_submit: "Update profile"
 
     title_dangerzone: "Danger Zone"
 
-    dangerzone: "Achtung! Hier kannst du dein Profil unwiederruflich löschen:"
+    dangerzone: "Warning! This is where you can delete your profile:"
 
-    submit_delete_account: "Profil löschen"
-    prompt_delete_account: "Oha! Bist du dir sicher, dass du dein Profil und alle dazugehörigen Einträge für immer löschen möchtest? Dieser Schritt kann nicht rückgängig gemacht werden."
+    submit_delete_account: "Delete profile"
+    prompt_delete_account: "Oha! Are you sure, you want to delete your profile and all your contributions? This can't be undone."
 
   # BLACK BOARD
 
   blackboard:
 
-    title: "Schwarzes Brett"
+    title: "BLACKBOARD"
 
-    title_collaborations: "Performer/Instrumente gesucht"
-    title_requirements: "Geräte gesucht"
+    title_collaborations: "Performers/Instruments wanted"
+    title_requirements: "Equipment wanted"
 
   # ACTIVITY
 
   activity:
 
-    title: "Aktivitäten"
+    title: "Activities"
 
-    deleted: "%{title} (gelöscht)"
+    deleted: "%{title} (deleted)"
 
     event:
 
-      create: "Eine Veranstaltung wurde erstellt:"
-      update: "Eine Veranstaltung wurde aktualisiert:"
-      destroy: "Eine Veranstaltung wurde gelöscht:"
+      create: "An event was created:"
+      update: "An event was updated:"
+      destroy: "An event was deleted:"
 
     production:
 
-      create: "Eine Produktion wurde erstellt:"
-      update: "Eine Produktion wurde aktualisiert:"
-      destroy: "Eine Produktion wurde gelöscht:"
+      create: "A production was created:"
+      update: "A production was updated:"
+      destroy: "A production was deleted:"
 
     instrument:
 
-      create: "Ein Instrument wurde erstellt:"
-      update: "Ein Instrument wurde aktualisiert:"
-      destroy: "Ein Instrument wurde gelöscht:"
+      create: "A instrument was created:"
+      update: "A instrument was updated:"
+      destroy: "A instrument was deleted:"
 
     device:
 
-      create: "Ein Gerät wurde erstellt:"
-      update: "Ein Gerät wurde aktualisiert:"
-      destroy: "Ein Gerät wurde gelöscht:"
+      create: "Equipment was created:"
+      update: "Equipment was updated:"
+      destroy: "Equipment was deleted:"
