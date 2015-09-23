@@ -60,13 +60,12 @@ de:
       message: |+
         Hallo %{name}!
 
-        Eines deiner Geräte wurde für ein Event angefragt. Hier die Informationen,
+        Dein eingetragenes Gerät *%{device}* wurde für eine Produktion angefragt. Hier die Informationen:
 
-        %{url}
         %{event}
-        %{date}
-        %{location}
-        %{device}
+        %{date} @ %{location}
+
+        Link: %{url}
 
     collaboration:
 
@@ -74,13 +73,12 @@ de:
       message: |+
         Hallo %{name}!
 
-        Eines deiner Instrumente wurde für ein Event angefragt. Hier die Informationen,
+        Eines deiner Instrumente *%{instrument}* wurde für eine Produktion angefragt. Hier die Informationen:
 
-        %{url}
         %{event}
-        %{date}
-        %{location}
-        %{instrument}
+        %{date} @ %{location}
+
+        Link: %{url}
 
   # NAVIGATION
 
@@ -126,7 +124,7 @@ de:
 
     signup_title: "Registrieren"
     signup_title_name: "Hallo!"
-    signup_description_html: '<p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden. Hierfür benötigen wir einige Daten von dir. Wir bitten dich also, diese hier weiter unten einzutragen.</p><p>Mit der Anmeldung erklärst du dich bereit, an VERATNWORTUNG 3000 teilzunehmen. Die Teilnahme kostet ca. 90 Euro, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p><p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich.</p>'
+    signup_description_html: '<p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden.</p><p>Mit der Anmeldung erklärst du dich bereit, an VERATNWORTUNG 3000 teilzunehmen. Die Teilnahme kostet ca. 90 Euro, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p><p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich.</p>'
     signup_contact: "Kontakt"
     signup_hint_email: "E-Mail ist das Hauptkommunikationsmittel auf VERANTWORTUNG 3000, bitte gebe sie an!"
     signup_hint_mobile: "Deine Mobilnummer brauchen wir während der Festivaltage, damit wird dich immer bei Fragen erreichen können."
@@ -147,10 +145,10 @@ de:
   pages:
 
     home_title: '30. August - 04. September 2016'
-    home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro.</p>'
+    home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
 
     about_title: 'Über'
-    about_html: '<p>VERANTWORTUNG 3000 ist eine Veranstaltung, die vom 30. August bis 4. September 2016 in Altwustrow, in Brandenburg, stattfinden wird. VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 ist aber nicht Kurator und auch nicht künstlerische Leitung. Kuratieren und programmieren werden alle Teilnehmer selbst, indem sie ihre Veranstaltungen auf dieser Plattform hier erstellen. VERANTWORTUNG3000.DE ist ein Werkzeug zur Selbstkuration. Den Ideen sind dabei keine Grenzen gesetzt. BLATT 3000 hat sich lediglich um die Räumlichkeiten gekümmert, die wir nutzen können.</p><p>Im Laufe der 6 Tage steht uns ein großer Hof in Altwustrow zur Verfügung (ca. 5000 m2), den wir komplett bewohnen und bespielen dürfen. Der Hof gehört dem lieben Peter, der uns fast alle Räumlichkeiten zur Verfügung stellt. Es gibt ein Haus, in dem der Großteil unterkommen wird, einige müssen in Zelten im Garten wohnen - insgesamt haben wir Kapazitäten für 50 Personen. Unter ‘Orte’ könnt ihr euch einen ersten Eindruck verschaffen. Für Verpflegung müssen wir alle selber sorgen - BLATT 3000 stellt Lebensmittel bereit, gekocht wird aber von allen für alle.</p><p>VERANTWORTUNG3000.DE dient allen Teilnehmenden als Organisationstool und Kommunikationsbasis. Jeder Teilnehmer meldet sich an und erhält ein Profil. Mit diesem kann man dann Produktionen und Events erstellen, Instrumente eintragen, die gespielt und mitgebracht werden, sowie sämtliche andere Geräte.</p><p>Ein Instrument versteht sich hier in einer abstrakten Form - als eine Tätigkeit / ein Gegenstand, die und der immer an einen Performer gebunden ist (z.B. Stimme). Ein Gerät ist kein Instrument, da es nicht an an einen Performer gebunden ist (z.B. Mikrofon).</p><p>All diese Kategorien werden untereinander verlinkt, so dass jeder immer sehen kann, wann wer was wie und wo macht. Das findet man übersichtlich unter ‘Kalender’. Ihr könnt euch also über VERANTWORTUNG3000.DE vernetzen, gemeinsam Produktionen planen, miteinander kollaborieren, nach Instrumenten und Musikern fragen oder für die Gruppe mal ein Abendessen kochen. Es gibt ein SCHWARZES BRETT, auf das sämtliche Anfragen an die 3000-Gemeinschaft gestellt werden können.</p><p>Hauptkommunikationsmittel ist die E-Mail, für die Absprache von Details könnt ihr die E-Mail-Adresse bei Anmeldung in den Profilen erfahren, um dann den Dialog zu beginnen und eure Produktion zu planen.</p><p>Die Plattform ist der Ort, wo die eigentliche Festivalarbeit stattfindet und verteilt die Verantwortung der Realisierung von VERANTWORTUNG 3000 auf alle Teilnehmenden. BLATT 3000 koordiniert lediglich die Struktur und Kommunikation auf der Plattform.</p>'
+    about_html: '<p>VERANTWORTUNG 3000 ist eine Veranstaltung, die vom 30. August bis 4. September 2016 in Altwustrow, in Brandenburg, stattfinden wird. VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 ist aber nicht Kurator und auch nicht künstlerische Leitung. Kuratieren und programmieren werden alle Teilnehmer selbst, indem sie ihre Veranstaltungen auf dieser Plattform hier erstellen. VERANTWORTUNG3000.DE ist ein Werkzeug zur Selbstkuration. Den Ideen sind dabei keine Grenzen gesetzt. BLATT 3000 hat sich lediglich um die Räumlichkeiten gekümmert, die wir nutzen können.</p><p>Im Laufe der 6 Tage steht uns ein großer Hof in Altwustrow zur Verfügung (ca. 5000 m2), den wir komplett bewohnen und bespielen dürfen. Der Hof gehört dem lieben Peter, der uns fast alle Räumlichkeiten zur Verfügung stellt. Es gibt ein Haus, in dem der Großteil unterkommen wird, einige müssen in Zelten im Garten wohnen - insgesamt haben wir Kapazitäten für 50 Personen. Unter ‘Orte’ könnt ihr euch einen ersten Eindruck verschaffen. Für Verpflegung müssen wir alle selber sorgen - BLATT 3000 stellt Lebensmittel bereit, gekocht wird aber von allen für alle.</p><h3>PLATTFORM</h3><p>VERANTWORTUNG3000.DE dient allen Teilnehmenden als Organisationstool und Kommunikationsbasis. Jeder Teilnehmer meldet sich an und erhält ein Profil. Mit diesem kann man dann Produktionen und Events erstellen, Instrumente eintragen, die gespielt und mitgebracht werden, sowie sämtliche andere Geräte.</p><p>Ein Instrument versteht sich hier in einer abstrakten Form - als eine Tätigkeit / ein Gegenstand, die und der immer an einen Performer gebunden ist (z.B. Stimme). Ein Gerät ist kein Instrument, da es nicht an an einen Performer gebunden ist (z.B. Mikrofon).</p><p>All diese Kategorien werden untereinander verlinkt, so dass jeder immer sehen kann, wann wer was wie und wo macht. Das findet man übersichtlich unter ‘Kalender’. Ihr könnt euch also über VERANTWORTUNG3000.DE vernetzen, gemeinsam Produktionen planen, miteinander kollaborieren, nach Instrumenten und Musikern fragen oder für die Gruppe mal ein Abendessen kochen. Es gibt ein SCHWARZES BRETT, auf das sämtliche Anfragen an die 3000-Gemeinschaft gestellt werden können.</p><p>Hauptkommunikationsmittel ist die E-Mail, für die Absprache von Details könnt ihr die E-Mail-Adresse bei Anmeldung in den Profilen erfahren, um dann den Dialog zu beginnen und eure Produktion zu planen.</p><p>Die Plattform ist der Ort, wo die eigentliche Festivalarbeit stattfindet und verteilt die Verantwortung der Realisierung von VERANTWORTUNG 3000 auf alle Teilnehmenden. BLATT 3000 koordiniert lediglich die Struktur und Kommunikation auf der Plattform.</p>'
 
     contact_title: 'Kontakt'
     contact_html: '<p>BLATT 3000</p><p>DZIALOCHA, KOBEL, WEBER GBR</p><p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p><p>GERMANY</p><p></p><p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p><p>TELEFON +49 (0) 30 / 37 4489 47</p><p></p><p>Falls du Fragen zur Anmeldung oder generell zu VERANTWORTUNG 3000 hast, schreib uns eine Mail an KONTAKT AT VERANTWORTUNG3000 DE</p>'
@@ -215,7 +213,7 @@ de:
       title_create_new: "Neue Veranstaltung erstellen"
 
       help_edit_main: "Event"
-      help_edit_main_html: "<p>Hilfetext fehlt</p>"
+      help_edit_main_html: "<p>Wähle Ort und Zeit für das Event.</p>"
 
       help_edit_instruments: "Instrumente bearbeiten"
       help_edit_instruments_html: "<p>Hier kannst du aus allen Instrumenten der Datenbank diejenigen auswählen, die du für diesen Event benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>"
