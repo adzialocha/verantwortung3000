@@ -63,7 +63,7 @@ de:
         Dein eingetragenes Gerät *%{device}* wurde für eine Produktion angefragt. Hier die Informationen:
 
         %{event}
-        %{date} @ %{location}
+        %{date} - %{location}
 
         Link: %{url}
 
@@ -76,7 +76,7 @@ de:
         Eines deiner Instrumente *%{instrument}* wurde für eine Produktion angefragt. Hier die Informationen:
 
         %{event}
-        %{date} @ %{location}
+        %{date} - %{location}
 
         Link: %{url}
 

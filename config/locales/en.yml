@@ -63,7 +63,7 @@ en:
         %{device}
 
         %{event}
-        %{date} @ %{location}
+        %{date} - %{location}
 
         Link: %{url}
 
@@ -76,7 +76,7 @@ en:
         %{instrument}
 
         %{event}
-        %{date} @ %{location}
+        %{date} - %{location}
 
         Link: %{url}
 
