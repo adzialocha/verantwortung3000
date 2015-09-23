@@ -29,7 +29,7 @@ en:
     help_image_upload_html: "<p>Here you can upload pictures, so that other participants see what you have in mind.</p>"
 
     help_text_formatting: "Format texts"
-    help_text_formatting_html: "<p>Hilfetext (Markdown etc.) fehlt</p>"
+    help_text_formatting_html: "<p>Here is space to describe your production in detail. You can edit your text using Markdown.</p>"
 
   # MAILS
 
@@ -146,19 +146,19 @@ en:
     home_html: '<p>Altwustrow is a village in Brandeburg. VERANTWORTUNG 3000 wants to create a gathering in Altwustrow, for 6 days in September 2016. VERANTWORTUNG 3000 is a space for exchange and critical discussion on contemporary music.</p><p>VERANTWORTUNG 3000 will be initiated by BLATT 3000. BLATT 3000 does not want any curation. BLATT 3000 wants a system of self-curation. All participants are responsible for the programming and realisation.</p><p>VERANTWORTUNG 3000 offers facilities, food and a platform for managing resources. Participants offer their resources and make use of others’ resources to create a programme. Everyone brings his or her loot, so we can share, play and eat together in Altwustrow.</p><p>VERANTWORTUNG 3000 is self-financed. Participation cost is approx. 90 Euros. Further information on the programme on VERANTWORTUNG3000.de.</p>'
 
     about_title: 'About'
-    about_html: '<p>VERANTWORTUNG 3000 is an event taking place in Altwustrow (Brandenburg) from 30 August to 4 September 2016. VERANTWORTUNG 3000 is initiated by BLATT 3000. BLATT 3000 is neither the curator nor artistic director. Participants themselves will curate and programme by creating events on this platform. VERANTWORTUNG 3000 is a tool for self-curation. All BLATT 3000 does, is to take care of the spaces, that we will all make use of.</p><p>During these 6 days, we will have a large farm for ourselves (5000m2). The farm belongs to our lovely host Peter, who will be so kind to leave us his space for the whole time. On the farm there is a house, in which most of us will find space to sleep, some others will have to live in tents in the garden. Overall, there is space for 50 people. You can get a feel for the different localities, if you go to PLACES. We will all have to provide food for ourselves - BLATT 3000 will do the shopping, everyone will cook for all of us.</p><h2>PLATFORM</h2><p>VERANTWORTUNG3000.de is everyone’s tool of organisation and basis of communication. Every participiant registers and will be displayed via a profil. When registered you can create productions and events, enter your instruments and all other equipment, that you need or bring along.</p><p>An instrument is to be understood in an abstract way - it is an activity or object which a performer makes use of (i.e. voice or tambourin or shoes). Equipment (i.e. microphone) is not necessarily tied to a performer and might be used by other participants.</p><p>All different categories will be connected to each other on the platform, so that everyone always sees, when what how and where something happens and who is involved. All that will be found on the ‚CALENDAR‘. So VERANTWORTUNG3000.de is the platform on which you connect with one another, plan productions, collaborations, search for performers, instruments, equipment or offer your cooking services. There is also a BLACKBOARD, which can be used for any request to the community.</p><p>Email is the main way of communication and will be useful for further dialogues and arranging details, collaborating etc.</p><p>The platform is the office headquarter: this is where the main festival organisation takes place and is at the same time used to share tasks and resposibilities. All participants are responsible for realising VERANTWORTUNG 3000. BLATT 3000 solemnly coordinates the structure and communication of the platform.</p>'
+    about_html: '<p>VERANTWORTUNG 3000 is an event taking place in Altwustrow (Brandenburg) from 30 August to 4 September 2016. VERANTWORTUNG 3000 is initiated by BLATT 3000. BLATT 3000 is neither the curator nor artistic director. Participants themselves will curate and programme by creating events on this platform. VERANTWORTUNG 3000 is a tool for self-curation. All BLATT 3000 does, is to take care of the spaces, that we will all make use of.</p><p>During these 6 days, we will have a large farm for ourselves (5000m2). The farm belongs to our lovely host Peter, who will be so kind to leave us his space for the whole time. On the farm there is a house, in which most of us will find space to sleep, some others will have to live in tents in the garden. Overall, there is space for 50 people. You can get a feel for the different localities, if you go to PLACES. We will all have to provide food for ourselves - BLATT 3000 will do the shopping, everyone will cook for all of us.</p><p>VERANTWORTUNG3000.de is everyone’s tool of organisation and basis of communication. Every participiant registers and will be displayed via a profil. When registered you can create productions and events, enter your instruments and all other equipment, that you need or bring along.</p><p>An instrument is to be understood in an abstract way - it is an activity or object which a performer makes use of (i.e. voice or tambourin or shoes). Equipment (i.e. microphone) is not necessarily tied to a performer and might be used by other participants.</p><p>All different categories will be connected to each other on the platform, so that everyone always sees, when what how and where something happens and who is involved. All that will be found on the ‚CALENDAR‘. So VERANTWORTUNG3000.de is the platform on which you connect with one another, plan productions, collaborations, search for performers, instruments, equipment or offer your cooking services. There is also a BLACKBOARD, which can be used for any request to the community.</p><p>Email is the main way of communication and will be useful for further dialogues and arranging details, collaborating etc.</p><p>The platform is the office headquarter: this is where the main festival organisation takes place and is at the same time used to share tasks and resposibilities. All participants are responsible for realising VERANTWORTUNG 3000. BLATT 3000 solemnly coordinates the structure and communication of the platform.</p>'
 
-    contact_title: 'Kontakt'
+    contact_title: 'Contact'
     contact_html: '<p>BLATT 3000</p><p>DZIALOCHA, KOBEL, WEBER GBR</p><p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p><p>GERMANY</p><p></p><p>PARTNER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p><p>TELEFON +49 (0) 30 / 37 4489 47</p><p></p><p>If you have any questions regarding VERANTWORTUNG 3000 write an email to KONTAKT AT VERANTWORTUNG3000 DE</p>'
 
-    routes_title: 'Anfahrt'
+    routes_title: 'Directions'
     routes_html: '<p>Altwustrow village is located in the Oderbruch region, 80 km East of Berlin. The nearest train station is in Wriezen. Wriezen can be reached within a 90 min train ride from Berlin. We recommend taking your bike with you und cycle to Altwustrow from Wriezen train station. Also the area is lovely for some bike rides in the afternoon. It will take you 30 min by bike from Wriezen to Altwustrow.</p><p>However, if you won’t bring your bike, there is a public bus (875) going to Altwustrow from Wriezen train station every hour (it will take 15 min).</p><p><a href="http://www.altwustrow.de" target="_blank">www.altwustrow.de</a></p>'
 
   # LOCATIONS
 
   locations:
 
-    overview_title: "Orte"
+    overview_title: "Venues"
 
   # CALENDAR
 
@@ -170,88 +170,88 @@ en:
 
   productions:
 
-    overview_title: "Produktionen"
+    overview_title: "Productions"
 
-    goto_create_new: "Produktion erstellen"
-    goto_edit: "Bearbeiten"
+    goto_create_new: "Create new production"
+    goto_edit: "Edit"
 
-    title_table_my: "Eigene Produktionen"
-    title_table_all: "Alle Produktionen"
+    title_table_my: "My productions"
+    title_table_all: "All productions"
 
-    title_create_new: "Neue Produktion erstellen"
-    title_edit: "%{title} bearbeiten"
+    title_create_new: "Create new production"
+    title_edit: "Edit %{title}"
 
     form:
 
-      panel_title: "Produktion"
-      btn_submit: "Speichern"
-      btn_delete: "Produktion löschen"
+      panel_title: "Production"
+      btn_submit: "Save"
+      btn_delete: "Delete production"
 
-      title_events: "Programm"
-      btn_add_event: "Veranstaltung hinzufügen"
+      title_events: "Programme"
+      btn_add_event: "Add event"
 
-    help_new: "Produktion erstellen"
-    help_new_html: "<p>Hilfetext fehlt</p>"
+    help_new: "Create production"
+    help_new_html: "<p>This is where you can create and describe your production. That may be quite lengthy and detailed, so that others understand what you have in mind. So feel free to use links, quotes, pictures, sketches etc. - everything that might be necessary. If you go down a bit, you can create and describe specific events and dates, which belong to your production. That is also where you can add a time and venue.</p>"
 
-    help_edit_main: "Produktion bearbeiten"
-    help_edit_main_html: "<p>Hilfetext fehlt</p>"
+    help_edit_main: "Edit production"
+    help_edit_main_html: "<p>You can edit your production here or change its title.</p>"
 
-    help_edit_events: "Events bearbeiten"
-    help_edit_events_html: "<p>Hilfetext fehlt</p>"
+    help_edit_events: "Edit event"
+    help_edit_events_html: "<p>An event takes places within a fixed timeframe, at a particular venue and is part of a production. That means, there might be more than one event for one production (i.e. rehearsals). You can assign which instruments, equipment and what venue you want to use for your event, therefore making sure you reserve that specific space for a certain time.</p>"
 
     event:
 
-      goto_overview: "Zur Übersicht"
-      goto_production: "Zur Produktion"
-      goto_calendar: "Zum Kalender"
+      goto_overview: "Go to overview"
+      goto_production: "Go to production"
+      goto_calendar: "Go to calendar"
 
-      title_table_instruments: "Instrumente"
-      title_table_devices: "Geräte"
+      title_table_instruments: "Instruments"
+      title_table_devices: "Equipment"
 
-      title_create_new: "Neue Veranstaltung erstellen"
+      title_create_new: "Create new event"
 
       help_edit_main: "Event"
       help_edit_main_html: "<p>Hilfetext fehlt</p>"
 
-      help_edit_instruments: "Instrumente bearbeiten"
-      help_edit_instruments_html: "<p>Hilfetext fehlt</p>"
+      help_edit_instruments: "Edit instruments"
+      help_edit_instruments_html: "<p>Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>"
 
-      help_edit_devices: "Geräte bearbeiten"
-      help_edit_devices_html: "<p>Hilfetext fehlt</p>"
+      help_edit_devices: "Edit equipment"
+      help_edit_devices_html: "<p>Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>"
 
-      help_edit_more: "Weitere Informationen bearbeiten"
-      help_edit_more_html: "<p>Hilfetext fehlt</p>"
+      help_edit_more: "Edit further info"
+      help_edit_more_html: "<p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event (using Markdown) and let others know what they can expect. </p>"
 
       form:
 
-        panel_title: "Veranstaltung"
-        btn_submit: "Veranstaltung erstellen"
-        goto_production: "Zur Produktion"
+        panel_title: "Event"
+        btn_submit: "Edit event"
+        goto_production: "Go to production"
 
-        error_location_occupied: "Der Ort ist leider schon zu dieser Uhrzeit belegt"
-        error_instrument_occupied: "Leider ist dieses Instrument zu dieser Uhrzeit schon belegt"
-        error_device_occupied: "Leider ist dieses Gerät zu dieser Uhrzeit schon belegt"
+        error_location_occupied: "Sorry! This venue is already occupied at that time."
+        error_instrument_occupied: "Sorry! This instrument is already in use at that time."
+        error_device_occupied: "Sorry! This equipment is in use at that time."
 
-        error_instrument_unique: "Dieses Instrument existiert schon in deiner Liste"
-        error_device_unique: "Dieses Gerät existiert schon in deiner Liste"
+        error_instrument_unique: "This instrument already exists in your list."
+        error_device_unique: "This device already exists in your list."
 
-        error_wrong_daterange: "Das Ende liegt zeitlich vor oder genau auf dem Veranstaltungsbeginn"
-        error_out_of_daterange: "Der Zeitraum liegt außerhalb des Festivals!"
+        error_wrong_daterange: "Your event ends before or at the same time it starts."
+        error_out_of_daterange: "Timeframe is before or after the festival."
 
-        panel_instruments_title: "Benötigte Instrumente"
-        panel_devices_title: "Benötigte Geräte"
-        panel_info_title: "Weitere Informationen"
+        panel_instruments_title: "What instruments do you need?"
+        panel_devices_title: "What equipment do you need?"
+        panel_info_title: "Further info"
 
-        btn_add_instrument: "Instrument hinzufügen"
-        btn_add_device: "Gerät hinzufügen"
-        btn_remove_instrument: "Entfernen"
-        btn_remove_device: "Entfernen"
+        btn_add_instrument: "Add instrument"
+        btn_add_device: "Add equipment"
+        btn_remove_instrument: "Delete"
+        btn_remove_device: "Delete"
 
-        select_not_exist_title: "Nicht vorhanden"
-        select_not_exist_description: "Erstelle einen Eintrag auf dem Schwarzen Brett"
+        select_not_exist_title: "Not available?"
+        select_not_exist_description: "Create an entry on the blackboard"
 
-        blackboard_title: "Titel der Anzeige auf dem Schwarzen Brett"
-        blackboard_description: "Text zur Anzeige"
+        blackboard_title: "Name the announcement on the blackboard"
+        blackboard_description: "Announcement text"
 
         error_title_needed: "Du musst einen Titel angeben"
         error_description_needed: "Du musst einen Text angeben"
