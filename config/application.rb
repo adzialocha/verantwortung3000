@@ -18,11 +18,6 @@ module Darmstadt3000
 
     # RAILS APPLICATION
 
-    config.action_mailer.default_url_options = {
-      :host => "verantwortung3000.de",
-      :port => 80
-    }
-
     config.before_configuration do
       ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}
     end
