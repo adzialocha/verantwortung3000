@@ -29,7 +29,7 @@ de:
     help_image_upload_html: "<p>Hier kannst du Bilder für deine Produktion hochladen.</p>"
 
     help_text_formatting: "Texte formatieren"
-    help_text_formatting_html: "<p>Hier ist Platz, um deine Produktion ausführlich zu besprechen. Du kannst deinen Beschreibungstext mihilfe von Markdown formatieren.</p>"
+    help_text_formatting_html: "<p>Hier ist Platz, um deine Produktion ausführlich zu besprechen. Du kannst deinen Beschreibungstext mihilfe von Markdown formatieren. Lese mehr über Markdown hier: http://daringfireball.net/projects/markdown/basics</p>"
 
   # MAILS
 
@@ -63,7 +63,7 @@ de:
         Dein eingetragenes Gerät *%{device}* wurde für eine Produktion angefragt. Hier die Informationen:
 
         %{event}
-        %{date} - %{location}
+        %{date} @ %{location}
 
         Link: %{url}
 
@@ -76,7 +76,7 @@ de:
         Eines deiner Instrumente *%{instrument}* wurde für eine Produktion angefragt. Hier die Informationen:
 
         %{event}
-        %{date} - %{location}
+        %{date} @ %{location}
 
         Link: %{url}
 
@@ -148,7 +148,7 @@ de:
     home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
 
     about_title: 'Über'
-    about_html: '<p>VERANTWORTUNG 3000 ist eine Veranstaltung, die vom 30. August bis 4. September 2016 in Altwustrow, in Brandenburg, stattfinden wird. VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 ist aber nicht Kurator und auch nicht künstlerische Leitung. Kuratieren und programmieren werden alle Teilnehmer selbst, indem sie ihre Veranstaltungen auf dieser Plattform hier erstellen. VERANTWORTUNG3000.DE ist ein Werkzeug zur Selbstkuration. Den Ideen sind dabei keine Grenzen gesetzt. BLATT 3000 hat sich lediglich um die Räumlichkeiten gekümmert, die wir nutzen können.</p><p>Im Laufe der 6 Tage steht uns ein großer Hof in Altwustrow zur Verfügung (ca. 5000 m2), den wir komplett bewohnen und bespielen dürfen. Der Hof gehört dem lieben Peter, der uns fast alle Räumlichkeiten zur Verfügung stellt. Es gibt ein Haus, in dem der Großteil unterkommen wird, einige müssen in Zelten im Garten wohnen - insgesamt haben wir Kapazitäten für 50 Personen. Unter ‘Orte’ könnt ihr euch einen ersten Eindruck verschaffen. Für Verpflegung müssen wir alle selber sorgen - BLATT 3000 stellt Lebensmittel bereit, gekocht wird aber von allen für alle.</p><h3>PLATTFORM</h3><p>VERANTWORTUNG3000.DE dient allen Teilnehmenden als Organisationstool und Kommunikationsbasis. Jeder Teilnehmer meldet sich an und erhält ein Profil. Mit diesem kann man dann Produktionen und Events erstellen, Instrumente eintragen, die gespielt und mitgebracht werden, sowie sämtliche andere Geräte.</p><p>Ein Instrument versteht sich hier in einer abstrakten Form - als eine Tätigkeit / ein Gegenstand, die und der immer an einen Performer gebunden ist (z.B. Stimme). Ein Gerät ist kein Instrument, da es nicht an an einen Performer gebunden ist (z.B. Mikrofon).</p><p>All diese Kategorien werden untereinander verlinkt, so dass jeder immer sehen kann, wann wer was wie und wo macht. Das findet man übersichtlich unter ‘Kalender’. Ihr könnt euch also über VERANTWORTUNG3000.DE vernetzen, gemeinsam Produktionen planen, miteinander kollaborieren, nach Instrumenten und Musikern fragen oder für die Gruppe mal ein Abendessen kochen. Es gibt ein SCHWARZES BRETT, auf das sämtliche Anfragen an die 3000-Gemeinschaft gestellt werden können.</p><p>Hauptkommunikationsmittel ist die E-Mail, für die Absprache von Details könnt ihr die E-Mail-Adresse bei Anmeldung in den Profilen erfahren, um dann den Dialog zu beginnen und eure Produktion zu planen.</p><p>Die Plattform ist der Ort, wo die eigentliche Festivalarbeit stattfindet und verteilt die Verantwortung der Realisierung von VERANTWORTUNG 3000 auf alle Teilnehmenden. BLATT 3000 koordiniert lediglich die Struktur und Kommunikation auf der Plattform.</p>'
+    about_html: '<p>VERANTWORTUNG 3000 ist eine Veranstaltung, die vom 30. August bis 4. September 2016 in Altwustrow, in Brandenburg, stattfinden wird. VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 ist nicht Kuratorin und nicht künstlerische Leitung. Kuratieren und programmieren werden alle Teilnehmer und Teilnehmerinnen selbst, indem sie Veranstaltungen auf VERANTWORTUNG3000.DE erstellen. VERANTWORTUNG3000.DE ist ein Werkzeug zur Selbstkuration.</p><p>Im Laufe der 6 Tage steht VERANTWORTUNG 3000 ein großer Hof in Altwustrow zur Verfügung (ca. 5000 m2), der bewohnt und bespielt werden darf. Der Hof gehört dem lieben Peter, der fast alle Räumlichkeiten zur Verfügung stellt. Es gibt ein Haus, in dem der Großteil unterkommen wird, einige müssen in Zelten im Garten wohnen - insgesamt gibt es Kapazitäten für 50 Personen. Unter ORTE kann sich ein erster Eindruck verschafft werden. Für Verpflegung müssen die Teilnehmerinnen und Teilnehmer selber sorgen - BLATT 3000 stellt Lebensmittel bereit, gekocht wird von allen für alle.</p><p>PLATTFORM</p><p>VERANTWORTUNG3000.DE dient allen Teilnehmenden als Organisationstool und Kommunikationsbasis. Jede Teilnehmerin meldet sich an und erhält ein Profil. Mit diesem kann man Produktionen und Events erstellen, Instrumente eintragen, die gespielt und mitgebracht werden, sowie sämtliche Geräte.</p><p>Ein Instrument versteht sich hier in einer abstrakten Form: als eine Tätigkeit / ein Gegenstand, die und der immer an einen Performer gebunden ist (z.B. Stimme). Ein Gerät ist kein Instrument, da es nicht an an eine Performerin gebunden ist (z.B. Mikrofon).</p><p>Im KALENDER könnt ihr einsehen wann wer was wie und wo macht. VERANTWORTUNG3000.DE bietet die Möglichkeit sich zu vernetzen, gemeinsam Produktionen zu planen, miteinander zu kollaborieren, nach Instrumenten und Performern zu fragen oder für die Gruppe ein Abendessen zu kochen. Es gibt ein SCHWARZES BRETT, auf das sämtliche Anfragen an die 3000-Gemeinschaft gestellt werden können.</p><p>Hauptkommunikationsmittel ist die E-Mail, für die Absprache von Details kann die E-Mail-Adresse bei Anmeldung in den Profilen eingesehen werden, um den Dialog zu beginnen und die Produktion zu planen.</p><p>'
 
     contact_title: 'Kontakt'
     contact_html: '<p>BLATT 3000</p><p>DZIALOCHA, KOBEL, WEBER GBR</p><p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p><p>GERMANY</p><p></p><p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p><p>TELEFON +49 (0) 30 / 37 4489 47</p><p></p><p>Falls du Fragen zur Anmeldung oder generell zu VERANTWORTUNG 3000 hast, schreib uns eine Mail an KONTAKT AT VERANTWORTUNG3000 DE</p>'
@@ -193,7 +193,7 @@ de:
       btn_add_event: "Veranstaltung hinzufügen"
 
     help_new: "Produktion erstellen"
-    help_new_html: "<p>Hier kannst du deine Produktion erstellen und beschreiben. Das darf ruhig ausführlich sein, damit andere Teilnehmer verstehen, was du vor hast. Füge also gerne Links, Zitate, Bilder, Skizzen etc. hinzu - alles was du für notwendig hältst. Später kannst du dann einzelne Events bzw. Termine, die zur Produktion gehören, konkreter beschreiben. Dort kannst du dann auch Zeit und Ort der Veranstaltungen angeben.</p>"
+    help_new_html: "<p>Hier kannst du deine Produktion erstellen und beschreiben. Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können also mehrere Veranstaltungen stattfinden z.B. Proben, Vorträge, Konzerte etc. Diese Events kannst du weiter unten erstellen. An dieser Stelle hier erklärst du deine Produktion allgemein.</p>"
 
     help_edit_main: "Produktion bearbeiten"
     help_edit_main_html: "<p>Du kannst hier deine Produktion bearbeiten oder den Titel deiner Produktion ändern.</p>"
@@ -216,10 +216,10 @@ de:
       help_edit_main_html: "<p>Wähle Ort und Zeit für das Event.</p>"
 
       help_edit_instruments: "Instrumente bearbeiten"
-      help_edit_instruments_html: "<p>Hier kannst du aus allen Instrumenten der Datenbank diejenigen auswählen, die du für diesen Event benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>"
+      help_edit_instruments_html: "<p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und einen Performer braucht, der das Instrument bedient - egal ob Geige oder Stimme oder Schuhe. Hier kannst du aus allen Instrumenten/PerformerInnen der Datenbank diejenigen auswählen, die du für diesen Event benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>"
 
       help_edit_devices: "Geräte bearbeiten"
-      help_edit_devices_html: "<p>Hier kannst du aus allen Geräten der Datenbank diejenigen auswählen, die du für diesen Event benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>"
+      help_edit_devices_html: "<p>Im Gegensatz zum Instrument ist das Gerät nicht an eine Person gekoppelt - kann also alles sein von Beamer bis Lautsprecher zu Mikrofon. Hier kannst du aus allen Geräten der Datenbank diejenigen auswählen, die du für diesen Event benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>"
 
       help_edit_more: "Weitere Informationen bearbeiten"
       help_edit_more_html: "<p>Hier kannst du den Titel dieses Events ändern - ansonsten bleibt der Name der Produktion einfach für dieses Event erhalten. Außerdem ist es vielleicht sinnvoll hier das einzelne Event zu umschreiben und so zu erklären, was du genau vor hast (auch hier Möglichkeit Markdown).</p>"
