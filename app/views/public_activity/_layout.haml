@@ -2,7 +2,7 @@
 
   .activity__image-container
 
-    - if activity.trackable and activity.trackable.respond_to?(:images) and activity.trackable.images.any?
+    - if activity.trackable and activity.trackable.respond_to?(:cover_image) and activity.trackable.cover_image != nil
 
       .activity__image-container__image{ :style => 'background-image: url("' + activity.trackable.cover_image.src.thumb.url + '")' }
 
