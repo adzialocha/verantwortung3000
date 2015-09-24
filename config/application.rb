@@ -27,10 +27,6 @@ module Darmstadt3000
       ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}
     end
 
-    config.to_prepare do
-      Devise::Mailer.layout "mailer"
-    end
-
     config.assets.version = '1.0'
     config.assets.enable = true
     config.assets.precompile += ['edit.js']
