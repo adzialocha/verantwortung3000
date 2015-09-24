@@ -35,6 +35,8 @@ en:
 
   mails:
 
+    signature_bot: "YOUR VERANTWORTUNG 3000 ROBOTER"
+
     auth:
 
       signup_html: |+

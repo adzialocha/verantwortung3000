@@ -2,6 +2,21 @@ module ApplicationHelper
 
   require 'redcarpet/render_strip'
 
+  def bye
+
+    [
+      'Tschüss!',
+      'Tschö!',
+      'Ciaopin!',
+      'Tschüsstakowitsch!',
+      'Ciao',
+      'Beep Beep',
+      'Bis bald!',
+      'Machs gut!'
+    ].sample
+
+  end
+
   def image_url(source)
     URI.join root_url, image_path(source)
   end

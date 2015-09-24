@@ -19,12 +19,16 @@ module Darmstadt3000
     # RAILS APPLICATION
 
     config.action_mailer.default_url_options = {
-      :host => "http://www.verantwortung3000.de",
+      :host => "verantwortung3000.de",
       :port => 80
     }
 
     config.before_configuration do
       ENV.update YAML.load_file('config/application.yml')[Rails.env] rescue {}
+    end
+
+    config.to_prepare do
+      Devise::Mailer.layout "mailer"
     end
 
     config.assets.version = '1.0'
