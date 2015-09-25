@@ -4,7 +4,7 @@ class Device < ActiveRecord::Base
   include Trackable
   include Sluggable
 
-  has_many :requirements, dependent: :nullify
+  has_many :requirements
   has_many :events, through: :requirements
 
   belongs_to :user
@@ -15,5 +15,11 @@ class Device < ActiveRecord::Base
 
   validates :title, presence: true, length: { minimum: 5, maximum: 30 }
   validates :description, presence: true
+
+  before_destroy :prepare_black_board_posts
+
+  def prepare_black_board_posts
+    self.requirements.update_all :device_id => nil, :title => self.title, :description => self.description
+  end
 
 end
