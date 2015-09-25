@@ -26,10 +26,12 @@ en:
       prompt_are_you_sure: "Are you sure?"
 
     help_image_upload: "Upload images"
-    help_image_upload_html: "<p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG format is allowed.</p>"
+    help_image_upload_html: |-
+      <p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG format is allowed.</p>"
 
     help_text_formatting: "Format texts"
-    help_text_formatting_html: '<p>Texts can be formatted with Markdown syntax. Read more about Markdown here: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>'
+    help_text_formatting_html: |-
+      <p>Texts can be formatted with Markdown syntax. Read more about Markdown here: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
   # MAILS
 
@@ -39,7 +41,7 @@ en:
 
     auth:
 
-      signup_html: |+
+      signup_html: |-
         Hello!
 
         Welcome to VERANTWORTUNG 3000!
@@ -48,8 +50,8 @@ en:
 
         %{url}
 
-      forgot_password_html: |+
-        Hello %{mail}!
+      forgot_password_html: |-
+        Hello!
 
         Someone has requested a link to change your password. You can do this through the link below.
 
@@ -62,7 +64,7 @@ en:
     requirement:
 
       subject: "VERANTWORTUNG 3000 - NEW EQUIPMENT REQUEST"
-      message: |+
+      message: |-
         Hello %{name}!
 
         %{device}
@@ -75,7 +77,7 @@ en:
     collaboration:
 
       subject: "VERANTWORTUNG 3000 - NEW COLLABORATION"
-      message: |+
+      message: |-
         Hello %{name}!
 
         %{instrument}
@@ -129,8 +131,13 @@ en:
 
     signup_title: "Register"
     signup_title_name: "Hello!"
-    signup_description_html: '<p>You are about to participate in VERANTWORTUNG 3000. Therefore we need some of your data. We ask you to fill everything out below.</p><p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation will be approx. 90 Euros, including board and lodge throughout the festival. You will receive an invoice via email.</p><p>We can only ensure your participation when we received your transaction. So we ask you to transfer the cost in time.</p><p>We are very much looking forward to welcoming you.</p>'
-    signup_contact: "Contakt"
+    signup_description_html: |-
+      <p>You are about to participate in VERANTWORTUNG 3000. Therefore we need some of your data. We ask you to fill everything out below.</p>
+      <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation will be approx. 90 Euros, including board and lodge throughout the festival. You will receive an invoice via email.</p>
+      <p>We can only ensure your participation when we received your transaction. So we ask you to transfer the cost in time.</p>
+      <p>We are very much looking forward to welcoming you.</p>
+
+    signup_contact: "Contact"
     signup_hint_email: "Please leave your email. We need your email to get in touch with you with everything that is happening here on VERANTWORTUNG3000.de."
     signup_hint_mobile: "Your cellphone will be necessary during the festival and the main means by reaching other participants.."
     signup_address: "Your address"
@@ -157,13 +164,32 @@ en:
       <p>VERANTWORTUNG 3000 is self-financed. Participation cost is approx. 90 Euros. Further information on the programme on VERANTWORTUNG3000.de.</p>
 
     about_title: 'About'
-    about_html: 'VERANTWORTUNG 3000 is an event taking place in Altwustrow (Brandenburg) from 30 August to 4 September 2016. VERANTWORTUNG 3000 is initiated by BLATT 3000. BLATT 3000 is neither the curator nor artistic director. Participants themselves will curate and programme, by creating events on this platform. VERANTWORTUNG 3000 is a tool for self-curation. All BLATT 3000 does, is to take care of the spaces, that we will all make use of.</p><p>During these 6 days, we will inhabit a large farm (5000m2). The farm belongs to our lovely host Peter, who will be so kind to leave us his space for the whole time. On the farm there is a house, in which most of us will find space to sleep, some others will have to sleep in tents in the garden. There is overall space for 50 people. You can get a feel for the different localities, if you go to ‚PLACES‘. We will have to provide meals for ourselves - BLATT 3000 will do the shopping, everyone will cook for all of us.</p><p>PLATFORM</p><p>VERANTWORTUNG3000.de is the office headquarter, everyone’s tool of organisation and basis of communication. Every participiant registers and will be displayed via a profil. When registered you can create productions and events, enter your instruments and all other equipment, that you need or bring along.</p><p>An instrument is to be understood in an abstract way: it is an activity or object which a performer makes use of (i.e. voice or tambourin or shoes). Equipment (i.e. microphone) is not necessarily tied to a performer and might be used by other participants.</p><p>All different categories will be connected to each other on the platform, so that everyone always sees, when what how and where something happens and who is involved. All that will be found on the ‚CALENDAR‘. So VERANTWORTUNG3000.de is the platform on which you connect with one another, plan productions, collaborations, search for performers, instruments, equipment or offer your cooking services. There is also a BLACKBOARD, which can be used for any request to the community.</p><p>Email is the main way of communication and will be useful for further dialogues and arranging details, collaborating etc.</p>'
+    about_html: |-
+      <p>VERANTWORTUNG 3000 is an event taking place in Altwustrow (Brandenburg) from 30 August to 4 September 2016. VERANTWORTUNG 3000 is initiated by BLATT 3000. BLATT 3000 is neither the curator nor artistic director. Participants themselves will curate and programme, by creating events on this platform. VERANTWORTUNG 3000 is a tool for self-curation. All BLATT 3000 does, is to take care of the spaces, that we will all make use of.</p><p>During these 6 days, we will inhabit a large farm (5000m2). The farm belongs to our lovely host Peter, who will be so kind to leave us his space for the whole time. On the farm there is a house, in which most of us will find space to sleep, some others will have to sleep in tents in the garden. There is overall space for 50 people. You can get a feel for the different localities, if you go to ‚PLACES‘. We will have to provide meals for ourselves - BLATT 3000 will do the shopping, everyone will cook for all of us.</p>
+      <h3>PLATFORM</h3>
+      <p>VERANTWORTUNG3000.de is the office headquarter, everyone’s tool of organisation and basis of communication. Every participiant registers and will be displayed via a profil. When registered you can create productions and events, enter your instruments and all other equipment, that you need or bring along.</p>
+      <p>An instrument is to be understood in an abstract way: it is an activity or object which a performer makes use of (i.e. voice or tambourin or shoes). Equipment (i.e. microphone) is not necessarily tied to a performer and might be used by other participants.</p>
+      <p>All different categories will be connected to each other on the platform, so that everyone always sees, when what how and where something happens and who is involved. All that will be found on the ‚CALENDAR‘. So VERANTWORTUNG3000.de is the platform on which you connect with one another, plan productions, collaborations, search for performers, instruments, equipment or offer your cooking services. There is also a BLACKBOARD, which can be used for any request to the community.</p>
+      <p>Email is the main way of communication and will be useful for further dialogues and arranging details, collaborating etc.</p>'
 
     contact_title: 'Contact'
-    contact_html: '<p>BLATT 3000</p><p>DZIALOCHA, KOBEL, WEBER GBR</p><p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p><p>GERMANY</p><p></p><p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p><p>TELEFON +49 (0) 30 / 37 4489 47</p><p></p><p>If you have any questions regarding VERANTWORTUNG 3000 write an email to KONTAKT AT VERANTWORTUNG3000 DE</p>'
+    contact_html: |-
+      <p>BLATT 3000</p>
+      <p>DZIALOCHA, KOBEL, WEBER GBR</p>
+      <p>KOPPENPLATZ 1</p>
+      <p>D-10115 BERLIN</p>
+      <p>GERMANY</p>
+      <hr>
+      <p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p>
+      <p>TELEFON +49 (0) 30 / 37 4489 47</p>
+      <hr>
+      <p>If you have any questions regarding VERANTWORTUNG 3000 write an email to KONTAKT AT VERANTWORTUNG3000 DE</p>
 
     routes_title: 'Directions'
-    routes_html: '<p>Altwustrow village is located in the Oderbruch region, 80 km East of Berlin. The nearest train station is in Wriezen. Wriezen can be reached within a 90 min train ride from Berlin. We recommend taking your bike with you und cycle to Altwustrow from Wriezen train station. Also the area is lovely for some bike rides in the afternoon. It will take you 30 min by bike from Wriezen to Altwustrow.</p><p>However, if you won’t bring your bike, there is a public bus (875) going to Altwustrow from Wriezen train station every hour (it will take 15 min).</p><p><a href="http://www.altwustrow.de" target="_blank">www.altwustrow.de</a></p>'
+    routes_html: |-
+      <p>Altwustrow village is located in the Oderbruch region, 80 km East of Berlin. The nearest train station is in Wriezen. Wriezen can be reached within a 90 min train ride from Berlin. We recommend taking your bike with you und cycle to Altwustrow from Wriezen train station. Also the area is lovely for some bike rides in the afternoon. It will take you 30 min by bike from Wriezen to Altwustrow.</p>
+      <p>However, if you won’t bring your bike, there is a public bus (875) going to Altwustrow from Wriezen train station every hour (it will take 15 min).</p>
+      <p><a href="http://www.altwustrow.de" target="_blank">www.altwustrow.de</a></p>
 
   # LOCATIONS
 
@@ -202,13 +228,16 @@ en:
       btn_add_event: "Add event"
 
     help_new: "Create production"
-    help_new_html: "<p>This is where you can create and describe your production. A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as rehearsal, talks, concerts etc. Events can be created later. So this space is where you describe your general ideas about your production.</p>"
+    help_new_html: |-
+      <p>This is where you can create and describe your production. A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as rehearsal, talks, concerts etc. Events can be created later. So this space is where you describe your general ideas about your production.</p>
 
     help_edit_main: "Edit production"
-    help_edit_main_html: "<p>You can edit your production here or change its title.</p>"
+    help_edit_main_html: |-
+      <p>You can edit your production here or change its title.</p>
 
     help_edit_events: "Edit event"
-    help_edit_events_html: "<p>An event takes places within a fixed timeframe, at a particular venue and is part of a production. That means, there might be more than one event for one production (i.e. rehearsals). You can assign which instruments, equipment and what venue you want to use for your event, therefore making sure you reserve that specific space for a certain time.</p>"
+    help_edit_events_html: |-
+      <p>An event takes places within a fixed timeframe, at a particular venue and is part of a production. That means, there might be more than one event for one production (i.e. rehearsals). You can assign which instruments, equipment and what venue you want to use for your event, therefore making sure you reserve that specific space for a certain time.</p>
 
     event:
 
@@ -222,16 +251,20 @@ en:
       title_create_new: "Create new event"
 
       help_edit_main: "Event"
-      help_edit_main_html: "<p>Select the venue and date for your event.</p>"
+      help_edit_main_html: |-
+        <p>Select the venue and date for your event.</p>
 
       help_edit_instruments: "Edit instruments"
-      help_edit_instruments_html: "<p>An instrument is to be understood as tied to a performer, but can be anything from voice to shoes. So if you are looking for an instrument you also reserve the performer, that plays that instrument. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>"
+      help_edit_instruments_html: |-
+        <p>An instrument is to be understood as tied to a performer, but can be anything from voice to shoes. So if you are looking for an instrument you also reserve the performer, that plays that instrument. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>
 
       help_edit_devices: "Edit equipment"
-      help_edit_devices_html: "<p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>"
+      help_edit_devices_html: |-
+        <p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
 
       help_edit_more: "Edit further info"
-      help_edit_more_html: "<p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event (using Markdown) and let others know what they can expect. </p>"
+      help_edit_more_html: |-
+        <p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event (using Markdown) and let others know what they can expect.</p>
 
       form:
 
@@ -297,6 +330,10 @@ en:
 
     title_used_in_events: "Events"
 
+    help_new_and_edit: "Angaben zum Instrument"
+    help_new_and_edit_html: |-
+      <p>Missing</p>
+
     form:
       panel_title: "Instrument"
       btn_submit: "Save"
@@ -322,6 +359,10 @@ en:
     title_edit: "Edit %{title}"
 
     title_used_in_events: "Events"
+
+    help_new_and_edit: "Angaben zum Instrument"
+    help_new_and_edit_html: |-
+      <p>Missing</p>
 
     form:
       panel_title: "Equipment"
