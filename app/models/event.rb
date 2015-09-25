@@ -4,6 +4,8 @@ class Event < ActiveRecord::Base
 
   tracked :owner => Proc.new { |controller, model| controller.current_user ? controller.current_user : nil }, :parameters => { :title => :production_title }
 
+  belongs_to :user
+
   belongs_to :production
 
   belongs_to :location

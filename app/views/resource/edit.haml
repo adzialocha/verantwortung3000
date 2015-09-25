@@ -25,7 +25,7 @@
 
       .well
 
-        %h1= t(resource.model_name.human.pluralize.downcase + '.help_edit')
-        = t(resource.model_name.human.pluralize.downcase + '.help_edit_html')
+        %h1= t(resource.model_name.human.pluralize.downcase + '.help_new_and_edit')
+        = t(resource.model_name.human.pluralize.downcase + '.help_new_and_edit_html')
 
       = render 'form', resource: resource, delete: true

@@ -14,7 +14,7 @@ de:
     table_column_title_name: "Titel"
     table_column_title_owner: "Erstellt von"
 
-    alert_no_permission: "Error: Kein Zugriff auf diese Funktion"
+    alert_no_permission: "Error: Kein Zugriff auf diese Funktion."
 
     form:
 
@@ -26,61 +26,82 @@ de:
       prompt_are_you_sure: "Bist du dir sicher?"
 
     help_image_upload: "Bilder hochladen"
-    help_image_upload_html: "<p>Hier kannst du Bilder für deine Produktion hochladen.</p>"
+    help_image_upload_html: |-
+      <p>Bilder können hier hochgeladen und gelöscht werden. Die Anzahl der Bilder ist nicht eingeschränkt, Bilder werden nach dem Hochladen automatisch verkleinert (die maximale Größe beträgt 960x960 Pixel), erlaubt sind nur JPG und PNG Formate.</p>
 
     help_text_formatting: "Texte formatieren"
-    help_text_formatting_html: "<p>Hier ist Platz, um deine Produktion ausführlich zu besprechen. Du kannst deinen Beschreibungstext mihilfe von Markdown formatieren. Lese mehr über Markdown hier: http://daringfireball.net/projects/markdown/basics</p>"
+    help_text_formatting_html: |-
+      <p>Texte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
   # MAILS
 
   mails:
 
-    signature_bot: "DEIN VERANTWORTUNG 3000 ROBOTER"
-
     auth:
 
-      signup_html: |+
-        Welcome %{mail}!
-        You can confirm your account email through the link below:
+      signup_html: |-
+        Hallo!
+
+        Willkommen bei VERANTWORTUNG 3000!
+
+        Bitte klicke auf den folgenden Link, um deine E-Mail-Adresse zu bestätigen:
 
         %{url}
 
-      forgot_password_html: |+
-        Hello %{mail}!
+        Wichtiger Hinweis: Bitte beachte, dass diese E-Mail deine Teilnahme am Festival noch nicht verbindlich bestätigt. Wir können deine Teilnahme inklusive Verpflegung und Übernachtung erst bestätigen, wenn dein Teilnahmebeitrag überwiesen worden ist.
 
-        Someone has requested a link to change your password. You can do this through the link below.
+        Zurzeit steht noch nicht fest, wie hoch der Beitrag sein wird (ungefähr 90 Euro), du wirst in den kommenden Wochen alle Informationen von uns via E-Mail und eine Rechnung erhalten, sobald alles bereit ist.
+
+        Schreibe an kontakt@verantwortung3000.de wenn du noch Fragen hast!
+
+      forgot_password_html: |-
+        Hallo Hallo!
+
+        Jemand möchte dein Passwort ändern. Klicke auf den folgenden Link, um die Änderung abzuschließen:
 
         %{url}
 
-        If you didnt request this, please ignore this email.
+        Wenn du diese Anfrage nicht erstellt hast, kannst du diese E-Mail einfach ignorieren.
 
-        Your password wont change until you access the link above and create a new one.
+    signature_bot: "DEIN VERANTWORTUNG 3000 ROBOTER"
 
     requirement:
 
-      subject: "VERANTWORTUNG 3000 - NEUE GERÄTANFRAGE"
-      message: |+
+      subject: "VERANTWORTUNG 3000 - NEUE GERÄTVERWENDUNG"
+      message: |-
         Hallo %{name}!
 
-        Dein eingetragenes Gerät *%{device}* wurde für eine Produktion angefragt. Hier die Informationen:
+        Dein eingetragenes Gerät *%{device}* wurde für die folgende Produktion eingetragen:
 
         %{event}
         %{date} @ %{location}
 
         Link: %{url}
+
+        Dein Gerät wird jetzt für diese Produktion verwendet, falls du das nicht möchtest, kannst du dich bei *%{creator_name}* (%{creator_url}) via E-Mail melden.
+
+        Die E-Mail-Adresse von %{creator_name} lautet: %{creator_mail}
+
+        Alle weiteren Details zur Produktion werden via E-Mail abgehandelt. Zum Beispiel wo und wann das Gerät bei dir auf dem Festival abgeholt werden kann. Melde dich gern bei weiteren Fragen bei uns!
 
     collaboration:
 
       subject: "VERANTWORTUNG 3000 - NEUE KOLLABORATION"
-      message: |+
+      message: |-
         Hallo %{name}!
 
-        Eines deiner Instrumente *%{instrument}* wurde für eine Produktion angefragt. Hier die Informationen:
+        Eines deiner Instrumente *%{instrument}* wurde für die folgende Produktion eingetragen:
 
         %{event}
         %{date} @ %{location}
 
         Link: %{url}
+
+        Du nimmst automatisch an dieser Produktion mit deinem Instrument als Performer teil, falls du das nicht möchtest, kannst du dich bei *%{creator_name}* (%{creator_url}) via E-Mail melden.
+
+        Die E-Mail-Adresse von %{creator_name} lautet: %{creator_mail}
+
+        Alle weiteren Details zur Produktion werden via E-Mail abgehandelt. Melde dich gern bei weiteren Fragen bei uns!
 
   # NAVIGATION
 
@@ -126,7 +147,11 @@ de:
 
     signup_title: "Registrieren"
     signup_title_name: "Hallo!"
-    signup_description_html: '<p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden.</p><p>Mit der Anmeldung erklärst du dich bereit, an VERATNWORTUNG 3000 teilzunehmen. Die Teilnahme kostet ca. 90 Euro, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p><p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich.</p>'
+    signup_description_html: |-
+      <p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden.</p>
+      <p>Mit der Anmeldung erklärst du dich bereit, an VERANTWORTUNG 3000 teilzunehmen. Die Teilnahme kostet ca. 90 Euro, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p>
+      <p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich.</p>
+
     signup_contact: "Kontakt"
     signup_hint_email: "E-Mail ist das Hauptkommunikationsmittel auf VERANTWORTUNG 3000, bitte gebe sie an!"
     signup_hint_mobile: "Deine Mobilnummer brauchen wir während der Festivaltage, damit wird dich immer bei Fragen erreichen können."
@@ -147,16 +172,39 @@ de:
   pages:
 
     home_title: '30. August - 04. September 2016'
-    home_html: '<p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p><p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle TeilnehmerInnen sind für das Programm und die Durchführung selbst zuständig.</p><p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p><p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.de</p>'
+    home_html: |-
+      <p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p>
+      <p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle Teilnehmer und Teilnehmerinnen sind für das Programm und die Durchführung selbst zuständig.</p>
+      <p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer und Teilnehmerinnen bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p>
+      <p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.DE</p>
 
     about_title: 'Über'
-    about_html: '<p>VERANTWORTUNG 3000 ist eine Veranstaltung, die vom 30. August bis 4. September 2016 in Altwustrow, in Brandenburg, stattfinden wird. VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 ist nicht Kuratorin und nicht künstlerische Leitung. Kuratieren und programmieren werden alle Teilnehmer und Teilnehmerinnen selbst, indem sie Veranstaltungen auf VERANTWORTUNG3000.DE erstellen. VERANTWORTUNG3000.DE ist ein Werkzeug zur Selbstkuration.</p><p>Im Laufe der 6 Tage steht VERANTWORTUNG 3000 ein großer Hof in Altwustrow zur Verfügung (ca. 5000 m2), der bewohnt und bespielt werden darf. Der Hof gehört dem lieben Peter, der fast alle Räumlichkeiten zur Verfügung stellt. Es gibt ein Haus, in dem der Großteil unterkommen wird, einige müssen in Zelten im Garten wohnen - insgesamt gibt es Kapazitäten für 50 Personen. Unter ORTE kann sich ein erster Eindruck verschafft werden. Für Verpflegung müssen die Teilnehmerinnen und Teilnehmer selber sorgen - BLATT 3000 stellt Lebensmittel bereit, gekocht wird von allen für alle.</p><p>PLATTFORM</p><p>VERANTWORTUNG3000.DE dient allen Teilnehmenden als Organisationstool und Kommunikationsbasis. Jede Teilnehmerin meldet sich an und erhält ein Profil. Mit diesem kann man Produktionen und Events erstellen, Instrumente eintragen, die gespielt und mitgebracht werden, sowie sämtliche Geräte.</p><p>Ein Instrument versteht sich hier in einer abstrakten Form: als eine Tätigkeit / ein Gegenstand, die und der immer an einen Performer gebunden ist (z.B. Stimme). Ein Gerät ist kein Instrument, da es nicht an an eine Performerin gebunden ist (z.B. Mikrofon).</p><p>Im KALENDER könnt ihr einsehen wann wer was wie und wo macht. VERANTWORTUNG3000.DE bietet die Möglichkeit sich zu vernetzen, gemeinsam Produktionen zu planen, miteinander zu kollaborieren, nach Instrumenten und Performern zu fragen oder für die Gruppe ein Abendessen zu kochen. Es gibt ein SCHWARZES BRETT, auf das sämtliche Anfragen an die 3000-Gemeinschaft gestellt werden können.</p><p>Hauptkommunikationsmittel ist die E-Mail, für die Absprache von Details kann die E-Mail-Adresse bei Anmeldung in den Profilen eingesehen werden, um den Dialog zu beginnen und die Produktion zu planen.</p><p>'
+    about_html: |
+      <p>VERANTWORTUNG 3000 ist eine Veranstaltung, die vom 30. August bis 4. September 2016 in Altwustrow, in Brandenburg, stattfinden wird. VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 ist nicht Kuratorin und nicht künstlerische Leitung. Kuratieren und programmieren werden alle Teilnehmer und Teilnehmerinnen selbst, indem sie Veranstaltungen auf VERANTWORTUNG3000.DE erstellen. VERANTWORTUNG3000.DE ist ein Werkzeug zur Selbstkuration.</p>
+      <p>Im Laufe der 6 Tage steht VERANTWORTUNG 3000 ein großer Hof in Altwustrow zur Verfügung (ca. 5000 m2), der bewohnt und bespielt werden darf. Der Hof gehört dem lieben Peter, der fast alle Räumlichkeiten zur Verfügung stellt. Es gibt ein Haus, in dem der Großteil unterkommen wird, einige müssen in Zelten im Garten wohnen - insgesamt gibt es Kapazitäten für 50 Personen. Unter ORTE kann sich ein erster Eindruck verschafft werden. Für Verpflegung müssen die Teilnehmerinnen und Teilnehmer selber sorgen - BLATT 3000 stellt Lebensmittel bereit, gekocht wird von allen für alle.</p>
+      <h3>PLATTFORM</h3>
+      <p>VERANTWORTUNG3000.DE dient allen Teilnehmenden als Organisationstool und Kommunikationsbasis. Jede Teilnehmerin meldet sich an und erhält ein Profil. Mit diesem kann man Produktionen und Veranstaltungen erstellen, Instrumente eintragen, die gespielt und mitgebracht werden, sowie sämtliche Geräte.</p>
+      <p>Ein Instrument versteht sich hier in einer abstrakten Form: als eine Tätigkeit / ein Gegenstand, die und der immer an einen Performer gebunden ist (z.B. Stimme). Ein Gerät ist kein Instrument, da es nicht an an eine Performerin gebunden ist (z.B. Mikrofon).</p>
+      <p>Im KALENDER könnt ihr einsehen wann wer was wie und wo macht. VERANTWORTUNG3000.DE bietet die Möglichkeit sich zu vernetzen, gemeinsam Produktionen zu planen, miteinander zu kollaborieren, nach Instrumenten und Performern zu fragen oder für die Gruppe ein Abendessen zu kochen. Es gibt ein SCHWARZES BRETT, auf das sämtliche Anfragen an die 3000-Gemeinschaft gestellt werden können.</p>
+      <p>Hauptkommunikationsmittel ist die E-Mail, für die Absprache von Details kann die E-Mail-Adresse bei Anmeldung in den Profilen eingesehen werden, um den Dialog zu beginnen und die Produktion zu planen.</p>
 
     contact_title: 'Kontakt'
-    contact_html: '<p>BLATT 3000</p><p>DZIALOCHA, KOBEL, WEBER GBR</p><p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p><p>GERMANY</p><p></p><p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p><p>TELEFON +49 (0) 30 / 37 4489 47</p><p></p><p>Falls du Fragen zur Anmeldung oder generell zu VERANTWORTUNG 3000 hast, schreib uns eine Mail an KONTAKT AT VERANTWORTUNG3000 DE</p>'
+    contact_html: |-
+      <p>BLATT 3000</p>
+      <p>DZIALOCHA, KOBEL, WEBER GBR</p>
+      <p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p>
+      <p>GERMANY</p>
+      <hr>
+      <p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p>
+      <p>TELEFON +49 (0) 30 / 37 4489 47</p>
+      <hr>
+      <p>Falls du Fragen zur Anmeldung oder generell zu VERANTWORTUNG 3000 hast, schreib uns eine Mail an KONTAKT AT VERANTWORTUNG3000 DE</p>
 
     routes_title: 'Anfahrt'
-    routes_html: '<p>Altwustrow liegt im Oderbruch, ca. 80 km östlich von Berlin. Der nächstgelegene Bahnhof befindet sich in Wriezen. Wriezen ist in 90 Minuten von Berlin mit der Bahn erreichbar. Es ist also zu empfehlen, Fahrräder mit in den Zug zu nehmen und von Wriezen mit dem Rad nach Altwustrow zu fahren. Außerdem ist die Umgebung schön mit dem Rad zu erkunden. Vom Wriezener Bahnhof sind es ca. 30 Minuten auf dem Fahrrad.</p><p>Wer nicht mit dem Fahrrad kommt, kann ab Wriezen HBF mit einem öffentlichen Bus (875) direkt nach Altwustrow (ca. 15 min, einmal pro Stunde) fahren.</p><p><a href="http://www.altwustrow.de" target="_blank">www.altwustrow.de</a></p>'
+    routes_html: |-
+      <p>Altwustrow liegt im Oderbruch, ca. 80 km östlich von Berlin. Der nächstgelegene Bahnhof befindet sich in Wriezen. Wriezen ist in 90 Minuten von Berlin mit der Bahn erreichbar. Es ist also zu empfehlen, Fahrräder mit in den Zug zu nehmen und von Wriezen mit dem Rad nach Altwustrow zu fahren. Außerdem ist die Umgebung schön mit dem Rad zu erkunden. Vom Wriezener Bahnhof sind es ca. 30 Minuten auf dem Fahrrad.</p>
+      <p>Wer nicht mit dem Fahrrad kommt, kann ab Wriezen HBF mit einem öffentlichen Bus (875) direkt nach Altwustrow (ca. 15 min, einmal pro Stunde) fahren.</p>
+      <p><a href="http://www.altwustrow.de" target="_blank">www.altwustrow.de</a></p>
 
   # LOCATIONS
 
@@ -195,13 +243,16 @@ de:
       btn_add_event: "Veranstaltung hinzufügen"
 
     help_new: "Produktion erstellen"
-    help_new_html: "<p>Hier kannst du deine Produktion erstellen und beschreiben. Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können also mehrere Veranstaltungen stattfinden z.B. Proben, Vorträge, Konzerte etc. Diese Events kannst du weiter unten erstellen. An dieser Stelle hier erklärst du deine Produktion allgemein.</p>"
+    help_new_html: |-
+      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht ein Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung. Diese Veranstaltungen werden im nächsten Schritt erstellt.</p>
 
     help_edit_main: "Produktion bearbeiten"
-    help_edit_main_html: "<p>Du kannst hier deine Produktion bearbeiten oder den Titel deiner Produktion ändern.</p>"
+    help_edit_main_html: |-
+      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht ein Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung.</p>
 
-    help_edit_events: "Events bearbeiten"
-    help_edit_events_html: "<p>Ein Event ist ein definierter Zeitraum an einem Ort und Teil einer Produktion. Das heißt, es kann auch mehrere Events innerhalb einer Produktion geben (z.B. Proben). Für jedes Event kannst du angeben, welche Technik, welche Instrumente und welchen Ort du dafür reservieren möchtest.</p>"
+    help_edit_events: "Veranstaltungen bearbeiten"
+    help_edit_events_html: |-
+      <p>Eine Veranstaltung ist ein definierter Zeitraum an einem Ort und Teil einer Produktion. Das heißt, es kann auch mehrere Veranstaltungen innerhalb einer Produktion geben (beispielsweise Proben). Für jedes Event wird angeben, welche Geräte, welche Instrumente und welchen Ort du dafür reservieren möchtest.</p>
 
     event:
 
@@ -214,17 +265,33 @@ de:
 
       title_create_new: "Neue Veranstaltung erstellen"
 
-      help_edit_main: "Event"
-      help_edit_main_html: "<p>Wähle Ort und Zeit für das Event.</p>"
+      help_edit_main: "Veranstaltung"
+      help_edit_main_html: |-
+        <p>Wähle einen Ort aus der Liste und einen Zeitraum für die Veranstaltung innerhalb deiner Produktion.</p>
+        <p>Es kann passieren, dass ein Ort zu einer gewünschten Uhrzeit schon reserviert ist. Die aktuellen Veranstaltungen der Orte können unter <a href="http://www.verantwortung3000.de/locations" target="_blank">Orte</a> eingesehen werden.</p>
 
       help_edit_instruments: "Instrumente bearbeiten"
-      help_edit_instruments_html: "<p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und einen Performer braucht, der das Instrument bedient - egal ob Geige oder Stimme oder Schuhe. Hier kannst du aus allen Instrumenten/PerformerInnen der Datenbank diejenigen auswählen, die du für diesen Event benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>"
+      help_edit_instruments_html: |-
+        <p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und an einen Performer gebunden ist, der das Instrument bedient - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe. Hier kannst du aus allen Instrumenten der Datenbank diejenigen auswählen, die du für diese Veranstaltung deiner Produktion benötigst (sofern sie nicht anderweitig schon verwendet werden, in diesem Fall erhälst du eine Fehlermeldung).</p>
+        <p>Ein eingetragenes Instrument und die dazugehörige Performerin wird nach dem Speichern als Teil der Veranstaltung registriert. Die Person wird automatisch daraufhin via E-Mail über diese Kollaboration informiert.</p>
+        <p>Bitte beachte, dass natürlich diese Person auch dieser Kollaboration zustimmen muss, am besten du nimmst vorher zu ihr Kontakt via E-Mail auf (im Profil sichtbar).</p>
+        <p>Alle weiteren Details und Vereinbarungen zur Umsetzung der Veranstaltung werden auch per E-Mail abgehandelt.</p>
+        <h3>Gesuchtes Instrument nicht vorhanden?</h3>
+        <p>Falls das gewünschte Instrument nicht vorhanden ist, wähle die Option "Nicht Vorhanden" und führe deinen Wunsch im Titel und im Beschreibungstext aus. Es wird so automatisch ein Eintrag ins Schwarze Brett erstellt. Interessierte Teilnehmer können sich dann bei dir via E-Mail melden und gegebenenfalls das gewünschte Instrument für dich eintragen, sodass du es dann zur Veranstaltung hinzufügen kannst.</p>
 
       help_edit_devices: "Geräte bearbeiten"
-      help_edit_devices_html: "<p>Im Gegensatz zum Instrument ist das Gerät nicht an eine Person gekoppelt - kann also alles sein von Beamer bis Lautsprecher zu Mikrofon. Hier kannst du aus allen Geräten der Datenbank diejenigen auswählen, die du für diesen Event benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>"
+      help_edit_devices_html: |-
+        <p>Im Gegensatz zum Instrument ist das Gerät nicht an eine Person gebunden - wie beispielsweise ein Beamer oder Lautsprecher oder Mikrofon. Hier kannst du aus allen Geräten der Datenbank diejenigen auswählen, die du für diese Veranstaltung benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>
+        <p>Wie bei den Instrumenten wird nach dem Speichern das Gerät als Teil der Veranstaltung registriert. Der Besitzer oder die Besitzerin wird automatisch daraufhin via E-Mail über diesen Eintrag informiert.</p>
+        <p>Bitte beachte, dass natürlich diese Person auch dem zustimmen muss, am besten du nimmst vorher zu ihr Kontakt via E-Mail auf (im Profil sichtbar).</p>
+        <p>Alle weiteren Details und Vereinbarungen zur Umsetzung der Veranstaltung (Treffpunkt, technische Details, Abholung des Gerätes während der Tage usw.) werden auch per E-Mail abgehandelt.</p>
+        <h3>Gesuchtes Gerät nicht vorhanden?</h3>
+        <p>Falls das gewünschte Gerät nicht vorhanden ist, wähle die Option "Nicht Vorhanden" und führe deinen Wunsch im Titel und im Beschreibungstext aus. Es wird so automatisch ein Eintrag ins Schwarze Brett erstellt. Interessierte Teilnehmer können sich dann bei dir via E-Mail melden und gegebenenfalls das gewünschte Gerät für dich eintragen, sodass du es dann zur Veranstaltung hinzufügen kannst.</p>
 
-      help_edit_more: "Weitere Informationen bearbeiten"
-      help_edit_more_html: "<p>Hier kannst du den Titel dieses Events ändern - ansonsten bleibt der Name der Produktion einfach für dieses Event erhalten. Außerdem ist es vielleicht sinnvoll hier das einzelne Event zu umschreiben und so zu erklären, was du genau vor hast (auch hier Möglichkeit Markdown).</p>"
+      help_edit_more: "Weitere Informationen angeben"
+      help_edit_more_html: |-
+        <p>Hier kannst du den Titel dieser Veranstaltung ändern - ansonsten wird der Name der Produktion übernommen. Außerdem kann ein individueller Beschreibungstext angegeben werden.</p>
+        <p>Beschreibungstexte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
       form:
 
@@ -232,15 +299,15 @@ de:
         btn_submit: "Veranstaltung erstellen"
         goto_production: "Zur Produktion"
 
-        error_location_occupied: "Der Ort ist leider schon zu dieser Uhrzeit belegt"
-        error_instrument_occupied: "Leider ist dieses Instrument zu dieser Uhrzeit schon belegt"
-        error_device_occupied: "Leider ist dieses Gerät zu dieser Uhrzeit schon belegt"
+        error_location_occupied: "Der Ort ist leider schon zu dieser Uhrzeit belegt."
+        error_instrument_occupied: "Leider ist dieses Instrument zu dieser Uhrzeit schon belegt."
+        error_device_occupied: "Leider ist dieses Gerät zu dieser Uhrzeit schon belegt."
 
-        error_instrument_unique: "Dieses Instrument existiert schon in deiner Liste"
-        error_device_unique: "Dieses Gerät existiert schon in deiner Liste"
+        error_instrument_unique: "Dieses Instrument existiert mehrfach in deiner Liste."
+        error_device_unique: "Dieses Gerät existiert mehrfach in deiner Liste."
 
-        error_wrong_daterange: "Das Ende liegt zeitlich vor oder genau auf dem Veranstaltungsbeginn"
-        error_out_of_daterange: "Der Zeitraum liegt außerhalb des Festivals!"
+        error_wrong_daterange: "Das Ende liegt zeitlich vor dem Veranstaltungsbeginn."
+        error_out_of_daterange: "Ha! Nicht schlecht. Aber der Zeitraum liegt außerhalb des Festivals!"
 
         panel_instruments_title: "Welche Instrumente brauchst du?"
         panel_devices_title: "Welche Geräte brauchst du?"
@@ -251,27 +318,27 @@ de:
         btn_remove_instrument: "Entfernen"
         btn_remove_device: "Entfernen"
 
-        select_not_exist_title: "Nicht vorhanden?"
+        select_not_exist_title: "Nicht vorhanden"
         select_not_exist_description: "Erstelle einen Eintrag auf dem Schwarzen Brett"
 
         blackboard_title: "Titel der Anzeige auf dem Schwarzen Brett"
         blackboard_description: "Text zur Anzeige"
 
-        error_title_needed: "Du musst einen Titel angeben"
-        error_description_needed: "Du musst einen Text angeben"
+        error_title_needed: "Du musst einen Titel angeben."
+        error_description_needed: "Du musst einen Text angeben."
 
         btn_edit_submit: "Speichern"
         btn_delete: "Veranstaltung löschen"
 
-    alert_create: "Produktion wurde erfolgreich erstellt!"
-    alert_update: "Produktion wurde erfolgreich aktualisiert!"
-    alert_delete: "Produktion wurde erfolgreich gelöscht!"
+    alert_create: "Wunderbar. Die Produktion wurde erfolgreich erstellt!"
+    alert_update: "Die Produktion wurde erfolgreich aktualisiert!"
+    alert_delete: "Die Produktion und alle damit verbundenenen Veranstaltungen wurden erfolgreich gelöscht!"
 
   events:
 
-    alert_create: "Veranstaltung wurde erfolgreich erstellt!"
-    alert_update: "Veranstaltung wurde erfolgreich aktualisiert!"
-    alert_delete: "Veranstaltung wurde erfolgreich gelöscht!"
+    alert_create: "Hurra! Die Veranstaltung wurde erfolgreich erstellt!"
+    alert_update: "Die Veranstaltung wurde erfolgreich aktualisiert!"
+    alert_delete: "Die Veranstaltung wurde erfolgreich gelöscht!"
 
   # INSTRUMENTS
 
@@ -290,14 +357,21 @@ de:
 
     title_used_in_events: "Veranstaltungen"
 
+    help_new_and_edit: "Angaben zum Instrument"
+    help_new_and_edit_html: |-
+      <p>Instrumente können mit dir als Performer oder Performerin in die Datenbank eingetragen werden. Andere Teilnehmer können dich und das Instrument für ihre Veranstaltungen dann anfragen. Du erhälst als Verantwortlicher oder Verantwortliche eine E-Mail und wirst über diese Kollaboration informiert.</p>
+      <p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und an einen Performer gebunden ist, der das Instrument bedient - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe.</p>
+      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Instrument, besondere Techniken oder Hinweise angegeben werden, die für den Komponisten oder Veranstalter wichtig oder inspirierend sein können.</p>
+      <p>Beschreibungstexte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
+
     form:
       panel_title: "Instrument"
       btn_submit: "Speichern"
       btn_delete: "Instrument löschen"
 
-    alert_create: "Instrument wurde erfolgreich erstellt!"
-    alert_update: "Instrument wurde erfolgreich aktualisiert!"
-    alert_delete: "Instrument wurde erfolgreich gelöscht!"
+    alert_create: "Toll. Das Instrument wurde erfolgreich eingetragen und wird jetzt für alle Teilnehmer sichtbar sein!"
+    alert_update: "Das Instrument wurde erfolgreich aktualisiert!"
+    alert_delete: "Das Instrument und alle dazugehörigen Kollaborationen wurden erfolgreich gelöscht!"
 
   # DEVICES
 
@@ -316,14 +390,21 @@ de:
 
     title_used_in_events: "Veranstaltungen"
 
+    help_new_and_edit: "Angaben zum Gerät"
+    help_new_and_edit_html: |-
+      <p>Geräte können in die Datenbank eingetragen werden. Du bietest das Gerät dann für andere Teilnehmer zur freien Verfügung an. Andere Teilnehmer können das Gerät für ihre Veranstaltungen dann anfragen. Du erhälst als Verantwortlicher oder Verantwortliche eine E-Mail und wirst über diese Anfrage informiert.</p>
+      <p>Im Gegensatz zum Instrument ist das Gerät nicht an eine Person gebunden - wie beispielsweise ein Beamer oder Lautsprecher oder Mikrofon.</p>
+      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Gerät, besondere Techniken oder Hinweise angegeben werden, die für den Komponisten oder Veranstalter wichtig oder inspirierend sein können.</p>
+      <p>Beschreibungstexte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
+
     form:
       panel_title: "Gerät"
       btn_submit: "Speichern"
       btn_delete: "Gerät löschen"
 
-    alert_create: "Gerät wurde erfolgreich erstellt!"
-    alert_update: "Gerät wurde erfolgreich aktualisiert!"
-    alert_delete: "Gerät wurde erfolgreich gelöscht!"
+    alert_create: "Super! Das Gerät wurde erfolgreich erstellt!"
+    alert_update: "Das Gerät wurde erfolgreich aktualisiert!"
+    alert_delete: "Das Gerät und alle dazugehörigen Anfragen wurden erfolgreich gelöscht!"
 
   # PARTICIPANTS
 
@@ -362,7 +443,7 @@ de:
 
     title: "Schwarzes Brett"
 
-    title_collaborations: "Performer/Instrumente gesucht"
+    title_collaborations: "PerformerIn und Instrumente gesucht"
     title_requirements: "Geräte gesucht"
 
   # ACTIVITY

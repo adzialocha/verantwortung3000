@@ -6,7 +6,7 @@ de:
       send_instructions: "Du erhältst in wenigen Minuten eine E-Mail, mit der Du Deine Registrierung bestätigen kannst."
       send_paranoid_instructions: "Falls Deine E-Mail-Adresse in unserer Datenbank existiert, erhältst Du in wenigen Minuten eine E-Mail mit der Du Deine Registrierung bestätigen kannst."
     failure:
-      already_authenticated: "Du bist bereits angemeldet."
+      already_authenticated: "Du bist bereits angemeldet!"
       inactive: "Dein Account ist nicht aktiv."
       invalid: "Ungültige Anmeldedaten."
       invalid_token: "Der Anmelde-Token ist ungültig."
@@ -17,11 +17,11 @@ de:
       unconfirmed: "Du musst Deinen Account bestätigen, bevor Du fortfahren kannst."
     mailer:
       confirmation_instructions:
-        subject: "Anleitung zur Bestätigung Deines Accounts"
+        subject: "VERANTWORTUNG 3000 - WILLKOMMEN!"
       reset_password_instructions:
-        subject: "Anleitung um Dein Passwort zurückzusetzen"
+        subject: "VERANTWORTUNG 3000 - PASSOWRT ZURÜCKSETZEN"
       unlock_instructions:
-        subject: "Anleitung um Deinen Account freizuschalten"
+        subject: "VERANTWORTUNG 3000 - PROFIL FREISCHALTEN"
     omniauth_callbacks:
       failure: "Du konntest nicht mit Deinem %{kind}-Account angemeldet werden, weil '%{reason}'."
       success: "Du hast Dich erfolgreich mit Deinem %{kind}-Account angemeldet."
@@ -40,8 +40,8 @@ de:
       update_needs_confirmation: "Deine Daten wurden aktualisiert, aber Du musst Deine neue E-Mail-Adresse bestätigen. Du erhälsts in wenigen Minuten eine E-Mail, mit der Du die Änderung Deiner E-Mail-Adresse abschließen kannst."
       updated: "Deine Daten wurden aktualisiert."
     sessions:
-      signed_in: "Erfolgreich angemeldet."
-      signed_out: "Erfolgreich abgemeldet."
+      signed_in: "Hallo! Willkommen!"
+      signed_out: "Du hast dich erfolgreich abgemeldet. Bis bald!"
     unlocks:
       send_instructions: "Du erhältst in wenigen Minuten eine E-Mail mit der Anleitung, wie Du Deinen Account entsperren kannst."
       send_paranoid_instructions: "Falls Deine E-Mail-Adresse in unserer Datenbank existiert, erhältst Du in wenigen Minuten eine E-Mail mit der Anleitung, wie Du Deinen Account entsperren kannst."
