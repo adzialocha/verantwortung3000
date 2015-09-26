@@ -6,6 +6,11 @@
 
   color: $white;
 
+  a
+  {
+    text-decoration: underline;
+  }
+
   h1, h2, h3, h4, h5, p, a
   {
     color: $white;
@@ -14,5 +19,12 @@
   h1
   {
     margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  h2, h3, h4, h5
+  {
+    font-size: 16px;
   }
 }

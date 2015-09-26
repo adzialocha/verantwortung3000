@@ -61,9 +61,11 @@ module ApplicationHelper
 
   end
 
-  def nice_timeframe(from, to)
+  def nice_timeframe(from, to, only_time=false)
 
-    if from.day == to.day
+    if only_time and from.day == to.day
+      from.strftime('%H:%M') + ' - ' + to.strftime('%H:%M')
+    elsif from.day == to.day
       from.strftime('%d.%m. %H:%M') + ' - ' + to.strftime('%H:%M')
     else
       from.strftime('%d.%m. %H:%M') + ' - ' + to.strftime('%d.%m. %H:%M')

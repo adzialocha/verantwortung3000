@@ -39,6 +39,15 @@
   overflow: hidden;
 }
 
+@media (max-width: $screen-xs-min) {
+
+  .event-grid__container
+  {
+    height: 400px;
+  }
+
+}
+
 .event-grid__container:nth-child(odd)
 {
   border-right: 3px solid $black;

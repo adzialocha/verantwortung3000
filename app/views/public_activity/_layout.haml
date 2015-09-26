@@ -1,6 +1,6 @@
-.activity
+.activity.row{:class => ['activity--' + activity.key.split('.').last]}
 
-  .activity__image-container
+  .col-xs-2.activity__image-container
 
     - if activity.trackable and activity.trackable.respond_to?(:cover_image) and activity.trackable.cover_image != nil
 
@@ -16,7 +16,7 @@
 
           = render "/public_activity/message", activity: activity
 
-  .activity__content
+  .col-xs-10.activity__content
 
     %p.activity__content__message
 

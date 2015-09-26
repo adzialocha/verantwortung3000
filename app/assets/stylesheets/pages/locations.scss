@@ -42,9 +42,13 @@
 
 @media (max-width: $screen-xs-max) {
 
-  .locations__item h2
+  .locations__item
   {
-    font-size: 30px;
+    h2
+    {
+      font-size: 30px;
+      margin: 20px;
+    }
   }
 
 }

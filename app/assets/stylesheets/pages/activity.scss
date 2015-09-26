@@ -2,17 +2,31 @@ $activity-size: 50px;
 
 .activity
 {
-  height: $activity-size;
-  @include clearfix();
-
+  min-height: $activity-size;
   margin-bottom: 20px;
+
+  border-right: 5px solid transparent;
+}
+
+.activity--create
+{
+  border-right-color: green;
+}
+
+.activity--update
+{
+  border-right-color: blue;
+}
+
+.activity--destroy
+{
+  border-right-color: red;
 }
 
 .activity__image-container
 {
-  width: $activity-size;
-  height: $activity-size;
-  float: left;
+  max-width: $activity-size;
+  padding: 0 !important;
 
   background-color: $black;
 }
@@ -34,9 +48,6 @@ $activity-size: 50px;
 
 .activity__content
 {
-  padding-left: 20px;
-  float: left;
-
   p
   {
     margin: 0;

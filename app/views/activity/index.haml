@@ -10,7 +10,9 @@
 
     .col-sm-12
 
-      - for activity in @activities
-        = render_activity activity, :layout => "../public_activity/layout", :fallback => "message"
+      .container-fluid
+
+        - for activity in @activities
+          = render_activity activity, :layout => "../public_activity/layout", :fallback => "message"
 
       = will_paginate @activities, renderer: BootstrapPagination::Rails

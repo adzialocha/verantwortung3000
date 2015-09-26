@@ -92,7 +92,7 @@ a.navbar-brand
   display: inline-block;
 }
 
-@media (max-width: $screen-sm-max) {
+@media (max-width: $screen-sm-min) {
 
   .navbar-brand-container
   {

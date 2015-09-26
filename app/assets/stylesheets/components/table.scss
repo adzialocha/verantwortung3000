@@ -93,3 +93,13 @@ $table-image-size: 50px;
   }
 
 }
+
+@media (max-width: $screen-xs-max) {
+
+  .table tr td:last-child, .table tr th:last-child
+  {
+    display: none;
+  }
+
+}
+

@@ -24,7 +24,10 @@
 
         %h3
 
-          %span= "#{nice_timeframe(event.from, event.to)} @ "
+          - if defined? only_time and only_time
+            %span= "#{nice_timeframe(event.from, event.to, true)} @ "
+          - else
+            %span= "#{nice_timeframe(event.from, event.to)} @ "
 
           %span
             = link_to event.location.title, location_path(event.location)

@@ -4,4 +4,4 @@
 
     %h1.text-center= l day, format: :long
 
-    = render '/event_grid', resource: events
+    = render '/event_grid', resource: events, only_time: true
