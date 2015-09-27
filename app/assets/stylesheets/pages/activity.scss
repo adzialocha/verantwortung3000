@@ -5,22 +5,22 @@ $activity-size: 50px;
   min-height: $activity-size;
   margin-bottom: 20px;
 
-  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
 
 .activity--create
 {
-  border-right-color: green;
+  border-left-color: green;
 }
 
 .activity--update
 {
-  border-right-color: blue;
+  border-left-color: blue;
 }
 
 .activity--destroy
 {
-  border-right-color: red;
+  border-left-color: red;
 }
 
 .activity__image-container
@@ -62,4 +62,11 @@ $activity-size: 50px;
 .activity__content__message
 {
   font-weight: bold;
+  text-transform: uppercase;
+
+  a, span.activity__content__message__deleted
+  {
+    background-color: $black;
+    color: $white;
+  }
 }

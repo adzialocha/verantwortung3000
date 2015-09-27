@@ -19,7 +19,7 @@
 
         %h2= t(collection.model_name.human.pluralize.downcase + '.title_table_my')
 
-        = render '/table', collection: collection.owned_by(current_user)
+        = render '/table', collection: collection.owned_by(current_user), hide_user: true
 
       %h2= t(collection.model_name.human.pluralize.downcase + '.title_table_all')
 

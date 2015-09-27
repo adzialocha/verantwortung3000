@@ -4,7 +4,7 @@
 
     .col-md-12
 
-      %h1 Create #{resource_class.model_name.human}
+      %h1 Erstelle #{resource_class.model_name.human}
 
   .row
 
@@ -22,4 +22,6 @@
 
         .form-actions
 
-          = form.button :submit, class: 'btn btn-default btn-info'
+          .pull-right
+
+            = form.button :submit, class: 'btn btn-success'

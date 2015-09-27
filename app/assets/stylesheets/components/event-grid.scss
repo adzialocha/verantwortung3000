@@ -43,7 +43,19 @@
 
   .event-grid__container
   {
-    height: 400px;
+    height: auto;
+    display: inline-block;
+  }
+
+/*   .event-grid__container__image
+  {
+    display: none;
+  }
+ */
+  .event-grid__container__event
+  {
+    position: static !important;
+    display: inline-block;
   }
 
 }

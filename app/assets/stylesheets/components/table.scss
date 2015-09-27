@@ -34,6 +34,11 @@ $table-image-size: 50px;
     margin-right: -15px;
   }
 
+  tr td:nth-child(1), tr th:nth-child(1)
+  {
+    max-width: $table-image-size;
+  }
+
   tr:nth-child(2) td
   {
     border-top: 7px solid $white !important;
@@ -41,7 +46,7 @@ $table-image-size: 50px;
 
   tr td:nth-child(2), tr th:nth-child(2)
   {
-    width: 60%;
+    width: auto;
   }
 
   tr td:nth-child(3), tr th:nth-child(3)

@@ -78,10 +78,10 @@
 
           %h1= t 'participants.title_table_instruments'
 
-          = render "/table", collection: @user.instruments
+          = render "/table", collection: @user.instruments, hide_user: true
 
         - unless @user.devices.empty?
 
           %h1= t 'participants.title_table_devices'
 
-          = render "/table", collection: @user.devices
+          = render "/table", collection: @user.devices, hide_user: true

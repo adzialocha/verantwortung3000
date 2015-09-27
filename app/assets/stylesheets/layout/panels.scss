@@ -21,6 +21,16 @@
   color: $white;
 }
 
+.panel-body
+{
+  hr
+  {
+    border-width: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 .panel-footer
 {
   border-color: $black;

@@ -29,7 +29,7 @@
 
       - else
 
-        %span= t 'activity.deleted', title: (activity.parameters.has_key?(:title) ? activity.parameters[:title] : "")
+        %span.activity__content__message__deleted= t 'activity.deleted', title: (activity.parameters.has_key?(:title) ? activity.parameters[:title] : "")
 
     %p.activity__content__meta
 

@@ -45,3 +45,18 @@ ul.devise-links
     }
   }
 }
+
+
+@media (max-width: $screen-xs-max) {
+
+  .text-nowrap
+  {
+    white-space: initial;
+  }
+
+  .container > h1
+  {
+    font-size: 25px;
+  }
+
+}

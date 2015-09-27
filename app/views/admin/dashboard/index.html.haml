@@ -10,35 +10,35 @@
 
     .panel-body
 
-      .row
+      %p
+        %span(class="badge")= @users_count
+        %span Teilnehmer
 
-        .col-md-12
+      %p
+        %span(class="badge")= @confirmed_users_count
+        %span davon bestätigt
 
-          %ul.list-group
+      %p
+        %span(class="badge")= @events_count
+        %span Veranstaltungen
 
-            %li.list-group-item
+      %p
+        %span(class="badge")= @productions_count
+        %span Produktionen
 
-              %span(class="badge")= @users_count
-              Users
+      %p
+        %span(class="badge")= @devices_count
+        %span Geräte Gesamt
 
-          %ul.list-group
+      %p
+        %span(class="badge")= @instruments_count
+        %span Instrumente Gesamt
 
-            %li.list-group-item
+      %p
+        %span(class="badge")= @collaborations_count
+        %span Kollaborationen ingesamt
 
-              %span(class="badge")= @events_count
-              Events
-
-          %ul.list-group
-
-            %li.list-group-item
-
-              %span(class="badge")= @devices_count
-              Devices
-
-          %ul.list-group
-
-            %li.list-group-item
-
-              %span(class="badge")= @instruments_count
-              Instruments
+      %p
+        %span(class="badge")= @requirements_count
+        %span benötigte Geräte gesamt
 

@@ -1,4 +1,4 @@
-%table{"class" => "table table-hover"}
+%table.table.table-hover
 
   %tr
 
@@ -6,7 +6,9 @@
 
     %th= t('common.table_column_title_name')
 
-    %th= t('common.table_column_title_owner')
+    - if not defined? hide_user or not hide_user
+
+      %th= t('common.table_column_title_owner')
 
     %th
 
@@ -28,10 +30,12 @@
           - else
             = resource.title
 
-      %td
+      - if not defined? hide_user or not hide_user
 
-        - unless resource.user.nil?
-          = link_to resource.user.fullname, user_path(resource.user)
+        %td
+
+          - unless resource.user.nil?
+            = link_to resource.user.fullname, user_path(resource.user)
 
       %td
 

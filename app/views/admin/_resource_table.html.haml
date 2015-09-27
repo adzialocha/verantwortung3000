@@ -1,22 +1,22 @@
 .container
 
-  .row
+  .row.header-row
 
-    .col-md-3
+    .col-md-6
 
-    .col-md-9
+      %h1= resource_class.model_name.human.pluralize
 
-      .pull-right
+    .col-md-6
 
-        = link_to new_resource_path, class: 'btn btn-sm btn-success' do
+      - if defined? can_add and can_add
 
-          %i.glyphicon.glyphicon-plus-sign
+        .pull-right
+
+          = link_to 'Hinzufügen', new_resource_path, class: 'btn btn-success'
 
   .row
 
     .col-md-12
-
-      %h1= resource_class.model_name.human.pluralize
 
       %table.table.table-hover
 
@@ -27,7 +27,9 @@
           - attributes.each do |a|
             %th= resource_class.human_attribute_name(a)
 
-          %th Actions
+          %th
+
+            .pull-right Aktionen
 
         - collection.each do |resource|
 
@@ -40,4 +42,6 @@
 
             %td
 
-              = link_to 'Bearbeiten', edit_resource_path(resource), class: 'btn btn-info'
+              .pull-right
+
+                = link_to 'Bearbeiten', edit_resource_path(resource), class: 'btn btn-info'
