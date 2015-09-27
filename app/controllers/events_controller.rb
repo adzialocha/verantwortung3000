@@ -7,7 +7,7 @@ class EventsController < ResourceController
   end
 
   def create
-    create!
+    create!(:notice => t("events.alert_create")) { edit_resource_url }
   end
 
   private

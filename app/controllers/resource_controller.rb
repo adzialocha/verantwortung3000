@@ -14,12 +14,12 @@ class ResourceController < ApplicationController
       resource.user_id = current_user.id
     end
 
-    create!(:notice => t("#{resource.model_name.human.pluralize.downcase}.alert_create"))
+    create!(:notice => t("#{resource.model_name.human.pluralize.downcase}.alert_create")) { edit_resource_url }
 
   end
 
   def update
-    update!(:notice => t("#{resource.model_name.human.pluralize.downcase}.alert_update"))
+    update!(:notice => t("#{resource.model_name.human.pluralize.downcase}.alert_update")) { edit_resource_url }
   end
 
   def destroy
