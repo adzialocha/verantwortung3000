@@ -12,8 +12,8 @@
 
         %ul
 
-          = li_link_to t('navigation.footer.routes'), routes_path
-          = li_link_to t('navigation.footer.contact'), contact_path
+          = li_link_to t('navigation.footer.routes'), page_path(:id => 'routes')
+          = li_link_to t('navigation.footer.contact'), page_path(:id => 'contact')
 
           - if current_user.try(:admin)
             = li_link_to t('navigation.footer.admin'), admin_root_path

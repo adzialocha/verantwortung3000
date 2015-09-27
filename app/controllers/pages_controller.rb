@@ -1,18 +1,7 @@
 class PagesController < ApplicationController
 
-  def home
-  end
-
-  def about
-  end
-
-  def locations
-  end
-
-  def contact
-  end
-
-  def routes
+  def show
+    @content = Page.find(params[:id])
   end
 
 end

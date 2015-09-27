@@ -25,7 +25,7 @@
           %ul.nav.navbar-nav.navbar-left
 
             = li_link_to t('navigation.home'), root_path
-            = li_link_to t('navigation.about'), about_path
+            = li_link_to t('navigation.about'), page_path(:id => 'about')
             = li_link_to t('navigation.calendar'), calendar_path
             = li_link_to t('navigation.locations'), locations_path
 

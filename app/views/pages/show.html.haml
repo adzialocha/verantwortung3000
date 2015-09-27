@@ -1,0 +1,12 @@
+.container
+
+  .page
+
+    %h1= @content["title_#{I18n.locale}"]
+    = markdown @content["content_#{I18n.locale}"]
+
+    - if @content.images.any?
+
+      %hr
+
+      = render '/image_grid', resource: @content

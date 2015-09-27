@@ -39,19 +39,16 @@
   overflow: hidden;
 }
 
-@media (max-width: $screen-xs-min) {
+@media (max-width: $screen-md-min) {
 
   .event-grid__container
   {
     height: auto;
+    width: 100%;
+
     display: inline-block;
   }
 
-/*   .event-grid__container__image
-  {
-    display: none;
-  }
- */
   .event-grid__container__event
   {
     position: static !important;

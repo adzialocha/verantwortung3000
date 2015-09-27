@@ -167,45 +167,6 @@ de:
     change_password_title: "Passwort ändern"
     submit_change_password: "Passwort ändern"
 
-  # STATIC PAGES
-
-  pages:
-
-    home_title: '30. August - 04. September 2016'
-    home_html: |-
-      <p>Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.</p>
-      <p>VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 will keine Kuration. BLATT 3000 will ein System der Selbstkuration. Alle Teilnehmer und Teilnehmerinnen sind für das Programm und die Durchführung selbst zuständig.</p>
-      <p>VERANTWORTUNG 3000 bietet Räumlichkeiten, Verpflegung und eine Plattform zur Ressourcen-Verwaltung. Die Teilnehmer und Teilnehmerinnen bieten ihre Ressourcen an und können andere Ressourcen verwenden um ein Programm zu schaffen. Alle bringen ihre Beute. Es wird getauscht, gespielt und gegessen, gemeinsam in Altwustrow.</p>
-      <p>VERANTWORTUNG 3000 finanziert sich selbst. Die Teilnahme kostet ungefähr 90 Euro. Aktuelle Informationen zum Programm auf: VERANTWORTUNG3000.DE</p>
-
-    about_title: 'Über'
-    about_html: |
-      <p>VERANTWORTUNG 3000 ist eine Veranstaltung, die vom 30. August bis 4. September 2016 in Altwustrow, in Brandenburg, stattfinden wird. VERANTWORTUNG 3000 wird initiiert von BLATT 3000. BLATT 3000 ist nicht Kuratorin und nicht künstlerische Leitung. Kuratieren und programmieren werden alle Teilnehmer und Teilnehmerinnen selbst, indem sie Veranstaltungen auf VERANTWORTUNG3000.DE erstellen. VERANTWORTUNG3000.DE ist ein Werkzeug zur Selbstkuration.</p>
-      <p>Im Laufe der 6 Tage steht VERANTWORTUNG 3000 ein großer Hof in Altwustrow zur Verfügung (ca. 5000 m2), der bewohnt und bespielt werden darf. Der Hof gehört dem lieben Peter, der fast alle Räumlichkeiten zur Verfügung stellt. Es gibt ein Haus, in dem der Großteil unterkommen wird, einige müssen in Zelten im Garten wohnen - insgesamt gibt es Kapazitäten für 50 Personen. Unter ORTE kann sich ein erster Eindruck verschafft werden. Für Verpflegung müssen die Teilnehmerinnen und Teilnehmer selber sorgen - BLATT 3000 stellt Lebensmittel bereit, gekocht wird von allen für alle.</p>
-      <h3>PLATTFORM</h3>
-      <p>VERANTWORTUNG3000.DE dient allen Teilnehmenden als Organisationstool und Kommunikationsbasis. Jede Teilnehmerin meldet sich an und erhält ein Profil. Mit diesem kann man Produktionen und Veranstaltungen erstellen, Instrumente eintragen, die gespielt und mitgebracht werden, sowie sämtliche Geräte.</p>
-      <p>Ein Instrument versteht sich hier in einer abstrakten Form: als eine Tätigkeit / ein Gegenstand, die und der immer an einen Performer gebunden ist (z.B. Stimme). Ein Gerät ist kein Instrument, da es nicht an an eine Performerin gebunden ist (z.B. Mikrofon).</p>
-      <p>Im KALENDER könnt ihr einsehen wann wer was wie und wo macht. VERANTWORTUNG3000.DE bietet die Möglichkeit sich zu vernetzen, gemeinsam Produktionen zu planen, miteinander zu kollaborieren, nach Instrumenten und Performern zu fragen oder für die Gruppe ein Abendessen zu kochen. Es gibt ein SCHWARZES BRETT, auf das sämtliche Anfragen an die 3000-Gemeinschaft gestellt werden können.</p>
-      <p>Hauptkommunikationsmittel ist die E-Mail, für die Absprache von Details kann die E-Mail-Adresse bei Anmeldung in den Profilen eingesehen werden, um den Dialog zu beginnen und die Produktion zu planen.</p>
-
-    contact_title: 'Kontakt'
-    contact_html: |-
-      <p>BLATT 3000</p>
-      <p>DZIALOCHA, KOBEL, WEBER GBR</p>
-      <p>KOPPENPLATZ 1</p><p>D-10115 BERLIN</p>
-      <p>GERMANY</p>
-      <hr>
-      <p>GESELLSCHAFTER - ANDREAS DZIALOCHA, MALTE KOBEL, LAURA WEBER</p>
-      <p>TELEFON +49 (0) 30 / 37 4489 47</p>
-      <hr>
-      <p>Falls du Fragen zur Anmeldung oder generell zu VERANTWORTUNG 3000 hast, schreib uns eine Mail an KONTAKT AT VERANTWORTUNG3000 DE</p>
-
-    routes_title: 'Anfahrt'
-    routes_html: |-
-      <p>Altwustrow liegt im Oderbruch, ca. 80 km östlich von Berlin. Der nächstgelegene Bahnhof befindet sich in Wriezen. Wriezen ist in 90 Minuten von Berlin mit der Bahn erreichbar. Es ist also zu empfehlen, Fahrräder mit in den Zug zu nehmen und von Wriezen mit dem Rad nach Altwustrow zu fahren. Außerdem ist die Umgebung schön mit dem Rad zu erkunden. Vom Wriezener Bahnhof sind es ca. 30 Minuten auf dem Fahrrad.</p>
-      <p>Wer nicht mit dem Fahrrad kommt, kann ab Wriezen HBF mit einem öffentlichen Bus (875) direkt nach Altwustrow (ca. 15 min, einmal pro Stunde) fahren.</p>
-      <p><a href="http://www.altwustrow.de" target="_blank">www.altwustrow.de</a></p>
-
   # LOCATIONS
 
   locations:
@@ -443,7 +404,7 @@ de:
 
     title: "Schwarzes Brett"
 
-    title_collaborations: "PerformerIn und Instrumente gesucht"
+    title_collaborations: "Instrumente gesucht"
     title_requirements: "Geräte gesucht"
 
   # ACTIVITY

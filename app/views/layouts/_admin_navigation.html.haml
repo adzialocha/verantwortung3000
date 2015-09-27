@@ -26,10 +26,11 @@
           %ul.nav.navbar-nav.navbar-left
 
             = li_link_to "Dashboard", admin_root_path
-            = li_link_to "Users", admin_users_path
-            = li_link_to "Locations", admin_locations_path
+            = li_link_to "Inhalte", admin_pages_path
+            = li_link_to "Teilnehmer", admin_users_path
+            = li_link_to "Orte", admin_locations_path
 
           %ul.nav.navbar-nav.navbar-right
 
-            = li_link_to "Page", root_path
+            = li_link_to "Zur Seite", root_path
             = li_link_to "Logout", destroy_user_session_path, method: :delete

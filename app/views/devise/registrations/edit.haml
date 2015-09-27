@@ -80,6 +80,8 @@
 
           = f.button :submit, t('participants.btn_submit'), :class => "btn btn-success"
 
+        .clearfix
+
       %hr
 
       %h2= t('participants.title_dangerzone')
@@ -89,4 +91,4 @@
         %span= t('participants.dangerzone')
 
         %span
-          = link_to t('participants.submit_delete_account'), registration_path(resource_name), data: { confirm: t('participants.prompt_delete_account') }, method: :delete
+          = link_to t('participants.submit_delete_account'), registration_path(resource_name), data: { confirm: t('participants.prompt_delete_account') }, method: :delete, :style => "color: red;"

@@ -2,13 +2,9 @@ Rails.application.routes.draw do
 
   devise_for :users, path: 'participants'
 
-  root 'pages#home'
+  root 'pages#show', id: 'home'
 
-  controller :pages do
-    get :about
-    get :routes
-    get :contact
-  end
+  resources :pages, :only => [ :show ]
 
   get 'calendar', controller: :calendar, action: :index
   get 'blackboard', controller: :black_board, action: :index
@@ -28,6 +24,7 @@ Rails.application.routes.draw do
 
     root 'dashboard#index'
 
+    resources :pages
     resources :users
     resources :locations
 

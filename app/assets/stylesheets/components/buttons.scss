@@ -80,3 +80,16 @@
   border-color: green;
   color: green;
 }
+
+/* groups */
+
+.btn-group .btn
+{
+  margin-bottom: -1px;
+}
+
+.btn-group .btn:first-child
+{
+  margin-left: -1px;
+}
+

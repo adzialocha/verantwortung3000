@@ -49,14 +49,21 @@ $footer-height: 50px;
   {
     height: $footer-height * 1.5;
 
+    .container
+    {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
     ul
     {
       display: block !important;
+      text-align: center;
     }
 
     .pull-right
     {
-      float: left !important;
+      float: initial !important;
     }
   }
 
