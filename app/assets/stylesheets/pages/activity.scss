@@ -4,23 +4,6 @@ $activity-size: 50px;
 {
   min-height: $activity-size;
   margin-bottom: 20px;
-
-  border-left: 5px solid transparent;
-}
-
-.activity--create
-{
-  border-left-color: green;
-}
-
-.activity--update
-{
-  border-left-color: blue;
-}
-
-.activity--destroy
-{
-  border-left-color: red;
 }
 
 .activity__image-container
@@ -68,5 +51,29 @@ $activity-size: 50px;
   {
     background-color: $black;
     color: $white;
+  }
+}
+
+.activity--create .activity__content__message
+{
+  a, span.activity__content__message__deleted
+  {
+    background-color: green;
+  }
+}
+
+.activity--update .activity__content__message
+{
+  a, span.activity__content__message__deleted
+  {
+    background-color: blue;
+  }
+}
+
+.activity--destroy .activity__content__message
+{
+  a, span.activity__content__message__deleted
+  {
+    background-color: red;
   }
 }
