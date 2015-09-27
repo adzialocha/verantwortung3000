@@ -1,6 +1,7 @@
 class Collaboration < ActiveRecord::Base
 
   scope :all_uncomplete, -> { where(instrument_id: nil) }
+  scope :all_complete, -> { where('instrument_id IS NOT NULL') }
 
   belongs_to :event
   belongs_to :instrument

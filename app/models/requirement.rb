@@ -1,6 +1,7 @@
 class Requirement < ActiveRecord::Base
 
   scope :all_uncomplete, -> { where(device_id: nil) }
+  scope :all_complete, -> { where('device_id IS NOT NULL') }
 
   belongs_to :event
   belongs_to :device

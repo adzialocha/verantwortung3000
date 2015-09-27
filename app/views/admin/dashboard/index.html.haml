@@ -1,6 +1,10 @@
 .container
 
-  %h1 Hey!
+  .row.header-row
+
+    .col-md-12
+
+      %h1= "Hey #{current_user.first_name}!"
 
   .panel.panel-default
 
@@ -12,33 +16,44 @@
 
       %p
         %span(class="badge")= @users_count
-        %span Teilnehmer
+        %span Teilnehmer, davon
 
-      %p
         %span(class="badge")= @confirmed_users_count
-        %span davon bestätigt
-
-      %p
-        %span(class="badge")= @events_count
-        %span Veranstaltungen
+        %span bestätigt.
 
       %p
         %span(class="badge")= @productions_count
-        %span Produktionen
+        %span Produktionen mit ingesamt
+
+        %span(class="badge")= @events_count
+        %span Veranstaltungen.
 
       %p
         %span(class="badge")= @devices_count
-        %span Geräte Gesamt
+        %span registrierte Geräte, mit
+
+        %span(class="badge")= @requirements_complete_count
+        %span Verwendungen und
+
+        %span(class="badge")= @requirements_incomplete_count
+        %span Einträgen auf dem Schwarzen Brett.
 
       %p
         %span(class="badge")= @instruments_count
-        %span Instrumente Gesamt
+        %span registrierte Instrumente, mit
+
+        %span(class="badge")= @collaborations_complete_count
+        %span Verwendungen und
+
+        %span(class="badge")= @collaborations_incomplete_count
+        %span Einträgen auf dem Schwarzen Brett.
+
+      %hr
 
       %p
-        %span(class="badge")= @collaborations_count
-        %span Kollaborationen ingesamt
+        %span(class="badge")= @images_count
+        %span hochgeladene Bilder.
 
       %p
-        %span(class="badge")= @requirements_count
-        %span benötigte Geräte gesamt
-
+        %span(class="badge")= @activities_count
+        %span aufgezeichnete Aktivitäten.
