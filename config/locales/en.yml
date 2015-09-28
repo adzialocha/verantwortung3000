@@ -365,6 +365,32 @@ en:
     submit_delete_account: "Delete profile"
     prompt_delete_account: "Oha! Are you sure, you want to delete your profile and all your contributions? This can't be undone."
 
+  # ENGAGEMENT
+
+  engagement:
+
+    overview_title: "Engagement"
+
+    help_main: "Hilfe Titel"
+    help_main_html: "Hilfe Text fehlt"
+
+    table_title_collaborations: "Verwendete Instrumente"
+    table_collaborations_is_empty: "Du wurdest bisher für kein Instrument angefragt."
+
+    table_title_requirements: "Verwendete Geräte"
+    table_requirements_is_empty: "Bisher wurde kein Gerät von dir angefragt."
+
+    table_column_title_name: "Was?"
+    table_column_title_timeframe: "Wann und Wo?"
+    table_column_title_event: "Was und Wer?"
+
+    btn_reject: "Ablehnen"
+
+    reject_prompt_are_you_sure: "Bist du dir sicher, dass du diese Kollaboration ablehnen möchtest? Der jeweilige Teilnehmer wird darüber informiert."
+
+    alert_requirement_rejected: "Das Gerät wird nicht mehr für die Veranstaltung verwendet. Der Veranstalter wurde via E-Mail über deine Absage informiert."
+    alert_collaboration_rejected: "Die Kollaboration wurde abgelehnt, der Veranstalter wurde via E-Mail über deine Absage informiert."
+
   # BLACK BOARD
 
   blackboard:

@@ -39,24 +39,6 @@
   overflow: hidden;
 }
 
-@media (max-width: $screen-md-min) {
-
-  .event-grid__container
-  {
-    height: auto;
-    width: 100%;
-
-    display: inline-block;
-  }
-
-  .event-grid__container__event
-  {
-    position: static !important;
-    display: inline-block;
-  }
-
-}
-
 .event-grid__container:nth-child(odd)
 {
   border-right: 3px solid $black;
@@ -87,8 +69,11 @@
 
 .event-grid__container__image
 {
+  z-index: -1;
+
   background-position: center;
   background-size: cover;
+
   opacity: 0;
 }
 
@@ -116,6 +101,15 @@
   .event-grid__container
   {
     border-right: none !important;
+
+    height: auto;
+    width: 100%;
+  }
+
+  .event-grid__container__event
+  {
+    position: static !important;
+    display: inline-block;
   }
 
 }

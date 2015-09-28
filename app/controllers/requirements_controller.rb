@@ -10,7 +10,7 @@ class RequirementsController < ApplicationController
 
       # UserMailer.inform_about_rejected_requirement(self.device.user, self).deliver_now
 
-      redirect_to engagement_path, :notice => I18n.t('engagement.flash_requirement_rejected')
+      redirect_to engagement_path, :notice => I18n.t('engagement.alert_requirement_rejected')
 
     end
 

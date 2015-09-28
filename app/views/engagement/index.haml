@@ -16,14 +16,14 @@
 
       .well
 
-        %h1= t('enagement.help_main')
-        = t('enagement.help_main_html')
+        %h1= t('engagement.help_main')
+        = t('engagement.help_main_html')
 
-      %h2= t 'enagement.table_title_collaborations'
+      %h2= t 'engagement.table_title_collaborations'
 
       - unless @collaborations.any?
 
-        %p= t 'engagenemtn.table_collaborations_is_empty'
+        %p= t 'engagement.table_collaborations_is_empty'
 
       - else
 
@@ -31,11 +31,11 @@
 
       %hr
 
-      %h2= t 'enagement.table_title_requirements'
+      %h2= t 'engagement.table_title_requirements'
 
       - unless @requirements.any?
 
-        %p= t 'engagenemtn.table_requirements_is_empty'
+        %p= t 'engagement.table_requirements_is_empty'
 
       - else
 

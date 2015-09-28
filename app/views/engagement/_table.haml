@@ -1,4 +1,4 @@
-%table.table.table-hover
+%table.table.table-hover.engagement-table
 
   %tr
 
@@ -29,6 +29,7 @@
 
         %p
           %span= nice_timeframe(resource.event.from, resource.event.to)
+        %p
           %span @
           %span
             = link_to resource.event.location.title, location_path(resource.event.location)
@@ -41,7 +42,8 @@
 
             = link_to resource.event.production_title, production_event_path(resource.event.production, resource.event)
 
-          %span= link_to resource.event.production.user.fullname, user_path(resource.event.production.user)
+        %p
+          = link_to resource.event.production.user.fullname, user_path(resource.event.production.user)
 
       %td
 

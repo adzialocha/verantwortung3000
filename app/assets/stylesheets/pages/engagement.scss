@@ -1,0 +1,21 @@
+.engagement-table
+{
+  td .btn
+  {
+    visibility: visible;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+
+  .engagement-table tr td:nth-child(4), .engagement-table tr th:nth-child(4)
+  {
+    display: none;
+  }
+
+  .engagement-table tr td:first-child, .engagement-table tr th:first-child
+  {
+    display: none;
+  }
+
+}
