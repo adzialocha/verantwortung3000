@@ -103,6 +103,38 @@ de:
 
         Alle weiteren Details zur Produktion werden via E-Mail abgehandelt. Melde dich gern bei weiteren Fragen bei uns!
 
+    requirement_rejected:
+
+      subject: "VERANTWORTUNG 3000 - GERÄTVERWENDUNG ABGEHLEHNT"
+      message: |-
+
+        Hallo %{name}!
+
+        Das angefragte Gerät *%{device}* wurde von %{device_owner_name} (%{device_owner_url}) für deine folgende Veranstaltung leider abgelehnt:
+
+        %{event}
+        %{date} @ %{location}
+
+        Mit der Ablehnung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche eines ähnlichen Gerätes erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+
+        Link: %{url}
+
+    collaboration_rejected:
+
+      subject: "VERANTWORTUNG 3000 - KOLLABORATION ABGEHLEHNT"
+      message: |-
+
+        Hallo %{name}!
+
+        Das angefragte Instrumente *%{instrument}* wurde von %{instrument_owner_name} (%{instrument_owner_url}) für deine folgende Veranstaltung leider abgelehnt:
+
+        %{event}
+        %{date} @ %{location}
+
+        Mit der Ablehnung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche deselben Instruments erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+
+        Link: %{url}
+
   # NAVIGATION
 
   navigation:

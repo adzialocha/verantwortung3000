@@ -6,9 +6,9 @@ class RequirementsController < ApplicationController
 
     if can? :update, requirement
 
-      requirement.update :device_id => nil, :title => requirement.device.title, :description => requirement.device.description
+      UserMailer.inform_about_rejected_requirement(requirement.event.production.user, requirement).deliver_now
 
-      # UserMailer.inform_about_rejected_requirement(self.device.user, self).deliver_now
+      requirement.update :device_id => nil, :title => requirement.device.title, :description => requirement.device.description
 
       redirect_to engagement_path, :notice => I18n.t('engagement.alert_requirement_rejected')
 
