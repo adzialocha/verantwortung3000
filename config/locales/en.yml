@@ -89,33 +89,33 @@ en:
 
     requirement_rejected:
 
-      subject: "VERANTWORTUNG 3000 - GERÄTVERWENDUNG ABGEHLEHNT"
+      subject: "VERANTWORTUNG 3000 - GERÄTVERWENDUNG ENTFERNT"
       message: |-
 
         Hallo %{name}!
 
-        Das angefragte Gerät *%{device}* wurde von %{device_owner_name} (%{device_owner_url}) für deine folgende Veranstaltung leider abgelehnt:
+        Das angefragte Gerät *%{device}* wurde von %{device_owner_name} (%{device_owner_url}) für deine folgende Veranstaltung leider gelöscht:
 
         %{event}
         %{date} @ %{location}
 
-        Mit der Ablehnung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche eines ähnlichen Gerätes erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+        Mit der Ablehnung / Löschung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche eines ähnlichen Gerätes erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
 
         Link: %{url}
 
     collaboration_rejected:
 
-      subject: "VERANTWORTUNG 3000 - KOLLABORATION ABGEHLEHNT"
+      subject: "VERANTWORTUNG 3000 - KOLLABORATION ENTFERNT"
       message: |-
 
         Hallo %{name}!
 
-        Das angefragte Instrumente *%{instrument}* wurde von %{instrument_owner_name} (%{instrument_owner_url}) für deine folgende Veranstaltung leider abgelehnt:
+        Das angefragte Instrumente *%{instrument}* wurde von %{instrument_owner_name} (%{instrument_owner_url}) für deine folgende Veranstaltung leider gelöscht:
 
         %{event}
         %{date} @ %{location}
 
-        Mit der Ablehnung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche deselben Instruments erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+        Mit der Ablehnung / Löschung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche deselben Instruments erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
 
         Link: %{url}
 

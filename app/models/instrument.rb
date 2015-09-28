@@ -19,7 +19,13 @@ class Instrument < ActiveRecord::Base
   before_destroy :prepare_black_board_posts
 
   def prepare_black_board_posts
+
+    for collaboration in self.collaborations
+      UserMailer.inform_about_rejected_collaboration(collaboration.event.production.user, collaboration).deliver_now
+    end
+
     self.collaborations.update_all :instrument_id => nil, :title => self.title, :description => self.description
+
   end
 
 end
