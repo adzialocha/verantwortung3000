@@ -4,8 +4,8 @@ class BlackBoardController < ApplicationController
 
   def index
 
-    @collaborations = Collaboration.all_uncomplete
-    @requirements = Requirement.all_uncomplete
+    @collaborations = Collaboration.all_uncomplete.order('updated_at DESC')
+    @requirements = Requirement.all_uncomplete.order('updated_at DESC')
 
   end
 

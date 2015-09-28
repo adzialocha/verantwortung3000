@@ -6,9 +6,13 @@ Rails.application.routes.draw do
 
   resources :pages, :only => [ :show ]
 
+  resources :requirements, :only => [ :update ]
+  resources :collaborations, :only => [ :update ]
+
   get 'calendar', controller: :calendar, action: :index
   get 'blackboard', controller: :black_board, action: :index
   get 'activity', controller: :activity, action: :index
+  get 'engagement', controller: :engagement, action: :index
 
   resources :users, :only => [ :show, :index ], path: 'participants'
   resources :locations, :only => [ :show, :index ]

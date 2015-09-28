@@ -8,7 +8,7 @@
     %span.black-board__table__item__title__event
       = link_to item.event.production_title, production_event_path(item.event.production, item.event)
 
-  %p.black-board__table__item__date= l item.created_at, format: :long
+  %p.black-board__table__item__date= l item.updated_at, format: :long
 
   - if not item.description.nil? and item.description != ""
     %p.black-board__table__item__description= item.description

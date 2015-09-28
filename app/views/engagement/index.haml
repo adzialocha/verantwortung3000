@@ -1,0 +1,43 @@
+.container
+
+  .row.header-row
+
+    .col-sm-6
+
+      %h1= t('engagement.overview_title')
+
+    .col-sm-6
+
+      = link_to t('common.toggle_help'), '#', class: 'btn btn-default toggle-help'
+
+  .row
+
+    .col-sm-12
+
+      .well
+
+        %h1= t('enagement.help_main')
+        = t('enagement.help_main_html')
+
+      %h2= t 'enagement.table_title_collaborations'
+
+      - unless @collaborations.any?
+
+        %p= t 'engagenemtn.table_collaborations_is_empty'
+
+      - else
+
+        = render 'table', collection: @collaborations
+
+      %hr
+
+      %h2= t 'enagement.table_title_requirements'
+
+      - unless @requirements.any?
+
+        %p= t 'engagenemtn.table_requirements_is_empty'
+
+      - else
+
+        = render 'table', collection: @requirements
+

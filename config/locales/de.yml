@@ -398,6 +398,12 @@ de:
     submit_delete_account: "Profil löschen"
     prompt_delete_account: "Oha! Bist du dir sicher, dass du dein Profil und alle dazugehörigen Einträge für immer löschen möchtest? Dieser Schritt kann nicht rückgängig gemacht werden."
 
+  # ENGAGEMENT
+
+  engagement:
+
+    reject_prompt_are_you_sure: "Bist du dir sicher, dass du diese Kollaboration ablehnen möchtest? Der jeweilige Teilnehmer wird darüber informiert."
+
   # BLACK BOARD
 
   blackboard:

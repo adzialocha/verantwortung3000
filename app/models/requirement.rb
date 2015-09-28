@@ -18,6 +18,10 @@ class Requirement < ActiveRecord::Base
     self.device.blank?
   end
 
+  def share_item
+    self.device
+  end
+
   private
 
   def is_occupied

@@ -1,0 +1,50 @@
+%table.table.table-hover
+
+  %tr
+
+    %th #
+
+    %th= t('engagement.table_column_title_name')
+
+    %th= t('engagement.table_column_title_timeframe')
+
+    %th= t('engagement.table_column_title_event')
+
+    %th
+
+  - collection.each do |resource|
+
+    %tr
+
+      %td.table-image
+
+        - unless resource.share_item.cover_image.nil?
+          .table-image__image{ :style => 'background-image: url("' + resource.cover_image.src.thumb.url + '")' }
+
+      %td
+
+        %strong.text-uppercase= link_to resource.share_item.title, resource.share_item, action: 'show'
+
+      %td
+
+        %p
+          %span= nice_timeframe(resource.event.from, resource.event.to)
+          %span @
+          %span
+            = link_to resource.event.location.title, location_path(resource.event.location)
+
+      %td
+
+        %p
+
+          %strong.text-uppercase
+
+            = link_to resource.event.production_title, production_event_path(resource.event.production, resource.event)
+
+          %span= link_to resource.event.production.user.fullname, user_path(resource.event.production.user)
+
+      %td
+
+        .pull-right
+
+          = link_to t('engagement.btn_reject'), resource, data: { confirm: t('engagement.reject_prompt_are_you_sure') }, class: 'btn btn-danger', method: :put

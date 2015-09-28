@@ -18,6 +18,10 @@ class Collaboration < ActiveRecord::Base
     self.instrument.blank?
   end
 
+  def share_item
+    self.instrument
+  end
+
   private
 
   def is_occupied
