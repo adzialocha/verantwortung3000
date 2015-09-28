@@ -151,6 +151,7 @@ de:
     instruments: "Instrumente"
     devices: "Geräte"
 
+    engagement: "Engagement"
     activity: "Aktivitäten"
     blackboard: "Schwarzes Brett"
 
@@ -461,6 +462,7 @@ de:
   blackboard:
 
     title: "Schwarzes Brett"
+    text: "Text fehlt"
 
     title_collaborations: "Instrumente gesucht"
     title_requirements: "Geräte gesucht"

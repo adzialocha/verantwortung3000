@@ -135,6 +135,7 @@ en:
     instruments: "Instruments"
     devices: "Equipment"
 
+    engagement: "Engagement"
     activity: "Activities"
     blackboard: "Blackboard"
 
@@ -427,7 +428,8 @@ en:
 
   blackboard:
 
-    title: "BLACKBOARD"
+    title: "Blackboard"
+    text: "Text fehlt"
 
     title_collaborations: "Instruments wanted"
     title_requirements: "Equipment wanted"
