@@ -19,11 +19,9 @@
 
       .content
 
-        - if not @location.description.nil? and @location.description != ""
+        .content__markdown
 
-          .content__markdown
-
-            = markdown(@location.description)
+          = markdown(@location["description_#{I18n.locale}"])
 
         - if @location.images.any?
 
