@@ -63,7 +63,7 @@ en:
 
     requirement:
 
-      subject: "VERANTWORTUNG 3000 - NEW EQUIPMENT REQUEST"
+      subject: "NEW EQUIPMENT REQUEST"
       message: |-
         Hello %{name}!
 
@@ -76,7 +76,7 @@ en:
 
     collaboration:
 
-      subject: "VERANTWORTUNG 3000 - NEW COLLABORATION"
+      subject: "NEW COLLABORATION"
       message: |-
         Hello %{name}!
 
@@ -89,7 +89,7 @@ en:
 
     requirement_rejected:
 
-      subject: "VERANTWORTUNG 3000 - GERÄTVERWENDUNG ENTFERNT"
+      subject: "GERÄTVERWENDUNG ENTFERNT"
       message: |-
 
         Hallo %{name}!
@@ -105,7 +105,7 @@ en:
 
     collaboration_rejected:
 
-      subject: "VERANTWORTUNG 3000 - KOLLABORATION ENTFERNT"
+      subject: "KOLLABORATION ENTFERNT"
       message: |-
 
         Hallo %{name}!

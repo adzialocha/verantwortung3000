@@ -67,7 +67,7 @@ de:
 
     requirement:
 
-      subject: "VERANTWORTUNG 3000 - NEUE GERÄTVERWENDUNG"
+      subject: "NEUE GERÄTVERWENDUNG"
       message: |-
         Hallo %{name}!
 
@@ -86,7 +86,7 @@ de:
 
     collaboration:
 
-      subject: "VERANTWORTUNG 3000 - NEUE KOLLABORATION"
+      subject: "NEUE KOLLABORATION"
       message: |-
         Hallo %{name}!
 
@@ -105,7 +105,7 @@ de:
 
     requirement_rejected:
 
-      subject: "VERANTWORTUNG 3000 - GERÄTVERWENDUNG ABGEHLEHNT"
+      subject: "GERÄTVERWENDUNG ABGEHLEHNT"
       message: |-
 
         Hallo %{name}!
@@ -121,7 +121,7 @@ de:
 
     collaboration_rejected:
 
-      subject: "VERANTWORTUNG 3000 - KOLLABORATION ABGEHLEHNT"
+      subject: "KOLLABORATION ABGEHLEHNT"
       message: |-
 
         Hallo %{name}!
