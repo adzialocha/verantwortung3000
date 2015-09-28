@@ -7,7 +7,13 @@ class EventsController < ResourceController
   end
 
   def create
+
+    if resource.attributes.has_key? 'user_id'
+      resource.user_id = current_user.id
+    end
+
     create!(:notice => t("events.alert_create")) { edit_resource_url }
+
   end
 
   private
