@@ -27,7 +27,7 @@ en:
 
     help_image_upload: "Upload images"
     help_image_upload_html: |-
-      <p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG format is allowed.</p>"
+      <p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG formats are allowed.</p>"
 
     help_text_formatting: "Format texts"
     help_text_formatting_html: |-
@@ -46,10 +46,17 @@ en:
 
         Welcome to VERANTWORTUNG 3000!
 
-        You can confirm your account email through the link below:
+        Please activate your account by clicking the following link:
 
         %{url}
+        
+        Please note: This email does not completely confirm your participation in the festival. We can only fully register you as a participant including board and lodging once we received your participation fee.    
 
+        Currently we are yet uncertain about the exact amount (approx. 90 Euro), but you will receive information and an invoice as soon as we are all set.
+        
+        If you have any further questions, please feel free to ask: kontakt@verantwortung3000.de
+        
+        
       forgot_password_html: |-
         Hello!
 
@@ -59,7 +66,8 @@ en:
 
         If you didnt request this, please ignore this email.
 
-        Your password wont change until you access the link above and create a new one.
+        Your password won't change until you access the link above and create a new one.
+        
 
     requirement:
 
@@ -67,55 +75,65 @@ en:
       message: |-
         Hello %{name}!
 
-        %{device}
+        Your device *%{device}* has been requested for the following production:
 
         %{event}
         %{date} @ %{location}
 
         Link: %{url}
+        
+        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email.  
 
+        %{creator_name}'s email is: %{creator_mail}.
+        
+        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the fesitval. If you have any other questions, feel free to contact us. 
+        
     collaboration:
 
       subject: "NEW COLLABORATION"
       message: |-
         Hello %{name}!
 
-        %{instrument}
+        One of your instruments, %{instrument}, has been requested for the following event:
 
         %{event}
         %{date} @ %{location}
 
         Link: %{url}
 
+        You automatically take part in this production as a performer with your instrument. If you don't want to participate, drop *%{creator_name}* (%{creator_url}) an email: %{creator_mail}.
+        
+        All further info on this production will be dealt with via email. If you have any other questions, contact us at any time.
+
     requirement_rejected:
 
-      subject: "GERÄTVERWENDUNG ENTFERNT"
+      subject: "EQUIPMENT REFUSED"
       message: |-
 
         Hallo %{name}!
 
-        Das angefragte Gerät *%{device}* wurde von %{device_owner_name} (%{device_owner_url}) für deine folgende Veranstaltung leider gelöscht:
+        The equipment *%{device}* you requested for the following event has been refused by %{device_owner_name} (%{device_owner_url}):
 
         %{event}
         %{date} @ %{location}
 
-        Mit der Ablehnung / Löschung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche eines ähnlichen Gerätes erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+        A request has automatically been created on the blackboard to help you find a similar equipment. You may edit or delete this request here::
 
         Link: %{url}
 
     collaboration_rejected:
 
-      subject: "KOLLABORATION ENTFERNT"
+      subject: "COLLABORATION REFUSED"
       message: |-
 
         Hallo %{name}!
 
-        Das angefragte Instrumente *%{instrument}* wurde von %{instrument_owner_name} (%{instrument_owner_url}) für deine folgende Veranstaltung leider gelöscht:
+        The instrument *%{instrument}* you requested for the following event has been refused by %{instrument_owner_name} (%{instrument_owner_url}):
 
         %{event}
         %{date} @ %{location}
 
-        Mit der Ablehnung / Löschung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche deselben Instruments erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+        A request has automatically been created on the blackboard to help you find another instrument. You may edit or delete this request here:
 
         Link: %{url}
 
@@ -165,14 +183,14 @@ en:
     signup_title: "Register"
     signup_title_name: "Hello!"
     signup_description_html: |-
-      <p>You are about to participate in VERANTWORTUNG 3000. Therefore we need some of your data. We ask you to fill everything out below.</p>
-      <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation will be approx. 90 Euros, including board and lodge throughout the festival. You will receive an invoice via email.</p>
-      <p>We can only ensure your participation when we received your transaction. So we ask you to transfer the cost in time.</p>
+      <p>You are about to participate in VERANTWORTUNG 3000.</p>
+      <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation will be approx. 90 Euro, including board and lodge throughout the festival. You will receive an invoice via email.</p>
+      <p>We can only confirm your participation once we received your transaction. So we ask you to transfer the cost in time.</p>
       <p>We are very much looking forward to welcoming you.</p>
 
     signup_contact: "Contact"
-    signup_hint_email: "Please leave your email. We need your email to get in touch with you with everything that is happening here on VERANTWORTUNG3000.de."
-    signup_hint_mobile: "Your cellphone will be necessary during the festival and the main means by reaching other participants.."
+    signup_hint_email: "Please leave your email. We need your email to get in touch with you regarding everything that is happening here on VERANTWORTUNG3000.de."
+    signup_hint_mobile: "Your cellphone will be necessary during the festival and the main means by reaching other participants on the ground."
     signup_address: "Your address"
     signup_password: "Password"
     submit_signup: "Register"
@@ -223,11 +241,11 @@ en:
 
     help_new: "Create production"
     help_new_html: |-
-      <p>This is where you can create and describe your production. A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as rehearsal, talks, concerts etc. Events can be created later. So this space is where you describe your general ideas about your production.</p>
+      <p>A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end. The indivdual events can be created later.</p>
 
     help_edit_main: "Edit production"
     help_edit_main_html: |-
-      <p>You can edit your production here or change its title.</p>
+      <p>A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end.</p>
 
     help_edit_events: "Edit event"
     help_edit_events_html: |-
@@ -246,19 +264,31 @@ en:
 
       help_edit_main: "Event"
       help_edit_main_html: |-
-        <p>Select the venue and date for your event.</p>
+        <p>Select the venue and date for your event from the list.</p>
+        <p>It is possible that this venue is already taken at that time. To see which venues are reserved for particular events have a look here: <a href="http://www.verantwortung3000.de/locations" target="_blank">Orte</a></p>
 
       help_edit_instruments: "Edit instruments"
       help_edit_instruments_html: |-
-        <p>An instrument is to be understood as tied to a performer, but can be anything from voice to shoes. So if you are looking for an instrument you also reserve the performer, that plays that instrument. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>
-
+        <p>An instrument can be anything that is part of a performance and tied to a performer, who plays that instrument - but can be anything from voice to shoes, movement to viola. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>
+        <p>This instrument and the associated performer will be registered as part of your event. The person involved will automatically receive an email and be informed about the collaboration.</p>
+        <p>Obviously the performer has to approve of the collaboration, so it might be best to first contact her or him via email (see profile)</p>
+        <p>All further agreements and details on the collaboration and event will also be dealt with via email.</p>
+        <h3>Is the instrument you are looking for not available?</h3>
+        <p>If your favourite instrument is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who are interested in collaborating will then reach you via email and hopefully register that instrument in the database, so you can then add it to your event.</p>
+      
       help_edit_devices: "Edit equipment"
       help_edit_devices_html: |-
         <p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
-
+        <p>The equipment will be registered as part of your event. The owner will automatically receive an email and be informed about the request.</p>
+        <p>Obviously the owner has to approve of the use of the equipment, so it might be best to first contact her or him via email (see profile)</p>
+        <p>All further agreements and details of the event (meeting, handing over, technical details etc.) will also be dealt with via email.</p>
+        <h3>Is the equipment you are looking for not available?</h3>
+        <p>If the equipment you are looking for is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who might help you out will then reach you via email and hopefully register that equipment in the database, so you can then add it to your event.</p>
+      
       help_edit_more: "Edit further info"
       help_edit_more_html: |-
-        <p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event (using Markdown) and let others know what they can expect.</p>
+        <p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event and let others know what they can expect.</p>
+        <p>Description texts can be edited using Markdown syntax. More information on Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
       form:
 
