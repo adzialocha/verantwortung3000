@@ -53,7 +53,7 @@ de:
         Zurzeit steht noch nicht fest, wie hoch der Beitrag sein wird (ungefähr 90 Euro), du wirst in den kommenden Wochen alle Informationen von uns via E-Mail und eine Rechnung erhalten, sobald alles bereit ist.
 
         Schreibe an kontakt@verantwortung3000.de wenn du noch Fragen hast!
-
+        
 
       forgot_password_html: |-
         Hallo Hallo!
@@ -362,7 +362,7 @@ de:
 
     help_new_and_edit: "Angaben zum Instrument"
     help_new_and_edit_html: |-
-
+  
     form:
       panel_title: "Instrument"
       btn_submit: "Speichern"
@@ -443,7 +443,8 @@ de:
     overview_title: "Engagement"
 
     help_main: "DEIN ENGAGEMENT"
-    help_main_html: <p>Hier findest du eine Auflistung all deiner Kollaborationen und siehst in welchen Produktionen und Veranstaltungen du involviert bist. Es ist also eine praktische Übersicht all deiner Termine und Vernetzungen während des Festivals.</p><p>Außerdem kannst du hierüber Anfragen deiner Geräte und Instrumente ablehnen. Jedoch lohnt es sich vielleicht vorher mit derjenigen Person, die anfragt, zu kommunizieren.</p>
+    help_main_html: <p>Hier findest du eine Auflistung all deiner Kollaborationen und siehst in welchen Produktionen und Veranstaltungen du involviert bist. Es ist also eine praktische Übersicht all deiner Termine und Vernetzungen während des Festivals.</p>
+    <p>Außerdem kannst du hierüber Anfragen deiner Geräte und Instrumente ablehnen. Jedoch lohnt es sich vielleicht vorher mit derjenigen Person, die anfragt, zu kommunizieren.</p>
 
     table_title_collaborations: "Verwendete Instrumente"
     table_collaborations_is_empty: "Du wurdest bisher für kein Instrument angefragt."
@@ -467,7 +468,9 @@ de:
   blackboard:
 
     title: "Schwarzes Brett"
-    text: "Text fehlt"
+    text: "<p>Das Schwarze Brett dient als Sammelstelle für alle gesuchten Instrumente oder Geräte. Das heißt, findest du für eine Veranstaltung, die du planst, in der Datenbank nicht das Instrument oder ein Gerät, was du benötigst, dann kannst du hier eine Anfrage schreiben.</p>
+    <p>Auf das Schwarze Brett haben alle Teilnehmer Zugriff. So nehmen also alle Teilnehmerinnen deine Anfrage wahr und können dir eine Email schreiben, wenn sich eine Kollaboration ergeben sollte.</p>
+    <p>Du kannst einen Eintrag im Schwarzen Brett beim Bearbeiten oder Erstellen eines Events erstellen oder bearbeiten.</p>"
 
     title_collaborations: "Instrumente gesucht"
     title_requirements: "Geräte gesucht"
