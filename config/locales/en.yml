@@ -27,7 +27,7 @@ en:
 
     help_image_upload: "Upload images"
     help_image_upload_html: |-
-      <p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG format is allowed.</p>"
+      <p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG formats are allowed.</p>"
 
     help_text_formatting: "Format texts"
     help_text_formatting_html: |-
@@ -46,10 +46,17 @@ en:
 
         Welcome to VERANTWORTUNG 3000!
 
-        You can confirm your account email through the link below:
+        Please activate your account by clicking the following link:
 
         %{url}
+        
+        Please note: This email does not completely confirm your participation in the festival. We can only fully register you as a participant including board and lodging once we received your participation fee.    
 
+        Currently we are yet uncertain about the exact amount (approx. 90 Euro), but you will receive information and an invoice as soon as we are all set.
+        
+        If you have any further questions, please feel free to ask: kontakt@verantwortung3000.de
+        
+        
       forgot_password_html: |-
         Hello!
 
