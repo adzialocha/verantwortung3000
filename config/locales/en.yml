@@ -49,13 +49,14 @@ en:
         Please activate your account by clicking the following link:
 
         %{url}
-
-        Please note: This email does not completely confirm your participation in the festival. We can only fully register you as a participant including board and lodging once we received your participation fee.
+        
+        Please note: This email does not completely confirm your participation in the festival. We can only fully register you as a participant including board and lodging once we received your participation fee.    
 
         Currently we are yet uncertain about the exact amount (approx. 90 Euro), but you will receive information and an invoice as soon as we are all set.
-
+        
         If you have any further questions, please feel free to ask: kontakt@verantwortung3000.de
-
+        
+        
       forgot_password_html: |-
         Hello!
 
@@ -66,6 +67,7 @@ en:
         If you didnt request this, please ignore this email.
 
         Your password won't change until you access the link above and create a new one.
+        
 
     requirement:
 
@@ -79,13 +81,13 @@ en:
         %{date} @ %{location}
 
         Link: %{url}
-
-        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email.
+        
+        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email.  
 
         %{creator_name}'s email is: %{creator_mail}.
-
-        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the fesitval. If you have any other questions, feel free to contact us.
-
+        
+        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the fesitval. If you have any other questions, feel free to contact us. 
+        
     collaboration:
 
       subject: "NEW COLLABORATION"
@@ -100,7 +102,7 @@ en:
         Link: %{url}
 
         You automatically take part in this production as a performer with your instrument. If you don't want to participate, drop *%{creator_name}* (%{creator_url}) an email: %{creator_mail}.
-
+        
         All further info on this production will be dealt with via email. If you have any other questions, contact us at any time.
 
     requirement_rejected:
@@ -110,10 +112,12 @@ en:
 
         Hallo %{name}!
 
-        The equipment *%{device}* you requested for the following event has been refused by %{device_owner_name} (%{device_owner_url}):
-
+        The equipment *%{device}* you requested for the following event 
+        
         %{event}
         %{date} @ %{location}
+
+        has been refused by %{device_owner_name} (%{device_owner_url}).
 
         A request has automatically been created on the blackboard to help you find a similar equipment. You may edit or delete this request here::
 
@@ -126,10 +130,12 @@ en:
 
         Hallo %{name}!
 
-        The instrument *%{instrument}* you requested for the following event has been refused by %{instrument_owner_name} (%{instrument_owner_url}):
-
+        The instrument *%{instrument}* you requested for the following event 
+        
         %{event}
         %{date} @ %{location}
+
+        has been refused by %{instrument_owner_name} (%{instrument_owner_url}).
 
         A request has automatically been created on the blackboard to help you find another instrument. You may edit or delete this request here:
 
@@ -273,7 +279,7 @@ en:
         <p>All further agreements and details on the collaboration and event will also be dealt with via email.</p>
         <h3>Is the instrument you are looking for not available?</h3>
         <p>If your favourite instrument is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who are interested in collaborating will then reach you via email and hopefully register that instrument in the database, so you can then add it to your event.</p>
-
+      
       help_edit_devices: "Edit equipment"
       help_edit_devices_html: |-
         <p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
@@ -282,7 +288,7 @@ en:
         <p>All further agreements and details of the event (meeting, handing over, technical details etc.) will also be dealt with via email.</p>
         <h3>Is the equipment you are looking for not available?</h3>
         <p>If the equipment you are looking for is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who might help you out will then reach you via email and hopefully register that equipment in the database, so you can then add it to your event.</p>
-
+      
       help_edit_more: "Edit further info"
       help_edit_more_html: |-
         <p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event and let others know what they can expect.</p>
@@ -324,14 +330,6 @@ en:
 
         btn_edit_submit: "Save"
         btn_delete: "Delete event"
-
-      modal:
-
-        title_requirement: "Select equipment"
-        title_collaboration: "Select instrument"
-
-        btn_close: "Close"
-        btn_save: "Save"
 
     alert_create: "Well done. The productions has been created."
     alert_update: "The productions has been updated."
@@ -397,9 +395,9 @@ en:
     help_new_and_edit_html: |-
       <p>Equipment can be registered in the database. Once registered other participants can see your equipment and request it for their own events. Once someone requests your equipment you will automatically receive an email and be informed about the event..</p>
       <p>Different from the instrument equipment is generally not tied to a person - i.e. a beamer or speakers or a microphone don’t necessarily need a performer.</p>
-      <p>In the description box all information on and specifics/echnicalities of the particular equipment can be indicated - this will help other musicians and composers and organisers with their own productions and ideas.</p>
+      <p>In the description box all information on and specifics/echnicalities of the particular equipment can be indicated - this will help other musicians and composers and organisers with their own productions and ideas.</p>
       <p>Description texts can be edited using Markdown syntax. More information on Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
-
+    
     form:
       panel_title: "Equipment"
       btn_submit: "Save"
@@ -446,25 +444,26 @@ en:
 
     overview_title: "Engagement"
 
-    help_main: "Hilfe Titel"
-    help_main_html: "Hilfe Text fehlt"
+    help_main: "YOUR ENGAGEMENT"
+    help_main_html: "<p>You find a list of all your collaborations here and also which productions and events you are involved in. It is a useful overview of all your dates and connections during the festival.</p>
+    <p>Also you can refuse other participant’s requests of your equipment and instruments. But maybe be nice and email the affected person before refusing.</p> "
 
-    table_title_collaborations: "Verwendete Instrumente"
-    table_collaborations_is_empty: "Du wurdest bisher für kein Instrument angefragt."
+    table_title_collaborations: "Instruments in use"
+    table_collaborations_is_empty: "No one has so far requested one of your instruments."
 
-    table_title_requirements: "Verwendete Geräte"
-    table_requirements_is_empty: "Bisher wurde kein Gerät von dir angefragt."
+    table_title_requirements: "Equipment in use"
+    table_requirements_is_empty: "No one has so far requested your equipment."
 
-    table_column_title_name: "Was?"
-    table_column_title_timeframe: "Wann und Wo?"
-    table_column_title_event: "Was und Wer?"
+    table_column_title_name: "What?"
+    table_column_title_timeframe: "When and where?"
+    table_column_title_event: "What and who?"
 
-    btn_reject: "Ablehnen"
+    btn_reject: "Refuse"
 
-    reject_prompt_are_you_sure: "Bist du dir sicher, dass du diese Kollaboration ablehnen möchtest? Der jeweilige Teilnehmer wird darüber informiert."
+    reject_prompt_are_you_sure: "Are you sure you want to refuse this collaboration? The participant will be informed via email."
 
-    alert_requirement_rejected: "Das Gerät wird nicht mehr für die Veranstaltung verwendet. Der Veranstalter wurde via E-Mail über deine Absage informiert."
-    alert_collaboration_rejected: "Die Kollaboration wurde abgelehnt, der Veranstalter wurde via E-Mail über deine Absage informiert."
+    alert_requirement_rejected: "This equipment will no longer be used für this event. The organiser will be informed via email about your refusal."
+    alert_collaboration_rejected: "The collaboration has been cancelled. The organiser has been informed via email about your refusal."
 
   # BLACK BOARD
 
