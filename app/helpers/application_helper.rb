@@ -5,14 +5,23 @@ module ApplicationHelper
   def bye
 
     [
-      'Tschüss!',
-      'Tschö!',
+      'Bye!',
       'Ciaopin!',
       'Tschüsstakowitsch!',
       'Ciao',
       'Beep Beep',
       'Bis bald!',
       'Machs gut!'
+      'Tschö mit ö!',
+      'Hau rein!',
+      'Tschüssi!',
+      'Tschüssikowski!',
+      'Tschüss!',
+      'Kuss.',
+      'Tschüssikovsky',
+      'Tschüssiwinsky',
+      'Tschö',
+      'Yo.'
     ].sample
 
   end
