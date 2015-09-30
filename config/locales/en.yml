@@ -183,14 +183,14 @@ en:
     signup_title: "Register"
     signup_title_name: "Hello!"
     signup_description_html: |-
-      <p>You are about to participate in VERANTWORTUNG 3000. Therefore we need some of your data. We ask you to fill everything out below.</p>
-      <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation will be approx. 90 Euros, including board and lodge throughout the festival. You will receive an invoice via email.</p>
-      <p>We can only ensure your participation when we received your transaction. So we ask you to transfer the cost in time.</p>
+      <p>You are about to participate in VERANTWORTUNG 3000.</p>
+      <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation will be approx. 90 Euro, including board and lodge throughout the festival. You will receive an invoice via email.</p>
+      <p>We can only confirm your participation once we received your transaction. So we ask you to transfer the cost in time.</p>
       <p>We are very much looking forward to welcoming you.</p>
 
     signup_contact: "Contact"
-    signup_hint_email: "Please leave your email. We need your email to get in touch with you with everything that is happening here on VERANTWORTUNG3000.de."
-    signup_hint_mobile: "Your cellphone will be necessary during the festival and the main means by reaching other participants.."
+    signup_hint_email: "Please leave your email. We need your email to get in touch with you regarding everything that is happening here on VERANTWORTUNG3000.de."
+    signup_hint_mobile: "Your cellphone will be necessary during the festival and the main means by reaching other participants on the ground."
     signup_address: "Your address"
     signup_password: "Password"
     submit_signup: "Register"
@@ -241,11 +241,11 @@ en:
 
     help_new: "Create production"
     help_new_html: |-
-      <p>This is where you can create and describe your production. A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as rehearsal, talks, concerts etc. Events can be created later. So this space is where you describe your general ideas about your production.</p>
+      <p>A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end. The indivdual events can be created later.</p>
 
     help_edit_main: "Edit production"
     help_edit_main_html: |-
-      <p>You can edit your production here or change its title.</p>
+      <p>A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end.</p>
 
     help_edit_events: "Edit event"
     help_edit_events_html: |-
@@ -264,12 +264,18 @@ en:
 
       help_edit_main: "Event"
       help_edit_main_html: |-
-        <p>Select the venue and date for your event.</p>
+        <p>Select the venue and date for your event from the list.</p>
+        <p>It is possible that this venue is already taken at that time. To see which venues are reserved for particular events have a look here: <a href="http://www.verantwortung3000.de/locations" target="_blank">Orte</a></p>
 
       help_edit_instruments: "Edit instruments"
       help_edit_instruments_html: |-
-        <p>An instrument is to be understood as tied to a performer, but can be anything from voice to shoes. So if you are looking for an instrument you also reserve the performer, that plays that instrument. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>
-
+        <p>An instrument can be anything that is part of a performance and tied to a performer, who plays that instrument - but can be anything from voice to shoes, movement to viola. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>
+        <p>This instrument and the associated performer will be registered as part of your event. The person involved will automatically receive an email and be informed about the collaboration.</p>
+        <p>Obviously the performer has to approve of the collaboration, so it might be best to first contact her or him via email (see profile)</p>
+        <p>All further agreements and details on the collaboration and event will also be dealt with via email.</p>
+        <h3>Is the instrument you are looking for not available?</h3>
+        <p>If your favourite instrument is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who are interested in collaborating will then reach you via email and hopefully register that instrument in the database, so you can then add it to your event.</p>
+      
       help_edit_devices: "Edit equipment"
       help_edit_devices_html: |-
         <p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
