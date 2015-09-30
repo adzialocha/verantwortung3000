@@ -11,7 +11,7 @@ module ApplicationHelper
       'Ciao',
       'Beep Beep',
       'Bis bald!',
-      'Machs gut!'
+      'Machs gut!',
       'Tschö mit ö!',
       'Hau rein!',
       'Tschüssi!',
