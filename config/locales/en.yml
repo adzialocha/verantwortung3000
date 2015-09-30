@@ -107,33 +107,33 @@ en:
 
     requirement_rejected:
 
-      subject: "GERÄTVERWENDUNG ENTFERNT"
+      subject: "EQUIPMENT REFUSED"
       message: |-
 
         Hallo %{name}!
 
-        Das angefragte Gerät *%{device}* wurde von %{device_owner_name} (%{device_owner_url}) für deine folgende Veranstaltung leider gelöscht:
+        The equipment *%{device}* you requested for the following event has been refused by %{device_owner_name} (%{device_owner_url}):
 
         %{event}
         %{date} @ %{location}
 
-        Mit der Ablehnung / Löschung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche eines ähnlichen Gerätes erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+        A request has automatically been created on the blackboard to help you find a similar equipment. You may edit or delete this request here::
 
         Link: %{url}
 
     collaboration_rejected:
 
-      subject: "KOLLABORATION ENTFERNT"
+      subject: "COLLABORATION REFUSED"
       message: |-
 
         Hallo %{name}!
 
-        Das angefragte Instrumente *%{instrument}* wurde von %{instrument_owner_name} (%{instrument_owner_url}) für deine folgende Veranstaltung leider gelöscht:
+        The instrument *%{instrument}* you requested for the following event has been refused by %{instrument_owner_name} (%{instrument_owner_url}):
 
         %{event}
         %{date} @ %{location}
 
-        Mit der Ablehnung / Löschung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche deselben Instruments erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+        A request has automatically been created on the blackboard to help you find another instrument. You may edit or delete this request here:
 
         Link: %{url}
 
