@@ -49,13 +49,14 @@ en:
         Please activate your account by clicking the following link:
 
         %{url}
-
-        Please note: This email does not completely confirm your participation in the festival. We can only fully register you as a participant including board and lodging once we received your participation fee.
+        
+        Please note: This email does not completely confirm your participation in the festival. We can only fully register you as a participant including board and lodging once we received your participation fee.    
 
         Currently we are yet uncertain about the exact amount (approx. 90 Euro), but you will receive information and an invoice as soon as we are all set.
-
+        
         If you have any further questions, please feel free to ask: kontakt@verantwortung3000.de
-
+        
+        
       forgot_password_html: |-
         Hello!
 
@@ -66,7 +67,7 @@ en:
         If you didnt request this, please ignore this email.
 
         Your password won't change until you access the link above and create a new one.
-
+        
 
     requirement:
 
@@ -80,13 +81,13 @@ en:
         %{date} @ %{location}
 
         Link: %{url}
-
-        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email.
+        
+        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email.  
 
         %{creator_name}'s email is: %{creator_mail}.
-
-        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the fesitval. If you have any other questions, feel free to contact us.
-
+        
+        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the fesitval. If you have any other questions, feel free to contact us. 
+        
     collaboration:
 
       subject: "NEW COLLABORATION"
@@ -101,7 +102,7 @@ en:
         Link: %{url}
 
         You automatically take part in this production as a performer with your instrument. If you don't want to participate, drop *%{creator_name}* (%{creator_url}) an email: %{creator_mail}.
-
+        
         All further info on this production will be dealt with via email. If you have any other questions, contact us at any time.
 
     requirement_rejected:
@@ -111,8 +112,8 @@ en:
 
         Hallo %{name}!
 
-        The equipment *%{device}* you requested for the following event
-
+        The equipment *%{device}* you requested for the following event 
+        
         %{event}
         %{date} @ %{location}
 
@@ -129,8 +130,8 @@ en:
 
         Hallo %{name}!
 
-        The instrument *%{instrument}* you requested for the following event
-
+        The instrument *%{instrument}* you requested for the following event 
+        
         %{event}
         %{date} @ %{location}
 
@@ -278,7 +279,7 @@ en:
         <p>All further agreements and details on the collaboration and event will also be dealt with via email.</p>
         <h3>Is the instrument you are looking for not available?</h3>
         <p>If your favourite instrument is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who are interested in collaborating will then reach you via email and hopefully register that instrument in the database, so you can then add it to your event.</p>
-
+      
       help_edit_devices: "Edit equipment"
       help_edit_devices_html: |-
         <p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
@@ -287,7 +288,7 @@ en:
         <p>All further agreements and details of the event (meeting, handing over, technical details etc.) will also be dealt with via email.</p>
         <h3>Is the equipment you are looking for not available?</h3>
         <p>If the equipment you are looking for is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who might help you out will then reach you via email and hopefully register that equipment in the database, so you can then add it to your event.</p>
-
+      
       help_edit_more: "Edit further info"
       help_edit_more_html: |-
         <p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event and let others know what they can expect.</p>
@@ -394,9 +395,9 @@ en:
     help_new_and_edit_html: |-
       <p>Equipment can be registered in the database. Once registered other participants can see your equipment and request it for their own events. Once someone requests your equipment you will automatically receive an email and be informed about the event..</p>
       <p>Different from the instrument equipment is generally not tied to a person - i.e. a beamer or speakers or a microphone don’t necessarily need a performer.</p>
-      <p>In the description box all information on and specifics/echnicalities of the particular equipment can be indicated - this will help other musicians and composers and organisers with their own productions and ideas.</p>
+      <p>In the description box all information on and specifics/echnicalities of the particular equipment can be indicated - this will help other musicians and composers and organisers with their own productions and ideas.</p>
       <p>Description texts can be edited using Markdown syntax. More information on Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
-
+    
     form:
       panel_title: "Equipment"
       btn_submit: "Save"
@@ -469,7 +470,9 @@ en:
   blackboard:
 
     title: "Blackboard"
-    text: "Text fehlt"
+    text: "<p>The blackboard is the space where you can ask the community for instruments or equipment. So if you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p> 
+    <p>Everyone has access to the blackboard. So if someone can help you out he or she will get in touch via email.</p>
+    <p>You can create a request on the blackboard while editing or creating an event.</p>"
 
     title_collaborations: "Instruments wanted"
     title_requirements: "Equipment wanted"
