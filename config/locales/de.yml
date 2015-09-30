@@ -324,6 +324,14 @@ de:
         btn_edit_submit: "Speichern"
         btn_delete: "Veranstaltung löschen"
 
+      modal:
+
+        title_requirement: "Gerät auswählen"
+        title_collaboration: "Instrument auswählen"
+
+        btn_close: "Schließen"
+        btn_save: "Speichern"
+
     alert_create: "Wunderbar. Die Produktion wurde erfolgreich erstellt!"
     alert_update: "Die Produktion wurde erfolgreich aktualisiert!"
     alert_delete: "Die Produktion und alle damit verbundenenen Veranstaltungen wurden erfolgreich gelöscht!"
