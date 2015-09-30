@@ -279,10 +279,16 @@ en:
       help_edit_devices: "Edit equipment"
       help_edit_devices_html: |-
         <p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
-
+        <p>The equipment will be registered as part of your event. The owner will automatically receive an email and be informed about the request.</p>
+        <p>Obviously the owner has to approve of the use of the equipment, so it might be best to first contact her or him via email (see profile)</p>
+        <p>All further agreements and details of the event (meeting, handing over, technical details etc.) will also be dealt with via email.</p>
+        <h3>Is the equipment you are looking for not available?</h3>
+        <p>If the equipment you are looking for is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who might help you out will then reach you via email and hopefully register that equipment in the database, so you can then add it to your event.</p>
+      
       help_edit_more: "Edit further info"
       help_edit_more_html: |-
-        <p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event (using Markdown) and let others know what they can expect.</p>
+        <p>This is where you can change this event’s title - otherwise it will have the same name as the production. Also you can write a description on this particular event and let others know what they can expect.</p>
+        <p>Description texts can be edited using Markdown syntax. More information on Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
       form:
 
