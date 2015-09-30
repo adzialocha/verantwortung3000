@@ -1,9 +1,11 @@
-.instrument.panel
+.col-md-6.col-sm-12.col-xs-12
 
-  .panel-body.no-padding
+  .instrument.panel
 
-    = render 'items_select', f: f, id: :instrument_id, collection: Instrument.all
+    .panel-body.no-padding
 
-  .panel-footer
+      = render 'items_select', f: f, id: :instrument_id, collection: Instrument.all
 
-    = link_to_remove_association t('productions.event.form.btn_remove_instrument'), f, class: 'btn btn-danger', data: { confirm: t('common.form.prompt_are_you_sure') }, wrapper_class: 'instrument'
+    .panel-footer
+
+      = link_to_remove_association t('productions.event.form.btn_remove_instrument'), f, class: 'btn btn-danger', data: { confirm: t('common.form.prompt_are_you_sure') }, wrapper_class: 'instrument'

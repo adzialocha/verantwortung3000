@@ -59,6 +59,11 @@ $item-select-size: 150px;
   height: 500px;
 }
 
+.panel .items-select-cell-container > *
+{
+  width: 100% !important;
+}
+
 .items-select__cell
 {
   cursor: pointer;

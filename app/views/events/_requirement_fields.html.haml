@@ -1,9 +1,11 @@
-.device.panel
+.col-md-6.col-sm-12.col-xs-12
 
-  .panel-body.no-padding
+  .device.panel
 
-    = render 'items_select', f: f, id: :device_id, collection: Device.all
+    .panel-body.no-padding
 
-  .panel-footer
+      = render 'items_select', f: f, id: :device_id, collection: Device.all
 
-    = link_to_remove_association t('productions.event.form.btn_remove_device'), f, class: 'btn btn-danger', data: { confirm: t('common.form.prompt_are_you_sure') }, wrapper_class: 'device'
+    .panel-footer
+
+      = link_to_remove_association t('productions.event.form.btn_remove_device'), f, class: 'btn btn-danger', data: { confirm: t('common.form.prompt_are_you_sure') }, wrapper_class: 'device'

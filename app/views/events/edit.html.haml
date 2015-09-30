@@ -45,7 +45,7 @@
 
         .cocoon.cocoon-collaboration#cocoon-collaboration
 
-          .cocoon-nested-container
+          .cocoon-nested-container.row
 
             = f.simple_fields_for :collaborations do |collaboration|
               = render 'collaboration_fields', f: collaboration
@@ -69,7 +69,7 @@
 
         .cocoon.cocoon-requirement#cocoon-requirement
 
-          .cocoon-nested-container
+          .cocoon-nested-container.row
 
             = f.simple_fields_for :requirements do |requirement|
               = render 'requirement_fields', f: requirement
