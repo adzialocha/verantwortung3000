@@ -66,7 +66,8 @@ en:
 
         If you didnt request this, please ignore this email.
 
-        Your password wont change until you access the link above and create a new one.
+        Your password won't change until you access the link above and create a new one.
+        
 
     requirement:
 
@@ -74,25 +75,35 @@ en:
       message: |-
         Hello %{name}!
 
-        %{device}
+        Your device *%{device}* has been requested for the following production:
 
         %{event}
         %{date} @ %{location}
 
         Link: %{url}
+        
+        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email.  
 
+        %{creator_name}'s email is: %{creator_mail}.
+        
+        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the fesitval. If you have any other questions, feel free to contact us. 
+        
     collaboration:
 
       subject: "NEW COLLABORATION"
       message: |-
         Hello %{name}!
 
-        %{instrument}
+        One of your instruments, %{instrument}, has been requested for the following event:
 
         %{event}
         %{date} @ %{location}
 
         Link: %{url}
+
+        You automatically take part in this production as a performer with your instrument. If you don't want to participate, drop *%{creator_name}* (%{creator_url}) an email: %{creator_mail}.
+        
+        All further info on this production will be dealt with via email. If you have any other questions, contact us at any time.
 
     requirement_rejected:
 
