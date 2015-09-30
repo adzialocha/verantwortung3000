@@ -65,13 +65,13 @@
 
               %span= @event.location.title
 
-        - if not @event.description.nil? and @event.description != ""
+        - if not @event.production_description.nil? and @event.production_description != ""
 
           %hr
 
           .content__markdown
 
-            = markdown(@event.description)
+            = markdown(@event.production_description)
 
           %hr
 
