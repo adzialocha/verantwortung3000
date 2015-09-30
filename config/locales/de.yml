@@ -53,7 +53,7 @@ de:
         Zurzeit steht noch nicht fest, wie hoch der Beitrag sein wird (ungefähr 90 Euro), du wirst in den kommenden Wochen alle Informationen von uns via E-Mail und eine Rechnung erhalten, sobald alles bereit ist.
 
         Schreibe an kontakt@verantwortung3000.de wenn du noch Fragen hast!
-        
+
 
       forgot_password_html: |-
         Hallo Hallo!
@@ -362,7 +362,7 @@ de:
 
     help_new_and_edit: "Angaben zum Instrument"
     help_new_and_edit_html: |-
-  
+
     form:
       panel_title: "Instrument"
       btn_submit: "Speichern"
@@ -443,8 +443,7 @@ de:
     overview_title: "Engagement"
 
     help_main: "DEIN ENGAGEMENT"
-    help_main_html: <p>Hier findest du eine Auflistung all deiner Kollaborationen und siehst in welchen Produktionen und Veranstaltungen du involviert bist. Es ist also eine praktische Übersicht all deiner Termine und Vernetzungen während des Festivals.</p>
-    <p>Außerdem kannst du hierüber Anfragen deiner Geräte und Instrumente ablehnen. Jedoch lohnt es sich vielleicht vorher mit derjenigen Person, die anfragt, zu kommunizieren.</p>
+    help_main_html: <p>Hier findest du eine Auflistung all deiner Kollaborationen und siehst in welchen Produktionen und Veranstaltungen du involviert bist. Es ist also eine praktische Übersicht all deiner Termine und Vernetzungen während des Festivals.</p><p>Außerdem kannst du hierüber Anfragen deiner Geräte und Instrumente ablehnen. Jedoch lohnt es sich vielleicht vorher mit derjenigen Person, die anfragt, zu kommunizieren.</p>
 
     table_title_collaborations: "Verwendete Instrumente"
     table_collaborations_is_empty: "Du wurdest bisher für kein Instrument angefragt."
