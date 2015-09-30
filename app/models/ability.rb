@@ -11,7 +11,7 @@ class Ability
     if user.admin?
       can :manage, :all
     else
-      can :read, [Production, Event, User, Location]
+      can :read, [Production, Event, User]
     end
 
     if User.exists?(user.id)

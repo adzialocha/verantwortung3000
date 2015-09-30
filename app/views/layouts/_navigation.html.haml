@@ -27,7 +27,9 @@
             = li_link_to t('navigation.home'), root_path
             = li_link_to t('navigation.about'), page_path(:id => 'about')
             = li_link_to t('navigation.calendar'), calendar_path
-            = li_link_to t('navigation.locations'), locations_path
+
+            - if user_signed_in?
+              = li_link_to t('navigation.locations'), locations_path
 
           %ul.nav.navbar-nav.navbar-right
 

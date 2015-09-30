@@ -56,8 +56,14 @@
             %span
               = "#{nice_timeframe(@event.from, @event.to)} @ "
 
-            %span
-              = link_to @event.location.title, location_path(@event.location)
+            - if can? :show, @event.location
+
+              %span
+                = link_to @event.location.title, location_path(@event.location)
+
+            - else
+
+              %span= @event.location.title
 
         - if not @event.description.nil? and @event.description != ""
 

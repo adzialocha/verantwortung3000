@@ -10,7 +10,7 @@
 
       .event-grid__container__event
 
-        - if defined? show_edit and show_edit
+        - if defined? show_edit and show_edit and can? :edit, event.production.event
 
           = link_to t('common.goto_edit'), edit_production_event_path(event.production, event), class: 'btn btn-info pull-right'
 
@@ -29,8 +29,14 @@
           - else
             %span= "#{nice_timeframe(event.from, event.to)} @ "
 
-          %span
-            = link_to event.location.title, location_path(event.location)
+          - if can? :show, event.location
+
+            %span
+              = link_to event.location.title, location_path(event.location)
+
+          - else
+
+            %span= event.location.title
 
         %p= no_markdown(event.production_description.truncate(200))
 
