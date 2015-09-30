@@ -1,0 +1,20 @@
+.modal
+{
+  .close
+  {
+    opacity: 1;
+    color: $white;
+  }
+}
+
+.modal-header
+{
+  background-color: $black;
+}
+
+.modal-title
+{
+  font-size: 13px;
+  font-weight: bold;
+  color: $white;
+}

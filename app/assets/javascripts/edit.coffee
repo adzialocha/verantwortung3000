@@ -32,7 +32,7 @@
 
         reader.readAsDataURL $event.target.files[0]
 
-  _initItemPickers = ($event, cInsertedItem) ->
+  _createNewItem = (cInsertedItem) ->
 
     # init item pickers
 
@@ -74,6 +74,30 @@
         $cell.removeClass 'items-select__cell--selected'
         $selectElem.val ''
 
+  _prepareItemSelection = ($item) ->
+
+    $numberItem = $item.find 'input[type="number"]'
+    $firstItem = $item.find '.items-select__cell--default'
+
+    val = $numberItem.val()
+
+    if not val? or val == ''
+
+      $selectedItem = $firstItem
+      $item.find('.items-select__create').show()
+      $item.find('.items-select__cell[data-value!="-1"]').parent().remove()
+
+    else
+
+      $item.addClass 'items-select--disabled'
+
+      $selectedItem = $item.find '.items-select__cell[data-value="' + val + '"]'
+
+      $firstItem.parent().remove()
+      $item.find('.items-select__cell[data-value!="' + val + '"]').parent().remove()
+
+    $selectedItem.addClass 'items-select__cell--selected'
+
   $(document).ready () ->
 
     # jquery datetimepicker setup
@@ -87,39 +111,76 @@
 
     # item picker setup
 
-    $('.items-select').each () ->
+    $('.cocoon .items-select').each () ->
+      _prepareItemSelection $(this)
 
-      $numberItem = $(this).find 'input[type="number"]'
-      $firstItem = $(this).find '.items-select__cell--default'
-
-      val = $numberItem.val()
-
-      if not val? or val == ''
-
-        _initItemPickers null, $(this)
-
-        $selectedItem = $firstItem
-        $(this).find('.items-select__create').show()
-
-      else
-
-        $(this).addClass 'items-select--disabled'
-
-        $selectedItem = $(this).find '.items-select__cell[data-value="' + val + '"]'
-
-        $firstItem.parent().remove()
-        $(this).find('.items-select__cell[data-value!="' + val + '"]').parent().remove()
-
-      $selectedItem.addClass 'items-select__cell--selected'
+    $('.modal .items-select').each () ->
+      _createNewItem $(this)
 
     # cocoon setup
 
+    $('.modal').on 'hidden.bs.modal', ($event) ->
+
+      $modal = $($event.target)
+
+      $modal.find('input[type="number"]').val ''
+      $modal.find('.blackboard_title').val ''
+      $modal.find('.blackboard_description').val ''
+
+      $modal.find('.items-select__cell').removeClass 'items-select__cell--selected'
+      $modal.find('.items-select__create').hide()
+
+    $('#collaboration-modal-submit').on 'click', ($event) ->
+
+      $modal = $ '#collaboration-modal'
+
+      # validation
+
+      modalValue = $modal.find('input[type="number"]').val()
+      modalTitle = $modal.find('.blackboard_title').val()
+      modalDescription = $modal.find('.blackboard_description').val()
+
+      if modalValue or (modalTitle and modalDescription)
+
+        $modal.find('.cocoon-add-collaboration').trigger 'click'
+        $('#collaboration-modal').modal 'hide'
+
+    $('#requirement-modal-submit').on 'click', () ->
+
+      $modal = $ '#requirement-modal'
+
+      # validation
+
+      modalValue = $modal.find('input[type="number"]').val()
+      modalTitle = $modal.find('.blackboard_title').val()
+      modalDescription = $modal.find('.blackboard_description').val()
+
+      if modalValue or (modalTitle and modalDescription)
+
+        $modal.find('.cocoon-add-requirement').trigger 'click'
+        $('#requirement-modal').modal 'hide'
+
     $(document).on 'cocoon:after-insert', ($event, cInsertedItem) ->
 
-      _initItemPickers($event, cInsertedItem)
-      _initFileSelectors($event, cInsertedItem)
+      if $event.target.id == 'cocoon-collaboration'
+        $modal = $ '#collaboration-modal'
+      else if $event.target.id == 'cocoon-requirement'
+        $modal = $ '#requirement-modal'
+      else
+        _initFileSelectors $event, cInsertedItem
+        return true
+
+      cInsertedItem.find('input[type="number"]').val $modal.find('input[type="number"]').val()
+      cInsertedItem.find('.blackboard_title').val $modal.find('.blackboard_title').val()
+      cInsertedItem.find('.blackboard_description').val $modal.find('.blackboard_description').val()
+
+      _prepareItemSelection cInsertedItem
 
     $('.cocoon a.add_fields').data('association-insertion-method', 'before').data('association-insertion-traversal', 'closest').data 'association-insertion-node', '.cocoon'
+
+    $('.cocoon-add-collaboration').data('association-insertion-method', 'before').data 'association-insertion-node', '.cocoon-collaboration'
+
+    $('.cocoon-add-requirement').data('association-insertion-method', 'before').data 'association-insertion-node', '.cocoon-requirement'
 
     # toggle help button
 

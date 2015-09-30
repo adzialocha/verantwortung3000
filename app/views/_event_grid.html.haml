@@ -10,7 +10,7 @@
 
       .event-grid__container__event
 
-        - if defined? show_edit and show_edit and can? :edit, event.production.event
+        - if defined? show_edit and show_edit and can? :edit, event
 
           = link_to t('common.goto_edit'), edit_production_event_path(event.production, event), class: 'btn btn-info pull-right'
 

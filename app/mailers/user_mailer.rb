@@ -5,7 +5,9 @@ class UserMailer < ApplicationMailer
     @user = user
     @collaboration = collaboration
 
-    mail(to: @user.email, subject: t('mails.collaboration.subject'))
+    I18n.with_locale(get_locale(user)) do
+      mail(to: @user.email, subject: t('mails.collaboration.subject'))
+    end
 
   end
 
@@ -14,7 +16,9 @@ class UserMailer < ApplicationMailer
     @user = user
     @requirement = requirement
 
-    mail(to: @user.email, subject: t('mails.requirement.subject'))
+    I18n.with_locale(get_locale(user)) do
+      mail(to: @user.email, subject: t('mails.requirement.subject'))
+    end
 
   end
 
@@ -23,7 +27,9 @@ class UserMailer < ApplicationMailer
     @user = user
     @collaboration = collaboration
 
-    mail(to: @user.email, subject: t('mails.collaboration_rejected.subject'))
+    I18n.with_locale(@user.locale) do
+      mail(to: @user.email, subject: t('mails.collaboration_rejected.subject'))
+    end
 
   end
 
@@ -32,8 +38,16 @@ class UserMailer < ApplicationMailer
     @user = user
     @requirement = requirement
 
-    mail(to: @user.email, subject: t('mails.requirement_rejected.subject'))
+    I18n.with_locale(get_locale(user)) do
+      mail(to: @user.email, subject: t('mails.requirement_rejected.subject'))
+    end
 
+  end
+
+  private
+
+  def get_locale(user)
+    user.locale || I18n.locale
   end
 
 end

@@ -43,7 +43,7 @@
           %h1= t('productions.event.help_edit_instruments')
           = t('productions.event.help_edit_instruments_html')
 
-        .cocoon
+        .cocoon.cocoon-collaboration#cocoon-collaboration
 
           .cocoon-nested-container
 
@@ -52,7 +52,7 @@
 
           .clearfix
 
-          = link_to_add_association t('productions.event.form.btn_add_instrument'), f, :collaborations, class: 'btn btn-success'
+          %button{:type => "button", :class => "btn btn-success", :data => { "toggle" => "modal", "target" => "#collaboration-modal" }}= t('productions.event.form.btn_add_instrument')
 
     .panel
 
@@ -67,7 +67,7 @@
           %h1= t('productions.event.help_edit_devices')
           = t('productions.event.help_edit_devices_html')
 
-        .cocoon
+        .cocoon.cocoon-requirement#cocoon-requirement
 
           .cocoon-nested-container
 
@@ -76,7 +76,7 @@
 
           .clearfix
 
-          = link_to_add_association t('productions.event.form.btn_add_device'), f, :requirements, class: 'btn btn-success'
+          %button{:type => "button", :class => "btn btn-success", :data => { "toggle" => "modal", "target" => "#requirement-modal" }}= t('productions.event.form.btn_add_device')
 
     .panel
 
@@ -104,3 +104,60 @@
 
         .pull-right
           = f.button :submit, t('productions.event.form.btn_edit_submit'), class: 'btn btn-success'
+
+          // modals
+
+          .modal#collaboration-modal
+
+            .modal-dialog
+
+              .modal-content
+
+                .modal-header
+
+                  %button.close{"data-dismiss" => "modal", :type => "button"}
+                    %span &times;
+
+                  %h4.modal-title= t 'productions.event.modal.title_collaboration'
+
+                .modal-body
+
+                  = render 'items_select', f: f, id: nil, collection: Instrument.all
+
+                .modal-footer
+
+                  .btn-group
+
+                    %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}= t 'productions.event.modal.btn_close'
+
+                    %button.btn.btn-success#collaboration-modal-submit{:type => "button"}= t 'productions.event.modal.btn_save'
+
+                    = link_to_add_association '', f, :collaborations, class: 'cocoon-add-collaboration hidden'
+
+          .modal#requirement-modal
+
+            .modal-dialog
+
+              .modal-content
+
+                .modal-header
+
+                  %button.close{"data-dismiss" => "modal", :type => "button"}
+                    %span &times;
+
+                  %h4.modal-title= t 'productions.event.modal.title_requirement'
+
+                .modal-body
+
+                  = render 'items_select', f: f, id: nil, collection: Device.all
+
+                .modal-footer
+
+                  .btn-group
+
+                    %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}= t 'productions.event.modal.btn_close'
+
+                    %button.btn.btn-success#requirement-modal-submit{:type => "button"}= t 'productions.event.modal.btn_save'
+
+                    = link_to_add_association '', f, :requirements, class: 'cocoon-add-requirement hidden'
+

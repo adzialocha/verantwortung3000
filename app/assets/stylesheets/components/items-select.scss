@@ -51,8 +51,12 @@ $item-select-size: 150px;
 .items-select-cell-container
 {
   width: 100%;
-  height: $item-select-size * 1.5;
   overflow: auto;
+}
+
+.modal .items-select-cell-container
+{
+  height: 500px;
 }
 
 .items-select__cell
@@ -86,6 +90,11 @@ $item-select-size: 150px;
     word-break: break-all;
   }
 
+  a:hover h2
+  {
+    text-decoration: underline;
+  }
+
   h2, p
   {
     display: inline;
@@ -95,14 +104,6 @@ $item-select-size: 150px;
 
     background-color: $black;
     color: $white;
-  }
-}
-
-.items-select__cell:hover
-{
-  p.items-select__cell__description
-  {
-    display: none;
   }
 }
 
