@@ -53,6 +53,7 @@ de:
         Zurzeit steht noch nicht fest, wie hoch der Beitrag sein wird (ungefähr 90 Euro), du wirst in den kommenden Wochen alle Informationen von uns via E-Mail und eine Rechnung erhalten, sobald alles bereit ist.
 
         Schreibe an kontakt@verantwortung3000.de wenn du noch Fragen hast!
+        
 
       forgot_password_html: |-
         Hallo Hallo!
@@ -71,7 +72,7 @@ de:
       message: |-
         Hallo %{name}!
 
-        Dein eingetragenes Gerät *%{device}* wurde für die folgende Produktion eingetragen:
+        Dein eingetragenes Gerät *%{device}* wurde für die folgende Produktion angefragt:
 
         %{event}
         %{date} @ %{location}
@@ -90,7 +91,7 @@ de:
       message: |-
         Hallo %{name}!
 
-        Eines deiner Instrumente *%{instrument}* wurde für die folgende Produktion eingetragen:
+        Eines deiner Instrumente *%{instrument}* wurde für die folgende Produktion angefragt:
 
         %{event}
         %{date} @ %{location}
@@ -131,7 +132,7 @@ de:
         %{event}
         %{date} @ %{location}
 
-        Mit der Ablehnung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche deselben Instruments erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
+        Mit der Ablehnung wurde automatisch ein Eintrag in das Schwarze Brett zur Suche desselben Instruments erstellt! Du kannst den Eintrag hier bearbeiten oder löschen:
 
         Link: %{url}
 
@@ -238,11 +239,11 @@ de:
 
     help_new: "Produktion erstellen"
     help_new_html: |-
-      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht ein Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung. Diese Veranstaltungen werden im nächsten Schritt erstellt.</p>
+      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht eine Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung. Diese einzelnen Veranstaltungen werden im nächsten Schritt erstellt.</p>
 
     help_edit_main: "Produktion bearbeiten"
     help_edit_main_html: |-
-      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht ein Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung.</p>
+      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht eine Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung.</p>
 
     help_edit_events: "Veranstaltungen bearbeiten"
     help_edit_events_html: |-
@@ -353,11 +354,7 @@ de:
 
     help_new_and_edit: "Angaben zum Instrument"
     help_new_and_edit_html: |-
-      <p>Instrumente können mit dir als Performer oder Performerin in die Datenbank eingetragen werden. Andere Teilnehmer können dich und das Instrument für ihre Veranstaltungen dann anfragen. Du erhälst als Verantwortlicher oder Verantwortliche eine E-Mail und wirst über diese Kollaboration informiert.</p>
-      <p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und an einen Performer gebunden ist, der das Instrument bedient - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe.</p>
-      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Instrument, besondere Techniken oder Hinweise angegeben werden, die für den Komponisten oder Veranstalter wichtig oder inspirierend sein können.</p>
-      <p>Beschreibungstexte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
-
+  
     form:
       panel_title: "Instrument"
       btn_submit: "Speichern"
@@ -426,7 +423,7 @@ de:
 
     title_dangerzone: "Danger Zone"
 
-    dangerzone: "Achtung! Hier kannst du dein Profil unwiederruflich löschen:"
+    dangerzone: "Achtung! Hier kannst du dein Profil unwiderruflich löschen:"
 
     submit_delete_account: "Profil löschen"
     prompt_delete_account: "Oha! Bist du dir sicher, dass du dein Profil und alle dazugehörigen Einträge für immer löschen möchtest? Dieser Schritt kann nicht rückgängig gemacht werden."
@@ -437,8 +434,9 @@ de:
 
     overview_title: "Engagement"
 
-    help_main: "Hilfe Titel"
-    help_main_html: "Hilfe Text fehlt"
+    help_main: "DEIN ENGAGEMENT"
+    help_main_html: " „<p>Hier findest du eine Auflistung all deiner Kollaborationen und siehst in welchen Produktionen und Veranstaltungen du involviert bist. Es ist also eine praktische Übersicht all deiner Termine und Vernetzungen während des Festivals.</p>
+    <p>Außerdem kannst du hierüber Anfragen deiner Geräte und Instrumente ablehnen. Jedoch lohnt es sich vielleicht vorher mit derjenigen Person, die anfragt, zu kommunizieren.</p>"
 
     table_title_collaborations: "Verwendete Instrumente"
     table_collaborations_is_empty: "Du wurdest bisher für kein Instrument angefragt."
@@ -452,9 +450,9 @@ de:
 
     btn_reject: "Ablehnen"
 
-    reject_prompt_are_you_sure: "Bist du dir sicher, dass du diese Kollaboration ablehnen möchtest? Der jeweilige Teilnehmer wird darüber informiert."
+    reject_prompt_are_you_sure: "Bist du dir sicher, dass du diese Kollaboration ablehnen möchtest? Die jeweilige Person wird darüber informiert."
 
-    alert_requirement_rejected: "Das Gerät wird nicht mehr für die Veranstaltung verwendet. Der Veranstalter wurde via E-Mail über deine Absage informiert."
+    alert_requirement_rejected: "Das Gerät wird nicht mehr für die Veranstaltung verwendet. Die Veranstalterin wurde via E-Mail über deine Absage informiert."
     alert_collaboration_rejected: "Die Kollaboration wurde abgelehnt, der Veranstalter wurde via E-Mail über deine Absage informiert."
 
   # BLACK BOARD
