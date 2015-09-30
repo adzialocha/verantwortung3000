@@ -387,19 +387,19 @@ en:
 
     title_used_in_events: "Events"
 
-    help_new_and_edit: "Angaben zum Instrument"
+    help_new_and_edit: "Information on equipment"
     help_new_and_edit_html: |-
-      <p>Instruments that are registered in the database are tied to you as a performer. Other participants can request you and your instrument for their own events. In that case you will receive an email and will be informed on the specifics of the collaboration.</p>
-      <p>An instrument can be anything that is part of a performance and tied to a performer, who plays that instrument - but can be anything from voice to shoes, movement to viola.</p>
-      <p>In the description box all information on and specifics (techniques and technicalities) of the instrument can be indicated - this will help other musicians and composers and organisers with their own productions and ideas.</p>
+      <p>Equipment can be registered in the database. Once registered other participants can see your equipment and request it for their own events. Once someone requests your equipment you will automatically receive an email and be informed about the event..</p>
+      <p>Different from the instrument equipment is generally not tied to a person - i.e. a beamer or speakers or a microphone don’t necessarily need a performer.</p>
+      <p>In the description box all information on and specifics/echnicalities of the particular equipment can be indicated - this will help other musicians and composers and organisers with their own productions and ideas.</p>
       <p>Description texts can be edited using Markdown syntax. More information on Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
-
+    
     form:
       panel_title: "Equipment"
       btn_submit: "Save"
       btn_delete: "Delete equipment"
 
-    alert_create: "The equipment has been created."
+    alert_create: "Splendid! The equipment has been created."
     alert_update: "The equipment has been updated."
     alert_delete: "The equipment has been deleted."
 
