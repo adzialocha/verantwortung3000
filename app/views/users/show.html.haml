@@ -30,13 +30,14 @@
 
   .row
 
-    .col-md-6
+    - if @user.image?
 
-      - if @user.image?
+      .col-md-6
+
         = link_to @user.image.url, class: 'fancybox' do
           = image_tag @user.image.url, class: 'img-responsive'
 
-    .col-md-6
+    %div{ :class => if @user.image? then 'col-md-6' else 'col-md-12' end }
 
       .content
 

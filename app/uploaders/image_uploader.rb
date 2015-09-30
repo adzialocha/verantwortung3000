@@ -11,7 +11,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def default_url(*args)
-    path_to_image "default.png"
+    ActionController::Base.helpers.asset_path("default.png")
   end
 
   process :resize_to_fit => [960, 960]

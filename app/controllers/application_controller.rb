@@ -27,6 +27,10 @@ class ApplicationController < ActionController::Base
 
   def set_locale
 
+    if user_signed_in? and params[:locale].present? and I18n.available_locales.map(&:to_s).include?(params[:locale])
+      current_user.update(:locale => params[:locale])
+    end
+
     if user_signed_in? and current_user.locale.present?
       session[:locale] = current_user.locale
     elsif I18n.available_locales.map(&:to_s).include?(params[:locale])
