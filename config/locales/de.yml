@@ -467,9 +467,7 @@ de:
   blackboard:
 
     title: "Schwarzes Brett"
-    text: "<p>Das Schwarze Brett dient als Sammelstelle für alle gesuchten Instrumente oder Geräte. Das heißt, findest du für eine Veranstaltung, die du planst, in der Datenbank nicht das Instrument oder ein Gerät, was du benötigst, dann kannst du hier eine Anfrage schreiben.</p>
-    <p>Auf das Schwarze Brett haben alle Teilnehmer Zugriff. So nehmen also alle Teilnehmerinnen deine Anfrage wahr und können dir eine Email schreiben, wenn sich eine Kollaboration ergeben sollte.</p>
-    <p>Du kannst einen Eintrag im Schwarzen Brett beim Bearbeiten oder Erstellen eines Events erstellen oder bearbeiten.</p>"
+    text_html: "<p>Das Schwarze Brett dient als Sammelstelle für alle gesuchten Instrumente oder Geräte. Das heißt, findest du für eine Veranstaltung, die du planst, in der Datenbank nicht das Instrument oder ein Gerät, was du benötigst, dann kannst du hier eine Anfrage schreiben.</p><p>Auf das Schwarze Brett haben alle Teilnehmer Zugriff. So nehmen also alle Teilnehmerinnen deine Anfrage wahr und können dir eine Email schreiben, wenn sich eine Kollaboration ergeben sollte.</p><p>Du kannst einen Eintrag im Schwarzen Brett beim Bearbeiten oder Erstellen eines Events erstellen oder bearbeiten.</p>"
 
     title_collaborations: "Instrumente gesucht"
     title_requirements: "Geräte gesucht"

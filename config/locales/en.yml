@@ -445,8 +445,7 @@ en:
     overview_title: "Engagement"
 
     help_main: "YOUR ENGAGEMENT"
-    help_main_html: "<p>You find a list of all your collaborations here and also which productions and events you are involved in. It is a useful overview of all your dates and connections during the festival.</p>
-    <p>Also you can refuse other participant’s requests of your equipment and instruments. But maybe be nice and email the affected person before refusing.</p> "
+    help_main_html: "<p>You find a list of all your collaborations here and also which productions and events you are involved in. It is a useful overview of all your dates and connections during the festival.</p><p>Also you can refuse other participant’s requests of your equipment and instruments. But maybe be nice and email the affected person before refusing.</p> "
 
     table_title_collaborations: "Instruments in use"
     table_collaborations_is_empty: "No one has so far requested one of your instruments."
@@ -470,9 +469,7 @@ en:
   blackboard:
 
     title: "Blackboard"
-    text: "<p>The blackboard is the space where you can ask the community for instruments or equipment. So if you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p>
-    <p>Everyone has access to the blackboard. So if someone can help you out he or she will get in touch via email.</p>
-    <p>You can create a request on the blackboard while editing or creating an event.</p>"
+    text_html: "<p>The blackboard is the space where you can ask the community for instruments or equipment. So if you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p><p>Everyone has access to the blackboard. So if someone can help you out he or she will get in touch via email.</p><p>You can create a request on the blackboard while editing or creating an event.</p>"
 
     title_collaborations: "Instruments wanted"
     title_requirements: "Equipment wanted"
