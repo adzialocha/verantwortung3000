@@ -328,12 +328,12 @@ en:
         btn_delete: "Delete event"
 
     alert_create: "Well done. The productions has been created."
-    alert_update: "The productions has been updated."
+    alert_update: "This was big fun! The productions has been updated."
     alert_delete: "The productions has been deleted."
 
   events:
 
-    alert_create: "The event has been created."
+    alert_create: "Jipi! The event has been created."
     alert_update: "The event has been updated."
     alert_delete: "The event has been deleted."
 
@@ -465,7 +465,7 @@ en:
   blackboard:
 
     title: "Blackboard"
-    text_html: "<p>The blackboard is the space where you can ask the community for instruments or equipment. So if you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p><p>Everyone has access to the blackboard. So if someone can help you out he or she will get in touch via email.</p><p>You can create a request on the blackboard while editing or creating an event.</p>"
+    text_html: "<p>The blackboard is the space where you can ask the community for instruments or equipment. If you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p><p>Everyone has access to the blackboard. If someone can help you out he or she will get in touch via email.</p><p>You can create a request on the blackboard while editing or creating an event.</p>"
 
     title_collaborations: "Instruments wanted"
     title_requirements: "Equipment wanted"
