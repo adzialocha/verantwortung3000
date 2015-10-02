@@ -243,13 +243,9 @@ en:
       title_events: "Programme"
       btn_add_event: "Add event"
 
-    help_new: "Create production"
-    help_new_html: |-
-      <p>A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end. The indivdual events can be created later.</p>
-
-    help_edit_main: "Edit production"
-    help_edit_main_html: |-
-      <p>A production is a project which takes place and will be realised wihtin the 6 days of the festival. So a production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end.</p>
+    help_new_and_edit: "Create and edit production"
+    help_new_and_edit_html: |-
+      <p>A production is a project which takes place and will be realized within the 6 days of the festival. A production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end. The indivdual events can be created later.</p>
 
     help_edit_events: "Edit event"
     help_edit_events_html: |-
