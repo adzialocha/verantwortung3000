@@ -237,17 +237,13 @@ de:
       title_events: "Programm"
       btn_add_event: "Veranstaltung hinzufügen"
 
-    help_new: "Produktion erstellen"
-    help_new_html: |-
+    help_new_and_edit: "Produktionen bearbeiten und erstellen"
+    help_new_and_edit_html: |-
       <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht eine Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung. Diese einzelnen Veranstaltungen werden im nächsten Schritt erstellt.</p>
-
-    help_edit_main: "Produktion bearbeiten"
-    help_edit_main_html: |-
-      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht eine Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung.</p>
 
     help_edit_events: "Veranstaltungen bearbeiten"
     help_edit_events_html: |-
-      <p>Eine Veranstaltung ist ein definierter Zeitraum an einem Ort und Teil einer Produktion. Das heißt, es kann auch mehrere Veranstaltungen innerhalb einer Produktion geben (beispielsweise Proben). Für jedes Event wird angeben, welche Geräte, welche Instrumente und welchen Ort du dafür reservieren möchtest.</p>
+      <p>Eine Veranstaltung ist ein definierter Zeitraum an einem Ort und Teil einer Produktion. Das heißt, es kann auch mehrere Veranstaltungen innerhalb einer Produktion geben (beispielsweise Proben). Für jede Veranstaltung wird angeben, welche Geräte, welche Instrumente und welchen Ort du dafür reservieren möchtest.</p>
 
     event:
 
@@ -362,6 +358,10 @@ de:
 
     help_new_and_edit: "Angaben zum Instrument"
     help_new_and_edit_html: |-
+      <p>Instrumente können mit dir als Performer oder Performerin in die Datenbank eingetragen werden. Andere Teilnehmer können dich und das Instrument für ihre Veranstaltungen dann anfragen. Du erhälst als Verantwortlicher oder Verantwortliche eine E-Mail und wirst über diese Kollaboration informiert.</p>
+      <p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und an einen Performer gebunden ist, der das Instrument bedient - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe.</p>
+      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Instrument, besondere Techniken oder Hinweise angegeben werden, die für den Komponisten oder Veranstalter wichtig oder inspirierend sein können.</p>
+      <p>Beschreibungstexte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
     form:
       panel_title: "Instrument"
@@ -467,7 +467,7 @@ de:
   blackboard:
 
     title: "Schwarzes Brett"
-    text_html: "<p>Das Schwarze Brett dient als Sammelstelle für alle gesuchten Instrumente oder Geräte. Das heißt, wenn du für eine Veranstaltung, die du planst, in der Datenbank nicht das Instrument oder ein Gerät findest, das du benötigst, dann kannst du hier eine Anfrage schreiben.</p><p>Auf das Schwarze Brett haben alle Teilnehmer Zugriff. So nehmen also alle Teilnehmerinnen deine Anfrage wahr und können dir eine Email schreiben, wenn sich eine Kollaboration ergeben sollte.</p><p>Du kannst einen Eintrag im Schwarzen Brett beim Bearbeiten oder Erstellen eines Events erstellen oder bearbeiten.</p>"
+    text_html: "<p>Das Schwarze Brett dient als Sammelstelle für alle gesuchten Instrumente oder Geräte. Das heißt, wenn du für eine Veranstaltung, die du planst, in der Datenbank nicht das Instrument oder ein Gerät findest, das du benötigst, dann kannst du hier eine Anfrage schreiben.</p><p>Auf das Schwarze Brett haben alle Teilnehmer Zugriff. So nehmen also alle Teilnehmerinnen deine Anfrage wahr und können dir eine Email schreiben, wenn sich eine Kollaboration ergeben sollte.</p><p>Einträge ins Schwarze Brett werden innerhalb der Veranstaltungen erstellt, wenn du deine Geräte und Instrumente für die Veranstaltung verwaltest./p>"
 
     title_collaborations: "Instrumente gesucht"
     title_requirements: "Geräte gesucht"
