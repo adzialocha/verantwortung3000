@@ -27,7 +27,7 @@ en:
 
     help_image_upload: "Upload images"
     help_image_upload_html: |-
-      <p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG formats are allowed.</p>"
+      <p>Images can be uploaded and deleted here. The number of images is not restricted, images will be resized after upload (maximum size is 960x960 pixels), only JPG and PNG formats are allowed.</p>
 
     help_text_formatting: "Format texts"
     help_text_formatting_html: |-
@@ -393,7 +393,7 @@ en:
 
     help_new_and_edit: "Information on equipment"
     help_new_and_edit_html: |-
-      <p>Equipment can be registered in the database. Once registered other participants can see your equipment and request it for their own events. Once someone requests your equipment you will automatically receive an email and be informed about the event..</p>
+      <p>Equipment can be registered in the database. Once registered other participants can see your equipment and request it for their own events. Once someone requests your equipment you will automatically receive an email and be informed about the event.</p>
       <p>Different from the instrument equipment is generally not tied to a person - i.e. a beamer or speakers or a microphone don’t necessarily need a performer.</p>
       <p>In the description box all information on and specifics/echnicalities of the particular equipment can be indicated - this will help other musicians and composers and organisers with their own productions and ideas.</p>
       <p>Description texts can be edited using Markdown syntax. More information on Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
