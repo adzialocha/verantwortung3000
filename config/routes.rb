@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users, path: 'participants'
+  devise_for :users, path: 'participants', :controllers => { 'registrations': 'registrations' }
 
   root 'pages#show', id: 'home'
 

@@ -17,16 +17,8 @@ class User < ActiveRecord::Base
 
   default_scope { order('last_name') }
 
-  after_create :set_locale
-
   def fullname
     self.first_name + ' ' + self.last_name
-  end
-
-  private
-
-  def set_locale
-    self.update :locale => I18n.locale
   end
 
 end
