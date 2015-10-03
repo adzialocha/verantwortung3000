@@ -69,6 +69,11 @@
   {
     margin: 0;
   }
+
+  p + p
+  {
+    margin-top: 1em;
+  }
 }
 
 @media (max-width: $screen-sm-max) {
