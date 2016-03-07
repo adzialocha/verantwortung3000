@@ -171,6 +171,7 @@ en:
 
       routes: "Directions"
       contact: "Contact"
+      faq: "FAQ"
       admin: "Administration"
 
       locale:

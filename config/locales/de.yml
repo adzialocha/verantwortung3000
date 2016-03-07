@@ -166,6 +166,7 @@ de:
 
       routes: "Anfahrt"
       contact: "Kontakt"
+      faq: "FAQ"
       admin: "Administration"
 
       locale:
