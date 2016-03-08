@@ -19,7 +19,7 @@ de:
       confirmation_instructions:
         subject: "VERANTWORTUNG 3000 - WILLKOMMEN!"
       reset_password_instructions:
-        subject: "VERANTWORTUNG 3000 - PASSOWRT ZURÜCKSETZEN"
+        subject: "VERANTWORTUNG 3000 - PASSWORT ZURÜCKSETZEN"
       unlock_instructions:
         subject: "VERANTWORTUNG 3000 - PROFIL FREISCHALTEN"
     omniauth_callbacks:

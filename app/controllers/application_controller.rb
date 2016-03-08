@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
 
-    additional_params = [:first_name, :last_name, :tel, :street, :city_code, :city, :country]
+    additional_params = [:first_name, :last_name, :tel, :street, :city_code, :city, :country, :camping_preferred, :tos_accepted]
 
     devise_parameter_sanitizer.for(:account_update) << [:image, :image_cache, :remove_image, :imageable_id, :imageable_type, :description] + additional_params
 

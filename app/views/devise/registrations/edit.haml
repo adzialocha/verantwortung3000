@@ -67,6 +67,12 @@
 
           %hr
 
+          %h2= t('auth.signup_additional_info')
+
+          = f.input :camping_preferred, label: t('auth.signup_camping_preferred')
+
+          %hr
+
           %h2= t('participants.form_title_credentials')
 
           = f.input :password, autocomplete: "off", required: false

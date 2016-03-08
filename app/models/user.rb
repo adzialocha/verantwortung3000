@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
 
   mount_uploader :image, ImageUploader
 
-  validates :email, :first_name, :last_name, :tel, :street, :city_code, :city, :country, presence: true
+  validates :email, :first_name, :last_name, :tel, :street, :city_code, :city, :country, :tos_accepted, presence: true
 
   default_scope { order('last_name') }
 

@@ -42,15 +42,21 @@
 
         %h2= t('auth.signup_additional_info')
 
-        = f.input :camping_preferred, inline_label: t('auth.signup_camping_preferred')
+        %br
+
+        = f.input :camping_preferred, label: t('auth.signup_camping_preferred')
 
         %hr
 
         %h2= t('auth.signup_terms_of_service')
 
+        %br
+
         = t('auth.signup_terms_of_service_html')
 
-        = f.input :tos_accepted, inline_label: t('auth.signup_terms_of_service_agree'), required: true
+        %br
+
+        = f.input :tos_accepted, label: t('auth.signup_terms_of_service_agree'), required: true
 
         %hr
 
