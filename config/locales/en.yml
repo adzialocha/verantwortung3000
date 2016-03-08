@@ -52,7 +52,7 @@ en:
 
         Please note: This email does not completely confirm your participation in the festival. We can only fully register you as a participant including board and lodging once we received your participation fee.
 
-        Currently we are yet uncertain about the exact amount (approx. 90 Euro), but you will receive information and an invoice as soon as we are all set.
+        In the following days you will receive another email with an invoice from us. We will then ask you to transfer the fee of 155,00 Euro on our bank account.
 
         If you have any further questions, please feel free to ask: kontakt@verantwortung3000.de
 
@@ -189,15 +189,31 @@ en:
     signup_title_name: "Hello!"
     signup_description_html: |-
       <p>You are about to participate in VERANTWORTUNG 3000.</p>
-      <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation will be approx. 90 Euro, including board and lodge throughout the festival. You will receive an invoice via email.</p>
+      <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation are <strong>155,00 Euro</strong>, including board and lodge throughout the festival. You will receive an invoice via email.</p>
       <p>We can only confirm your participation once we received your transaction. So we ask you to transfer the cost in time.</p>
-      <p>We are very much looking forward to welcoming you.</p>
+      <p>We are very much looking forward to welcoming you!</p>
 
     signup_contact: "Contact"
     signup_hint_email: "Please leave your email. We need your email to get in touch with you regarding everything that is happening here on VERANTWORTUNG3000.de."
     signup_hint_mobile: "Your cellphone will be necessary during the festival and the main means by reaching other participants on the ground."
     signup_address: "Your address"
     signup_password: "Password"
+
+    signup_additional_info: "General information"
+    signup_camping_preferred: "I prefer bringing my own tent for camping instead of staying in a dorm inside."
+
+    signup_terms_of_service: "Agreements"
+
+    signup_terms_of_service_html: |-
+      <p>We want to make sure you read our terms before you sign up.</p>
+      <p>* VERANTWORTUNG 3000 wants only the best for you, still we can't guarantee any luxury. Please note that you will stay with 3-10 people in one room. We will all live on an amazing but simple farm.</p>
+      <p>* You have to bring your own sheets / sleeping bag.</p>
+      <p>* As a participant you are liable for your own gear and instruments. As the host we dont take any responsibily for possible damage through accidents or usage of other participants.</p>
+      <p>* You commit yourself to help in the kitchen once for 3-4 hours.</p>
+      <p>Great! Please read also our FAQ for further informations.</p>
+
+    signup_terms_of_service_agree: "I agree with the above mentioned terms."
+
     submit_signup: "Register"
 
     forgot_password_title: "Forgot your password?"

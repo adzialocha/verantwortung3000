@@ -42,7 +42,7 @@ de:
       signup_html: |-
         Hallo!
 
-        Willkommen bei VERANTWORTUNG 3000!
+        Willkommen zu VERANTWORTUNG 3000!
 
         Bitte klicke auf den folgenden Link, um deine E-Mail-Adresse zu bestätigen:
 
@@ -50,7 +50,7 @@ de:
 
         Wichtiger Hinweis: Bitte beachte, dass diese E-Mail deine Teilnahme am Festival noch nicht verbindlich bestätigt. Wir können deine Teilnahme inklusive Verpflegung und Übernachtung erst bestätigen, wenn dein Teilnahmebeitrag überwiesen worden ist.
 
-        Zurzeit steht noch nicht fest, wie hoch der Beitrag sein wird (ungefähr 90 Euro), du wirst in den kommenden Wochen alle Informationen von uns via E-Mail und eine Rechnung erhalten, sobald alles bereit ist.
+        Du erhälst in den kommenden Tagen eine weitere E-Mail mit einer Rechnung von uns. Wir bitten dich dann den Teilnahmebeitrag in Höhe von 155,00 Euro auf unser Konto zu überweisen.
 
         Schreibe an kontakt@verantwortung3000.de wenn du noch Fragen hast!
 
@@ -184,14 +184,30 @@ de:
     signup_title_name: "Hallo!"
     signup_description_html: |-
       <p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden.</p>
-      <p>Mit der Anmeldung erklärst du dich bereit, an VERANTWORTUNG 3000 teilzunehmen. Die Teilnahme kostet ca. 90 Euro, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p>
-      <p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich.</p>
+      <p>Mit der Anmeldung erklärst du dich bereit, an VERANTWORTUNG 3000 teilzunehmen. Die Teilnahme kostet <strong>155,00 Euro</strong>, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p>
+      <p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich!</p>
 
     signup_contact: "Kontakt"
     signup_hint_email: "E-Mail ist das Hauptkommunikationsmittel auf VERANTWORTUNG 3000, bitte gebe sie an!"
     signup_hint_mobile: "Deine Mobilnummer brauchen wir während der Festivaltage, damit wird dich immer bei Fragen erreichen können."
     signup_address: "Deine Adresse"
     signup_password: "Passwort"
+
+    signup_additional_info: "Allgemeine Angaben"
+    signup_camping_preferred: "I prefer bringing my own tent for camping instead of staying in a dorm inside."
+
+    signup_terms_of_service: "Bedingungen"
+
+    signup_terms_of_service_html: |-
+      <p>Wir möchten auf ein paar wichtige Bedingungen hinweisen, die du vorher beachten solltest:</p>
+      <p>* VERANTWORTUNG 3000 will für euch nur das beste, garantiert aber keinen Luxus, beachte dass du mit 3-10 Leuten in einem Raum schlafen wirst und wir auf einem tollen aber einfachen Landgut leben werden.</p>
+      <p>* Bettwäsche / Schlafsack muss von dir mitgebracht werden.</p>
+      <p>* Als Teilnehmer haftest du selber für dein eigenes mitgebrachtes Equipment und deine Instrumente. Wir übernehmen als Veranstalter keine Haftung für etwagige Schäden die durch Unfälle und den Gebrauch auch durch andere Teilnehmer auftreten können.</p>
+      <p>* Du verpflichtest dich einmalig für 3-4 Stunden in der Küche mitzuhelfen.</p>
+      <p>Super! Bitte beachte auch unsere FAQ für weitere Informationen.</p>
+
+    signup_terms_of_service_agree: "Ich stimme den oben genannten Bedingungen zu."
+
     submit_signup: "Registrieren"
 
     forgot_password_title: "Passwort vergessen?"
