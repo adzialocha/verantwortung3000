@@ -257,11 +257,11 @@ de:
 
     help_new_and_edit: "Produktionen bearbeiten und erstellen"
     help_new_and_edit_html: |-
-      <p>Eine Produktion ist ein Projekt, das im Laufe der 6 Tage stattfindet und realisiert wird. Innerhalb einer Produktion, können mehrere Veranstaltungen stattfinden, so besteht eine Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung. Diese einzelnen Veranstaltungen werden im nächsten Schritt erstellt.</p>
+      <p>Eine Produktion ist ein Projekt, das im Laufe der Festivaltage stattfindet und realisiert wird. Innerhalb einer Produktion können mehrere Veranstaltungen stattfinden, so besteht eine Workshop-Produktion beispielsweise aus mehreren Workshop-Tagen und einer Präsentationsveranstaltung am Ende. Diese einzelnen Veranstaltungen werden im nächsten Schritt erstellt.</p>
 
     help_edit_events: "Veranstaltungen bearbeiten"
     help_edit_events_html: |-
-      <p>Eine Veranstaltung ist ein definierter Zeitraum an einem Ort und Teil einer Produktion. Das heißt, es kann auch mehrere Veranstaltungen innerhalb einer Produktion geben (beispielsweise Proben). Für jede Veranstaltung wird angeben, welche Geräte, welche Instrumente und welchen Ort du dafür reservieren möchtest.</p>
+      <p>Eine Veranstaltung findet immer zu einem definierter Zeitraum an einem Ort statt. Eine Veranstaltung ist immer Teil einer übergeordneten Produktion. Das heißt, es kann auch mehrere Veranstaltungen innerhalb einer Produktion geben (beispielsweise Proben). Für jede Veranstaltung wird angeben, welche Geräte, welche Instrumente und welchen Ort du dafür reservieren möchtest.</p>
 
     event:
 
@@ -274,28 +274,28 @@ de:
 
       title_create_new: "Neue Veranstaltung erstellen"
 
-      help_edit_main: "Veranstaltung"
+      help_edit_main: "Ort und Zeit wählen"
       help_edit_main_html: |-
-        <p>Wähle einen Ort aus der Liste und einen Zeitraum für die Veranstaltung innerhalb deiner Produktion.</p>
-        <p>Es kann passieren, dass ein Ort zu einer gewünschten Uhrzeit schon reserviert ist. Die aktuellen Veranstaltungen der Orte können unter <a href="http://www.verantwortung3000.de/locations" target="_blank">Orte</a> eingesehen werden.</p>
+        <p>Wähle einen Ort aus der Liste und einen Zeitraum für die Veranstaltung.</p>
+        <p>Es kann passieren, dass ein Ort zu einer gewünschten Uhrzeit schon reserviert ist. Die aktuellen Veranstaltungen der Orte können unter <a href="locations" target="_blank">Orte</a> eingesehen werden.</p>
 
-      help_edit_instruments: "Instrumente bearbeiten"
+      help_edit_instruments: "Instrumente auswählen"
       help_edit_instruments_html: |-
-        <p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und an einen Performer gebunden ist, der das Instrument bedient - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe. Hier kannst du aus allen Instrumenten der Datenbank diejenigen auswählen, die du für diese Veranstaltung deiner Produktion benötigst (sofern sie nicht anderweitig schon verwendet werden, in diesem Fall erhälst du eine Fehlermeldung).</p>
-        <p>Ein eingetragenes Instrument und die dazugehörige Performerin wird nach dem Speichern als Teil der Veranstaltung registriert. Die Person wird automatisch daraufhin via E-Mail über diese Kollaboration informiert.</p>
-        <p>Bitte beachte, dass natürlich diese Person auch dieser Kollaboration zustimmen muss, am besten du nimmst vorher zu ihr Kontakt via E-Mail auf (im Profil sichtbar).</p>
-        <p>Alle weiteren Details und Vereinbarungen zur Umsetzung der Veranstaltung werden auch per E-Mail abgehandelt.</p>
+        <p>Wir definieren als Instrument alles, was für eine Aufführung von anderen Teilnehmern angeboten wird und an einen Performer gebunden ist, der das Instrument bedient oder spielt - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe.</p>
+        <p>Hier kannst du aus allen Instrumenten der Datenbank diejenigen auswählen, die du für diese Veranstaltung benötigst. Es kann natürlich sein, dass dieses Instrument zu diesem Zeitpunkt schon reserviert ist, du erhälst in diesem Fall eine Fehlermeldung.</p>
+        <p>Ein eingetragenes Instrument und die dazugehörige Performerin wird nach dem Speichern als Teil der Veranstaltung registriert. Die Person wird automatisch via E-Mail über diese Kollaboration informiert.</p>
+        <p>Bitte beachte, dass diese Person auch dieser Kollaboration zustimmen muss, am besten du nimmst vorher Kontakt via E-Mail mit ihr auf. Die E-Mail-Adresse findest du im Profil. Alle weiteren Details und Vereinbarungen zur Umsetzung der Veranstaltung werden auch per E-Mail abgehandelt.</p>
         <h3>Gesuchtes Instrument nicht vorhanden?</h3>
-        <p>Falls das gewünschte Instrument nicht vorhanden ist, wähle die Option "Nicht Vorhanden" und führe deinen Wunsch im Titel und im Beschreibungstext aus. Es wird so automatisch ein Eintrag ins Schwarze Brett erstellt. Interessierte Teilnehmer können sich dann bei dir via E-Mail melden und gegebenenfalls das gewünschte Instrument für dich eintragen, sodass du es dann zur Veranstaltung hinzufügen kannst.</p>
+        <p>Falls das gewünschte Instrument nicht vorhanden ist, wähle die Option "Nicht Vorhanden" und beschreibe deinen Wunsch im Textformular. Es wird so automatisch ein Eintrag ins Schwarze Brett erstellt. Interessierte Teilnehmer können sich dann bei dir via E-Mail melden und gegebenenfalls das gewünschte Instrument für dich eintragen, sodass du es dann zur Veranstaltung hinzufügen kannst.</p>
 
-      help_edit_devices: "Geräte bearbeiten"
+      help_edit_devices: "Geräte auswählen"
       help_edit_devices_html: |-
         <p>Im Gegensatz zum Instrument ist das Gerät nicht an eine Person gebunden - wie beispielsweise ein Beamer oder Lautsprecher oder Mikrofon. Hier kannst du aus allen Geräten der Datenbank diejenigen auswählen, die du für diese Veranstaltung benötigst (sofern sie nicht anderweitig schon verwendet werden).</p>
         <p>Wie bei den Instrumenten wird nach dem Speichern das Gerät als Teil der Veranstaltung registriert. Der Besitzer oder die Besitzerin wird automatisch daraufhin via E-Mail über diesen Eintrag informiert.</p>
-        <p>Bitte beachte, dass natürlich diese Person auch dem zustimmen muss, am besten du nimmst vorher zu ihr Kontakt via E-Mail auf (im Profil sichtbar).</p>
+        <p>Bitte beachte, dass natürlich diese Person auch dem zustimmen muss, am besten du nimmst vorher zu ihr Kontakt via E-Mail auf. Die E-Mail-Adresse findest du im Profil.</p>
         <p>Alle weiteren Details und Vereinbarungen zur Umsetzung der Veranstaltung (Treffpunkt, technische Details, Abholung des Gerätes während der Tage usw.) werden auch per E-Mail abgehandelt.</p>
         <h3>Gesuchtes Gerät nicht vorhanden?</h3>
-        <p>Falls das gewünschte Gerät nicht vorhanden ist, wähle die Option "Nicht Vorhanden" und führe deinen Wunsch im Titel und im Beschreibungstext aus. Es wird so automatisch ein Eintrag ins Schwarze Brett erstellt. Interessierte Teilnehmer können sich dann bei dir via E-Mail melden und gegebenenfalls das gewünschte Gerät für dich eintragen, sodass du es dann zur Veranstaltung hinzufügen kannst.</p>
+        <p>Falls das gewünschte Gerät nicht vorhanden ist, wähle die Option "Nicht Vorhanden" und beschreibe deinen Wunsch im Textformular. Es wird so automatisch ein Eintrag ins Schwarze Brett erstellt. Interessierte Teilnehmer können sich dann bei dir via E-Mail melden und gegebenenfalls das gewünschte Gerät für dich eintragen, sodass du es dann zur Veranstaltung hinzufügen kannst.</p>
 
       help_edit_more: "Weitere Informationen angeben"
       help_edit_more_html: |-
@@ -348,7 +348,7 @@ de:
         btn_save: "Speichern"
 
     alert_create: "Wunderbar. Die Produktion wurde erfolgreich erstellt!"
-    alert_update: "Die Produktion wurde erfolgreich aktualisiert!"
+    alert_update: "Hurra! Die Produktion wurde erfolgreich aktualisiert!"
     alert_delete: "Die Produktion und alle damit verbundenenen Veranstaltungen wurden erfolgreich gelöscht!"
 
   events:

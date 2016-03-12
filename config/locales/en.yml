@@ -263,11 +263,11 @@ en:
 
     help_new_and_edit: "Create and edit production"
     help_new_and_edit_html: |-
-      <p>A production is a project which takes place and will be realized within the 6 days of the festival. A production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end. The indivdual events can be created later.</p>
+      <p>A production is a project which takes place and will be realized within the days of the festival. A production may consist of several events, such as a workshop production, which is split into several workshop days and a presentation in the end. The indivdual events can be created later.</p>
 
     help_edit_events: "Edit event"
     help_edit_events_html: |-
-      <p>An event takes places within a fixed timeframe, at a particular venue and is part of a production. That means, there might be more than one event for one production (i.e. rehearsals). You can assign which instruments, equipment and what venue you want to use for your event, therefore making sure you reserve that specific space for a certain time.</p>
+      <p>An event takes places within a defined timeframe and at a particular venue. Every event is part of a production. There might be more than one event for one production (i.e. rehearsals). You can assign which instruments, equipment and what venue you want to use for your event, making sure you will have these things and places reserved for you.</p>
 
     event:
 
@@ -280,28 +280,28 @@ en:
 
       title_create_new: "Create new event"
 
-      help_edit_main: "Event"
+      help_edit_main: "Select a place and a time"
       help_edit_main_html: |-
         <p>Select the venue and date for your event from the list.</p>
-        <p>It is possible that this venue is already taken at that time. To see which venues are reserved for particular events have a look here: <a href="http://www.verantwortung3000.de/locations" target="_blank">Orte</a></p>
+        <p>It is possible that this venue is already reserved at that time. To see which venues are reserved for particular events have a look here: <a href="/locations" target="_blank">Places</a></p>
 
-      help_edit_instruments: "Edit instruments"
+      help_edit_instruments: "Choose needed instruments"
       help_edit_instruments_html: |-
-        <p>An instrument can be anything that is part of a performance and tied to a performer, who plays that instrument - but can be anything from voice to shoes, movement to viola. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>
+        <p>An instrument can be anything that is part of a performance and tied to a performer, who plays that instrument - this can be anything from voice to shoes, movement or viola for example. Here you can choose from all the instruments in the database, that you need for this event (unless they are in use at that time already).</p>
         <p>This instrument and the associated performer will be registered as part of your event. The person involved will automatically receive an email and be informed about the collaboration.</p>
-        <p>Obviously the performer has to approve of the collaboration, so it might be best to first contact her or him via email (see profile)</p>
+        <p>Obviously the performer has to approve of the collaboration, so it might be best to first contact her or him via email. You will find the email adress in the profile.</p>
         <p>All further agreements and details on the collaboration and event will also be dealt with via email.</p>
         <h3>Is the instrument you are looking for not available?</h3>
-        <p>If your favourite instrument is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who are interested in collaborating will then reach you via email and hopefully register that instrument in the database, so you can then add it to your event.</p>
+        <p>If your needed instrument is not available yet, choose option „Not available“ and name and describe what you are looking for. A request will automatically be created on the blackboard. Participants who are interested in collaborating will then reach you via email and hopefully register that instrument in the database, so you can then add it to your event.</p>
 
-      help_edit_devices: "Edit equipment"
+      help_edit_devices: "Choose needed equipment"
       help_edit_devices_html: |-
-        <p>Equipment is not tied to a person - so can be anything from beamer to speaker to microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
+        <p>Equipment is not tied to a person - it can for example be a beamer, speaker or microphone. Here you can choose from all the equipment in the database, that you need for this event (unless it is in use at that time already).</p>
         <p>The equipment will be registered as part of your event. The owner will automatically receive an email and be informed about the request.</p>
-        <p>Obviously the owner has to approve of the use of the equipment, so it might be best to first contact her or him via email (see profile)</p>
-        <p>All further agreements and details of the event (meeting, handing over, technical details etc.) will also be dealt with via email.</p>
+        <p>Obviously the owner has to approve of the use of the equipment, so it might be best to first contact her or him via email.  You will find the email adress in the profile.</p>
+        <p>All further agreements and details of the event (meeting, handover, technical details etc.) will also be dealt with via email.</p>
         <h3>Is the equipment you are looking for not available?</h3>
-        <p>If the equipment you are looking for is not available, choose option „Not available“ and name and describe what you are looking for here. A request will automatically be created on the blackboard. Participants who might help you out will then reach you via email and hopefully register that equipment in the database, so you can then add it to your event.</p>
+        <p>If the equipment you are looking for is not available, choose option „Not available“ and name and describe what you are looking for. A request will automatically be created on the blackboard. Participants who might help you out will then reach you via email and hopefully register that equipment in the database, so you can then add it to your event.</p>
 
       help_edit_more: "Edit further info"
       help_edit_more_html: |-
@@ -314,7 +314,7 @@ en:
         btn_submit: "Edit event"
         goto_production: "Go to production"
 
-        error_location_occupied: "Sorry! This venue is already occupied at that time."
+        error_location_occupied: "Sorry! This venue is already reserved for the specified time."
         error_instrument_occupied: "Sorry! This instrument is already in use at that time."
         error_device_occupied: "Sorry! This equipment is already in use at that time."
 
@@ -322,7 +322,7 @@ en:
         error_device_unique: "This device already exists in your list."
 
         error_wrong_daterange: "Your event ends before or at the same time it starts."
-        error_out_of_daterange: "Timeframe is before or after the festival."
+        error_out_of_daterange: "Nice try. But the timeframe is before or after the festival."
 
         panel_instruments_title: "What instruments do you need?"
         panel_devices_title: "What equipment do you need?"
@@ -346,8 +346,8 @@ en:
         btn_delete: "Delete event"
 
     alert_create: "Well done. The productions has been created."
-    alert_update: "This was big fun! The productions has been updated."
-    alert_delete: "The productions has been deleted."
+    alert_update: "Hurra! The productions has been updated."
+    alert_delete: "The productions and all regarding events has been deleted."
 
   events:
 
@@ -490,7 +490,7 @@ en:
     text_html: |-
       <p>The blackboard is the space where you can ask the community for instruments or equipment. If you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p>
       <p>Everyone has access to the blackboard. If someone can help you out he or she will get in touch via email.</p>
-      <p>You can create a request on the blackboard while editing or creating an event. Edit a event, and choose the "Not Available" option when adding instruments or equipment to that event.</p>"
+      <p>You can create a request on the blackboard while editing or creating an event. Edit an event, and choose the "Not Available" option when adding instruments or equipment.</p>
 
     title_collaborations: "Instruments wanted"
     title_requirements: "Equipment wanted"
