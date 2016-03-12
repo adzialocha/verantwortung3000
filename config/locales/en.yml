@@ -144,7 +144,7 @@ en:
     home: "Home"
     about: "About"
     calendar: "Calendar"
-    locations: "Places"
+    locations: "Venues"
 
     dropdown: "Menu"
 
@@ -263,7 +263,7 @@ en:
 
     help_edit_events: "Edit event"
     help_edit_events_html: |-
-      <p>An event takes places within a defined timeframe and at a particular venue. Every event is part of a production. There might be more than one event for one production (i.e. rehearsals). You can assign which instruments, equipment and what venue you want to use for your event, making sure you will have these things and places reserved for you.</p>
+      <p>An event takes place within a defined timeframe and at a particular venue. Every event is part of a production. There might be more than one event for one production (i.e. rehearsals). You can assign which instruments, equipment and what venue you want to use for your event, making sure you will have these things and venues reserved for you.</p>
 
     event:
 
@@ -276,10 +276,10 @@ en:
 
       title_create_new: "Create new event"
 
-      help_edit_main: "Select a place and a time"
+      help_edit_main: "Select a venue and a time"
       help_edit_main_html: |-
         <p>Select the venue and date for your event from the list.</p>
-        <p>It is possible that this venue is already reserved at that time. To see which venues are reserved for particular events have a look here: <a href="/locations" target="_blank">Places</a></p>
+        <p>It is possible that this venue is already reserved at that time. To see which venues are reserved for particular events have a look here: <a href="/locations" target="_blank">Venues</a></p>
 
       help_edit_instruments: "Choose needed instruments"
       help_edit_instruments_html: |-
