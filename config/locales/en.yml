@@ -56,18 +56,14 @@ en:
 
         If you have any further questions, please feel free to ask: kontakt@verantwortung3000.de
 
-
       forgot_password_html: |-
-        Hello!
+        Hello Hello!
 
         Someone has requested a link to change your password. You can do this through the link below.
 
         %{url}
 
         If you didnt request this, please ignore this email.
-
-        Your password won't change until you access the link above and create a new one.
-
 
     requirement:
 
@@ -82,11 +78,11 @@ en:
 
         Link: %{url}
 
-        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email.
+        Your device will be used for this production. If you disapprove, please write *%{creator_name}* (%{creator_url}) an email and refuse the entry under "Engagement".
 
         %{creator_name}'s email is: %{creator_mail}.
 
-        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the fesitval. If you have any other questions, feel free to contact us.
+        All further information regarding this production will be dealt with via email. For example where and when your device will be picked up during the festival. If you have any other questions, feel free to contact us.
 
     collaboration:
 
@@ -101,7 +97,7 @@ en:
 
         Link: %{url}
 
-        You automatically take part in this production as a performer with your instrument. If you don't want to participate, drop *%{creator_name}* (%{creator_url}) an email: %{creator_mail}.
+        You automatically take part in this production as a performer with your instrument. If you don't want to participate, drop *%{creator_name}* (%{creator_url}) an email: %{creator_mail} and refuse the entry under "Engagement".
 
         All further info on this production will be dealt with via email. If you have any other questions, contact us at any time.
 
@@ -119,7 +115,7 @@ en:
 
         has been refused by %{device_owner_name} (%{device_owner_url}).
 
-        A request has automatically been created on the blackboard to help you find a similar equipment. You may edit or delete this request here::
+        A request has automatically been created on the blackboard to help you find a similar equipment. You may edit or delete this post here::
 
         Link: %{url}
 
@@ -137,7 +133,7 @@ en:
 
         has been refused by %{instrument_owner_name} (%{instrument_owner_url}).
 
-        A request has automatically been created on the blackboard to help you find another instrument. You may edit or delete this request here:
+        A request has automatically been created on the blackboard to help you find another instrument. You may edit or delete this post here:
 
         Link: %{url}
 

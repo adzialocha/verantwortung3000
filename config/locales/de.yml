@@ -54,7 +54,6 @@ de:
 
         Schreibe an kontakt@verantwortung3000.de wenn du noch Fragen hast!
 
-
       forgot_password_html: |-
         Hallo Hallo!
 
@@ -68,7 +67,7 @@ de:
 
     requirement:
 
-      subject: "NEUE GERÄTVERWENDUNG"
+      subject: "NEUE GERÄTEVERWENDUNG"
       message: |-
         Hallo %{name}!
 
@@ -79,7 +78,7 @@ de:
 
         Link: %{url}
 
-        Dein Gerät wird jetzt für diese Produktion verwendet, falls du das nicht möchtest, kannst du dich bei *%{creator_name}* (%{creator_url}) via E-Mail melden.
+        Dein Gerät wird jetzt für diese Produktion verwendet, falls du das nicht möchtest, kannst du dich bei *%{creator_name}* (%{creator_url}) via E-Mail melden und den Eintrag unter "Engagement" ablehnen.
 
         Die E-Mail-Adresse von %{creator_name} lautet: %{creator_mail}
 
@@ -98,7 +97,7 @@ de:
 
         Link: %{url}
 
-        Du nimmst automatisch an dieser Produktion mit deinem Instrument als Performer teil, falls du das nicht möchtest, kannst du dich bei *%{creator_name}* (%{creator_url}) via E-Mail melden.
+        Du nimmst automatisch an dieser Produktion mit deinem Instrument als Performer teil, falls du das nicht möchtest, kannst du dich bei *%{creator_name}* (%{creator_url}) via E-Mail melden und den Eintrag unter "Engagement" ablehnen.
 
         Die E-Mail-Adresse von %{creator_name} lautet: %{creator_mail}
 
@@ -106,7 +105,7 @@ de:
 
     requirement_rejected:
 
-      subject: "GERÄTVERWENDUNG ABGEHLEHNT"
+      subject: "GERÄTEVERWENDUNG ABGEHLEHNT"
       message: |-
 
         Hallo %{name}!
