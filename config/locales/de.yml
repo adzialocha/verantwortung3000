@@ -376,9 +376,9 @@ de:
 
     help_new_and_edit: "Angaben zum Instrument"
     help_new_and_edit_html: |-
-      <p>Instrumente können mit dir als Performer oder Performerin in die Datenbank eingetragen werden. Andere Teilnehmer können dich und das Instrument für ihre Veranstaltungen dann anfragen. Du erhälst als Verantwortlicher oder Verantwortliche eine E-Mail und wirst über diese Kollaboration informiert.</p>
-      <p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und an einen Performer gebunden ist, der das Instrument bedient - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe.</p>
-      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Instrument, besondere Techniken oder Hinweise angegeben werden, die für den Komponisten oder Veranstalter wichtig oder inspirierend sein können.</p>
+      <p>Instrumente können mit dir als Performer in die Datenbank eingetragen werden. Andere Teilnehmer können dich mit dem Instrument für ihre Veranstaltungen anfragen. Du erhälst als Verantwortliche eine E-Mail und wirst über diese Kollaboration informiert.</p>
+      <p>Als Instrument wird alles angesehen, was für eine Aufführung jeglicher Art frei angeboten wird und an eine Performerin gebunden ist, die das Instrument bedient oder spielt - egal ob Geige oder Stimme, Bewegung, Haare oder Schuhe.</p>
+      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Instrument, besondere Techniken oder Hinweise angegeben werden, die für die Komponistin oder den Veranstalter wichtig oder inspirierend sein können.</p>
       <p>Beschreibungstexte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
     form:
@@ -409,9 +409,9 @@ de:
 
     help_new_and_edit: "Angaben zum Gerät"
     help_new_and_edit_html: |-
-      <p>Geräte können in die Datenbank eingetragen werden. Du bietest das Gerät dann für andere Teilnehmer zur freien Verfügung an. Andere Teilnehmer können das Gerät für ihre Veranstaltungen dann anfragen. Du erhälst als Verantwortlicher oder Verantwortliche eine E-Mail und wirst über diese Anfrage informiert.</p>
-      <p>Im Gegensatz zum Instrument ist das Gerät nicht an eine Person gebunden - wie beispielsweise ein Beamer oder Lautsprecher oder Mikrofon.</p>
-      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Gerät, besondere Techniken oder Hinweise angegeben werden, die für den Komponisten oder Veranstalter wichtig oder inspirierend sein können.</p>
+      <p>Du kannst Geräte für andere Teilnehmer zur freien Verfügung hier eintragen und anbieten. Andere Teilnehmer können das Gerät für ihre Veranstaltungen anfragen. Als Verantwortliche wirst du über diese Anfrage via E-Mail informiert.</p>
+      <p>Im Gegensatz zum Instrument ist das Gerät nicht an eine Person gebunden - mögliche Geräte sind beispielsweise ein Beamer oder Lautsprecher oder Mikrofon.</p>
+      <p>Im Beschreibungstext können alle wichtigen Informationen und Daten zum Gerät, besondere Techniken oder Hinweise angegeben werden, die für den Komponisten oder die Veranstalterin wichtig oder inspirierend sein können.</p>
       <p>Beschreibungstexte können mithilfe von Markdown-Syntax formatiert werden. Mehr Informationen zu Markdown: <a href="http://daringfireball.net/projects/markdown/basics" target="_blank">http://daringfireball.net/projects/markdown/basics</a></p>
 
     form:
