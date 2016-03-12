@@ -10,7 +10,7 @@ module Darmstadt3000
     # VERANTWORTUNG 3000
 
     config.title = 'VERANTWORTUNG 3000'
-    config.description = 'Altwustrow ist ein Ort in Brandenburg. VERANTWORTUNG 3000 will eine Zusammenkunft in Altwustrow schaffen, 6 Tage im September 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.'
+    config.description = 'VERANTWORTUNG 3000 will eine Zusammenkunft schaffen, 6 Tage in Brandenburg im Spätsommer 2016. VERANTWORTUNG 3000 versteht sich als Ort für konstruktiven Austausch und kritische Diskussion über zeitgenössische Musik.'
     config.url = 'http://www.verantwortung3000.de'
 
     config.FESTIVAL_START = Time.new 2016, 8, 30
