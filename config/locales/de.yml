@@ -185,10 +185,10 @@ de:
     signup_description_html: |-
       <p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden.</p>
       <p>Mit der Anmeldung erklärst du dich bereit, an VERANTWORTUNG 3000 teilzunehmen. Die Teilnahme kostet <strong>155,00 Euro</strong>, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p>
-      <p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung zu begleichen.</p><p>Wir freuen uns auf dich!</p>
+      <p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung, spätestens bis zum 01.06. zu begleichen.</p><p>Wir freuen uns auf dich!</p>
 
     signup_contact: "Kontakt"
-    signup_hint_email: "E-Mail ist das Hauptkommunikationsmittel auf VERANTWORTUNG 3000, bitte gebe sie an!"
+    signup_hint_email: "E-Mail ist das Hauptkommunikationsmittel auf VERANTWORTUNG 3000, andere Teilnehmer werden dich über diese Adresse erreichen können."
     signup_hint_mobile: "Deine Mobilnummer brauchen wir während der Festivaltage, damit wird dich immer bei Fragen erreichen können."
     signup_address: "Deine Adresse"
     signup_password: "Passwort"
@@ -204,7 +204,8 @@ de:
       <p>* Bettwäsche / Schlafsack muss von dir mitgebracht werden.</p>
       <p>* Als Teilnehmer haftest du selber für dein eigenes mitgebrachtes Equipment und deine Instrumente. Wir übernehmen als Veranstalter keine Haftung für etwagige Schäden die durch Unfälle und den Gebrauch auch durch andere Teilnehmer auftreten können.</p>
       <p>* Du verpflichtest dich einmalig für 3-4 Stunden in der Küche mitzuhelfen.</p>
-      <p>Super! Bitte beachte auch unsere FAQ für weitere Informationen.</p>
+      <p>* Bei einer Absage bis zum spätestens 01.08. können wir dir den vollen Teilnahmebeitrag zurückzahlen. Danach ist eine Erstattung nicht mehr möglich.</p>
+      <p>Super! Bitte beachte auch unsere <a href="/pages/faq" target="_blank">FAQ</a> für weitere Informationen.</p>
 
     signup_terms_of_service_agree: "Ich stimme den oben genannten Bedingungen zu."
 

@@ -190,12 +190,12 @@ en:
     signup_description_html: |-
       <p>You are about to participate in VERANTWORTUNG 3000.</p>
       <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation are <strong>155,00 Euro</strong>, including board and lodge throughout the festival. You will receive an invoice via email.</p>
-      <p>We can only confirm your participation once we received your transaction. So we ask you to transfer the cost in time.</p>
+      <p>We can only confirm your participation once we received your transaction. So we ask you to transfer the cost in time, latest 01.06.</p>
       <p>We are very much looking forward to welcoming you!</p>
 
     signup_contact: "Contact"
-    signup_hint_email: "Please leave your email. We need your email to get in touch with you regarding everything that is happening here on VERANTWORTUNG3000.de."
-    signup_hint_mobile: "Your cellphone will be necessary during the festival and the main means by reaching other participants on the ground."
+    signup_hint_email: "We need your email to get in touch with you regarding everything that is happening on VERANTWORTUNG3000, also other participants will reach you through this address."
+    signup_hint_mobile: "Your cellphone number might be needed to reach you during the festival."
     signup_address: "Your address"
     signup_password: "Password"
 
@@ -210,7 +210,8 @@ en:
       <p>* You have to bring your own sheets / sleeping bag.</p>
       <p>* As a participant you are liable for your own gear and instruments. As the host we dont take any responsibily for possible damage through accidents or usage of other participants.</p>
       <p>* You commit yourself to help in the kitchen once for 3-4 hours.</p>
-      <p>Great! Please read also our FAQ for further informations.</p>
+      <p>* With a cancellation until the 01.08. we will pay you the full participation fee. After this date this is not anymore possible.</p>
+      <p>Great! Please read also our <a href="/pages/faq" target="_blank">FAQ</a> for further informations.</p>
 
     signup_terms_of_service_agree: "I agree with the above mentioned terms."
 
