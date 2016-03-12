@@ -188,9 +188,9 @@ en:
     signup_title: "Register"
     signup_title_name: "Hello!"
     signup_description_html: |-
-      <p>You are about to participate in VERANTWORTUNG 3000.</p>
+      <p>You are about to participate in VERANTWORTUNG 3000. Hurra!</p>
       <p>By registering, you agree to take part in VERANTWORTUNG 3000. Costs of participation are <strong>155,00 Euro</strong>, including board and lodge throughout the festival. You will receive an invoice via email.</p>
-      <p>We can only confirm your participation once we received your transaction. So we ask you to transfer the cost in time, latest 01.06.</p>
+      <p>We can only confirm your participation once we received your transaction. We ask you to transfer the cost in time, latest until 01.06.</p>
       <p>We are very much looking forward to welcoming you!</p>
 
     signup_contact: "Contact"
@@ -458,8 +458,12 @@ en:
 
     overview_title: "Engagement"
 
-    help_main: "YOUR ENGAGEMENT"
-    help_main_html: "<p>You find a list of all your collaborations here and also which productions and events you are involved in. It is a useful overview of all your dates and connections during the festival.</p><p>Also you can refuse other participant’s requests of your equipment and instruments. But maybe be nice and email the affected person before refusing.</p> "
+    help_main: "Your Engagement"
+    help_main_html: |-
+      <p>You find a list of all your collaborations here and also which productions and events you are involved in. It is a useful overview of all your dates and connections during the festival.</p>
+      <p>Under "Instruments in use" all requested instruments of yours are listed. In most of the cases this means you are asked to perform here.</p>
+      <p>Under "Equipment in use" you can see which participant want to use your gear when and where.</p>
+      <p>Also you can refuse other participant’s requests of your equipment and instruments. You might want to contact this person before refusing.</p>"
 
     table_title_collaborations: "Instruments in use"
     table_collaborations_is_empty: "No one has so far requested one of your instruments."
@@ -475,15 +479,18 @@ en:
 
     reject_prompt_are_you_sure: "Are you sure you want to refuse this collaboration? The participant will be informed via email."
 
-    alert_requirement_rejected: "This equipment will no longer be used für this event. The organiser will be informed via email about your refusal."
-    alert_collaboration_rejected: "The collaboration has been cancelled. The organiser has been informed via email about your refusal."
+    alert_requirement_rejected: "This equipment will no longer be used for this event. The organiser will be informed via email about your decision."
+    alert_collaboration_rejected: "The collaboration has been cancelled. The organiser has been informed via email."
 
   # BLACK BOARD
 
   blackboard:
 
     title: "Blackboard"
-    text_html: "<p>The blackboard is the space where you can ask the community for instruments or equipment. If you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p><p>Everyone has access to the blackboard. If someone can help you out he or she will get in touch via email.</p><p>You can create a request on the blackboard while editing or creating an event.</p>"
+    text_html: |-
+      <p>The blackboard is the space where you can ask the community for instruments or equipment. If you are planning an event and don’t find what you are looking for in the database, you can create a request for a specific instrument/performer or equipment.</p>
+      <p>Everyone has access to the blackboard. If someone can help you out he or she will get in touch via email.</p>
+      <p>You can create a request on the blackboard while editing or creating an event. Edit a event, and choose the "Not Available" option when adding instruments or equipment to that event.</p>"
 
     title_collaborations: "Instruments wanted"
     title_requirements: "Equipment wanted"

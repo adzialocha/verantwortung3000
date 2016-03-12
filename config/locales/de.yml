@@ -183,8 +183,8 @@ de:
     signup_title: "Registrieren"
     signup_title_name: "Hallo!"
     signup_description_html: |-
-      <p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden.</p>
-      <p>Mit der Anmeldung erklärst du dich bereit, an VERANTWORTUNG 3000 teilzunehmen. Die Teilnahme kostet <strong>155,00 Euro</strong>, darin enthalten Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du bei der Anmeldung als Bestätigungsmail.</p>
+      <p>Du bist gerade dabei, dich bei VERANTWORTUNG 3000 anzumelden. Hurra!</p>
+      <p>Mit der Anmeldung erklärst du dich bereit, an VERANTWORTUNG 3000 teilzunehmen. Die Teilnahme kostet <strong>155,00 Euro</strong>, darin enthalten sind Übernachtung und Verpflegung für den gesamten Zeitraum. Die Rechnung bekommst du nach der Anmeldung via E-Mail.</p>
       <p>Erst bei Überweisung des Rechnungbetrags können wir dir einen Schlafplatz und die Teilnahme sichern, von daher bitten wir dich möglichst schnell die offene Rechnung, spätestens bis zum 01.06. zu begleichen.</p><p>Wir freuen uns auf dich!</p>
 
     signup_contact: "Kontakt"
@@ -460,11 +460,15 @@ de:
 
     overview_title: "Engagement"
 
-    help_main: "DEIN ENGAGEMENT"
-    help_main_html: <p>Hier findest du eine Auflistung all deiner Kollaborationen und siehst in welchen Produktionen und Veranstaltungen du involviert bist. Es ist also eine praktische Übersicht all deiner Termine und Vernetzungen während des Festivals.</p><p>Außerdem kannst du hierüber Anfragen deiner Geräte und Instrumente ablehnen. Jedoch lohnt es sich vielleicht vorher mit derjenigen Person, die anfragt, zu kommunizieren.</p>
+    help_main: "Dein Engagement"
+    help_main_html: |-
+      <p>Hier findest du eine Auflistung all deiner aktuellen Kollaborationen und in welchen Produktionen und Veranstaltungen du als Performerin involviert bist.</p>
+      <p>Unter "Verwendete Instrumente" werden deine angefragten Instrumente aufgelistet, hier bist du in den meisten Fällen als Performer gefragt.</p>
+      <p>Unter "Verwendete Geräte" siehst du, welche Teilnehmer deine Geräte wann und wo ausleihen und verwenden wollen.</p>
+      <p>Du kannst auch Anfragen deiner Geräte und Instrumente ablehnen. Jedoch lohnt es sich vielleicht vorher mit derjenigen Person zu kommunizieren.</p>
 
     table_title_collaborations: "Verwendete Instrumente"
-    table_collaborations_is_empty: "Du wurdest bisher für kein Instrument angefragt."
+    table_collaborations_is_empty: "Du wurdest bisher für keines deiner Instrumente angefragt."
 
     table_title_requirements: "Verwendete Geräte"
     table_requirements_is_empty: "Bisher wurde kein Gerät von dir angefragt."
@@ -475,7 +479,7 @@ de:
 
     btn_reject: "Ablehnen"
 
-    reject_prompt_are_you_sure: "Bist du dir sicher, dass du diese Kollaboration ablehnen möchtest? Die jeweilige Person wird darüber informiert."
+    reject_prompt_are_you_sure: "Bist du dir sicher, dass du diese Kollaboration ablehnen möchtest? Die jeweilige Person wird über deine Absage via E-Mail informiert."
 
     alert_requirement_rejected: "Das Gerät wird nicht mehr für die Veranstaltung verwendet. Die Veranstalterin wurde via E-Mail über deine Absage informiert."
     alert_collaboration_rejected: "Die Kollaboration wurde abgelehnt, der Veranstalter wurde via E-Mail über deine Absage informiert."
@@ -485,7 +489,10 @@ de:
   blackboard:
 
     title: "Schwarzes Brett"
-    text_html: "<p>Das Schwarze Brett dient als Sammelstelle für alle gesuchten Instrumente oder Geräte. Das heißt, wenn du für eine Veranstaltung, die du planst, in der Datenbank nicht das Instrument oder ein Gerät findest, das du benötigst, dann kannst du hier eine Anfrage schreiben.</p><p>Auf das Schwarze Brett haben alle Teilnehmer Zugriff. So nehmen also alle Teilnehmerinnen deine Anfrage wahr und können dir eine Email schreiben, wenn sich eine Kollaboration ergeben sollte.</p><p>Einträge ins Schwarze Brett werden innerhalb der Veranstaltungen erstellt, wenn du deine Geräte und Instrumente für die Veranstaltung verwaltest.</p>"
+    text_html: |-
+      <p>Das Schwarze Brett dient als Sammelstelle für alle gesuchten Instrumente oder Geräte. Das heißt, wenn du für eine Veranstaltung, die du planst, in der Datenbank nicht das Instrument oder ein Gerät findest, das du benötigst, dann kannst du hier eine Anfrage schreiben.</p>
+      <p>Auf das Schwarze Brett haben alle Teilnehmer Zugriff. So nehmen also alle Teilnehmerinnen deine Anfrage wahr und können dir eine Email schreiben, wenn sich eine Kollaboration ergeben sollte.</p>
+      <p>Einträge ins Schwarze Brett kannst du erstellen, wenn du deine Geräte und Instrumente für eine Veranstaltung verwaltest. Bearbeite hierzu eine deiner Veranstaltungen und wähle als Instrument oder Gerät die Option "Nicht vorhanden" aus.</p>
 
     title_collaborations: "Instrumente gesucht"
     title_requirements: "Geräte gesucht"
