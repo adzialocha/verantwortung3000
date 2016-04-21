@@ -12,7 +12,9 @@ class EventsController < ResourceController
       resource.user_id = current_user.id
     end
 
-    create!(:notice => t("events.alert_create")) { edit_resource_url }
+    create! do |success, failure|
+      success.html { redirect_to edit_resource_url }
+    end
 
   end
 
