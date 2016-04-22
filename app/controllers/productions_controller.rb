@@ -17,7 +17,7 @@ class ProductionsController < ResourceController
     params.require(:production).permit(
       :title, :description, :user_id,
       images_attributes: [ :id, :src, :_destroy ],
-      events_attributes: [ :id, :title, :description, :location_id, :from, :to, :_destroy ]
+      events_attributes: [ :id, :title, :description, :location_id, :user_id, :from, :to, :_destroy ]
     )
 
   end

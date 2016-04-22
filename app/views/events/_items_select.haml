@@ -28,5 +28,25 @@
 
   .items-select__create
 
-    = f.input :title, label: t('productions.event.form.blackboard_title'), required: true, input_html: { class: 'blackboard_title' }
-    = f.input :description, label: t('productions.event.form.blackboard_description'), required: true, input_html: { class: 'blackboard_description' }
+    - if id.present?
+
+      = f.input :title, label: t('productions.event.form.blackboard_title'), required: true, input_html: { class: 'blackboard_title' }
+      = f.input :description, label: t('productions.event.form.blackboard_description'), required: true, input_html: { class: 'blackboard_description' }
+
+    - else
+
+      .form-group.string.required
+
+        %label.string.required.control-label{:for => "blackboard_title"}
+          %abbr *
+          = t('productions.event.form.blackboard_title')
+
+        %input#blackboard_title.string.required.blackboard_title.form-control{ :name => "blackboard[title]", :type => "text" }
+
+      .form-group.text.required
+
+        %label.text.required.control-label{:for => "blackboard_description"}
+          %abbr *
+          = t('productions.event.form.blackboard_description')
+
+        %textarea#blackboard_description.text.required.blackboard_description.form-control{:name => "blackboard[description]"}

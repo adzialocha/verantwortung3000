@@ -8,7 +8,7 @@ class EventsController < ResourceController
 
   def create
 
-    if resource.attributes.has_key? 'user_id'
+    if resource.attributes.has_key? 'user_id' and current_user?
       resource.user_id = current_user.id
     end
 
@@ -23,7 +23,7 @@ class EventsController < ResourceController
   def event_params
 
     params.require(:event).permit(
-      :title, :description, :user_id, :from, :to, :location_id,
+      :id, :title, :description, :user_id, :from, :to, :location_id,
       images_attributes: [ :id, :src, :_destroy ],
       collaborations_attributes: [ :id, :title, :description, :instrument_id, :user_id, :_destroy ],
       requirements_attributes: [ :id, :title, :description, :device_id, :user_id, :_destroy ]

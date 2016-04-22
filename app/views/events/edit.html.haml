@@ -28,7 +28,11 @@
 
     = f.error_notification
 
+    // event: where & when
+
     = render 'form', f: f
+
+    // instruments
 
     .panel
 
@@ -54,6 +58,8 @@
 
           %button{:type => "button", :class => "btn btn-success", :data => { "toggle" => "modal", "target" => "#collaboration-modal" }}= t('productions.event.form.btn_add_instrument')
 
+    // devices
+
     .panel
 
       .panel-heading
@@ -78,6 +84,8 @@
 
           %button{:type => "button", :class => "btn btn-success", :data => { "toggle" => "modal", "target" => "#requirement-modal" }}= t('productions.event.form.btn_add_device')
 
+    // event: info & description
+
     .panel
 
       .panel-heading
@@ -93,6 +101,8 @@
 
         = f.input :title
         = f.input :description
+
+    // submit form
 
     .row
 

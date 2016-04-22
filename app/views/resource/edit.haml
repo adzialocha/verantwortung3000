@@ -9,7 +9,7 @@
         %span.header-row__category
           = link_to t(resource.model_name.human.pluralize.downcase + '.overview_title'), collection_path(resource)
 
-        %span.text-nowrap= "> #{ t(resource.model_name.human.pluralize.downcase + '.title_edit', title: resource.title) }"
+        %span= "> #{ t(resource.model_name.human.pluralize.downcase + '.title_edit', title: resource.title) }"
 
     .col-sm-5
 
