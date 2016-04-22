@@ -8,7 +8,7 @@ class EventsController < ResourceController
 
   def create
 
-    if resource.attributes.has_key? 'user_id' and current_user?
+    if resource.attributes.has_key? 'user_id'
       resource.user_id = current_user.id
     end
 

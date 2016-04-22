@@ -60,7 +60,7 @@ class Event < ActiveRecord::Base
 
     existing_events = Event.where(id + 'location_id = :location AND (("to" >= :to AND "from" <= :from) OR ("to" > :from AND "from" < :to))', id: self.id, location: self.location_id, to: self.to, from: self.from).first
 
-    if existing_events
+    if existing_events and location.reservable
       errors.add(:location_id, I18n.t("productions.event.form.error_location_occupied"))
     end
 
