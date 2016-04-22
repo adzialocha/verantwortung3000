@@ -102,6 +102,16 @@ $table-image-size: 50px;
     width: 10%;
     min-width: 100px;
   }
+
+  td.table-cell-false
+  {
+    background-color: $red;
+  }
+
+  td.table-cell-true
+  {
+    background-color: $green;
+  }
 }
 
 @media (max-width: $screen-xs-max) {

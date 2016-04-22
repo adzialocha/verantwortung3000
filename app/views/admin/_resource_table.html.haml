@@ -38,7 +38,14 @@
             %td= resource.id
 
             - attributes.each do |a|
-              %td= resource.send(a)
+
+              - if [true, false].include? resource.send(a)
+
+                %td{ class: resource.send(a) ? 'table-cell-true': 'table-cell-false' }
+
+              - else
+
+                %td= resource.send(a)
 
             %td
 
