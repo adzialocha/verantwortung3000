@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
-  devise :database_authenticatable, :confirmable,
-         :recoverable, :rememberable, :trackable, :validatable, :registerable
+  # devise :database_authenticatable, :confirmable,
+  #        :recoverable, :rememberable, :trackable, :validatable, :registerable
 
   extend FriendlyId
 
