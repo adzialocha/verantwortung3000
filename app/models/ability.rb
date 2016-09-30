@@ -16,11 +16,11 @@ class Ability
 
     if User.exists?(user.id)
 
-      can :change, [Production, Instrument, Device, Event], :user_id => user.id
+      # can :change, [Production, Instrument, Device, Event], :user_id => user.id
       can :change, User, :id => user.id
 
       can :read, :all
-      can :create, :all
+      # can :create, :all
 
     end
 

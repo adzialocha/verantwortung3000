@@ -31,34 +31,34 @@
             - if user_signed_in?
               = li_link_to t('navigation.locations'), locations_path
 
-          / %ul.nav.navbar-nav.navbar-right
+          %ul.nav.navbar-nav.navbar-right
 
-          / - if user_signed_in?
+            - if user_signed_in?
 
-          /   %li{"class" => "dropdown"}
+              %li{"class" => "dropdown"}
 
-          /     %a{"role" => "button", "class" => "dropdown-toggle", "data-toggle" => "dropdown"}
+                %a{"role" => "button", "class" => "dropdown-toggle", "data-toggle" => "dropdown"}
 
-          /       %span= t('navigation.dropdown')
-          /       %span{"class" => "caret"}
+                  %span= t('navigation.dropdown')
+                  %span{"class" => "caret"}
 
-          /     %ul.dropdown-menu
+                %ul.dropdown-menu
 
-          /       = li_link_to t('navigation.participants'), users_path
-          /       = li_link_to t('navigation.productions'), productions_path
-          /       = li_link_to t('navigation.instruments'), instruments_path
-          /       = li_link_to t('navigation.devices'), devices_path
+                  = li_link_to t('navigation.participants'), users_path
+                  = li_link_to t('navigation.productions'), productions_path
+                  = li_link_to t('navigation.instruments'), instruments_path
+                  = li_link_to t('navigation.devices'), devices_path
 
-          /       %li{"role" => "separator", "class" => "divider"}
+                  %li{"role" => "separator", "class" => "divider"}
 
-          /       = li_link_to t('navigation.engagement'), engagement_path
-          /       = li_link_to t('navigation.activity'), activity_path
-          /       = li_link_to t('navigation.blackboard'), blackboard_path
+                  = li_link_to t('navigation.engagement'), engagement_path
+                  = li_link_to t('navigation.activity'), activity_path
+                  = li_link_to t('navigation.blackboard'), blackboard_path
 
-          /   = li_link_to t('navigation.profile'), edit_user_registration_path
-          /   = li_link_to t('navigation.signout'), destroy_user_session_path, method: :delete
+              = li_link_to t('navigation.profile'), edit_user_registration_path
+              = li_link_to t('navigation.signout'), destroy_user_session_path, method: :delete
 
-          / - else
+            - else
 
-          /   = li_link_to t('navigation.signup'), new_user_registration_path
-          /   = li_link_to t('navigation.signin'), new_user_session_path
+              / = li_link_to t('navigation.signup'), new_user_registration_path
+              = li_link_to t('navigation.signin'), new_user_session_path
